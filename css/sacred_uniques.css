@@ -1,0 +1,120 @@
+@font-face {
+    font-family: diabloFont;
+    src: url("../fonts/diablo_h.ttf");
+}
+
+/* General */
+body {
+    background-color: #0f0d06;
+}
+
+.container {
+    margin: auto;
+    width: 75%;
+    text-align: center;
+    background-color: #1a18179a;
+    line-height: 1.05;
+    border-left: 3px solid #5f4e15e3;
+    border-right: 3px solid #5f4e15e3;
+}
+
+header {
+    background-color: #1a1909d0;
+    text-align: center;
+    word-spacing: 40px;
+    color: #706033;
+    text-shadow: 2px 2px #000000;
+}
+
+h1 {
+    font: 25px/3 diabloFont, arial, sans-serif;
+    font-weight: bold;
+}
+
+nav {
+    font-size: 18px;
+    text-align: left;
+    background-color: #66615acc;
+    word-spacing: 40px;
+    padding: 5px 0 5px 29px;
+    border-top: 2px solid #5f4e15e3;
+    border-bottom: 2px solid #5f4e15e3;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+/* table */
+table {
+    width: 95%;
+    margin: 25px auto 0 auto;
+    /* font-family: Helvetica; */
+}
+
+/* tr {
+    
+} */
+
+th {
+    margin: 0 auto;
+    border: 1px solid black;
+    line-height: 24px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #a1a178;
+    background-color: #312a1aa9;
+}
+
+td {
+    border: 1px solid black;
+    vertical-align: middle;
+    font-size: 15px;
+    color: #a1a178;
+}
+
+td img{
+    margin: auto;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.textCell {
+    width: 40%;
+    padding: 3px 0 5px 5px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.img {
+    width: 10%;
+    padding: 0 10px 0 10px;
+}
+
+/* Items */
+.unique {
+    color: #706033;
+    font-weight: bold;
+    }
+.magic {
+    color: #555570;
+    }
+.rare {
+    color: #909000;
+    }
+.note {
+    font-size: 12px;
+    color: #a1a178;
+}
+.heroic {
+    color: #20b020;
+}
+.uberquest {
+    color: #ff9900;
+}
+
+.elite {
+    color: #ffff20;
+}
