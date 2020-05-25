@@ -6,6 +6,7 @@
 /* General */
 body {
     background-color: #0f0d06;
+    color: #838363;
 }
 
 .container {
@@ -14,15 +15,15 @@ body {
     text-align: center;
     background-color: #1a18179a;
     line-height: 1.05;
-    border-left: 3px solid #5f4e15e3;
-    border-right: 3px solid #5f4e15e3;
+    border-left: 3px solid #413922e3;
+    border-right: 3px solid #413922e3;
 }
 
 header {
-    background-color: #1a1909d0;
+    background-color: #1d170b;
     text-align: center;
     word-spacing: 40px;
-    color: #706033;
+    color: #7e6c3a;
     text-shadow: 2px 2px #000000;
 }
 
@@ -31,23 +32,73 @@ h1 {
     font-weight: bold;
 }
 
-nav {
-    font-size: 18px;
-    text-align: left;
-    background-color: #66615acc;
-    word-spacing: 40px;
-    padding: 5px 0 5px 29px;
-    border-top: 2px solid #5f4e15e3;
-    border-bottom: 2px solid #5f4e15e3;
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-ul {
+/* navigation bar */ 
+nav {
+    color: #838363;
+    font-size: 18px;
+    text-align: left;
+    background-color: #272112;
+    word-spacing: 40px;
+    padding: 5px 0 5px 29px;
+    border-top: 2px solid #413922e3;
+    border-bottom: 2px solid #413922e3;
+}
+
+.navpanel {
     list-style-type: none;
 }
 
-li {
+.navpanel li {
     display: inline;
 }
+
+.description {
+    background-color: #1a160c;
+    width: 70%;
+    margin: 30px auto 20px auto;
+    padding: 10px 5px 10px 5px;
+    border: 2px solid #413922e3;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Table of Contents */
+.toc {
+    height: 650px;
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 11%;
+    text-align: left;
+    color: #a1a178;
+    font-size: 14px;
+    border: 1px solid #bbab7773;
+    position: fixed;
+    left: 5px;
+    top: 75px;
+}
+
+.tocCategory {
+    font-weight: bold;
+    text-decoration: underline;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.toc li {
+    padding: 4px 0 4px 3px;
+}
+
+.toc li a:hover {
+    color: #ebebc5;
+}
+
 /* table */
 .category {
     width: 95%;
