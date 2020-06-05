@@ -1,47 +1,3 @@
-@font-face {
-    font-family: diabloFont;
-    src: url("../fonts/diablo_h.ttf");
-}
-
-/* General */
-body {
-    background-color: #0f0d06;
-    color: #838363;
-}
-
-.container {
-    margin: auto;
-    width: 75%;
-    text-align: center;
-    background-color: #1a18179a;
-    line-height: 1.05;
-    border-left: 3px solid #413922e3;
-    border-right: 3px solid #413922e3;
-}
-
-header {
-    background-color: #1d170b;
-    text-align: center;
-    word-spacing: 40px;
-    color: #7e6c3a;
-    text-shadow: 2px 2px #000000;
-}
-
-.spacing {
-    width: 100%;
-    height: 50px;
-}
-
-h1 {
-    font: 25px/3 diabloFont, arial, sans-serif;
-    font-weight: bold;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
 .description {
     color: #a0a076;
     text-align: left;
@@ -61,59 +17,6 @@ a {
     padding: 10px 10px 10px 10px;
     width: 70%;
     border: 2px solid #413922e3;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-/* navigation bar */ 
-nav {
-    color: #838363;
-    font-size: 18px;
-    text-align: left;
-    background-color: #272112;
-    word-spacing: 40px;
-    padding: 5px 0 5px 29px;
-    border-top: 2px solid #413922e3;
-    border-bottom: 2px solid #413922e3;
-}
-
-.navpanel {
-    list-style-type: none;
-}
-
-.navpanel li {
-    display: inline;
-}
-/* Table of Contents */
-.toc {
-    height: 650px;
-    overflow: hidden;
-    overflow-y: scroll;
-    width: 11%;
-    text-align: left;
-    color: #a1a178;
-    font-size: 14px;
-    border: 1px solid #bbab7773;
-    position: fixed;
-    left: 5px;
-    top: 75px;
-}
-
-.tocCategory {
-    font-weight: bold;
-    text-decoration: underline;
-    list-style-type: circle;
-    list-style-position: inside;
-}
-
-.toc li {
-    padding: 4px 0 4px 3px;
-}
-
-.toc li a:hover {
-    color: #ebebc5;
 }
 
 /* table */
@@ -156,28 +59,3 @@ td img{
     padding: 0 10px 0 10px;
 }
 
-/* Items */
-.unique {
-    color: #706033;
-    font-weight: bold;
-    }
-.magic {
-    color: #555570;
-    }
-.rare {
-    color: #909000;
-    }
-.note {
-    font-size: 12px;
-    color: #a1a178;
-}
-.heroic {
-    color: #20b020;
-}
-.uberquest {
-    color: #ff9900;
-}
-
-.elite {
-    color: #ffff20;
-}
