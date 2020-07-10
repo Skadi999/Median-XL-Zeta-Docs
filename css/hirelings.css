@@ -1,0 +1,68 @@
+h2 {
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 15px;
+    letter-spacing: 0.1em;
+    color: #6e591a;
+}
+
+h3 {
+    color: #706033;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 9px;
+    text-align: left;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 19px;
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+h6 {
+    font-weight: bold;
+    font-size: 17px;
+    text-align: left;
+}
+
+table {
+    margin: 20px auto;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 4px;
+}
+
+th {
+    font-weight: bold;
+}
+
+.mercenary {
+    width: 60%;
+    margin-top: 35px;
+    text-align: left;
+}
+
+.hirelings {
+    padding: 10px 5px 10px 15px;
+    margin: 20px auto 10px auto;
+    width: 75%;
+}
+
+.hirelings p {
+    margin: 0 0 20px 0;
+    text-align: left;
+}
+
+.hirelings a {
+    color: #6e567e;
+    text-decoration: underline;
+}
+
+.hirelings a:hover{
+    color: #c8a3e0;
+}

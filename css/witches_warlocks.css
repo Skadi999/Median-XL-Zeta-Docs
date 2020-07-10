@@ -1,0 +1,51 @@
+
+.description {
+    padding: 10px 5px 10px 15px;
+    margin: 20px auto 10px auto;
+    width: 80%;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.description p {
+    margin: 0 0 20px 0;
+    text-align: left;
+}
+
+.titleDescription {
+    margin-bottom: 35px;
+}
+
+h2 {
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+h6 {
+    font-weight: bold;
+    font-size: 17px;
+    text-align: left;
+}
+
+#subH6 {
+    font-size: 13px;
+}
+
+.textAndImage {
+    font-size: 1.05em;
+    width: 20%;
+    text-align: left;
+    float: left;
+}
+
+.textAndImage img {
+    width: 175px;
+    height: 175px;
+    margin-top: 5px;
+}
+
+#warlockimg {
+    border: 1px solid white;
+}
