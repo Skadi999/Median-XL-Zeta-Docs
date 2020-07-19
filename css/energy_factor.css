@@ -1,0 +1,43 @@
+.description {
+    padding: 10px 5px 10px 15px;
+    margin: 20px auto 10px auto;
+    width: 80%;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.description p {
+    margin: 0 0 20px 0;
+    text-align: left;
+}
+
+.titleDescription {
+    margin-bottom: 35px;
+}
+
+.sacredUniqueAreas {
+    margin: 20px 0 20px 0;
+    background-color: #1a160c;
+    padding: 10px 10px 10px 10px;
+    width: 70%;
+    border: 2px solid #413922e3;
+}
+
+h2 {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+h6 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 17px;
+    text-align: left;
+}
+
+#energy_factor {
+    width: 100%;
+}

@@ -1,10 +1,14 @@
 /* TU description card */
 .description {
     background-color: #1a160c;
-    width: 70%;
-    margin: 30px auto 20px auto;
-    padding: 10px 5px 10px 5px;
+    width: 60%;
+    margin: 10px 0 20px 2.5%;
+    padding: 10px 5px;
     border: 2px solid #413922e3;
+}
+
+.description p {
+    margin: 0 20px;
 }
 
 /* table */

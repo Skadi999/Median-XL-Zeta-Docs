@@ -50,7 +50,11 @@ a:hover {
     font-weight: bold;
 }
 
-#smallFont {
+.italic {
+    font-style: italic;
+}
+
+.smallFont {
     font-size: 13px;
 }
 
