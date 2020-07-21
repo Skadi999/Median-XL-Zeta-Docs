@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/characters.css">
+    <title>Necromancer | MXL:Z Documentation</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>+ Necromancer +</h1>
+        </header>
+        <nav>
+            <ul class="navpanel">
+                <li>Concepts</li>
+                <li>Characters</li>
+                <li>Items</li>
+                <li>Uberquests</li>
+                <li>Challenges</li>
+                <li>Maps</li>
+                <li>Misc</li>
+            </ul>
+        </nav>
+        <div class="description">
+            <h2>THE NECROMANCER</h2>
+            <p>The Median XL druid class is physically the weakest class in the game, but uses range and damage over
+                time to his advantage or morphs into a fierce creature of nature.</p>
+            <hr>
+            <img src="img/art/intro_necromancer.jpg">
+            <hr>
+            <h2>BACKGROUND OF THE MEDIAN XL NECROMANCER</h2>
+            <p>Contrary to popular opinion among the unwashed mashes, necromancers are not power-hungry maniacs. They
+                may in fact be the only ones who know what is truly at stake.</p>
+
+            <p>Historically, the first mortal necromancer was the edyrem Mendeln. Sensitised by the presence of the
+                nephalem warrior-mage Uldyssian, he heard the calling of an ancient being from the dawn of Creation –
+                the dragon Trang-Oul, ruler of the Plane of the Dead.</p>
+
+            <p>Trang-Oul explained that Sanctuary was not meant to be. A fallen angel and wayward demon, tired of the
+                never-ending war, had created their own kingdom to rule and humanity to serve them. But if either the
+                High Heavens or the Burning Hells found out about the mortal plane, the Eternal War would descend upon
+                it and tear it to pieces.</p>
+
+            <p>Trang-Oul and his pupil, the nephalem Rathma, were powerful beings, but not powerful enough. The two had
+                to watch as first the Hells and then the angelic legions discovered Sanctuary. Only the vote of the
+                archangel Tyrael prevented the avenging angels of Heaven from immediately destroying the traitor
+                Inarius’ impure creations. Both sides signed a blood pact to keep humanity out of the war and allow them
+                to develop, grow and perhaps make their own choice between good and evil.</p>
+
+            <p>Before his final voyage to the Plane of the Dead, Mendeln recorded the events in what would become the
+                necromancer’s holy book, the foundation of the cult of Rathma.</p>
+
+            <p>The priests of Rathma strive to uphold the balance between the High Heavens and the Burning Hells, for if
+                the balance swings too much, the fate of the mortal plane itself would be in jeopardy. A victory of the
+                forces of chaos would mean hell on earth, whereas if the angelic legions win the Eternal War, their
+                likely next step would be to get rid of the last taint on Creation and annihilate the mortal world.</p>
+
+            <p>In times when the forces of Light are strong, this earns them the disdain of the masses. For this reason,
+                the Cult hides underground, only surfacing in times of need...</p>
+            <hr>
+            <h2>BASE STATS</h2>
+            <p>Chance to block: <span class="unique">1%</span></p>
+            <p>Strength: <span class="unique">15</span><br>
+                Dexterity: <span class="unique">25</span><br>
+                Vitality: <span class="unique">20</span> (70 life)<br>
+                Energy: <span class="unique">25</span> (25 mana)</p>
+            <p>+20 life, +20 mana per level<br>
+                Gains +1 life per point into vitality<br>
+                Gains +6 mana per point into energy</p>
+            <hr>
+            <h2>PREFERRED WEAPONS</h2>
+            <p>The Cult of Rathma created a vast arsenal of exotic weapons to augment the magic and combat abilities of
+                their zealots.</p>
+
+            <p>The Rathma priests are known as magical experts, not mighty warriors. But with the right mixture of
+                alchemical ingredients, even a necromancer can turn into a slavering scythe-wielding maniac. Death
+                Knights, the warrior branch of the Cult, are commonly seen wielding wicked hexblades or enchanted
+                scythes capable of slicing through steel and demon scales.</p>
+
+            <p>Due to the high clergy's ban on crossbow development in the overworld and the low quality of black market
+                weapons, the heavy crossbows and trebuchets of the Dark Rangers are the most powerful in the world.
+                Although they are not known for being exceptionally brave or tough in combat, the arbalists of Rathma
+                use the sheer damaging power of their advanced weapons to great effect.</p>
+
+            <p>Summoners and totemcrafters use wands or the ancient Rathman bone staves, which require both hands to
+                wield and offer little protection in combat - but an army of the dead and his voodoo powers are all the
+                protection a necromancer ever needs.</p>
+
+            <p><span class="italic">Base cast rate increased when wielding a staff</span></p>
+
+            <p id="indented"><span class="bold">Class-specific 1h weapon: Wand<br>
+                    Class-specific 1h weapon: Necromancer Dagger<br>
+                    Class-specific 2h weapon: Necromancer Crossbow<br>
+                    Class-specific 2h weapon: Necromancer Staff<br>
+                    Class-specific 2h weapon: Necromancer Scythe (On hit: Mega Impact)</span></p>
+            <hr>
+            <h2>PREFERRED ARMOUR</h2>
+            <p>The necromantic skull shields are not the best at blocking arrows or blades, but augment the magical
+                abilities of the wielder. Some say the spirit of the former owner of the skull is bound within the item
+                and slowly drained to power the necromancer's magic.</p>
+            <p id="indented"><span class="bold">Class-specific shield: Shrunken Head</span></p>
+            <hr>
+            <h2>SUMMONING SKILLS</h2>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Summon Shadows</td>
+                    <td><img src="img/skillicons/necromancer/SummonShadows.gif"></td>
+                    <td>The ghosts of heroes past take the fight to the forces of hell, their presence at the other side
+                        of the veil of time strengthening the faith and fury of their living comrades.<br>
+                        <span class="italic">Effect: shadow minions with an aura that increases life and
+                            regeneration</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Summon Rampagor</td>
+                    <td><img src="img/skillicons/necromancer/SummonRampagor.gif"></td>
+                    <td>The manifestation of demons slain aeons ago and bound by the necromancer, Rampagors are living
+                        siege engines with wicked poison blades.<br>
+                        <span class="italic">Effect: large and tough minions with a poison attack</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Summon Lamia</td>
+                    <td><img src="img/skillicons/necromancer/SummonLamia.gif"></td>
+                    <td>The howling spirits of the dead return to exact their revenge on the living. Their chilling
+                        death touch weakens the flesh and spirit of the victim.<br>
+                        <span class="italic">Effect: flying minions with a curse that adds points to damage</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Summon Veil King</td>
+                    <td><img src="img/skillicons/necromancer/SummonVeilKing.gif"></td>
+                    <td>After Leoric's defeat, the priests of Rathma explored his ancient crypt and used the bones and
+                        lingering magic in a ritual to raise the fearsome skeleton king as a servant to Rathma's
+                        church.<br>
+                        <span class="italic">Effect: single minion that may use a lethal strike and spawns undead
+                            fiends</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Summon Void Archon</td>
+                    <td><img src="img/skillicons/necromancer/SummonVoidArchon.gif"></td>
+                    <td>Created by a suicidally reckless coven during the Mage Clan Wars, these aberrations feed on
+                        magic and are very difficult to bind. Their warping aura disrupts the defences of the
+                        necromancer's enemies.<br>
+                        <span class="italic">Effect: single minion with a crippling aura and an area effect
+                            attack</span>
+                    </td>
+                </tr>
+            </table>
+            <h2>MELEE SKILLS</h2>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Massacre</td>
+                    <td><img src="img/skillicons/necromancer/Massacre.gif"></td>
+                    <td>The right alchemical mixture can turn even a frail priest of Rathma into a fearsome warrior,
+                        provided he does not mind occasionally waking up in an orphanage in a pool of blood with the
+                        militia banging on the door.<br>
+                        <span class="italic">Effect: multiple rapid attacks</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Angel of Death</td>
+                    <td><img src="img/skillicons/necromancer/AngelofDeath.gif"></td>
+                    <td>The death knight takes flight on black wings of fury and descends upon his cowering victims,
+                        cleaving them in half with a devastating swing of his scythe or hexblade.<br>
+                        <span class="italic">Effect: leap attack that adds damage and inflicts lethal poison</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Famine</td>
+                    <td><img src="img/skillicons/necromancer/Famine.gif"></td>
+                    <td>Rathma's death knights are all but immortal on the battlefield. It is whispered among their
+                        frightened adversaries that they are so hard to kill because they are in fact already dead.<br>
+                        <span class="italic">Passive effect: increases damage and grants life steal</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Parasite</td>
+                    <td><img src="img/skillicons/necromancer/Parasite.gif"></td>
+                    <td>If you admire Ashaera's wizardesses and the Rathma cult's finely crafted war scythes, you do not
+                        want to know what both are used for out of combat. In both cases, it often leads to infection
+                        with a flesh eating parasite.<br>
+                        <span class="italic">Effect: melee attack that unleashes a worm that bounces between
+                            targets</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Deathlord</td>
+                    <td><img src="img/skillicons/necromancer/Deathlord.gif"></td>
+                    <td>Wearing heavy full plate mail is a privilege reserved for the strongest fighters of the realm.
+                        The Rathma priests found a slightly different solution: an enchanted set of armour animated by
+                        the spirit of an ancient warrior.<br>
+                        <span class="italic">Effect: morph into a death knight</span>
+                    </td>
+                </tr>
+            </table>
+            <h2>CROSSBOW SKILLS</h2>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Buckshot</td>
+                    <td><img src="img/skillicons/necromancer/Buckshot.gif"></td>
+                    <td>This popular crossbow retrofit uses exploding oil to launch a number of jagged metal shards. Its
+                        effective range is limited, but its effect on unprotected flesh is impressive.<br>
+                        <span class="italic">Effect: fires a short ranged crossbow blast</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Flametail Shot</td>
+                    <td><img src="img/skillicons/necromancer/FlametailShot.gif"></td>
+                    <td>Rathma's alchemists harness the explosive power of their concoctions to propel a crossbow bolt
+                        under its own power, slamming its way through the enemy ranks.<br>
+                        <span class="italic">Effect: fires a rocket that pierces and stuns enemies</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Dragonfire Oil</td>
+                    <td><img src="img/skillicons/necromancer/DragonfireOil.gif"></td>
+                    <td>This secret mixture of sticky gasoline and distilled voodoo can be applied to any weapon to set
+                        it ablaze and torch the unfortunate target.<br>
+                        <span class="italic">Passive effect: adds fire damage to your attacks</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fragmentation Shot</td>
+                    <td><img src="img/skillicons/necromancer/FragmentationShot.gif"></td>
+                    <td>Most mages are familiar with exploding potions, usually not on purpose. The expert alchemist
+                        uses his crossbow to project a glass vial filled with magical oil and shrapnel over a large
+                        distance.<br>
+                        <span class="italic">Effect: fires a potion that explodes on the ground</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Widowmaker</td>
+                    <td><img src="img/skillicons/necromancer/Widowmaker.gif"></td>
+                    <td>Voodoo magic was long known to the Umbaru tribes in Kehjistan, the only other humans mad enough
+                        to live in the deadly jungle. Shooting a voodoo doll of a shadow minion with a crossbow can have
+                        interesting effects.<br>
+                        <span class="italic">Effect: target minion spits out a barrage of homing crossbow bolts</span>
+                    </td>
+                </tr>
+            </table>
+            <h2>TOTEM SKILLS</h2>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Death's Fury Totem</td>
+                    <td><img src="img/skillicons/necromancer/DeathsFuryTotem.gif"></td>
+                    <td>In a particular perversion of druidic magic, this totem sucks the spirits of nature out of the
+                        earth and channels them into the claws and blades of the necromancer and his allies.<br>
+                        <span class="italic">Totem effect: adds fire, cold and lightning damage</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Frostclaw Totem</td>
+                    <td><img src="img/skillicons/necromancer/FrostclawTotem.gif"></td>
+                    <td>This totem channels the spirits of vengeance of fallen warriors in the areas. The spirits
+                        unleash their fury from the cold darkness at the other side of the veil.<br>
+                        <span class="italic">Totem effect: casts homing waves of ice flame</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fireheart Totem</td>
+                    <td><img src="img/skillicons/necromancer/FireheartTotem.gif"></td>
+                    <td>This totem channels fire spirits from the ambient air, launching an endless barrage of scorching
+                        firebolts at the totemcrafter’s enemies.<br>
+                        <span class="italic">Totem effect: casts explosive fireballs at multiple targets</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Howling Totem</td>
+                    <td><img src="img/skillicons/necromancer/HowlingTotem.gif"></td>
+                    <td>The spirits in this totem invoke a dark rage in the necromancer and his allies. Many death
+                        knights are wary of this totem, for the haunting song of the spirits seems to possess them and,
+                        over time, drives them insane.<br>
+                        <span class="italic">Totem effect: increases physical damage and causes targets to flee</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Stormeye Totem</td>
+                    <td><img src="img/skillicons/necromancer/StormeyeTotem.gif"></td>
+                    <td>More mechanical than magical, this totem employs a running belt of silk that builds up an
+                        electrostatic charge on the sphere, causing sparks to fly when an enemy enters the area.<br>
+                        <span class="italic">Totem effect: casts a continuous stream of lightning</span>
+                    </td>
+                </tr>
+            </table>
+            <h2>SUPPORT SKILLS</h2>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Embalming</td>
+                    <td><img src="img/skillicons/necromancer/Embalming.gif"></td>
+                    <td>Burial rites were created to preserve the integrity of the deceased's body and empower its soul
+                        on its voyage to the plane of the dead. These are properties any warrior would die for.<br>
+                        <span class="italic">Passive effect: increases mana regen and life of self and minions</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sacrifices</td>
+                    <td><img src="img/skillicons/necromancer/Sacrifices.gif"></td>
+                    <td>The ends justify the means. The Cult of Rathma has its own underground prison and regularly
+                        raids Zakarumite temples for those times when a spell happens to require fresh blood.<br>
+                        <span class="italic">Effect: summons prisoners and kills them for corpses</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bend the Shadows</td>
+                    <td><img src="img/skillicons/necromancer/BendtheShadows.gif"></td>
+                    <td>The necromancer links his mind with one of his undead summoned spirits, manifesting at the
+                        location of the spirit along with the rest of his army. This crucial ability keeps the undead
+                        army on the move and on the offensive.<br>
+                        <span class="italic">Effect: teleport to target minion, taking other minions with you</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bane</td>
+                    <td><img src="img/skillicons/necromancer/Bane.gif"></td>
+                    <td>If the sight of one of Rathma's undead aberrations does not fill even a demon from hell with
+                        dread, this sinister magical enchantment of terror may push the fiend over the edge into
+                        quivering insanity.<br>
+                        <span class="italic">Effect: curses enemies near target minion, lowering physical resist</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Talon's Hold</td>
+                    <td><img src="img/skillicons/necromancer/TalonsHold.gif"></td>
+                    <td>Fallen enemies of the Cult may see the error of their ways when they stand before the Dragon God
+                        on the plane of the dead. Trang-Oul sometimes grants the gift of unlife to his new
+                        converts...<br>
+                        <span class="italic">Passive effect: slows targets and reanimates the dead as Rathma
+                            Priests</span>
+                    </td>
+                </tr>
+            </table>
+            <h2>UBERSKILLS</h2>
+            <p>You may choose a single uberskill at character level 90.</p>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Summon Jinn</td>
+                    <td><img src="img/skillicons/necromancer/SummonJinn.gif"></td>
+                    <td>Originating from before the dawn of mankind, the Jinni were Zakarum's failed experiment to
+                        create a race of servants from elemental fire. They rebelled and were banished to the Plane of
+                        the Dead.<br>
+                        <span class="italic">Effect: summons fiery spirits that increase your spellpower</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Rathma's Chosen</td>
+                    <td><img src="img/skillicons/necromancer/RathmasChosen.gif"></td>
+                    <td>The prophet of the Dragon God may choose a particularly brave and fierce undead spirit as his
+                        avatar. The chosen one of Rathma is timeless, immortal and almighty.<br>
+                        <span class="italic">Effect: target minion is invulnerable and deals massive magic damage</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Death Ward</td>
+                    <td><img src="img/skillicons/necromancer/DeathWard.gif"></td>
+                    <td>Runic tattoos and enchantments protect the mage with a permanent warding spell that turns aside
+                        weapons or causes them to pass through harmlessly as if he were a ghost.<br>
+                        <span class="italic">Passive effect: increases defence and grants a chance to avoid
+                            damage</span>
+                    </td>
+                </tr>
+            </table>
+            <h2>ENNEAD SKILL</h2>
+            <p>After completing the Ennead Challenge and keeping the Class Charm in the inventory while at character
+                level 90 and above, you can invest points in this skill.</p>
+            <p>See <a href="">THIS PAGE</a> for more information about the Ennead Challenge.</p>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Black Mass</td>
+                    <td><img src="img/skillicons/necromancer/BlackMass.gif"></td>
+                    <td>The dragon god of death Trang-Oul takes his faithful under his wings, turning aside blades and
+                        arrows. This powerful spell requires total concentration and is easily broken when the caster is
+                        disturbed.<br>
+                        <span class="italic">Effect: press and hold to protect self and nearby minions</span>
+                    </td>
+                </tr>
+            </table>
+            <h2>BLACK ROAD SKILL</h2>
+            <p>After completing the Black Road Challenge and keeping the Class Charm in the inventory, you can invest
+                points in this skill.</p>
+            <p>See <a href="">THIS PAGE</a> for more information about the Black Road Challenge.</p>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Graveyard</td>
+                    <td><img src="img/skillicons/necromancer/Graveyard.gif"></td>
+                    <td>The deathspeaker establishes an aura powered by the emanations of a demon's wicked thoughts,
+                        conjuring torture equipment and striking the demon with the punishments it desires most to
+                        inflict upon humanity.<br>
+                        <span class="italic">Effect: when activated, periodically shoots deadly spiked balls at enemies</span>
+                    </td>
+                </tr>
+            </table>
+            <h2>INNATE SKILL</h2>
+            <p>Necromancers start with the following skill in their icon list.</p>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Burning Veil</td>
+                    <td><img src="img/skillicons/necromancer/IN-BurningVeil.gif"></td>
+                    <td>Employing his mastery of the planes, the necromancer opens a window to the plane of perdition,
+                        giving those who come into contact with the portal a glimpse of hellish hatred.<br>
+                        <span class="italic">Effect: wall of rage that increases damage of allies that cross it</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="spacing"></div>
+    </div>
+</body>
+
+</html>
