@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/characters.css">
+    <title>Sorceress | MXL:Z Documentation</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>+ Sorceress +</h1>
+        </header>
+        <nav>
+            <ul class="navpanel">
+                <li>Concepts</li>
+                <li>Characters</li>
+                <li>Items</li>
+                <li>Uberquests</li>
+                <li>Challenges</li>
+                <li>Maps</li>
+                <li>Misc</li>
+            </ul>
+        </nav>
+        <div class="description">
+            <h2>THE SORCERESS</h2>
+            <p>The Median XL sorceress class employs devastating spells and powerful wards to protect her should she
+                choose to fight in melee combat.</p>
+            <hr>
+            <img src="img/art/intro_sorceress.jpg">
+            <hr>
+            <h2>BACKGROUND OF THE MEDIAN XL SORCERESS</h2>
+            <p>The Zann Esu covens have always been regarded with suspicion by the other mage clans of Sanctuary.
+                Although their mastery of elemental magic was undeniable, the witch covens keep away from society and
+                adhere to strict ethical rules and their own religion of nature worship.</p>
+
+            <p>Their secluded lifestyle and mysterious powers gave rise to rumours among the common folk about hexcraft
+                and a pact with the devil. Members of the covens were hunted down as witches and prosecuted by the
+                Church until the witches finally fled deep into the forests to the underground city of Zann Rok, never
+                to be seen again.</p>
+
+            <p>Now more myth than history, folk tales of the Zann Esu tell of haunting chants and dances to the full
+                moon deep in the forest and unearthly spirits hunting down and slaying any witnesses to the spectacle...
+            </p>
+            <hr>
+            <h2>BASE STATS</h2>
+            <p>Chance to block: <span class="unique">4%</span></p>
+            <p>Strength: <span class="unique">10</span><br>
+                Dexterity: <span class="unique">25</span><br>
+                Vitality: <span class="unique">15</span> (6 5 life)<br>
+                Energy: <span class="unique">35</span> (35 mana)</p>
+            <p>+25 life, +15 mana per level<br>
+                Gains +2 life per point into vitality<br>
+                Gains +4 mana per point into energy</p>
+            <hr>
+            <h2>PREFERRED WEAPONS</h2>
+            <p>Sorceresses are adept at the use of magical staves and orbs as channelling foci for their spells. The
+                smaller orbs are one-handed, enabling the spellcaster to carry a shield. However, staves are more
+                efficient and allow the sorceress to cast her spells much faster.</p>
+
+            <p>Battlemage warriors are often seen wielding crystal swords or the Zann Esu’s mystical warp blades. A
+                combination of channelling athame and war sword, warp blades create energy ripples that enable the
+                wielder to strike multiple enemies in a single swing!
+            </p>
+
+            <p><span class="italic">Base cast rate increased when wielding a staff.</span></p>
+
+            <p id="indented"><span class="bold">Class-specific 1h weapon: Orb<br>
+                    Class-specific 1h weapon: Warp Blade (On hit: deals area effect damage)<br>
+                    Also uses staves</span></p>
+            <hr>
+            <h2>PREFERRED ARMOUR</h2>
+            <p>Because traditional warrior plate is cumbersome and impedes mobility and spell casting, the ancient mage
+                clans created their own exotic designs that allow for easy movement and precise gestures. Though the
+                knowledge to create this armour has been lost to the ages, you may come across one of the few surviving
+                Eastern kazarghands, Khanduran lamellar plates or the splendid Kehjistani ceremonial armours...</p>
+
+            <p id="indented"><span class="bold">Class-specific body armor: Sorceress Armor</span></p>
+            <hr>
+            <h2>ELEMENTAL SPECIALIZATION</h2>
+            <p>If a sorceress wishes to become a master of her arts, she must devote her studies and training to no more
+                than two elemental powers.</p>
+            <p>The Zann Esu believe that magi who dabble in many arts at once lack the patience and discipline required
+                to properly serve the elemental aspects of the Deity. Zann Esu neolytes are consecrated to two elements
+                of nature at their rite of passage and are forbidden to study the other elements. Those who violate this
+                sacred rule are excommunicated.</p>
+            <p><span class="italic">You can only learn two elements out of four (fire, cold, lightning, poison).</span>
+            </p>
+            <h2>FIRE SKILLS</h2>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Retaliate</td>
+                    <td><img src="img/skillicons/sorceress/Flamefront.gif"></td>
+                    <td>The novice of the flame learns to summon the elemental energies and bombard the ranks of her
+                        enemies with explosive bolts of flame.<br>
+                        <span class="italic">Effect: casts multiple exploding fireballs</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Living Flame</td>
+                    <td><img src="img/skillicons/sorceress/LivingFlame.gif"></td>
+                    <td>The element of fire represents destruction, but also rebirth and renewal. By calling upon these
+                        aspects of the elemental flame, the initiate sorceress can rapidly mend her wounds.<br>
+                        <span class="italic">Passive effect: regenerates life and increases max life</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Flamestrike</td>
+                    <td><img src="img/skillicons/sorceress/Flamestrike.gif"></td>
+                    <td>Like a cleansing forest fire, this raging pillar of flame eradicates the demonic taint from the
+                        area, allowing the corrupted Earth to heal and new life to sprout from the ashes.<br>
+                        <span class="italic">Effect: calls down a blast of flame</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pyroblast</td>
+                    <td><img src="img/skillicons/sorceress/Pyroblast.gif"></td>
+                    <td>The sister of the flame summons a massive ball of fire and casts it at her demonic enemies. The
+                        globe bursts on impact, engulfing the enemy in her flames of vengeance.<br>
+                        <span class="italic">Effect: fireball that sets flame to the area around impact</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Firedance</td>
+                    <td><img src="img/skillicons/sorceress/Firedance.gif"></td>
+                    <td>Queen of heaven, queen of hell, horned hunter of the night! The priestess calls upon the aspects
+                        of the twin deities in a circle of sacred fire to add her divine power to her spells.<br>
+                        <span class="italic">Effect: circle of flame increases spell damage</span>
+                    </td>
+                </tr>
+            </table>
+            <h2>COLD SKILLS</h2>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Shatter the Flesh</td>
+                    <td><img src="img/skillicons/sorceress/ShattertheFlesh.gif"></td>
+                    <td>Using this spell, the acolyte of winter causes the frozen heart of a fallen fiend to shatter and
+                        explode in a blast of freezing ice.<br>
+                        <span class="italic">Effect: detonates a corpse, freezing and damaging enemies</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Frigid Sphere</td>
+                    <td><img src="img/skillicons/sorceress/FrigidSphere.gif"></td>
+                    <td> An improved version of the Frozen Orb, the Frigid Sphere spell eschews the mass shedding
+                        process and explodes at a point of the caster's choosing, focussing all of its energy into its
+                        final destructive blast. <br>
+                        <span class="italic">Effect: orb explodes at target point, causing massive damage</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Snow Queen</td>
+                    <td><img src="img/skillicons/sorceress/SnowQueen.gif"></td>
+                    <td>Vengeance and the Goddess have in common that they are best served cold. Lowering her body
+                        temperature to glacial levels, the priestess of winter manifests a protective second skin of
+                        magical ice.<br>
+                        <span class="italic">Passive effect: increases defense and maximum health</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Abyss</td>
+                    <td><img src="img/skillicons/sorceress/SummonIceElementals.gif"></td>
+                    <td>The adept of winter summons a whirling maelstrom of freezing ice and wind. Those standing in the
+                        eye of the storm are spared while her fury rages around them.<br>
+                        <span class="italic">Effect: surrounds target point with a spiral of frost</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Summon Ice Elementals</td>
+                    <td><img src="img/skillicons/sorceress/SummonIceElementals.gif"></td>
+                    <td>A follower of the path of winter never has to face evil alone, for the spirits of the Deity
+                        accompany and guide those who listen to their silent whispers.<br>
+                        <span class="italic">Effect: summons ice spirits with a freezing nova attack</span>
+                    </td>
+                </tr>
+            </table>
+            <h2>LIGHTNING SKILLS</h2>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Forked Lightning</td>
+                    <td><img src="img/skillicons/sorceress/ForkedLightning.gif"></td>
+                    <td>Before formally commencing their studies, novices of the storm are sent to observe the monsoons
+                        and commune with the sky spirits until the magic comes naturally to them.<br>
+                        <span class="italic">Effect: casts multiple snaking lightning bolts</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Thunderstone</td>
+                    <td><img src="img/skillicons/sorceress/Thunderstone.gif"></td>
+                    <td>This mysterious mineral is found at the site of a lightning strike. It is a powerful natural
+                        piezo-electric capacitor and will unleash the charge from the bolt that created it when exposed
+                        to a physical shock.<br>
+                        <span class="italic">Effect: throw a rock that explodes into charged bolts on the ground</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tempest</td>
+                    <td><img src="img/skillicons/sorceress/Tempest.gif"></td>
+                    <td>A cascade of static lightning arcs from the stormfury to nearby enemies, blasting through them
+                        and leaving only destruction and a high voltage glow in its wake.<br>
+                        <span class="italic">Effect: casts lightning bolts at all nearby enemies</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Warp Armor</td>
+                    <td><img src="img/skillicons/sorceress/WarpArmor.gif"></td>
+                    <td>A magnetic field protects the adept stormfury by deflecting swords and claws and mysteriously
+                        causing arrows to deviate from their path.<br>
+                        <span class="italic">Passive effect: increases defense rating and causes attacks to miss</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nova Charge</td>
+                    <td><img src="img/skillicons/sorceress/NovaCharge.gif"></td>
+                    <td>This ritual establishes a strong electrical charge between the caster and the earth. The
+                        approach of an unprotected enemy triggers a cascade of electrical blasts.<br>
+                        <span class="italic">Effect: periodically casts shock novas when enemies are nearby</span>
+                    </td>
+                </tr>
+            </table>
+            <h2>POISON SKILLS</h2>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Lorenado</td>
+                    <td><img src="img/skillicons/sorceress/Lorenado.gif"></td>
+                    <td>Book curses are fearsome, but are not typically employed as combat magic. Developed on the first
+                        of Ostara as a deadly joke, this small energy twister blows a swirl of forbidden books into the
+                        enemy's face.<br>
+                        <span class="italic">Effect: advancing whirlwind of deadly books</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Vengeful Power</td>
+                    <td><img src="img/skillicons/sorceress/VengefulPower.gif"></td>
+                    <td>An eye for an eye, a curse for a curse. Centuries of persecution and torture taught the Zann Esu
+                        the only law the ungifted live by.<br>
+                        <span class="italic">Passive effect: damages attackers and boosts spell damage when
+                            struck</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Miasma</td>
+                    <td><img src="img/skillicons/sorceress/Miasma.gif"></td>
+                    <td>This expanding field of sticky slime seems to have a life of its own, attaching itself to
+                        enemies and filling their thoughts with maddening hallucinations.<br>
+                        <span class="italic">Effect: field of poison that lowers attack rating and movement speed</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Carpet of Spiders</td>
+                    <td><img src="img/skillicons/sorceress/CarpetofSpiders.gif"></td>
+                    <td>The adept witch creates a magical cyst in an enemy of her choosing, which bursts into a deluge
+                        of poisonous giant tarantulas.<br>
+                        <span class="italic">Effect: a hundred spiders emerge from the target enemy</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hive</td>
+                    <td><img src="img/skillicons/sorceress/Hive.gif"></td>
+                    <td>Those seeking to harm the witch queen are set upon by swarms of biting and stinging insects that
+                        mysteriously seem to appear out of thin air.<br>
+                        <span class="italic">Effect: periodically creates poisonous swarms when approached</span>
+                    </td>
+                </tr>
+            </table>
+            <h2>ARCANE SKILLS</h2>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Moonstrike</td>
+                    <td><img src="img/skillicons/sorceress/Moonstrike.gif"></td>
+                    <td>This mystical combat technique uses the battlemage's crystal weapon as a spell focus, creating a
+                        protective barrier that lasts for as long as she remains on the front line.<br>
+                        <span class="italic">Effect: melee attack that adds damage and increases life</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Familiar</td>
+                    <td><img src="img/skillicons/sorceress/Familiar.gif"></td>
+                    <td>Familiars are enchanted creatures kept to perform mundane tasks for the wizard and empower their
+                        magic. The Zann Esu adopted the black cat as their familiar of choice, polymorphed into a
+                        panther for battle purposes.<br>
+                        <span class="italic">Effect: black panther familiar with an aura that increases magic
+                            ability</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Arcane Torrent</td>
+                    <td><img src="img/skillicons/sorceress/ArcaneTorrent.gif"></td>
+                    <td>Energy conversion from raw mana to elemental power may be fairly efficient, but the mystical
+                        force itself is a weapon in its own right.<br>
+                        <span class="italic">Effect: energy wave that deals damage based on the caster's mana</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mana Sweep</td>
+                    <td><img src="img/skillicons/sorceress/ManaSweep.gif"></td>
+                    <td>Magic users regenerate their powers by slowly absorbing mana from the environment. This spell
+                        greatly speeds up the process, causing a devastating pressure wave of energy that flattens
+                        nearby enemies.<br>
+                        <span class="italic">Effect: steals mana and damages enemies based on mana lost</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bladestorm</td>
+                    <td><img src="img/skillicons/sorceress/Bladestorm.gif"></td>
+                    <td>The victim of the battlemage’s fury is assaulted with a legion of immaterial blades, all that
+                        remains of an ancient army of raiders that was destroyed at the walls of Zann Rok.<br>
+                        <span class="italic">Effect: melee attack that unleashes homing magical swords</span>
+                    </td>
+                </tr>
+            </table>
+            <h2>UBERSKILLS</h2>
+            <p>You may choose a single uberskill at character level 90.</p>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Chronofield</td>
+                    <td><img src="img/skillicons/sorceress/Chronofield.gif"></td>
+                    <td>Time magic is forbidden by the ruling mage clans, but desperate times call for desperate
+                        measures. The time field slows down enemies to a relativistic crawl, making them easy prey.<br>
+                        <span class="italic">Effect: slows movement and attack of enemies caught in the field</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Witch Blood</td>
+                    <td><img src="img/skillicons/sorceress/WitchBlood.gif"></td>
+                    <td>There is more to spellcasting than knowing the incantations. One also needs to be born with the
+                        Gift, inherited from an ancient bloodline of witches. It follows that when the mage's blood is
+                        spilled, so vanishes her power.<br>
+                        <span class="italic">Passive effect: increases spell damage when life is full</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Baneblade</td>
+                    <td><img src="img/skillicons/sorceress/Baneblade.gif"></td>
+                    <td>To protect themselves from the antimagic tricks of the witch hunters, the Zann Esu trained
+                        several of their people as arcane warriors, queens of the magical blade.<br>
+                        <span class="italic">Effect: improves melee combat ability and defense</span>
+                    </td>
+                </tr>
+            </table>
+            <h2>ENNEAD SKILL</h2>
+            <p>After completing the Ennead Challenge and keeping the Class Charm in the inventory while at character
+                level 90 and above, you can invest points in this skill.</p>
+            <p>See <a href="">THIS PAGE</a> for more information about the Ennead Challenge.</p>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Symbol of Esu</td>
+                    <td><img src="img/skillicons/sorceress/SymbolofEsu.gif"></td>
+                    <td>The symbol of the ancient witch queen is a specially crafted conductive adamantine moon crescent
+                        that accumulates ambient energy from the magic in the environment, releasing it as a healing
+                        pulse when broken.<br>
+                        <span class="italic">Effect: create a symbol in the cube that instantly heals life and
+                            mana</span>
+                    </td>
+                </tr>
+            </table>
+            <h2>BLACK ROAD SKILL</h2>
+            <p>After completing the Black Road Challenge and keeping the Class Charm in the inventory, you can invest
+                points in this skill.</p>
+            <p>See <a href="">THIS PAGE</a> for more information about the Black Road Challenge.</p>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Arcane Fury</td>
+                    <td><img src="img/skillicons/sorceress/ArcaneFury.gif"></td>
+                    <td>Hell hath no Fury like a woman scorned. This metamagic ability drastically speeds up
+                        spellcasting, movement and mana regeneration for a short period of time.<br>
+                        <span class="italic">Effect: temporarily increases casting speed and mana regeneration</span>
+                    </td>
+                </tr>
+            </table>
+            <h2>INNATE SKILL</h2>
+            <p>Sorceresses start with the following skill in their icon list.</p>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Force Wall</td>
+                    <td><img src="img/skillicons/sorceress/IN-ForceWall.gif"></td>
+                    <td>Using this simple cantrip, the apprentice summons a wall of solid mana, keeping her enemies at a
+                        safe distance for a few precious seconds.<br>
+                        <span class="italic">Effect: wall of energy that repels enemies</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="spacing"></div>
+    </div>
+</body>
+
+</html>
