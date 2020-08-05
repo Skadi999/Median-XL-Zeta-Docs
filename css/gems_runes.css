@@ -1,28 +1,3 @@
-.description {
-    padding: 10px 5px 10px 15px;
-    margin: 20px auto 10px auto;
-    width: 80%;
-    text-align: left;
-    line-height: 1.2;
-}
-
-.description p {
-    margin: 0 0 20px 0;
-    text-align: left;
-}
-
-h2 {
-    margin-top: 25px;
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 3px;
-}
-
-h6 {
-    font-weight: bold;
-    font-size: 17px;
-    text-align: left;
-}
 /* Table */
 table {
     width: 80%;
@@ -34,11 +9,6 @@ th, td {
     border: 1px solid rgb(179, 168, 147);
     vertical-align: middle;
 }
-
-/* th {
-    color: #a1a178;
-    background-color: #14110a;
-} */
 
 .effect {
     text-align: left;

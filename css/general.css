@@ -32,6 +32,19 @@ h1 {
     font-weight: bold;
 }
 
+h2 {
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+h6 {
+    font-weight: bold;
+    font-size: 17px;
+    text-align: left;
+}
+
 .spacing {
     width: 100%;
     height: 50px;
@@ -58,7 +71,24 @@ a:hover {
     font-size: 13px;
 }
 
-/* navigation bar */ 
+.description {
+    padding: 10px 5px 10px 15px;
+    margin: 20px auto 10px auto;
+    width: 80%;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.description p {
+    margin: 0 0 20px 0;
+    text-align: left;
+}
+
+.titleDescription {
+    margin-bottom: 35px;
+}
+
+/* Navigation Bar */ 
 nav {
     color: #838363;
     font-size: 18px;
@@ -109,7 +139,7 @@ nav {
     color: #ebebc5;
 }
 
-/* Items */
+/* Font Colors */
 .unique {
     color: #706033;
     font-weight: bold;
