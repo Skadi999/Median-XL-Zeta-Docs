@@ -71,6 +71,14 @@ a:hover {
     font-size: 13px;
 }
 
+.sacredUniqueAreas {
+    margin: 20px 0 20px 0;
+    background-color: #1a160c;
+    padding: 10px 10px 10px 10px;
+    width: 70%;
+    border: 2px solid #413922e3;
+}
+
 .description {
     padding: 10px 5px 10px 15px;
     margin: 20px auto 10px auto;
@@ -94,7 +102,7 @@ nav {
     font-size: 18px;
     text-align: left;
     background-color: #272112;
-    word-spacing: 40px;
+    /* word-spacing: 40px; */
     padding: 5px 0 5px 29px;
     border-top: 2px solid #413922e3;
     border-bottom: 2px solid #413922e3;
@@ -106,6 +114,38 @@ nav {
 
 .navpanel li {
     display: inline;
+}
+
+/* Dropdown */
+ul button {
+    color: #838363;
+    font-size: 17px;
+    background-color: #272112;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0f0d06;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 16px;
+}
+
+.dropdown-content a {
+    padding: 8px 6px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #3d3519;
+}
+
+  .show {
+      display:block;
 }
 
 

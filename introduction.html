@@ -16,8 +16,27 @@
         </header>
         <nav>
             <ul class="navpanel">
-                <li>Concepts</li>
-                <li>Characters</li>
+                <button onclick="myFunction(this)" class="btnDropdown">Concepts</button>
+                <div id="conceptDropdown" class="dropdown-content">
+                    <a href="difficulty_levels.html">Difficulty Levels</a>
+                    <a href="energy_factor.html">Energy Factor</a>
+                    <a href="block_and_defense.html">Block & Defense</a>
+                    <a href="players_x.html">Players Command</a>
+                    <a href="witches_warlocks.html">Witches & Warlocks</a>
+                    <a href="poison_damage.html">Poison Damage</a>
+                </div>
+                <button onclick="myFunctionTwo(this)" class="btnDropdown">Characters</button>
+                <div id="characterDropdown" class="dropdown-content">
+                    <a href="amazon.html">Amazon</a>
+                    <a href="assassin.html">Assassin</a>
+                    <a href="barbarian.html">Barbarian</a>
+                    <a href="druid.html">Druid</a>
+                    <a href="necromancer.html">Necromancer</a>
+                    <a href="paladin.html">Paladin</a>
+                    <a href="sorceress.html">Sorceress</a>
+                </div>
+                <!-- <li>Concepts</li>s -->
+                <!-- <li>Characters</li> -->
                 <li>Items</li>
                 <li>Uberquests</li>
                 <li>Challenges</li>
@@ -216,5 +235,5 @@
         <div class="spacing"></div>
     </div>
 </body>
-
+<script src="js/dropdown.js"></script>
 </html>
