@@ -113,7 +113,7 @@ nav {
 }
 
 .navpanel li {
-    display: inline;
+    display: inline-block;
 }
 
 /* Dropdown */
