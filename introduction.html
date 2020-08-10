@@ -16,8 +16,8 @@
         </header>
         <nav>
             <ul class="navpanel">
-                <li class="parent">
-                    <button onclick="myFunction()" class="btnDropdown">Concepts</button>
+                <li>
+                    <button onclick="myFunction(this)" class="btnDropdown">Concepts</button>
                     <div id="conceptDropdown" class="dropdown-content">
                         <a href="difficulty_levels.html">Difficulty Levels</a>
                         <a href="energy_factor.html">Energy Factor</a>
@@ -27,8 +27,8 @@
                         <a href="poison_damage.html">Poison Damage</a>
                     </div>
                 </li>
-                <li class="parent">
-                    <button onclick="myFunctionTwo()" class="btnDropdown">Characters</button>
+                <li>
+                    <button onclick="myFunctionTwo(this)" class="btnDropdown">Characters</button>
                     <div id="characterDropdown" class="dropdown-content">
                         <a href="amazon.html">Amazon</a>
                         <a href="assassin.html">Assassin</a>
@@ -240,5 +240,4 @@
     </div>
 </body>
 <script src="js/dropdown.js"></script>
-
 </html>

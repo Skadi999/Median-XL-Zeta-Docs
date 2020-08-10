@@ -1,10 +1,19 @@
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("conceptDropdown").classList.toggle("show");
+function myFunction(a) {
+  document.querySelector('#conceptDropdown').classList.toggle('show');
+  unShowDropDown('characterDropdown');
 }
-function myFunctionTwo() {
-  document.getElementById("characterDropdown").classList.toggle("show");
+
+function myFunctionTwo(a) {
+  document.querySelector('#characterDropdown').classList.toggle('show')
+  unShowDropDown('conceptDropdown');
+}
+
+function unShowDropDown(dropDownID) {
+  var otherDropDown = document.querySelector(`#${dropDownID}`);
+  otherDDEnabled = otherDropDown.classList.contains('show')
+  if(otherDDEnabled) otherDropDown.classList.toggle('show')
 }
 
 // Close the dropdown menu if the user clicks outside of it
