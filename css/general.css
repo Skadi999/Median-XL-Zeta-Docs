@@ -128,6 +128,7 @@ ul button {
 .dropdown-content {
     display: none;
     position: absolute;
+    width: max-content;
     background-color: #0f0d06;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -144,8 +145,12 @@ ul button {
     background-color: #3d3519;
 }
 
-  .show {
+.show {
       display:block;
+}
+
+.parent {
+    position: relative;
 }
 
 
