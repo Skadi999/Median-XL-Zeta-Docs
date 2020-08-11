@@ -17,7 +17,7 @@
         <nav>
             <ul class="navpanel">
                 <li>
-                    <button onclick="myFunction(this)" class="btnDropdown">Concepts</button>
+                    <button onclick="clickConcepts()" class="btnDropdown">Concepts ▼</button>
                     <div id="conceptDropdown" class="dropdown-content">
                         <a href="difficulty_levels.html">Difficulty Levels</a>
                         <a href="energy_factor.html">Energy Factor</a>
@@ -28,7 +28,7 @@
                     </div>
                 </li>
                 <li>
-                    <button onclick="myFunctionTwo(this)" class="btnDropdown">Characters</button>
+                    <button onclick="clickCharacters()" class="btnDropdown">Characters ▼</button>
                     <div id="characterDropdown" class="dropdown-content">
                         <a href="amazon.html">Amazon</a>
                         <a href="assassin.html">Assassin</a>
@@ -39,13 +39,64 @@
                         <a href="sorceress.html">Sorceress</a>
                     </div>
                 </li>
-                <!-- <li>Concepts</li>s -->
-                <!-- <li>Characters</li> -->
-                <li>Items</li>
-                <li>Uberquests</li>
-                <li>Challenges</li>
-                <li>Maps</li>
-                <li>Misc</li>
+                <li>
+                    <button onclick="clickItems()" class="btnDropdown">Items ▼</button>
+                    <div id="itemDropdown" class="dropdown-content">
+                        <a href="base_items.html">Base Items</a>
+                        <a href="tiered_uniques.html">Tiered Uniques</a>
+                        <a href="sacred_uniques.html">Sacred Uniques</a>
+                        <a href="sets.html">Sets</a>
+                        <a href="runewords.html">Runewords</a>
+                        <a href="cube_recipes.html">Cube Recipes</a>
+                        <a href="gems_runes.html">Gems and Runes</a>
+                        <a href="gemwords.html">Gemwords</a>
+                        <a href="honorific_shrine.html">Honorific & Crafted</a>
+                        <a href="shrine_bonuses.html">Shrine Bonuses</a>
+                        <a href="prefixes_and_suffixes.html">Prefixes & Suffixes</a>
+                        <a href="oskill_items.html">Items with Oskills</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickUbers()" class="btnDropdown">Uberquests ▼</button>
+                    <div id="uberDropdown" class="dropdown-content">
+                        <a href="dungeon_uberquests.html">Dungeon Uberquests</a>
+                        <a href="summoning_uberquests.html">Summoning Uberquests</a>
+                        <a href="uberlevels.html">Uberlevels</a>
+                        <a href="heroic_levels.html">Heroic Levels</a>
+                        <a href="trophies.html">Trophy Bonuses</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickChallenges()" class="btnDropdown">Challenges ▼</button>
+                    <div id="challengeDropdown" class="dropdown-content">
+                        <a href="dragon_eggs.html">Dragon's Eggs</a>
+                        <a href="lc1.html">Level Challenge 1</a>
+                        <a href="lc2.html">Level Challenge 2</a>
+                        <a href="ennead.html">Ennead Challenge</a>
+                        <a href="black_road.html">Black Road Challenge</a>
+                        <a href="minigames.html">Minigames</a>
+                        <a href="veteran_tokens.html">Veteran Tokens</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickMaps()" class="btnDropdown">Maps ▼</button>
+                    <div id="mapDropdown" class="dropdown-content">
+                        <a href="map_k3kba.html">Kurast 3000 BA Map</a>
+                        <a href="map_tran_athulua.html">Tran Athulua Map</a>
+                        <a href="map_fauztinville.html">Fauztinville Map</a>
+                        <a href="map_ureh.html">Kingdom of Shadow Map</a>
+                        <a href="map_duncraig.html">Duncraig Map</a>
+                        <a href="map_vizjun.html">Vizjun Map</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickMisc()" class="btnDropdown">Misc ▼</button>
+                    <div id="miscDropdown" class="dropdown-content">
+                        <a href="introduction.html">Introduction</a>
+                        <a href="hirelings.html">Hirelings</a>
+                        <a href="changelog.html">Changelog</a>
+                    </div>
+                </li>
             </ul>
         </nav>
         <div class="introductionText">
@@ -212,8 +263,8 @@
 
             <p>The full list of changes can be found in the changelog on this website.</p>
 
-            <p>Median XL Zeta also comes with devurandom's <a
-                    href="https://d2mods.info/forum/viewtopic.php?t=65492">Basemod</a>, which features amazing quality
+            <p>Median XL Zeta also comes with devurandom's
+                <a href="https://d2mods.info/forum/viewtopic.php?t=65492">Basemod</a>, which features amazing quality
                 of life changes
                 such as
                 ctrl-clicking items to move them to the stash or the Horadric Cube or automatically setting nopickup or
@@ -226,8 +277,7 @@
             </p>
 
             <p>Most of the ideas for the quality of life features and some of the sprites in the game were taken from
-                later versions
-                of Median (Ultimative and Sigma).
+                later versions of Median (Ultimative and Sigma).
             </p>
 
             <p>Please note that Median XL Zeta is <span class="bold">NOT</span> compatible with save files from any
@@ -240,4 +290,5 @@
     </div>
 </body>
 <script src="js/dropdown.js"></script>
+
 </html>

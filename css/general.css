@@ -102,7 +102,6 @@ nav {
     font-size: 18px;
     text-align: left;
     background-color: #272112;
-    /* word-spacing: 40px; */
     padding: 5px 0 5px 29px;
     border-top: 2px solid #413922e3;
     border-bottom: 2px solid #413922e3;
@@ -144,8 +143,12 @@ ul button {
     background-color: #3d3519;
 }
 
-  .show {
-      display:block;
+.show {
+    display:block;
+}
+
+.arrow {
+    font-size: 14px;
 }
 
 
