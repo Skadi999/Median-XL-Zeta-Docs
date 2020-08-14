@@ -59,6 +59,15 @@ a:hover {
     color: #ebebc5;
 }
 
+.externalLink {
+    color: #6e567e;
+    text-decoration: underline;
+}
+
+.externalLink:hover{
+    color: #c8a3e0;
+}
+
 .bold {
     font-weight: bold;
 }

@@ -13,12 +13,3 @@ td, th {
     border: 1px solid rgb(179, 168, 147);
     width: 100px;
 }
-
-a {
-    color: #6e567e;
-    text-decoration: underline;
-}
-
-a:hover{
-    color: #c8a3e0;
-}

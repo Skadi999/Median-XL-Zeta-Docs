@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/energy_factor.css">
+    <title>Energy Factor | MXL:Z Documentation</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>+ Energy Factor +</h1>
+        </header>
+        <nav>
+            <ul class="navpanel">
+                <li>
+                    <button onclick="clickConcepts()" class="btnDropdown">Concepts ▼</button>
+                    <div id="conceptDropdown" class="dropdown-content">
+                        <a href="difficulty_levels.html">Difficulty Levels</a>
+                        <a href="energy_factor.html">Energy Factor</a>
+                        <a href="block_and_defense.html">Block & Defense</a>
+                        <a href="players_x.html">Players Command</a>
+                        <a href="witches_warlocks.html">Witches & Warlocks</a>
+                        <a href="poison_damage.html">Poison Damage</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickCharacters()" class="btnDropdown">Characters ▼</button>
+                    <div id="characterDropdown" class="dropdown-content">
+                        <a href="../characters/amazon.html">Amazon</a>
+                        <a href="../characters/assassin.html">Assassin</a>
+                        <a href="../characters/barbarian.html">Barbarian</a>
+                        <a href="../characters/druid.html">Druid</a>
+                        <a href="../characters/necromancer.html">Necromancer</a>
+                        <a href="../characters/paladin.html">Paladin</a>
+                        <a href="../characters/sorceress.html">Sorceress</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickItems()" class="btnDropdown">Items ▼</button>
+                    <div id="itemDropdown" class="dropdown-content">
+                        <a href="../items/base_items.html">Base Items</a>
+                        <a href="../items/tiered_uniques.html">Tiered Uniques</a>
+                        <a href="../items/sacred_uniques.html">Sacred Uniques</a>
+                        <a href="../items/sets.html">Sets</a>
+                        <a href="../items/runewords.html">Runewords</a>
+                        <a href="../items/cube_recipes.html">Cube Recipes</a>
+                        <a href="../items/gems_runes.html">Gems and Runes</a>
+                        <a href="../items/gemwords.html">Gemwords</a>
+                        <a href="../items/honorific_shrine.html">Honorific & Crafted</a>
+                        <a href="../items/shrine_bonuses.html">Shrine Bonuses</a>
+                        <a href="../items/prefixes_and_suffixes.html">Prefixes & Suffixes</a>
+                        <a href="../items/oskill_items.html">Items with Oskills</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickUbers()" class="btnDropdown">Uberquests ▼</button>
+                    <div id="uberDropdown" class="dropdown-content">
+                        <a href="../uberquests/dungeon_uberquests.html">Dungeon Uberquests</a>
+                        <a href="../uberquests/summoning_uberquests.html">Summoning Uberquests</a>
+                        <a href="../uberquests/uberlevels.html">Uberlevels</a>
+                        <a href="../uberquests/heroic_levels.html">Heroic Levels</a>
+                        <a href="../uberquests/trophies.html">Trophy Bonuses</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickChallenges()" class="btnDropdown">Challenges ▼</button>
+                    <div id="challengeDropdown" class="dropdown-content">
+                        <a href="../challenges/dragon_eggs.html">Dragon's Eggs</a>
+                        <a href="../challenges/lc1.html">Level Challenge 1</a>
+                        <a href="../challenges/lc2.html">Level Challenge 2</a>
+                        <a href="../challenges/ennead.html">Ennead Challenge</a>
+                        <a href="../challenges/black_road.html">Black Road Challenge</a>
+                        <a href="../challenges/minigames.html">Minigames</a>
+                        <a href="../challenges/veteran_tokens.html">Veteran Tokens</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickMaps()" class="btnDropdown">Maps ▼</button>
+                    <div id="mapDropdown" class="dropdown-content">
+                        <a href="../maps/map_k3kba.html">Kurast 3000 BA Map</a>
+                        <a href="../maps/map_tran_athulua.html">Tran Athulua Map</a>
+                        <a href="../maps/map_fauztinville.html">Fauztinville Map</a>
+                        <a href="../maps/map_ureh.html">Kingdom of Shadow Map</a>
+                        <a href="../maps/map_duncraig.html">Duncraig Map</a>
+                        <a href="../maps/map_vizjun.html">Vizjun Map</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickMisc()" class="btnDropdown">Misc ▼</button>
+                    <div id="miscDropdown" class="dropdown-content">
+                        <a href="../misc/introduction.html">Introduction</a>
+                        <a href="../misc/hirelings.html">Hirelings</a>
+                        <a href="../misc/changelog.html">Changelog</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="description">
+            <h2>Energy Factor</h2>
+            <p>In Median XL, direct damage spells gain a damage bonus from energy. This bonus has diminishing returns:
+                the damage gained per additional point of energy is lower if you already have lots of energy to begin
+                with.</p>
+            <p>The energy factor bonus on some caster items modifies this curve, causing each point into energy to
+                provide a significant benefit until much higher levels of energy. Energy factor is particularly
+                effective for high level characters with most or all points into energy.</p>
+            <p>The formula used to calculate the bonus from energy to spell damage is:</p>
+            <h6>Spell damage increased by (260*energy)/(250+energy) + min((energy*enr_factor)/15000,200) percent</h6>
+            <br>
+            <hr>
+            <p><span class="bold">Strength Factor</span><br>
+                This rare modifier can only be found on some legendary items and the druid's Force of Nature skill. It
+                functions the same way as energy factor, but is based on strength instead.</p>
+            <hr>
+            <img src="../img/misc/energy_factor.png" id="energy_factor" alt="Energy Factor Visualization">
+        </div>
+        <div class="spacing"></div>
+    </div>
+</body>
+<script src="../js/dropdown.js"></script>
+
+</html>

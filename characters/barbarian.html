@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/characters.css">
+    <title>Barbarian | MXL:Z Documentation</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>+ Barbarian +</h1>
+        </header>
+        <nav>
+            <ul class="navpanel">
+                <li>
+                    <button onclick="clickConcepts()" class="btnDropdown">Concepts ▼</button>
+                    <div id="conceptDropdown" class="dropdown-content">
+                        <a href="../concepts/difficulty_levels.html">Difficulty Levels</a>
+                        <a href="../concepts/energy_factor.html">Energy Factor</a>
+                        <a href="../concepts/block_and_defense.html">Block & Defense</a>
+                        <a href="../concepts/players_x.html">Players Command</a>
+                        <a href="../concepts/witches_warlocks.html">Witches & Warlocks</a>
+                        <a href="../concepts/poison_damage.html">Poison Damage</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickCharacters()" class="btnDropdown">Characters ▼</button>
+                    <div id="characterDropdown" class="dropdown-content">
+                        <a href="amazon.html">Amazon</a>
+                        <a href="assassin.html">Assassin</a>
+                        <a href="barbarian.html">Barbarian</a>
+                        <a href="druid.html">Druid</a>
+                        <a href="necromancer.html">Necromancer</a>
+                        <a href="paladin.html">Paladin</a>
+                        <a href="sorceress.html">Sorceress</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickItems()" class="btnDropdown">Items ▼</button>
+                    <div id="itemDropdown" class="dropdown-content">
+                        <a href="../items/base_items.html">Base Items</a>
+                        <a href="../items/tiered_uniques.html">Tiered Uniques</a>
+                        <a href="../items/sacred_uniques.html">Sacred Uniques</a>
+                        <a href="../items/sets.html">Sets</a>
+                        <a href="../items/runewords.html">Runewords</a>
+                        <a href="../items/cube_recipes.html">Cube Recipes</a>
+                        <a href="../items/gems_runes.html">Gems and Runes</a>
+                        <a href="../items/gemwords.html">Gemwords</a>
+                        <a href="../items/honorific_shrine.html">Honorific & Crafted</a>
+                        <a href="../items/shrine_bonuses.html">Shrine Bonuses</a>
+                        <a href="../items/prefixes_and_suffixes.html">Prefixes & Suffixes</a>
+                        <a href="../items/oskill_items.html">Items with Oskills</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickUbers()" class="btnDropdown">Uberquests ▼</button>
+                    <div id="uberDropdown" class="dropdown-content">
+                        <a href="../uberquests/dungeon_uberquests.html">Dungeon Uberquests</a>
+                        <a href="../uberquests/summoning_uberquests.html">Summoning Uberquests</a>
+                        <a href="../uberquests/uberlevels.html">Uberlevels</a>
+                        <a href="../uberquests/heroic_levels.html">Heroic Levels</a>
+                        <a href="../uberquests/trophies.html">Trophy Bonuses</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickChallenges()" class="btnDropdown">Challenges ▼</button>
+                    <div id="challengeDropdown" class="dropdown-content">
+                        <a href="../challenges/dragon_eggs.html">Dragon's Eggs</a>
+                        <a href="../challenges/lc1.html">Level Challenge 1</a>
+                        <a href="../challenges/lc2.html">Level Challenge 2</a>
+                        <a href="../challenges/ennead.html">Ennead Challenge</a>
+                        <a href="../challenges/black_road.html">Black Road Challenge</a>
+                        <a href="../challenges/minigames.html">Minigames</a>
+                        <a href="../challenges/veteran_tokens.html">Veteran Tokens</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickMaps()" class="btnDropdown">Maps ▼</button>
+                    <div id="mapDropdown" class="dropdown-content">
+                        <a href="../maps/map_k3kba.html">Kurast 3000 BA Map</a>
+                        <a href="../maps/map_tran_athulua.html">Tran Athulua Map</a>
+                        <a href="../maps/map_fauztinville.html">Fauztinville Map</a>
+                        <a href="../maps/map_ureh.html">Kingdom of Shadow Map</a>
+                        <a href="../maps/map_duncraig.html">Duncraig Map</a>
+                        <a href="../maps/map_vizjun.html">Vizjun Map</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickMisc()" class="btnDropdown">Misc ▼</button>
+                    <div id="miscDropdown" class="dropdown-content">
+                        <a href="../misc/introduction.html">Introduction</a>
+                        <a href="../misc/hirelings.html">Hirelings</a>
+                        <a href="../misc/changelog.html">Changelog</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="description">
+            <h2>THE BARBARIAN</h2>
+            <p>The Median XL barbarian class is the toughest melee character in the game, but also has good ranged
+                attack capability in his throwing skills and ancestral spirits.</p>
+            <img src="../img/art/intro_barbarian.jpg">
+            <h2>BACKGROUND OF THE MEDIAN XL BARBARIAN</h2>
+            <p>The tribes of the Arreat Highlands guard an ancient secret from the dawn of history. The Worldstone,
+                created by Inarius to protect the world of Sanctuary against overt angelic or demonic influence, has
+                often been the target of attacks by mortal emissaries of the Burning Hells looking to destroy the
+                barrier. Should the Worldstone fall, all of Sanctuary would be in grave danger.</p>
+
+            <p>So much for the commonly accepted theory. Some say the Worldstone may have a darker side. Inarius did not
+                want an empowered third party in the Eternal War. What he really wanted to create was a world of
+                worshippers. The offspring of an angel and demon, the first humans - the nephalem - possessed certain
+                powers that could prove to be a threat to the dominion of Inarius.</p>
+
+            <p>To suppress these awakening powers, Inarius imbued the Worldstone with a dampening field that would
+                forever limit the innate magical abilities of humans. Within a few generations, the era of the nephalem
+                was over and the Old Ages begun.</p>
+
+            <p>Inarius had been very thorough. Only the strongest wills could muster more than simple parlour tricks.
+                Individuals with some lingering power grouped together to colonise the ley lines, building great towers
+                and circles of stone to channel the remaning energines. At these sacred places, the first formal mage
+                clans were founded - the primeval Vizjerei, Ennead and Annuit.</p>
+
+            <p>Many millennia later, the stalemate was shattered by the covert actions of mankind's mother goddess,
+                Lilith, who sparked the extinct nephalem flame in a small group of humans. The edyrem rampaged over the
+                Cult of the Trinue, her unwilling servants, but this was a price she was willing to pay if they would
+                proceed to take out her former consort and mortal adversary - Inarius.</p>
+
+            <p>But she had underestimated the edyrem and was destroyed by her own creations. Inarius and his religion of
+                treachery fell not long afterwards, but not before the actions of the edyrem drew the attention of the
+                celestial and infernal forces to Sanctuary.</p>
+
+            <p>The intervention of Tyrael narrowly prevented the complete destruction of Sanctuary. The warring sides
+                signed a blood pact to never set foot or claw on Sanctuary again until humanity had grown and made its
+                own choice in the Eternal War. It should come as no surprise that the forces of Hell quickly found a way
+                around the pact, while the armies of Heaven - now led by rising star Imperius, who never had much love
+                for mankind - remained stoically at a distance.</p>
+
+            <p>It is believed that the barbarian people, more than any Eastern or Western loremaster, know the true
+                history of Sanctuary. Still they choose to protect the Worldstone and its crippling antimagic field.
+                Increasingly desperate attempts have been made to reach the Worlstone and shatter it, from ragtag armies
+                of farmers and citizens who lost everything in a demonic attack to an organised strike by the paladins
+                of the Silver Hand, who are usually not known as proponents of godless magic.</p>
+
+            <p>Perhaps the barbarians believe that the nephalem are their gods and attempting to seize nephalem power
+                would be an act of blasphemy. Or maybe the tribes have quietly switched sides and are now working with
+                the demonic legions against the rest of humanity...</p>
+            <hr>
+            <h2>BASE STATS</h2>
+            <p>Chance to block: <span class="unique">1%</span></p>
+            <p>Strength: <span class="unique">30</span><br>
+                Dexterity: <span class="unique">20</span><br>
+                Vitality: <span class="unique">30</span> (80 life)<br>
+                Energy: <span class="unique">5</span> (5 mana)</p>
+            <p>+30 life, +10 mana per level<br>
+                Gains +3 life per point into vitality<br>
+                Gains +2 mana per point into energy</p>
+            <hr>
+            <h2>PREFERRED WEAPONS</h2>
+            <p>The great nephalem king Bul-Kathos brought humanity the secret of steel. After many millennia, barbaric
+                weaponsmithing is at its peak.</p>
+
+            <p>Barbarian berserks are known to wield two tribal swords, unleashing a hurricane of blades upon their
+                enemies. Other tribal warriors prefer the striking power of a massive two-handed axe. Although small
+                quantities of these weapons have fallen off the wagon and appeared on the Southern bazaars, they are
+                much too large and heavy for any other mortal to wield. It is said that many tribal weapons are jinxed
+                by the barbaric witchdoctors; many a trader has been seen speeding through the barbarian lands on his
+                last horse, carrying the ridiculously large steel blade that may have bankrupted him to cast it into the
+                fires of Sescheron and lift the curse.</p>
+
+            <p>Although some shaman are seen wielding maces and other channelling weapons, most prefer the same weapons
+                as their brothers in arms. To the barbarian tribes, a shaman is first and foremost a warrior and should
+                ever be ready for battle, fighting alongside his spirits. Anything less would be unworthy of one of
+                Bul-Kathos' bloodline.</p>
+
+            <p>The hunters of the steppes prefer to engage their prey from a distance. There is no honour in dying by
+                the claws of a frost bear. While seen as valuable members of barbarian society, bringing in the food
+                necessary to keep the barbaric armies in fighting condition, most consider the hunters as less than a
+                warrior, though much more than any Southern soldier. Their heavy throwing axes can deliver silent death
+                from a distance and have enough stopping power to halt an onrushing army.</p>
+            <p id="indented"><span class="bold">Class-specific 1h weapon: Sword<br>
+                    Class-specific 1h weapon: Barbarian One-Handed Axe<br>
+                    Class-specific 2h weapon: Barbarian Two-Handed Axe (On hit: Thunderfury)</span></p>
+            <hr>
+            <h2>PREFERRED ARMOUR</h2>
+            <p>Many barbarian warriors grudgingly accept the usefulness of a shield in battle. Getting oneself killed
+                without taking down anyone else is a foolish waste of Arreat's blood.</p>
+            <p>The barbaric bronze and gilded shields are the ultimate prize for their enemies. Although their weight
+                would cripple a Southern warrior, the base materials fetch a very good price on the bazaars... provided
+                you bring a beast of burden or be prepared to roll the shield back to the civilised world.</p>
+            <p id="indented"><span class="bold">Class-specific helm: Barbarian Helm<br>
+                    Class-specific shield: Barbarian Shield</span></p>
+            <hr>
+            <h2>MELEE SKILLS</h2>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Earthquake</td>
+                    <td><img src="../img/skillicons/barbarian/Earthquake.gif"></td>
+                    <td>The berserk's power shatters the very ground before his might, crushing entire armies and
+                        throwing them into disarray. No one shall stand against the sons of the nephalem.<br>
+                        <span class="italic">Effect: melee attack that creates a rolling wave of damage</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bloodhatred</td>
+                    <td><img src="../img/skillicons/barbarian/Bloodhatred.gif"></td>
+                    <td>The screaming berserks of Sescheron are a fearsome sight to behold. Their lifespan should
+                        ordinarily be measured in moments, but by drinking the demon blood of their slain foes, they may
+                        gain a kind of unholy immortality in battle.<br>
+                        <span class="italic">Effect: frenzy attack that rapidly drains life, but steals it back on
+                            striking</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Thunder Slam</td>
+                    <td><img src="../img/skillicons/barbarian/ThunderSlam.gif"></td>
+                    <td>With a shouted prayer to the storm god, the barbarian slams the ground, creating a rolling
+                        shockwave and deafening thunderclap that smashes through multiple enemies.<br>
+                        <span class="italic">Effect: melee attack that unleashes a stunning shockwave</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Shower of Rocks</td>
+                    <td><img src="../img/skillicons/barbarian/ShowerofRocks.gif"></td>
+                    <td>The living spirit of Mount Arreat destroys those who seek to unravel its secrets. Southern
+                        soldiers tell tales of the forces of the mountain itself joining the barbarian counterattack,
+                        crushing the defences of their brothers.<br>
+                        <span class="italic">Effect: melee attack that pounds the target with boulders</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Stormblast</td>
+                    <td><img src="../img/skillicons/barbarian/Stormblast.gif"></td>
+                    <td>One might think a barbarian warrior whetting a perfectly good axe for hours at a time has
+                        nothing better to do. In fact, he is invoking the thunderbird spirit, or in civilised terms,
+                        inducing a high voltage static charge in the metal.<br>
+                        <span class="italic">Effect: melee attack that emits a zigzagging blast of lightning</span>
+                    </td>
+                </tr>
+            </table>
+            <h2>THROWING SKILLS</h2>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Bear Claw</td>
+                    <td><img src="../img/skillicons/barbarian/BearClaw.gif"></td>
+                    <td>The novice hunter seeks to emulate the mighty claw swipes of the bear in his combat technique,
+                        swiftly stunning and downing the prey in a single strike.<br>
+                        <span class="italic">Effect: throw an axe that stuns and pierces through enemies</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Stampede</td>
+                    <td><img src="../img/skillicons/barbarian/Stampede.gif"></td>
+                    <td>A single snow buffalo is no match for a trained warrior, but not even an army dares to stand
+                        against a stampeding herd of them. The tribal hunter knows that strength comes in numbers.<br>
+                        <span class="italic">Effect: throw multiple Bear Claw axes</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Rebound</td>
+                    <td><img src="../img/skillicons/barbarian/Rebound.gif"></td>
+                    <td>Skillful weapon construction and specially crafted mithril blades allow the adept big game
+                        hunter to bank his throws off solid obstacles to strike prey behind cover.<br>
+                        <span class="italic">Effect: axe that deals no damage, but splits on striking a wall</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Screaming Eagle</td>
+                    <td><img src="../img/skillicons/barbarian/ScreamingEagle.gif"></td>
+                    <td>The majestic eagles of the Arreat peaks are the manifestation of air spirits, related to the
+                        spirits that cause dust devils on the southern steppes, often exactly where a raiding party is
+                        invading.<br>
+                        <span class="italic">Effect: throw an axe in an arc, slowing enemies and reducing damage</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Overkill</td>
+                    <td><img src="../img/skillicons/barbarian/Overkill.gif"></td>
+                    <td>An expert barbarian hunter never wastes any of the tribe's hunting axes, often a gift from his
+                        ancestors, biding his time to strike at the perfect moment. Stopping a demonic charge, however,
+                        may require desperate measures.<br>
+                        <span class="italic">Effect: throw a massive shower of axes over an area</span>
+                    </td>
+                </tr>
+            </table>
+            <h2>STANCE SKILLS</h2>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Lion Stance</td>
+                    <td><img src="../img/skillicons/barbarian/LionStance.gif"></td>
+                    <td>Eager to prove themselves to the ancestors, young and reckless warriors often charge straight
+                        into the enemy ranks, paying no heed to their own survival.<br>
+                        <span class="italic">Stance effect: increases damage done and taken</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Snake Stance</td>
+                    <td><img src="../img/skillicons/barbarian/SnakeStance.gif"></td>
+                    <td>The Snake Tribe is known for their underhanded but effective combat techniques. Other tribes
+                        fear having to fight the Snake warriors, for death by poisoning is not a warrior’s death.<br>
+                        <span class="italic">Stance effect: adds poison to weapon attacks and slows targets</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bear Stance</td>
+                    <td><img src="../img/skillicons/barbarian/BearStance.gif"></td>
+                    <td>The Bear Tribe of Shaman King Koth emphasises brutal and bloody close combat. This combat stance
+                        protects the warrior from blows and the arrows of cowards.<br>
+                        <span class="italic">Stance effect: increases defence but disables ranged skills when active.
+                            Also ignores the physical resistances of the undead.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Eagle Stance</td>
+                    <td><img src="../img/skillicons/barbarian/EagleStance.gif"></td>
+                    <td>The mountain eagles are harbingers of the future. When they flee, war and famine is coming to
+                        Arreat, but when they multiply in number, bright times are ahead.<br>
+                        <span class="italic">Stance effect: steals life and regenerates lost life</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Wolf Stance</td>
+                    <td><img src="../img/skillicons/barbarian/WolfStance.gif"></td>
+                    <td>The Wolf Tribe emphasises speed and agility, hunting in packs to strike unexpectedly and bring
+                        down the enemy force in a decisive strike.<br>
+                        <span class="italic">Stance effect: increases damage, speed and crushing blow</span>
+                    </td>
+                </tr>
+            </table>
+            <h2>SHAMAN SKILLS</h2>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Guardian Spirit</td>
+                    <td><img src="../img/skillicons/barbarian/GuardianSpirit.gif"></td>
+                    <td>The barbarian tribes believe that the spirits of the nephalem watch over them. Legends tell of
+                        armies struck down by a barrage of thrown axes out of nowhere.<br>
+                        <span class="italic">Effect: guardian spirit with various throwing skills</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Defender Spirit</td>
+                    <td><img src="../img/skillicons/barbarian/DefenderSpirit.gif"></td>
+                    <td>The barbarian fortresses have been under siege by foreign armies many times, but have never
+                        fallen. The spirits retaliate fiercely against those who invade the barbarian lands.<br>
+                        <span class="italic">Effect: defender spirit that retaliates with knockback when struck</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Protector Spirit</td>
+                    <td><img src="../img/skillicons/barbarian/ProtectorSpirit.gif"></td>
+                    <td>The spirits of the nephalem will honour the brave and honourable. The blessing of the spirits
+                        enables one warrior of Arreat to battle with the fury of a hundred.<br>
+                        <span class="italic">Effect: protector spirit with a powerful attack and a Bloodlust
+                            spell</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Greater Manifestations</td>
+                    <td><img src="../img/skillicons/barbarian/GreaterManifestations.gif"></td>
+                    <td>Though many tribal warriors have seen the spirits of nature, only the shamans of the tribe can
+                        call upon these spirits and ask them favours in battle.<br>
+                        <span class="italic">Passive effect: summon more and stronger spirits</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Spirit Walk</td>
+                    <td><img src="../img/skillicons/barbarian/SpiritWalk.gif"></td>
+                    <td>The master shaman briefly turns ethereal and reappears at the location of a living spirit
+                        anchor, usually an unwilling enemy, accompanied by his spirit warriors who follow the astral
+                        channel, blades ready to strike.<br>
+                        <span class="italic">Effect: teleport self and spirit army towards enemy target</span>
+                    </td>
+                </tr>
+            </table>
+            <h2>UTILITY SKILLS</h2>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Wolf Companion</td>
+                    <td><img src="../img/skillicons/barbarian/WolfCompanion.gif"></td>
+                    <td>A wise barbarian never hunts alone. The wolves of Arreat are far more perceptive than humans and
+                        will point out the game's weak spots to the apprentice hunter.<br>
+                        <span class="italic">Effect: spirit wolf that marks targets to take extra damage from
+                            strikes</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ancient Blood</td>
+                    <td><img src="../img/skillicons/barbarian/AncientBlood.gif"></td>
+                    <td>The nephalem bloodline of Bul-Kathos is still strong in today’s tribesmen. Barbarians can
+                        achieve feats of physical strength no mere mortal should be capable of.<br>
+                        <span class="italic">Passive effect: increases life, attack speed and skill levels</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fortress</td>
+                    <td><img src="../img/skillicons/barbarian/Fortress.gif"></td>
+                    <td>Raiding defenseless farming villages is easy, defending against the inevitable cavalry
+                        counterattack is much harder. The barbarian warbands master the art of erecting basic defenses
+                        in no time at all.<br>
+                        <span class="italic">Effect: creates a ring of arrow towers</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Spirit Guide</td>
+                    <td><img src="../img/skillicons/barbarian/SpiritGuide.gif"></td>
+                    <td>The presence of the spirits of the ancestors in battle doubles the already formidable might of a
+                        trained barbarian warrior and inspires him to great feats of shamanism.<br>
+                        <span class="italic">Passive effect: being near a spirit or wolf increases damage, defense and
+                            cast rate</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mountain King</td>
+                    <td><img src="../img/skillicons/barbarian/MountainKing.gif"></td>
+                    <td>Any maniacally flailing barbarian warrior is a dangerous adversary, but only those who master
+                        all aspects of combat will rise to lead their own tribe.<br>
+                        <span class="italic">Passive effect: percentage bonus to all attributes</span>
+                    </td>
+                </tr>
+            </table>
+            <h2>UBERSKILLS</h2>
+            <p>You may choose a single uberskill at character level 90.</p>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Nephalem Weapons</td>
+                    <td><img src="../img/skillicons/barbarian/NephalemWeapons.gif"></td>
+                    <td>Although the nephalem are long gone, some of their legacy remained in the form of ancient and
+                        powerful enchanted weapons and the rituals required to create them.<br>
+                        <span class="italic">Effect: adds fire, cold and lightning damage to the party</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Runemaster</td>
+                    <td><img src="../img/skillicons/barbarian/Runemaster.gif"></td>
+                    <td>The powers of the barbaric rune priests have been all but forgotten by those not in the inner
+                        circle. Using this ability, the priest of Wo-Thar uses his runic armour to project a force
+                        field.<br>
+                        <span class="italic">Passive effect: defence bonus for each socketed rune</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Shamanic Trance</td>
+                    <td><img src="../img/skillicons/barbarian/ShamanicTrance.gif"></td>
+                    <td>Few tribesmen truly dedicate themselves to the shaman's path. Warriors enjoy a higher status in
+                        barbarian society, but the seidr knows that their survival depends on the power of his
+                        spirits.<br>
+                        <span class="italic">Effect: increases number and power of summoned spirits</span>
+                    </td>
+                </tr>
+            </table>
+            <h2>ENNEAD SKILL</h2>
+            <p>After completing the Ennead Challenge and keeping the Class Charm in the inventory while at character
+                level 90 and above, you can invest points in this skill.</p>
+            <p>See <a href="">THIS PAGE</a> for more information about the Ennead Challenge.</p>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Immortal</td>
+                    <td><img src="../img/skillicons/barbarian/Immortal.gif"></td>
+                    <td>Running away is for the weak. A barbarian warrior who runs is easy prey. One who stands his
+                        ground in the face of death may survive, for he is the one the ancestral spirits will
+                        favour.<br>
+                        <span class="italic">Passive effect: avoids damage when standing still and improves hit
+                            recovery</span>
+                    </td>
+                </tr>
+            </table>
+            <h2>BLACK ROAD SKILL</h2>
+            <p>After completing the Black Road Challenge and keeping the Class Charm in the inventory, you can invest
+                points in this skill.</p>
+            <p>See <a href="">THIS PAGE</a> for more information about the Black Road Challenge.</p>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Thundergod</td>
+                    <td><img src="../img/skillicons/barbarian/Thundergod.gif"></td>
+                    <td>A warrior who has his eyes on the throne of his tribe is sent to the summit of Mt. Sescheron to
+                        await the next thunderstorm. If he survives, he may have learned something valuable about the
+                        forces of nature.<br>
+                        <span class="italic">Effect: adds stun damage and periodically emits stun novas</span>
+                    </td>
+                </tr>
+            </table>
+            <h2>INNATE SKILL</h2>
+            <p>Barbarians start with the following skill in their icon list.</p>
+            <table>
+                <tr>
+                    <th><span class="bold">Name</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Titan Strike</td>
+                    <td><img src="../img/skillicons/barbarian/IN-TitanStrike.gif"></td>
+                    <td>The spirit of the ancient king Bul-Kathos is said to live on in the very rock of Mount Arreat.
+                        The warrior children of the mountain learn to enter a battle rush, shaking off blows as if their
+                        skin was made of stone.<br>
+                        <span class="italic">Effect: melee attack that raises strength, dexterity and regenerates lost
+                            life</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="spacing"></div>
+    </div>
+</body>
+<script src="../js/dropdown.js"></script>
+
+</html>

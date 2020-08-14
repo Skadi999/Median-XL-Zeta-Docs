@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/players_x.css">
+    <title>Players X | MXL:Z Documentation</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>+ Players X +</h1>
+        </header>
+        <nav>
+            <ul class="navpanel">
+                <li>
+                    <button onclick="clickConcepts()" class="btnDropdown">Concepts ▼</button>
+                    <div id="conceptDropdown" class="dropdown-content">
+                        <a href="difficulty_levels.html">Difficulty Levels</a>
+                        <a href="energy_factor.html">Energy Factor</a>
+                        <a href="block_and_defense.html">Block & Defense</a>
+                        <a href="players_x.html">Players Command</a>
+                        <a href="witches_warlocks.html">Witches & Warlocks</a>
+                        <a href="poison_damage.html">Poison Damage</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickCharacters()" class="btnDropdown">Characters ▼</button>
+                    <div id="characterDropdown" class="dropdown-content">
+                        <a href="../characters/amazon.html">Amazon</a>
+                        <a href="../characters/assassin.html">Assassin</a>
+                        <a href="../characters/barbarian.html">Barbarian</a>
+                        <a href="../characters/druid.html">Druid</a>
+                        <a href="../characters/necromancer.html">Necromancer</a>
+                        <a href="../characters/paladin.html">Paladin</a>
+                        <a href="../characters/sorceress.html">Sorceress</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickItems()" class="btnDropdown">Items ▼</button>
+                    <div id="itemDropdown" class="dropdown-content">
+                        <a href="../items/base_items.html">Base Items</a>
+                        <a href="../items/tiered_uniques.html">Tiered Uniques</a>
+                        <a href="../items/sacred_uniques.html">Sacred Uniques</a>
+                        <a href="../items/sets.html">Sets</a>
+                        <a href="../items/runewords.html">Runewords</a>
+                        <a href="../items/cube_recipes.html">Cube Recipes</a>
+                        <a href="../items/gems_runes.html">Gems and Runes</a>
+                        <a href="../items/gemwords.html">Gemwords</a>
+                        <a href="../items/honorific_shrine.html">Honorific & Crafted</a>
+                        <a href="../items/shrine_bonuses.html">Shrine Bonuses</a>
+                        <a href="../items/prefixes_and_suffixes.html">Prefixes & Suffixes</a>
+                        <a href="../items/oskill_items.html">Items with Oskills</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickUbers()" class="btnDropdown">Uberquests ▼</button>
+                    <div id="uberDropdown" class="dropdown-content">
+                        <a href="../uberquests/dungeon_uberquests.html">Dungeon Uberquests</a>
+                        <a href="../uberquests/summoning_uberquests.html">Summoning Uberquests</a>
+                        <a href="../uberquests/uberlevels.html">Uberlevels</a>
+                        <a href="../uberquests/heroic_levels.html">Heroic Levels</a>
+                        <a href="../uberquests/trophies.html">Trophy Bonuses</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickChallenges()" class="btnDropdown">Challenges ▼</button>
+                    <div id="challengeDropdown" class="dropdown-content">
+                        <a href="../challenges/dragon_eggs.html">Dragon's Eggs</a>
+                        <a href="../challenges/lc1.html">Level Challenge 1</a>
+                        <a href="../challenges/lc2.html">Level Challenge 2</a>
+                        <a href="../challenges/ennead.html">Ennead Challenge</a>
+                        <a href="../challenges/black_road.html">Black Road Challenge</a>
+                        <a href="../challenges/minigames.html">Minigames</a>
+                        <a href="../challenges/veteran_tokens.html">Veteran Tokens</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickMaps()" class="btnDropdown">Maps ▼</button>
+                    <div id="mapDropdown" class="dropdown-content">
+                        <a href="../maps/map_k3kba.html">Kurast 3000 BA Map</a>
+                        <a href="../maps/map_tran_athulua.html">Tran Athulua Map</a>
+                        <a href="../maps/map_fauztinville.html">Fauztinville Map</a>
+                        <a href="../maps/map_ureh.html">Kingdom of Shadow Map</a>
+                        <a href="../maps/map_duncraig.html">Duncraig Map</a>
+                        <a href="../maps/map_vizjun.html">Vizjun Map</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickMisc()" class="btnDropdown">Misc ▼</button>
+                    <div id="miscDropdown" class="dropdown-content">
+                        <a href="../misc/introduction.html">Introduction</a>
+                        <a href="../misc/hirelings.html">Hirelings</a>
+                        <a href="../misc/changelog.html">Changelog</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="description">
+            <h2>The /players X Command</h2>
+            <p>This is a classic Lord of Destruction feature that is not known to all players.</p>
+            <p>During a single player game or tcp/ip or open battle.net multiplayer game, press Enter and type the
+                following:</p>
+            <p><span class="bold">/players X</span></p>
+            <p>where X is a number from 1 to 8. Press Enter again. The game will confirm your action.</p>
+            <div class="descriptionImage"><img src="../img/menu/MXL_menu_012.jpg"></div>
+            <hr>
+            <p>The /players x command makes monsters more difficult but also increases their rewards.
+                The command simulates the effect of a real (unpartied) player joining your multiplayer game.
+                It greatly boosts monster HP, slightly boosts monster damage and attack rating, but also increases the
+                experience you get from the monsters, and reduces the monsters' NoDrop chance (the chance of absolutely
+                nothing being dropped from a monster).
+            </p>
+
+            <h3>Formulae for the stats affected by the /players x command</h3><br>
+            <span class="bold">Monsters' Hit Points and Experience gain:</span><br><br>
+            <span class="bold">Hit Points = X * (n + 1) / 2</span><br>
+            Where X = base hit points and n = the player number set by the /players x command.
+
+            <span class="bold">Monsters' Damage and Attack Rating</span><br><br>
+            <p>Each additional player in the game also increases the damage dealt by 6.25%. This bonus is applied after
+                the champion or unique bonus and is further amplified by critical strike. The bonus is the same for both
+                ranged and melee attacks, but not every monster skill in the game is increased. This bonus does not
+                apply to classic Diablo 2. </p>
+
+            <span class="bold">Drops</span><br><br>
+            <p>The /players x command reduces NoDrop according to the following formula:</p>
+            <p><span class="bold">NewNoDrop=int( ProbSum/(1/((NoDrop/(NoDrop+ProbSum))^N)-1) )</span></p>
+            <p>where N=int(1+AdditionalPlayers/2+ClosePartiedPlayers/2),<br>
+                AdditionalPlayers — the number of all additional players in the game, where the monster is killed,<br>
+                ClosePartiedPlayers — the number of players in your party near you (not far than two screens away),<br>
+                ProbSum=Prob1+Prob2+Prob3+...+Prob10,<br>
+                int — operation of truncating fractional part of a number.</p>
+            <p>This looks pretty complicated, so for the sake of comprehensibility let's just say:<br>
+                <span class="bold">• For normal monsters:</span> The more players, the more drops.<br>
+                <span class="bold">• For Super Uniques</span> (like Pindleskin), <span class="bold">Uniques and
+                    Champions:</span> player setting is irrelevant.<br>
+                • Super Uniques will always drop two items.<br>
+                • Uniques will always drop one item.<br>
+                • Champions will always drop one item.<br>
+                <span class="bold">• Bosses:</span> "nodrop" will be reduced to zero for 5 unpartied players or 3 near
+                players in the same party. In
+                Single Player the difference between the drops for 3 player setting and 5 player setting is only
+                marginal though.<br>
+
+                Note: The formula implies, that for unpartied players (and simulated players via the Players X Command)
+                only every second additional players has impact on drop rates. So the steps for more drops are players
+                <span class="bold">3, players 5</span> and <span class="bold">players 7.</span><br>
+                In other words: players 8 and players 7 have the same drop rates, players 6 and 5, players 4 and 3, and
+                players 2 and 1. Note that the amount of Experience gained and monsters' Hit Points are nonetheless
+                different for each player setting (as stated above).</p>
+
+            <table>
+                <tr>
+                    <th>Players</th>
+                    <th>Monster HP</th>
+                    <th>Damage & AR</th>
+                    <th>Experience</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>100%</td>
+                    <td>00.00%</td>
+                    <td>100%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>150%</td>
+                    <td>06.25%</td>
+                    <td>150%</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>200%</td>
+                    <td>12.50%</td>
+                    <td>200%</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>250%</td>
+                    <td>18.75%</td>
+                    <td>250%</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>300%</td>
+                    <td>25.00%</td>
+                    <td>300%</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>350%</td>
+                    <td>31.25%</td>
+                    <td>350%</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>400%</td>
+                    <td>37.50%</td>
+                    <td>400%</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>450%</td>
+                    <td>43.75%</td>
+                    <td>450%</td>
+                </tr>
+            </table>
+            <p><br>For details see the
+                <a class="externalLink"
+                    href="https://web.archive.org/web/20190808090053/https://diablo2.diablowiki.net/Player_Settings">diablowiki</a>
+                page.
+            </p>
+        </div>
+        <div class="spacing"></div>
+    </div>
+</body>
+<script src="../js/dropdown.js"></script>
+
+</html>
