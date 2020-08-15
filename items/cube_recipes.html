@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/cube_recipes.css">
+    <title>Cube Recipes | MXL:Z Documentation</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>+ CUBE RECIPES +</h1>
+        </header>
+        <nav>
+            <ul class="navpanel">
+                <li>
+                    <button onclick="clickConcepts()" class="btnDropdown">Concepts ▼</button>
+                    <div id="conceptDropdown" class="dropdown-content">
+                        <a href="../concepts/difficulty_levels.html">Difficulty Levels</a>
+                        <a href="../concepts/energy_factor.html">Energy Factor</a>
+                        <a href="../concepts/block_and_defense.html">Block & Defense</a>
+                        <a href="../concepts/players_x.html">Players Command</a>
+                        <a href="../concepts/witches_warlocks.html">Witches & Warlocks</a>
+                        <a href="../concepts/poison_damage.html">Poison Damage</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickCharacters()" class="btnDropdown">Characters ▼</button>
+                    <div id="characterDropdown" class="dropdown-content">
+                        <a href="../characters/amazon.html">Amazon</a>
+                        <a href="../characters/assassin.html">Assassin</a>
+                        <a href="../characters/barbarian.html">Barbarian</a>
+                        <a href="../characters/druid.html">Druid</a>
+                        <a href="../characters/necromancer.html">Necromancer</a>
+                        <a href="../characters/paladin.html">Paladin</a>
+                        <a href="../characters/sorceress.html">Sorceress</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickItems()" class="btnDropdown">Items ▼</button>
+                    <div id="itemDropdown" class="dropdown-content">
+                        <a href="base_items.html">Base Items</a>
+                        <a href="tiered_uniques.html">Tiered Uniques</a>
+                        <a href="sacred_uniques.html">Sacred Uniques</a>
+                        <a href="sets.html">Sets</a>
+                        <a href="runewords.html">Runewords</a>
+                        <a href="cube_recipes.html">Cube Recipes</a>
+                        <a href="gems_runes.html">Gems and Runes</a>
+                        <a href="gemwords.html">Gemwords</a>
+                        <a href="honorific_shrine.html">Honorific & Crafted</a>
+                        <a href="shrine_bonuses.html">Shrine Bonuses</a>
+                        <a href="prefixes_and_suffixes.html">Prefixes & Suffixes</a>
+                        <a href="oskill_items.html">Items with Oskills</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickUbers()" class="btnDropdown">Uberquests ▼</button>
+                    <div id="uberDropdown" class="dropdown-content">
+                        <a href="../uberquests/dungeon_uberquests.html">Dungeon Uberquests</a>
+                        <a href="../uberquests/summoning_uberquests.html">Summoning Uberquests</a>
+                        <a href="../uberquests/uberlevels.html">Uberlevels</a>
+                        <a href="../uberquests/heroic_levels.html">Heroic Levels</a>
+                        <a href="../uberquests/trophies.html">Trophy Bonuses</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickChallenges()" class="btnDropdown">Challenges ▼</button>
+                    <div id="challengeDropdown" class="dropdown-content">
+                        <a href="../challenges/dragon_eggs.html">Dragon's Eggs</a>
+                        <a href="../challenges/lc1.html">Level Challenge 1</a>
+                        <a href="../challenges/lc2.html">Level Challenge 2</a>
+                        <a href="../challenges/ennead.html">Ennead Challenge</a>
+                        <a href="../challenges/black_road.html">Black Road Challenge</a>
+                        <a href="../challenges/minigames.html">Minigames</a>
+                        <a href="../challenges/veteran_tokens.html">Veteran Tokens</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickMaps()" class="btnDropdown">Maps ▼</button>
+                    <div id="mapDropdown" class="dropdown-content">
+                        <a href="../maps/map_k3kba.html">Kurast 3000 BA Map</a>
+                        <a href="../maps/map_tran_athulua.html">Tran Athulua Map</a>
+                        <a href="../maps/map_fauztinville.html">Fauztinville Map</a>
+                        <a href="../maps/map_ureh.html">Kingdom of Shadow Map</a>
+                        <a href="../maps/map_duncraig.html">Duncraig Map</a>
+                        <a href="../maps/map_vizjun.html">Vizjun Map</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickMisc()" class="btnDropdown">Misc ▼</button>
+                    <div id="miscDropdown" class="dropdown-content">
+                        <a href="../misc/introduction.html">Introduction</a>
+                        <a href="../misc/hirelings.html">Hirelings</a>
+                        <a href="../misc/changelog.html">Changelog</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <ul class="toc">
+            <li class="tocCategory">Quick Navigation</li>
+            <li><a href=#disenchanting>Disenchanting</a></li>
+            <li><a href=#itemQuality>Item Quality Recipes</a></li>
+            <li><a href=#uptier>Uptier Recipes</a></li>
+            <li><a href=#affix>Affix Recipes</a></li>
+            <li><a href=#shrines>Shrines</a></li>
+            <li><a href=#jewelcrafting>Jewelcrafting</a></li>
+            <li><a href=#alchemy>Alchemy</a></li>
+            <li><a href=#misc>Miscellaneous Recipes</a></li>
+        </ul>
+
+        <div class="description">
+            <h2>CUBE RECIPES</h2>
+            <p>Far from being the interesting magical gimmick you may be used to, the Median XL cube is a powerful
+                weapon of war.</p>
+            <div class="sacredUniqueAreas">
+                <span class="bold">Crafting Points</span><br>
+                <p>Many cube recipes work only if you have the required amount of Crafting Points on your equipped
+                    items. Crafting Point requirements are listed near the recipe in silver text:</p>
+                <p class="craftingPoints">Upgrade Egg to Chicken: 200 Crafting Points</p>
+                <p>To use this recipe and turn an egg into a chicken, you would need to wear items with a total of +200
+                    crafting points or more.</p>
+            </div>
+            <div class="sacredUniqueAreas">
+                <p><span class="bold">Reagents</span></p>
+                <p><span class="italic">Oils/Catalysts/Sacrifical Heart/Meditation Candle</span><br>
+                    These reagents can be bought from the appropriate vendor.</p>
+                <p><span class="italic">Arcane Shards</span><br>
+                    This reagent is obtained by disenchanting unique items.</p>
+                <p><span class="italic">Arcane Сrystal</span><br>
+                    This reagent is created by cubing Arcane Shards in sets of five.</p>
+                <p><span class="italic">Mystic Orbs</span><br>
+                    These reagents can be bought from any magic items vendor or by killing monsters. Note that not all
+                    Mystic Orbs are for sale...</p>
+                <p><span class="italic">Shrines</span><br>
+                    Crucifixes with an orange name that drop in late Terror and in Destruction difficulty. They enable
+                    you to create and bless items, see below.</p>
+            </div>
+            <h2 id="disenchanting">DISENCHANTING</h2>
+            <h3>Disassemble items into resources</h3>
+            <p></p>
+            <span class="craftingTitle">Arcane Shards and Crystals</span>
+            <p>Destroy spare unique or set items to create Arcane Shards and combine those into Arcane Crystals, which
+                are required for other cube recipes.</p>
+            <p><span class="bold">Combining Arcane Shards</span><br>
+                Arcane Shards of various sizes may be combined in the cube to produce Arcane Crystals and/or Arcane
+                Shards of a different size.<br>
+                The size of a crystal is indicated in the parentheses at the end of their name. An Arcane Crystal's size
+                is 5.<br>
+                The combined size of the input shards in the cube must not exceed 15. You may not put Arcane Crystals in
+                the cube, either. (That would be pointless!)</p>
+            <p><span class="reagent">X unique items (up to 10) + Catalyst of Disenchantment -> X Arcane Shards +
+                    Catalyst of Disenchantment<br>
+                    X set items (up to 10) + Catalyst of Disenchantment -> X Arcane Shards + Catalyst
+                    of Disenchantment</span></p>
+            <p><span class="reagent">X Arcane Shards (up to 15) -> Y Combined Crystals & Shards (up to 3
+                    crystals)</span>
+            </p>
+            <p>A few examples of the last recipe for clarification:</p>
+            <p class="italic">Arcane Shards (4) + Arcane Shards (1) + Arcane Shards (3) -> 1 Arcane Crystal +
+                Arcane Shards (3)<br>
+                Arcane Shards (2) + Arcane Shards (2) + Arcane Shards (1) -> 1 Arcane
+                Crystal<br>
+                Arcane Shards (2) + Arcane Shards (1) + Arcane Shards (1) -> Arcane Shards
+                (4)<br>
+                Arcane Shards (4) + Arcane Shards (4) + Arcane Shards (4) + Arcane Shards (3) -> 3
+                Arcane Crystals<br>
+            </p>
+
+            <span class="craftingTitle">Arcane Clusters</span>
+            <p>Arcane Clusters are a quality of life item which acts as a container for Arcane Crystals. Their purpose
+                is to conserve storage space, which would otherwise be taken by multiple crystals.
+                Arcane Clusters have a maximum capacity of 500 crystals. Currently, you may cube only 1 crystal with a
+                cluster
+                at a time.</p>
+            <p class="reagent">Arcane Crystal + Oil of Transmutation -> Arcane Cluster with 1 stored crystal</p>
+            <p class="reagent">Arcane Cluster + Arcane Crystal -> Arcane Cluster +1 stored crystal<br>
+                Arcane Cluster -> Arcane Crystal & Arcane Cluster -1 stored crystal
+            </p>
+            <p>If an Arcane Cluster with 1 charge is transmuted in the cube, it returns the Arcane Crystal and oil that
+                were used in creating the cluster.</p>
+
+            <span class="craftingTitle">Signets of Learning</span>
+            <p>Destroy spare unique or set items to create Signets of Learning. Click the signet to gain attribute
+                points permanently.
+            </p>
+            <p>X unique/set items (up to 25) + Catalyst of Learning -> Signet of Learning (X stat points) + Catalyst of
+                Learning
+            </p>
+            <span class="italic">Each character can use a maximum of 500 Signets of Learning.</span>
+
+            <h2 id="itemQuality">ITEM QUALITY RECIPES</h2>
+            <h3>Change the quality level of your items</h3>
+            <p></p>
+
+            <span class="craftingTitle">Upgrade to Non-magical Item</span>
+            <p>Upgrade any low quality item to regular quality or a regular item to superior. This also rerolls the
+                socket count on the item.<br>
+                You may use this recipe on superior items to reroll their socket count and modifiers, as if you rerolled
+                it with an Oil of Renewal.</p>
+            <p><span class="reagent">Low quality item + Oil of Enhancement -> reroll item as regular<br>
+                    Regular item + Oil of Enhancement -> reroll item as superior</span></p>
+
+            <span class="craftingTitle">Upgrade to Magical/Rare Item</span>
+            <p>Use these two recipes to upgrade a non-magical item to magic (blue color) or a magic item to rare (yellow
+                color)</p>
+            <p><span class="reagent">Non-magical item + Oil of Enhancement + rune -> reroll item as magic<br>
+                    Magic item + Oil of Enhancement + rune -> reroll item as rare</span></p>
+
+            <span class="craftingTitle">Reroll Magic to Honorific</span>
+            <p>Honorific items are blank items that receive a double bonus from Mystic Orbs. This enables you to create
+                your own custom items, provided you have some money to spend on the ingredients and the Mystic Orbs.</p>
+            <p>See the <a href="../items/honorific_shrine.html">HONORIFIC AND SHRINE CRAFTS</a> page for more details.
+            </p>
+            <p><span class="reagent">Magic weapon/armor + Meditation Candle + Sacrifical Heart -> return item as
+                    honorific</span></p>
+
+            <span class="craftingTitle">Reroll any Item to Unique</span>
+            <p>This powerful recipe uses the reagents obtained by disenchanting other uniques to turn any tiered item of
+                your choosing into a unique. But choose wisely, because the crystals are precious and costly to
+                replace.<br>
+                You may never get Sacred items (including jewelry and quivers) using this recipe.</p>
+            <p><span class="reagent">Any non-sacred item + Oil of Enhancement + Arcane Crystal x2 -> reroll item as
+                    unique</span></p>
+
+            <span class="craftingTitle">Chaos Reroll Recipe</span>
+            <p>Ready to roll the dice? Your item may turn into a lowly white or magical item... or a powerful rare or
+                unique. This recipe cannot create sacred uniques or sets, but it can create almost anything else for
+                cheap.</p>
+            <p><span class="reagent">Any item + Oil of Luck + jewel -> reroll item randomly (item level caps at
+                    99)</span></p>
+            <span class="craftingTitle">Affix Burn Recipe</span>
+            <p>This explosive alchemical combination burns all magic off an item, returning it as a basic low quality
+                item. This recipe is useful to prepare an item for a runeword.</p>
+            <p><span class="reagent">Any item + Catalyst of Destruction + rune -> reroll item as low quality + Catalyst
+                    of Destruction</span></p>
+            <p><span class="italic"><span class="bold">Warning!</span> Do not forget the rune or you will destroy more
+                    than you bargained for.</span></p>
+
+            <span class="craftingTitle">Reroll Modifiers</span>
+            <p>These recipes reroll the modifiers and socket count on any non-magical, magic or rare item. This is
+                useful when you have a bad rare that could have been good, or to try and get better superior bonuses on
+                your item before making a runeword.<br>
+                You may also use a Flask of Renewal instead of the Oil. It functions the same way, but has 50 charges
+                and is 50 times more expensive. Use it if you want to reroll an item many times.</p>
+            <p><span class="reagent">Non-magical item + Oil/Flask of Renewal -> reroll item<br>
+                    Magic item + Oil/Flask of Renewal -> reroll item<br>
+                    Rare item + Oil/Flask of Renewal -> reroll item</span></p>
+
+            <span class="craftingTitle">Zomghelp Recipe</span>
+            <p>When Lady Luck turns her back and leaves you without a viable weapon or armour, this recipe allows you to
+                create yourself some baseline items. The items come with very weak random stats, but have a built-in
+                enhanced damage or defence bonus.</p>
+            <p><span class="reagent">Magic weapon/armor + magic amulet + magic ring -> reroll item as level 1 magic
+                    item</span></p>
+            <p><span class="italic">This recipe also adds <span class="magic">+25% Enhanced Damage</span> (weapons) or
+                    <span class="magic">+25% Enhanced Defense</span>
+                    (armour) if you use it at character level 1, and an additional +2% for each higher character level.
+                    A level 40 character, for example, will get +103%.</span></p>
+
+            <h2 id="uptier">UPTIER RECIPES</h2>
+            <h3>Upgrade items to the next higher tier</h3>
+            <p></p>
+            <p>Uptiering an item increases its base statistics and maximum sockets but also increases requirements.
+                These recipes cannot create Sacred items.</p>
+            <p>See the <a href="../items/base_items.html">BASE ITEMS</a> page for more information about item tiers.</p>
+            <span class="craftingTitle">Uptier Recipe</span>
+            <p>Upgrade any tiered item to the next higher tier. The modifiers on the item remain intact, but the new
+                item will have improved base statistics and higher requirements.</p>
+            <p><span class="reagent">Any non-sacred weapon/armor + Arcane Crystal -> return item as next higher
+                    tier</span></p>
+            <p><span class="italic">This recipe currently does not work on ethereal items due to a bug in some versions
+                    of Diablo II with the 'usemod' cube code.</span></p>
+            <p><span class="craftingTitle">Uptier Recipe (improved for uniques)</span></p>
+            <p>This recipe is an improved version of the generic uptier recipe. Not only is the item upgraded to the
+                next higher tier, but the modifiers are replaced with those of the higher tier version of the unique.
+                This is the preferred way to uptier uniques.</p>
+            <p><span class="reagent">Unique non-sacred weapon/armor + Arcane Crystal + rune -> reroll as next higher
+                    tier</span></p>
+
+            <h2 id="affix">AFFIX RECIPES</h2>
+            <h3>Enhance your items with extra magical bonuses</h3>
+            <p></p>
+            <span class="craftingTitle">Mystic Orbs</span>
+            <p>Mystic Orbs add a magical bonus to an item at the cost of a higher required level to use the item. There
+                are 65 known types in circulation, but rumours persist of lost ancient orbs with miraculous powers...
+            </p>
+            <p><span class="reagent">Any non-ethereal equippable item + Mystic Orb -> add orb bonus and +2 required
+                    level</span></p>
+            <p><span class="italic">You can only apply up to 15 of the same Mystic Orb (eg. +strength) to your
+                    item.</span></p>
+            <p>The level requirement penalty is applied after taking into account both the base item level and the level
+                of any socket fillers. This means for example if you have a belt with required level 20, add five orbs
+                (level penalty +10) and socket a Rha rune (required level 100), you get a belt with required level
+                100+10 = 110.</p>
+
+            <span class="craftingTitle">Lucky Bonus</span>
+            <p>This recipe grants a chance to add a minor extra bonus to an item.</p>
+            <p><span class="reagent">Any non-ethereal item + Oil of Luck -> returns item, may add bonuses</span></p>
+            <p><span class="italic">This recipe has 20% chance to add any of the following bonuses:</span></p>
+            <p><span class="holy">Weapon: </span><span class="magic">+40% Enhanced Damage, 100% Bonus to Attack
+                    Rating</span><br>
+                <span class="holy">Armor: </span><span class="magic">+40% Enhanced Defense, Damage Reduced by
+                    1%</span><br>
+                <span class="holy">Amulet: </span><span class="magic">+1 to All Skill Levels</span><br>
+                <span class="holy">Ring: </span><span class="magic">+10% to Spell Damage</span><br>
+                <span class="holy">Quiver: </span><span class="magic">5% Bonus to all Attributes</span><br>
+                <span class="holy">Jewel: </span><span class="magic">+2 to Strength, +2 to Dexterity, +2 to Energy, +2
+                    to Vitality</span></p>
+
+            <span class="craftingTitle">Socket Punch</span>
+            <p>Use this recipe to add extra sockets to an item. The more jewels you feed this recipe, the more sockets
+                it will create.</p>
+            <p><span class="reagent">Non-socketed non-ethereal item + [1-6] jewels -> returns item with [1-6]
+                    sockets</span></p>
+            <p><span class="italic">Warning! This recipe will not go over the max natural sockets an item can have.
+                    Every item type has its own maximum socket count, and lower tier items have a lower socket count.
+                    Excess jewels are wasted.</span></p>
+            <p>Consult the <a href="../items/base_items.html">BASE ITEMS</a> page for more information about maximum
+                sockets.</p>
+
+            <h2 id="shrines">SHRINES</h2>
+            <h3>Call on divine forces to craft your own items</h3>
+            <p></p>
+            <p>In Terror and Destruction difficulty, you may find blessed relics from the ancient labyrinth beneath
+                Tristram, stolen before its collapse.</p>
+            <p>During those dark days the holy shrines in the cathedral's catacombs offered salvation to some
+                adventurers and damnation to others; removed from their sockets, the enchanted crosses cannot
+                permanently affect humans anymore, but their divine powers can be applied to items.</p>
+            <p>There are 15 types of shrines with eldritch names and a short clue as to what the shrine does. Beware,
+                results may vary depending on divine will. The Shrine names are as follows:</p>
+            <p class="holy">Abandoned Shrine<br>
+                Creepy Shrine<br>
+                Eerie Shrine<br>
+                Fascinating Shrine<br>
+                Gloomy Shrine<br>
+                Hidden Shrine<br>
+                Magical Shrine<br>
+                Ornate Shrine<br>
+                Quiet Shrine<br>
+                Sacred Shrine<br>
+                Shimmering Shrine<br>
+                Spiritual Shrine<br>
+                Stone Shrine<br>
+                Tainted Shrine<br>
+                Weird Shrine</p>
+
+            <p>Each shrine comes with 10 charges. Each use in the cube will drain one charge. When you use up the last
+                charge, the shrine disappears.</p>
+            <p>Experiment, learn and create some of the most powerful items in all of Sanctuary.</p>
+
+            <span class="craftingTitle">Shrine Crafting</span>
+            <p>Use a shrine to turn any sacred item into a powerful crafted item. The crafted item comes with several
+                random rare modifiers and there is a high chance that some preset modifiers based on shrine type will
+                appear as well. The preset modifiers may stack with the rare modifiers, creating some very powerful
+                items.</p>
+            <p class="reagent">Rare/unique/set/crafted Sacred item + Shrine -> reroll item as crafted + Shrine -1 charge
+            </p>
+            <p><i>Crafted items always have maximum sockets and receive a double bonus from Mystic Orbs.</i></p>
+            <div class="sacredUniqueAreas">
+                <span class="bold">What affixes will the item get?</span><br>
+                <p>The resulting crafted item spawns with <u>0-3 preset affixes</u> depending on luck and shrine type
+                    used, and
+                    <u>1-4 extra random rare affixes</u>, based on the item level:</p>
+                <p class="note">Item level 1-30 : 40% chance of 1 affix and 20% chance each of 2, 3 or 4 affixes.<br>
+                    Item level 31-50 : 60% chance of 2 affixes and 20% chance each of 3 or 4 affixes.<br>
+                    Item level 51-70 : 80% chance of 3 affixes and 20% chance of 4 affixes.<br>
+                    Item level 71+ : 100% chance of 4 affixes.<br></p>
+                <p>The required level of a crafted item is:</p>
+                <p class="note">[level of the highest affix * 3/4] + 10 + 3 * [number of random rare affixes]</p>
+                <p>Especially at lower levels, this formula may create items with a required level above the level of
+                    the character that crafted them. This is a feature of crafting and occurs in classic LoD as well.
+                </p>
+                <p>Do not confuse <u>required level</u>, which appears on the item, with <u>item level</u>, which is
+                    usually equal to the monster level of the monster that dropped the item.</p>
+            </div>
+
+            <span class="craftingTitle">Shrine Blessing</span>
+            <p>A variant of shrine crafting, this recipe allows you to impart the blessings of the shrine unto an
+                existing sacred item. This randomly adds some or all of the shrine modifiers to the item and subtracts 1
+                charge. You can only use this recipe once per item, so choose your shrine wisely.</p>
+            <p class="reagent">Non-ethereal rare/crafted/honorific Sacred item + Shrine + Arcane Crystal -> add shrine
+                bonuses + Shrine -1 charge</p>
+            <p>The item retains its original affixes and gains <u>0-3 preset affixes</u> depending on luck and shrine
+                type used.</p>
+
+            <span class="craftingTitle">Shrine Vessels</span>
+            <p>Shrine Vessels are a quality of life feature, made to reduce space taken by shrines. They act
+                as a container for shrines, allowing you to store up to 500 of them in a vessel.<br>
+                There are Shrine Vessels for each of the shrine types, and you may only cube a vessel with shrines of
+                the same type.<br>
+                Only full shrines (10 charges) can be used to create or fill a Shrine Vessel, and you may cube up to 10
+                shrines at a time.</p>
+            <p class="reagent">Any Shrine + Oil of Transmutation -> Shrine Vessel of the same type with 1 stored shrine
+            </p>
+            <p class="reagent">Shrine Vessel + [1-10] Shrines of the same type -> Shrine Vessel + [1-10] stored
+                shrines<br>
+                Shrine Vessel -> Shrine of the same type & Shrine Vessel -1 stored shrines</p>
+            <p>If a vessel with 1 charge is transmuted in the cube, it returns the shrine that was used to create it and
+                the Oil of Transmutation
+            </p>
+            <h2 id="jewelcrafting">JEWELCRAFTING</h2>
+            <h3>Create your own Jewels</h3>
+            <p></p>
+            <span class="craftingTitle">Jewelcrafting</span><br>
+            <p class="reagent">Jewel + Oil of Jewelcrafting + rune -> reroll jewel as crafted, add bonuses</p>
+            <p>The bonuses on the jewel depend on the rune used as follows:</p>
+
+            <p><span class="holy">Tir:</span> <span class="magic">(6 to 10)% Better Chance of Getting Magic
+                    Items</span><br>
+                <span class="holy">Ith:</span> <span class="magic">All Resists +(3 to 5)%</span>
+            </p>
+            <p class="craftingPoints">Tir, Ith: 50 Crafting Points</p>
+
+            <p><span class="holy">Ort:</span> <span class="magic">Requirements -(2 to 4)%</span><br>
+                <span class="holy">Shael:</span> <span class="magic">+(21 to 50) Defense</span>
+            </p>
+            <p class="craftingPoints">Ort, Shael: 100 Crafting Points</p>
+
+            <p><span class="holy">Lum:</span> <span class="magic">+(1 to 2)% to Experience Gained</span><br>
+                <span class="holy">Lem:</span> <span class="magic">+(3 to 5) to All Attributes</span>
+            </p>
+            <p class="craftingPoints">Lum, Lem: 150 Crafting Points</p>
+
+            <p><span class="holy">Ist:</span> <span class="magic">+(4 to 6)% Bonus to Summoned Minion Life</span><br>
+                <span class="holy">Ohm:</span> <span class="magic">+(4 to 12) to Maximum Damage</span>
+            </p>
+            <p class="craftingPoints">Ist, Ohm: 200 Crafting Points</p>
+
+            <p><span class="holy">Ber:</span> <span class="magic">(1 to 2)% Life Stolen per Hit, (1 to 2)% Mana Stolen
+                    per Hit</span><br>
+                <span class="holy">Zod:</span> <span class="magic">+(1 to 3)% to Spell Damage</span>
+            </p>
+            <p class="craftingPoints">Ber, Zod: 250 Crafting Points</p>
+
+            <p><span class="holy">Kur:</span> <span class="magic">+(4 to 6)% Bonus to Summoned Minion Damage</span><br>
+                <span class="holy">Nas:</span> <span class="magic">Slows Target by 1%</span>
+            </p>
+            <p class="craftingPoints">Kur, Nas: 300 Crafting Points</p>
+
+            <p><span class="holy">Vith:</span> <span class="magic">+(2 to 4)% Bonus to Summoned Minion
+                    Resistances</span><br>
+                <span class="holy">Thai:</span> <span class="magic">+(6 to 15) to Minimum Damage</span>
+            </p>
+            <p class="craftingPoints">Vith, Thai: 350 Crafting Points</p>
+
+            <p><span class="holy">Nih:</span> <span class="magic">+(2 to 8) Life on Striking in Melee, +(2 to 8) Mana on
+                    Striking in Melee</span>
+            </p>
+            <p class="craftingPoints">Nih: 400 Crafting Points</p>
+
+            <span class="craftingTitle">Jewel Dupe Recipe</span>
+            <p>Magic, Rare and Crafted Jewels can be duplicated with an expensive recipe. The duplicated jewel will have
+                the exact same stats as the original one.
+            </p>
+            <span class="reagent">Any non-unique jewel + Oil of Duplication + Arcane Crystal -> jewel x2</span>
+            <p><i>Note: The random hidden "seed" for the Mystic Orb bonuses will also transfer to the new jewel. Whether
+                    you applied a Mystic Orb to the original jewel or not yet, the Mystic Orb bonuses will be the same
+                    on both jewels.</i>
+            </p>
+            <h2 id="alchemy">ALCHEMY</h2>
+            <h3>Create magical elixirs</h3>
+            <p></p>
+            <span class="craftingTitle">Alchemy</span>
+            <p class="reagent">Specific perfect gem + Oil of Transmutation -> corresponding Elixir x3</p>
+            <p class="craftingPoints">There are currently six known alchemy recipes. The mage clans are working on more
+                and stronger concoctions, but the recent explosion of the Annuit lab caused the unfortunate loss of all
+                collected knowledge so far.
+            </p>
+            <p><span class="reagent">Perfect Amber + Oil of Transmutation + Sacrifical Heart + Meditation
+                    Candle:</span><br>
+                Elixir of Adrenaline: cancels a running spell timer<br>
+                Instant.
+            </p>
+            <p><span class="reagent">Perfect Emerald + Oil of Transmutation:</span><br>
+                Elixir of Greater Experience: +300% to Experience Gained<br>
+                Duration: 20 seconds.
+            </p>
+            <p><span class="reagent">Perfect Ruby + Oil of Transmutation:</span><br>
+                Elixir of Greater Greed: 350% Better Chance of Getting Magic Items<br>
+                Duration: 20 seconds.
+            </p>
+            <p><span class="reagent">Perfect Diamond + Oil of Transmutation:</span><br>
+                Elixir of Greater Wealth: 450% Extra Gold from Monsters<br>
+                Duration: 20 seconds.
+            </p>
+            <p><span class="reagent">Perfect Sapphire + Oil of Transmutation:</span><br>
+                Elixir of Power: +15 to All Skills<br>
+                Duration: 20 seconds.
+            </p>
+            <p><span class="reagent">Perfect Topaz + Oil of Transmutation:</span><br>
+                Elixir of Love: Reduces all Vendor Prices 25%<br>
+                Duration: 20 seconds.
+            </p>
+            <p><i>The Elixir of Adrenaline cancels a spell timer (red skill icon), enabling you to use a timered skill
+                    instantly again.</i>
+            </p>
+
+            <h2 id="misc">Miscellaneous Recipes</h2>
+            <h3>Everything else</h3>
+            <p></p>
+            <span class="craftingTitle">Gem Upgrade</span>
+            <p>You can upgrade gems to the next higher quality level. Note that unlike classic Diablo II, this recipe
+                only requires two gems, not three.
+            </p>
+            <p class="reagent">Same gem x2 -> next higher gem quality</p>
+            <span class="craftingTitle">Rune Upgrade/Downgrade</span>
+            <p>You can upgrade or downgrade runes to the next higher or lower rune. This is useful when you need a
+                certain exact rune to create a runeword.
+            </p>
+            <p class="reagent">Same rune x2 -> rune one level higher<br>
+                Same rune x4 -> rune two levels higher<br>
+                Rune -> rune one level lower
+            </p>
+            <p class="italic">These recipes do not allow you to obtain or downgrade Great Runes (<span
+                    class="holy">Taha, Ghal, Qor, Krys, Auhe</span> and <span class="holy">Sha'ad</span>).
+            </p>
+
+            <span class="craftingTitle">Unsocket Recipe</span>
+            <p>These recipes separate the socket fillers (gems, jewels, runes) from an item and return both the item and
+                the socket fillers.
+            </p>
+            <p class="bold">Magical or higher quality:</p>
+            <p class="reagent">Socketed item + Oil of Disjunction -> separate item and socket fillers</p>
+            <p class="bold">Non-magical:</p>
+            <p class="reagent">Socketed item + Oil of Disjunction + perfect gem x3 -> separate item and socket fillers
+            </p>
+            <p class="italic">Non-magical socketed items are grey, and therefore include runewords. The price is higher
+                for these items to prevent unhealthy amounts of runeword rerolling.
+            </p>
+
+            <span class="craftingTitle">Book of Summoning Creation Recipe</span>
+            <p>You need a Book to do any of the summoning uberquests. Although the ingredients are expensive, once you
+                have a Book, you get to keep it.
+            </p>
+            <p>See the <a href="../uberquests/summoning_uberquests.html">SUMMONING UBERQUESTS</a> page for more
+                information on what you can do with this Book once you have it.
+            </p>
+            <p class="reagent">Sacrificial Heart x3 + Meditation Candle x3 -> Book of Summoning</p>
+
+            <span class="craftingTitle">Unassign Skill and Attribute Points</span>
+            <p>Diablo II patch 1.13 enables ingame skill and attribute respecs, both at Akara's and by collecting items.
+                In Median XL this recipe is much more accessible. This recipe creates an elixir that refunds your skill
+                and attribute points.
+            </p>
+            <p class="reagent">Oil of Absolution + rune -> Belladonna Elixir</p>
+            <p class="italic">The elixir works only in Diablo II Lord of Destruction patch 1.13.</p>
+
+            <span class="craftingTitle">Shortcut Recipe</span>
+            <p>Looking for a way to skip some of that long and boring content? Create your own quest items and give the
+                questgivers the middle finger.
+            </p>
+            <p class="reagent">Arcane Crystal x2 + healing potion -> Horadric Staff<br>
+                Arcane Crystal x2 + mana potion -> Khalim's Will
+            </p>
+            <p class="italic">You do need to create the quest items in the difficulty where you intend to use them,
+                because they are earmarked by difficulty.
+            </p>
+
+            <span class="craftingTitle">Item Destruction Recipe</span>
+            <p>Is your stash completely filled with useless garbage? Does the mountain of items where all those monsters
+                were just a second ago hide that unique from view? This recipe for destruction will remove just about
+                any items you feed it from the game and out of your way.
+            </p>
+            <p class="reagent">Any number of items + Catalyst of Destruction -> Catalyst of Destruction</p>
+
+            <span class="craftingTitle">R.I.P. Recipe</span>
+            <p>If you went wild with reanimate items and now you can't see the forest for the reanimated Ents, this
+                recipe can help. It adds the 'R.I.P.' modifier to an item, causing your kills to stay dead instead of
+                rising up to get in your way. This should help out players with slower computers.
+            </p>
+            <p class="reagent">Any item + Catalyst of Destruction + Arcane Crystal -> returns item with R.I.P. modifier
+                + Catalyst of Destruction
+            </p>
+            <p class="italic">Don't forget the crystal or you'll end up destroying your item!</p>
+
+            <span class="craftingTitle">Apply Trophy to Uberquest Charm</span>
+            <p>Killing an uberquest boss will often yield his own special unique charm on Destruction difficulty. But
+                before you grab the charm and leave the uberquest area for good, consider that many bosses also have an
+                additional 2% chance to drop a special trophy which you can cube with the charm for a small extra bonus.
+            </p>
+            <p>See the Uberquests section for more information.</p>
+            <p class="reagent">Any uberquest trophy + Corresponding unique charm -> return charm with added bonus</p>
+            <p class="italic">This recipe only works once per charm.</p>
+
+            <span class="craftingTitle">I Am Rich</span>
+            <p>Want to show the common rabble in your game how rich and powerful you are? This recipe consumes some of
+                the rarest trophies in the game and returns a completely useless item. Show it to friends and strangers
+                so they know that you are strong, powerful and wealthy enough to waste trophies on a worthless item.
+            </p>
+            <p>See the Uberquests section for more information.</p>
+            <p class="reagent">Vizjun Trophy + Brother Laz Trophy + Duncraig Trophy -> I Am Rich Gem</p>
+            <p class="italic">This recipe is inspired by the $1000 iPhone application that does nothing.</p>
+
+            <span class="craftingTitle">Cow Level Portal</span>
+            <p>Moo! You need to have killed Baal on your current difficulty and stand in the Rogue Encampment to use
+                this recipe. Be careful, the cows have been beefed up in Median XL
+            </p>
+            <p class="reagent">Wirt's Leg + Tome of Town Portal -> Cow Level portal</p>
+            <div class="spacing"></div>
+        </div>
+    </div>
+</body>
+<script src="../js/dropdown.js"></script>
+
+</html>

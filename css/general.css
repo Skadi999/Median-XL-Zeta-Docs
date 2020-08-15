@@ -39,6 +39,10 @@ h2 {
     margin-bottom: 3px;
 }
 
+h3 {
+    font-size: 18px;
+}
+
 h6 {
     font-weight: bold;
     font-size: 17px;
@@ -227,4 +231,8 @@ ul button {
 
 .set {
     color: #117011;
+}
+
+.reagent {
+    color: #a76524;
 }
