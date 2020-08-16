@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/umos.css">
+    <title>UMOs | MXL:Z Documentation</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>+ UNIQUE MYSTIC ORBS +</h1>
+        </header>
+        <nav>
+            <ul class="navpanel">
+                <li>
+                    <button onclick="clickConcepts()" class="btnDropdown">Concepts ▼</button>
+                    <div id="conceptDropdown" class="dropdown-content">
+                        <a href="../concepts/difficulty_levels.html">Difficulty Levels</a>
+                        <a href="../concepts/energy_factor.html">Energy Factor</a>
+                        <a href="../concepts/block_and_defense.html">Block & Defense</a>
+                        <a href="../concepts/players_x.html">Players Command</a>
+                        <a href="../concepts/witches_warlocks.html">Witches & Warlocks</a>
+                        <a href="../concepts/poison_damage.html">Poison Damage</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickCharacters()" class="btnDropdown">Characters ▼</button>
+                    <div id="characterDropdown" class="dropdown-content">
+                        <a href="../characters/amazon.html">Amazon</a>
+                        <a href="../characters/assassin.html">Assassin</a>
+                        <a href="../characters/barbarian.html">Barbarian</a>
+                        <a href="../characters/druid.html">Druid</a>
+                        <a href="../characters/necromancer.html">Necromancer</a>
+                        <a href="../characters/paladin.html">Paladin</a>
+                        <a href="../characters/sorceress.html">Sorceress</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickItems()" class="btnDropdown">Items ▼</button>
+                    <div id="itemDropdown" class="dropdown-content">
+                        <a href="base_items.html">Base Items</a>
+                        <a href="tiered_uniques.html">Tiered Uniques</a>
+                        <a href="sacred_uniques.html">Sacred Uniques</a>
+                        <a href="umos.html">Unique Mystic Orbs</a>
+                        <a href="sets.html">Sets</a>
+                        <a href="runewords.html">Runewords</a>
+                        <a href="cube_recipes.html">Cube Recipes</a>
+                        <a href="gems_runes.html">Gems and Runes</a>
+                        <a href="gemwords.html">Gemwords</a>
+                        <a href="honorific_shrine.html">Honorific & Crafted</a>
+                        <a href="shrine_bonuses.html">Shrine Bonuses</a>
+                        <a href="prefixes_and_suffixes.html">Prefixes & Suffixes</a>
+                        <a href="oskill_items.html">Items with Oskills</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickUbers()" class="btnDropdown">Uberquests ▼</button>
+                    <div id="uberDropdown" class="dropdown-content">
+                        <a href="../uberquests/dungeon_uberquests.html">Dungeon Uberquests</a>
+                        <a href="../uberquests/summoning_uberquests.html">Summoning Uberquests</a>
+                        <a href="../uberquests/uberlevels.html">Uberlevels</a>
+                        <a href="../uberquests/heroic_levels.html">Heroic Levels</a>
+                        <a href="../uberquests/trophies.html">Trophy Bonuses</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickChallenges()" class="btnDropdown">Challenges ▼</button>
+                    <div id="challengeDropdown" class="dropdown-content">
+                        <a href="../challenges/dragon_eggs.html">Dragon's Eggs</a>
+                        <a href="../challenges/lc1.html">Level Challenge 1</a>
+                        <a href="../challenges/lc2.html">Level Challenge 2</a>
+                        <a href="../challenges/ennead.html">Ennead Challenge</a>
+                        <a href="../challenges/black_road.html">Black Road Challenge</a>
+                        <a href="../challenges/minigames.html">Minigames</a>
+                        <a href="../challenges/veteran_tokens.html">Veteran Tokens</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickMaps()" class="btnDropdown">Maps ▼</button>
+                    <div id="mapDropdown" class="dropdown-content">
+                        <a href="../maps/map_k3kba.html">Kurast 3000 BA Map</a>
+                        <a href="../maps/map_tran_athulua.html">Tran Athulua Map</a>
+                        <a href="../maps/map_fauztinville.html">Fauztinville Map</a>
+                        <a href="../maps/map_ureh.html">Kingdom of Shadow Map</a>
+                        <a href="../maps/map_duncraig.html">Duncraig Map</a>
+                        <a href="../maps/map_vizjun.html">Vizjun Map</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickMisc()" class="btnDropdown">Misc ▼</button>
+                    <div id="miscDropdown" class="dropdown-content">
+                        <a href="../misc/introduction.html">Introduction</a>
+                        <a href="../misc/hirelings.html">Hirelings</a>
+                        <a href="../misc/changelog.html">Changelog</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="description">
+            <h2>UNIQUE MYSTIC ORBS</h2>
+            <p>As normal Mystic Orbs, Unique Mystic Orbs can be applied to proper items, but they add +10 Required Level
+                to the item.
+            </p>
+            <p>Usually one or two of them drop in Act 1 Hatred, and Heroic Boss Bull Prince Rodeo (see <a
+                    href="../uberquests/heroic_levels">HEROIC LEVELS</a> for more information) has 10% chance to drop
+                one.
+            </p>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">Weapons</th>
+                </tr>
+            </thead>
+            <tr>
+                <td rowspan="3" class="img">
+                    <img src="../img/base/amu1.jpg" alt="Weapons Unique Mystic Orb">
+                </td>
+                <td class="textCell">
+                    <span class="unique">Larzuk's Round Shot</span><br>
+                    <span class="magic">2% Chance of Crushing Blow<br>
+                        Adds Strength Bonus to Damage<br>
+                        +10 to Strength<br>
+                        +25% Enhanced Damage</span><br>
+                </td>
+                <td class="textCell">
+                    <span class="unique">Vizjun's Ball Bearing</span><br>
+                    <span class="magic">+50 Maximum Stamina<br>
+                        +5 to Dexterity<br>
+                        3% Deadly Strike<br>
+                        10% Faster Run/Walk</span><br>
+                </td>
+                <td class="textCell">
+                    <span class="unique">Nor Tiraj's Flaming Sphere</span><br>
+                    <span class="magic">Fire Resist +10%<br>
+                        +5% to Fire Spell Damage<br>
+                        Adds 25-50 Fire Damage<br>
+                        1% Chance to cast level 30 Flamefront when Attacked</span><br>
+                </td>
+            </tr>
+            <tr>
+                <td class="textCell">
+                    <span class="unique">The Demon Core</span><br>
+                    <span class="magic">+4% to Poison Spell Damage<br>
+                        +4% to Fire Spell Damage<br>
+                        1% Chance to cast level 17 Gamma Field when you Kill an Enemy<br>
+                        1% Chance to cast level 17 Apocalypse when you Kill an Enemy</span><br>
+                </td>
+                <td class="textCell">
+                    <span class="unique">Uldyssian's Spirit</span><br>
+                    <span class="magic">+2% to Spell Damage<br>
+                        +25% Damage to Demons<br>
+                        +5 Energy Factor to Spell Damage<br>
+                        +5 Strength Factor to Spell Damage</span><br>
+                </td>
+                <td class="textCell">
+                    <span class="unique">Orb of Annihilation</span><br>
+                    <span class="magic">2% Bonus to Energy<br>
+                        +5% to Physical/Magic Spell Damage<br>
+                        5% Chance to cast level 1 Detonate on Attack</span><br>
+                </td>
+            </tr>
+            <tr>
+                <td class="textCell">
+                    <span class="unique">Warbringer</span><br>
+                    <span class="magic">+10 Maximum Damage<br>
+                        1% Chance to cast level 5 Arrow on Striking</span><br>
+                </td>
+                <td class="textCell">
+                    <span class="unique">Ten Pin Striker</span><br>
+                    <span class="magic">Target Takes Additional Damage of 15<br>
+                        15% Bonus to Attack Rating<br>
+                        5% Faster Run/Walk</span><br>
+                </td>
+                <td class="textCell">
+                    <span class="unique">Wrathspirit</span><br>
+                    <span class="magic">+10 Life after each Kill<br>
+                        +3% to Spell Damage<br>
+                        1% Chance to cast level 8 Punisher when Struck</span><br>
+                </td>
+            </tr>
+        </table>
+        <div class="spacing"></div>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">Armor</th>
+                </tr>
+            </thead>
+            <tr>
+                <td rowspan="3" class="img">
+                    <img src="../img/base/amu1.jpg" alt="Armor Unique Mystic Orb">
+                </td>
+                <td class="textCell">
+                    <span class="unique">Idol of Stars</span><br>
+                    <span class="magic">+3 to Energy<br>
+                        +3 to Vitality<br>
+                        +4 to Dexterity<br>
+                        +4 to Strength </span><br>
+                </td>
+                <td class="textCell">
+                    <span class="unique">Nagapearl</span><br>
+                    <span class="magic">10% Better Chance of Getting Magic Items<br>
+                        40% Extra Gold from Monsters<br>
+                        Stun Attack</span><br>
+                </td>
+                <td class="textCell">
+                    <span class="unique">The Moon Crystal</span><br>
+                    <span class="magic">Regenerate Mana +10%<br>
+                        Lightning Resist +5%<br>
+                        Cold Resist +5%<br>
+                        5% Faster Cast Rate</span><br>
+                </td>
+            </tr>
+            <tr>
+                <td class="textCell">
+                    <span class="unique">Auriel's Focus</span><br>
+                    <span class="magic">Poison Length Reduced by 2%<br>
+                        +10 to Energy<br>
+                        +25% Enhanced Defense<br>
+                        2% Bonus to Energy Factor</span><br>
+                </td>
+                <td class="textCell">
+                    <span class="unique">Solitude</span><br>
+                    <span class="magic">+5% Bonus to Buff/Debuff/Cold Skill Duration<br>
+                        1% Bonus to all Attributes<br>
+                        1% Chance to cast level 4 Banish when Struck<br>
+                        +40 Crafting Points</span><br>
+                </td>
+                <td class="textCell">
+                    <span class="unique">Crystal of Tears</span><br>
+                    <span class="magic">-20 to Life<br>
+                        Adds 5-15 Damage</span><br>
+                </td>
+            </tr>
+            <tr>
+                <td class="textCell">
+                    <span class="unique">Essence of Itherael</span><br>
+                    <span class="magic">Total Character Defense Plus 5%<br>
+                        Enhanced Weapon Damage +15%</span><br>
+                </td>
+                <td class="textCell">
+                    <span class="unique">Periapt of Life</span><br>
+                    <span class="magic">+4% Increased Healing Rate from Apples<br>
+                        Regenerate Life +50<br>
+                        2% Bonus to Vitality</span><br>
+                </td>
+                <td class="textCell">
+                    <span class="unique">Lodestone</span><br>
+                    <span class="magic">Requirements +10%<br>
+                        +4% to Spell Damage</span><br>
+                </td>
+            </tr>
+        </table>
+        <div class="spacing"></div>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">Ring/Amulet</th>
+                </tr>
+            </thead>
+            <tr>
+                <td rowspan="3" class="img">
+                    <img src="../img/base/amu3.jpg" alt="Ring/Amulet Unique Mystic Orb">
+                </td>
+                <td class="textCell">
+                    <span class="unique">Kara's Trinket</span><br>
+                    <span class="magic">+5% Bonus to Summoned Minion Life<br>
+                        +5% Bonus to Summoned Minion Attack Rating<br>
+                        +10% Bonus to Summoned Minion Damage<br>
+                        3% Faster Cast Rate</span><br>
+                </td>
+                <td class="textCell">
+                    <span class="unique">Monsterball</span><br>
+                    <span class="magic">+1 to Summon Shock Beast<br>
+                        +2% Bonus to Summoned Minion Resistances<br>
+                        +5% Bonus to Summoned Minion Life<br>
+                        +5% Bonus to Summoned Minion Damage</span><br>
+                </td>
+                <td class="textCell">
+                    <span class="unique">Heart of Frost</span><br>
+                    <span class="magic">+1 to Elemental Guide (Ice Elementals only)<br>
+                        +3% to Cold Spell Damage<br>
+                        +3% Bonus to Summoned Minion Damage<br>
+                        Enhanced Weapon Damage +10%</span><br>
+                </td>
+            </tr>
+            <tr>
+                <td class="textCell">
+                    <span class="unique">Relic of Yaerius</span><br>
+                    <span class="magic">+5 to Life after Each Kill<br>
+                        Regenerate Life +10<br>
+                        +10 to Maximum Damage<br>
+                        +15% Damage to Undead</span><br>
+                </td>
+                <td class="textCell">
+                    <span class="unique">The Endless Light</span><br>
+                    <span class="magic">+100 Defense<br>
+                        Total Character Defense Plus 3%<br>
+                        -3% to All Enemy Resistances</span><br>
+                </td>
+                <td class="textCell">
+                    <span class="unique">Explorer's Globe</span><br>
+                    <span class="magic">(-1 to 2)% Bonus to Energy<br>
+                        (-1 to 2)% Bonus to Vitality<br>
+                        (-1 to 2)% Bonus to Dexterity<br>
+                        (-1 to 2)% Bonus to Strength<br>
+                </td>
+            </tr>
+            <tr>
+                <td class="textCell">
+                    <span class="unique">The Perfect Sphere</span><br>
+                    <span class="magic">+1% to Maximum Lightning Resist<br>
+                        +1% to Maximum Cold Resist<br>
+                        +1% to Maximum Fire Resist</span><br>
+                </td>
+                <td class="textCell">
+                </td>
+                <td class="textCell">
+                </td>
+            </tr>
+        </table>
+        <div class="spacing"></div>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">Any Item</th>
+                </tr>
+            </thead>
+            <tr>
+                <td rowspan="3" class="img">
+                    <img src="../img/base/amu2.jpg" alt="Item Unique Mystic Orb">
+                </td>
+                <td class="textCell">
+                    <span class="unique">Marksman's Eye</span><br>
+                    <span class="magic">2% Bonus to Dexterity<br>
+                        10% Bonus to Attack Rating<br>
+                        +5 to Minimum Damage<br>
+                        5% Increased Attack Speed</span><br>
+                </td>
+                <td class="textCell">
+                    <span class="unique">Zayl's Soul Orb</span><br>
+                    <span class="magic">Half Freeze Duration<br>
+                        +25 to Mana<br>
+                        1% Reanimate As: Flying Scimitar</span><br>
+                </td>
+                <td class="textCell">
+                    <span class="unique">Farnham's Lost Marble</span><br>
+                    <span class="magic">Random Run/Walk Speed<br>
+                        +10 Mana on Striking in Melee<br>
+                        +10 Life on Striking in Melee</span><br>
+                </td>
+            </tr>
+            <tr>
+                <td class="textCell">
+                    <span class="unique">Eye of Malic</span><br>
+                    <span class="magic">Adds 15-30 Cold Damage<br>
+                        Adds 15-30 Fire Damage<br>
+                        1% Chance to cast level 14 Frozen Soul on Attack<br>
+                        1% Chance to cast level 14 Bloodstar on Attack</span><br>
+                </td>
+                <td class="textCell">
+                    <span class="unique">Apple of Discord</span><br>
+                    <span class="magic">+20 to Mana<br>
+                        +20 to Life<br>
+                        1% Chance to cast level 13 Dire Charm on Attack</span><br>
+                </td>
+                <td class="textCell">
+                </td>
+            </tr>
+        </table>
+        <div class="spacing"></div>
+    </div>
+</body>
+<script src="../js/dropdown.js"></script>
+
+</html>
