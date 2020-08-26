@@ -1,3 +1,9 @@
+h2 {
+    font-size: 28px;
+    color: rgb(216, 162, 62);
+    margin-top: 35px;
+}
+
 .sacredUniqueAreas {
     margin: 20px 0 20px 0;
     background-color: #1a160c;
@@ -22,10 +28,6 @@
 .note {
     color: #a1a178;
     font-size: 1em;
-}
-
-.craftingPoints {
-    color: #868d91;
 }
 
 .toc {
