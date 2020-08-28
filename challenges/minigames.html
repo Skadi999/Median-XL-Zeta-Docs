@@ -5,26 +5,25 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../css/reset.css">
     <link rel="stylesheet" type="text/css" href="../css/general.css">
-    <link rel="stylesheet" type="text/css" href="css/block_and_defense.css">
-    <title>Block and Defence | MXL:Z Documentation</title>
+    <title>Minigames | MXL:Z Documentation</title>
 </head>
 
 <body>
     <div class="container">
         <header>
-            <h1>+ Block and Defence +</h1>
+            <h1>+ MINIGAMES +</h1>
         </header>
         <nav>
             <ul class="navpanel">
                 <li>
                     <button onclick="clickConcepts()" class="btnDropdown">Concepts ▼</button>
                     <div id="conceptDropdown" class="dropdown-content">
-                        <a href="difficulty_levels.html">Difficulty Levels</a>
-                        <a href="energy_factor.html">Energy Factor</a>
-                        <a href="block_and_defense.html">Block & Defense</a>
-                        <a href="players_x.html">Players Command</a>
-                        <a href="witches_warlocks.html">Witches & Warlocks</a>
-                        <a href="poison_damage.html">Poison Damage</a>
+                        <a href="../concepts/difficulty_levels.html">Difficulty Levels</a>
+                        <a href="../concepts/energy_factor.html">Energy Factor</a>
+                        <a href="../concepts/block_and_defense.html">Block & Defense</a>
+                        <a href="../concepts/players_x.html">Players Command</a>
+                        <a href="../concepts/witches_warlocks.html">Witches & Warlocks</a>
+                        <a href="../concepts/poison_damage.html">Poison Damage</a>
                     </div>
                 </li>
                 <li>
@@ -70,13 +69,13 @@
                 <li>
                     <button onclick="clickChallenges()" class="btnDropdown">Challenges ▼</button>
                     <div id="challengeDropdown" class="dropdown-content">
-                        <a href="../challenges/dragon_eggs.html">Dragon's Eggs</a>
-                        <a href="../challenges/lc1.html">Level Challenge 1</a>
-                        <a href="../challenges/lc2.html">Level Challenge 2</a>
-                        <a href="../challenges/ennead.html">Ennead Challenge</a>
-                        <a href="../challenges/black_road.html">Black Road Challenge</a>
-                        <a href="../challenges/minigames.html">Minigames</a>
-                        <a href="../challenges/monster_tokens.html">Monster Tokens</a>
+                        <a href="dragon_eggs.html">Dragon's Eggs</a>
+                        <a href="lc1.html">Level Challenge 1</a>
+                        <a href="lc2.html">Level Challenge 2</a>
+                        <a href="ennead.html">Ennead Challenge</a>
+                        <a href="black_road.html">Black Road Challenge</a>
+                        <a href="minigames.html">Minigames</a>
+                        <a href="monster_tokens.html">Monster Tokens</a>
                     </div>
                 </li>
                 <li>
@@ -101,80 +100,66 @@
             </ul>
         </nav>
         <div class="description">
-            <h2>BLOCK AND DEFENCE</h2>
-            <p>Blocking and defence rating in Median XL work much the same as in classic Diablo II Lord of Destruction,
-                but their role in the game has changed. In the regular game, max block (75% block) through investment
-                into dexterity was common, while defence rating was hardly worth it. The two statistics are much more
-                balanced in Median XL.</p>
-            <div class="descriptionImage"><img src="../img/menu/MXL_menu_011.jpg"></div>
-            <span class="bold">Defense</span>
-            <p>The chance to be hit is as follows:</p>
-            <span class="bold">CtBH = 100*(attack)/(attack + defence)</span>
-            <p>Investing into defence pays off if you can get around 20-50K defence at level 120, at which point you
-                will see a noticeable improvement in your chance to be hit. Some builds can go well over 100K defence.
+            <h2>MINIGAMES</h2>
+            <p>Minigames are small challenges you can do in Terror and/or Destruction difficulty. The reward for all of
+                these is the same: the maximum amount of points you can put into your skills is raised by 1 for each
+                completed minigame.
             </p>
-            <span class="italic">Important: in Diablo II, defence is ignored when you run. Use 'R' to switch to walk
-                mode to preserve your defence. Walk speed is much improved in Median XL.</span>
+
+            <p>
+                This bonus is applied to the class charm you picked up in Kurast 3000 BA. Refer to the
+                <a href="../uberquests/uberlevels.html">UBERLEVELS</a> page if you do not have it yet.
+            </p>
+
+            <h2>MINIGAME 1: WITCH QUEEN</h2>
+            <p>Simply slay the Countess on Terror difficulty to receive a red swirly overlay. Quickly cube your class
+                charm with an <b>Eth</b> rune while the overlay is visible to receive a bonus. You have 30 seconds. Easy
+                you
+                say? Be afraid... the inhabitants of the deepest Tower level are a bit unusual.
+            </p>
+            <img src="../img/highlights/doc_witches.jpg" alt="Witch Queen Challenge">
+            <p class="reagent">[Class Charm] + Eth Rune -> returns [Class Charm] with added bonuses </p>
+            <p class="italic">This upgrade recipe adds the following bonus:</p>
+            <p class="magic">Maximum Skill Level Increased by 1</p>
             <hr>
-            <span class="bold">Block</span>
-            <p>In Median XL, your chance to block depends on character class, not your shield: </p>
-            <p>Amazon/Assassin/Sorceress: 4%<br>
-                Druid: 3%<br>
-                Paladin: 2%<br>
-                Barbarian/Necromancer: 1%</p>
-            <p>This is because block rating is boosted by dexterity as follows:</p>
-            <p><span class="bold">CtB = (block_percent * dex)/(clvl * 2)</span></p>
-            <p>Also, if you use a class-specific shield, you gain +1% extra block rating.</p>
-            <p>Max block is hard to reach; you will need to invest heavily into dexterity. This is a balance measure in
-                Median XL to ensure that shields do not outclass two-handed weapons as in classic Diablo II Lord of
-                Destruction.</p>
-            <span class="italic">Important: in Diablo II, your chance to block is reduced to 1/3 while running.</span>
+
+            <h2>MINIGAME 2: CROWNED</h2>
+            <p>Find a witch anywhere on Terror difficulty, except in the Countess tower. Witches generally appear in
+                outdoors areas. Inch as close as you dare to a witch without waking her up... there is a chance that you
+                will see an unmistakeable star effect <i>just</i> before you get close enough to
+                get pounced by the witch.
+            </p>
+            <p>
+                This only works on <b>20%</b> of the witches - if you see no stars, run away before the witch pounces!
+                Cube
+                your class charm with a <b>Thul</b> rune while the overlay is on you to receive a bonus.
+            </p>
+            <img src="../img/highlights/doc_witchstar.jpg" alt="Witch's Star">
+            <p class="reagent">[Class Charm] + Thul Rune -> returns [Class Charm] with added bonuses </p>
+            <p class="italic">This upgrade recipe adds the following bonus:</p>
+            <p class="magic">Maximum Skill Level Increased by 1</p>
+            <div class="sacredUniqueAreas">
+                <p class="bold">Witches spawn in the following areas:</p>
+                <p>· Act 1: Countess Tower (these witches cannot give stars)<br>
+                    · Act 1: Tamoe Highland<br>
+                    · Act 2: Rocky Waste<br>
+                    · Act 5: Frozen Tundra
+                </p>
+            </div>
             <hr>
-            <p>Amount of dexterity needed to achieve maxblock (75%) on a level 120 character:</p>
-            <table>
-                <tr>
-                    <th>Base Block</th>
-                    <th>Dex Needed</th>
-                </tr>
-                <tr>
-                    <td>1%</td>
-                    <td>18016</td>
-                </tr>
-                <tr>
-                    <td>2%</td>
-                    <td>9016</td>
-                </tr>
-                <tr>
-                    <td>3%</td>
-                    <td>6016</td>
-                </tr>
-                <tr>
-                    <td>4%</td>
-                    <td>4516</td>
-                </tr>
-                <tr>
-                    <td>5%</td>
-                    <td>3616</td>
-                </tr>
-                <tr>
-                    <td>6%</td>
-                    <td>3016</td>
-                </tr>
-                <tr>
-                    <td>7%</td>
-                    <td>2587</td>
-                </tr>
-                <tr>
-                    <td>8%</td>
-                    <td>2260</td>
-                </tr>
-                <tr>
-                    <td>9%</td>
-                    <td>2016</td>
-                </tr>
-            </table>
+
+            <h2>MINIGAME 3: MIRROR MIRROR</h2>
+            <p>Do the Baal fight on Terror or Destruction difficulty and instead of killing Baal, kill his Shardspawn
+                minions. Each kill brings a 1% chance to gain a red swirly overlay, so you may have to let him summon a
+                few. Cube your class charm with a <b>Lem</b> rune while the swirls are active to receive a bonus. You have 30
+                seconds before the swirls vanish.
+            </p>
+            <img src="../img/highlights/doc_shardspawn.jpg" alt="Shardspawn">
+            <p class="reagent">[Class Charm] + Lem Rune -> returns [Class Charm] with added bonuses </p>
+            <p class="italic">This upgrade recipe adds the following bonus:</p>
+            <p class="magic">Maximum Skill Level Increased by 1</p>
+            <hr>
         </div>
-        <div class="spacing"></div>
     </div>
 </body>
 <script src="../js/dropdown.js"></script>

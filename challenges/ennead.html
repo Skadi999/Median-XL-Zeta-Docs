@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/general.css">
+    <link rel="stylesheet" type="text/css" href="../characters/css/characters.css">
+    <title>Ennead Challenge | MXL:Z Documentation</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>+ ENNEAD CHALLENGE +</h1>
+        </header>
+        <nav>
+            <ul class="navpanel">
+                <li>
+                    <button onclick="clickConcepts()" class="btnDropdown">Concepts ▼</button>
+                    <div id="conceptDropdown" class="dropdown-content">
+                        <a href="../concepts/difficulty_levels.html">Difficulty Levels</a>
+                        <a href="../concepts/energy_factor.html">Energy Factor</a>
+                        <a href="../concepts/block_and_defense.html">Block & Defense</a>
+                        <a href="../concepts/players_x.html">Players Command</a>
+                        <a href="../concepts/witches_warlocks.html">Witches & Warlocks</a>
+                        <a href="../concepts/poison_damage.html">Poison Damage</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickCharacters()" class="btnDropdown">Characters ▼</button>
+                    <div id="characterDropdown" class="dropdown-content">
+                        <a href="../characters/amazon.html">Amazon</a>
+                        <a href="../characters/assassin.html">Assassin</a>
+                        <a href="../characters/barbarian.html">Barbarian</a>
+                        <a href="../characters/druid.html">Druid</a>
+                        <a href="../characters/necromancer.html">Necromancer</a>
+                        <a href="../characters/paladin.html">Paladin</a>
+                        <a href="../characters/sorceress.html">Sorceress</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickItems()" class="btnDropdown">Items ▼</button>
+                    <div id="itemDropdown" class="dropdown-content">
+                        <a href="../items/base_items.html">Base Items</a>
+                        <a href="../items/tiered_uniques.html">Tiered Uniques</a>
+                        <a href="../items/sacred_uniques.html">Sacred Uniques</a>
+                        <a href="../items/umos.html">Unique Mystic Orbs</a>
+                        <a href="../items/sets.html">Sets</a>
+                        <a href="../items/runewords.html">Runewords</a>
+                        <a href="../items/cube_recipes.html">Cube Recipes</a>
+                        <a href="../items/gems_runes.html">Gems and Runes</a>
+                        <a href="../items/jewelwords.html">Jewelwords</a>
+                        <a href="../items/honorific_shrine.html">Honorific & Crafted</a>
+                        <a href="../items/shrine_bonuses.html">Shrine Bonuses</a>
+                        <a href="../items/prefixes_and_suffixes.html">Prefixes & Suffixes</a>
+                        <a href="../items/oskill_items.html">Items with Oskills</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickUbers()" class="btnDropdown">Uberquests ▼</button>
+                    <div id="uberDropdown" class="dropdown-content">
+                        <a href="../uberquests/dungeon_uberquests.html">Dungeon Uberquests</a>
+                        <a href="../uberquests/summoning_uberquests.html">Summoning Uberquests</a>
+                        <a href="../uberquests/uberlevels.html">Uberlevels</a>
+                        <a href="../uberquests/heroic_levels.html">Heroic Levels</a>
+                        <a href="../uberquests/trophies.html">Trophy Bonuses</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickChallenges()" class="btnDropdown">Challenges ▼</button>
+                    <div id="challengeDropdown" class="dropdown-content">
+                        <a href="dragon_eggs.html">Dragon's Eggs</a>
+                        <a href="lc1.html">Level Challenge 1</a>
+                        <a href="lc2.html">Level Challenge 2</a>
+                        <a href="ennead.html">Ennead Challenge</a>
+                        <a href="black_road.html">Black Road Challenge</a>
+                        <a href="minigames.html">Minigames</a>
+                        <a href="monster_tokens.html">Monster Tokens</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickMaps()" class="btnDropdown">Maps ▼</button>
+                    <div id="mapDropdown" class="dropdown-content">
+                        <a href="../maps/map_k3kba.html">Kurast 3000 BA Map</a>
+                        <a href="../maps/map_tran_athulua.html">Tran Athulua Map</a>
+                        <a href="../maps/map_fauztinville.html">Fauztinville Map</a>
+                        <a href="../maps/map_ureh.html">Kingdom of Shadow Map</a>
+                        <a href="../maps/map_duncraig.html">Duncraig Map</a>
+                        <a href="../maps/map_vizjun.html">Vizjun Map</a>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clickMisc()" class="btnDropdown">Misc ▼</button>
+                    <div id="miscDropdown" class="dropdown-content">
+                        <a href="../misc/introduction.html">Introduction</a>
+                        <a href="../misc/hirelings.html">Hirelings</a>
+                        <a href="../misc/changelog.html">Changelog</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="description">
+            <h2>THE ENNEAD CHALLENGE</h2>
+            <p>A low level challenge that rewards you with a new skill and other useful midgame perks.
+            </p>
+            <div class="sacredUniqueAreas">
+                <p><b>Your class charm</b><br>
+                    As part of this challenge, you will need to collect your 'Class Charm'. This charm is also used in
+                    later uberquests and challenges.
+                </p>
+                <p>There are 7 class charms, one for each character class.</p>
+                <p>
+                    <span class="unique">Sacred Sunstone: </span> Amazon class charm<br>
+                    <span class="unique">Shadow Vortex: </span> Assassin class charm<br>
+                    <span class="unique">Worldstone Orb: </span> Barbarian class charm<br>
+                    <span class="unique">Caoi Dulra Fruit: </span> Druid class charm<br>
+                    <span class="unique">Soulstone Shard: </span> Necromancer class charm<br>
+                    <span class="unique">Eye of Divinity: </span> Paladin class charm<br>
+                    <span class="unique">Nexus Crystal: </span> Sorceress class charm<br>
+                </p>
+
+                <p>When found, each class charm spawns with the following bonuses:</p>
+
+                <p class="magic">+1 to Light Radius<br>
+                    Maximum Skill Level Increased by 1
+                </p>
+
+                <p>More bonuses can be added with the Horadric Cube after completing further challenges.</p>
+            </div>
+
+            <h2>HOW TO DO THE ENNEAD CHALLENGE</h2>
+            <h3>MAXIMUM LEVEL 80</h3>
+            <p></p>
+
+            <p>Go to the Kurast 3000 BA uberlevel on any difficulty and kill the Ennead Necromancer bosses until your
+                class charm drops. Each Necromancer drops a random charm, so if you are unlucky, just restart the game
+                and try again.
+            </p>
+
+            <p>See <a href="../uberquests/uberlevels.html">THIS PAGE</a> for more information about Kurast 3000 BA.</p>
+
+            <p>If you are level 80 or below, cube the charm with a jewel to add extra bonuses and unlock your Ennead
+                Challenge skill.
+            </p>
+
+            <p class="reagent">[Class Charm] + any jewel -> returns [Class Charm] with added bonuses</p>
+            <p class="craftingPoints">Requires: level 80 or below</p>
+
+            <p class="italic">This upgrade recipe adds the following bonuses:</p>
+            <p><span class="holy">Amazon</span><br>
+                <span class="magic">+2 to Amazon Skills<br>
+                    Increase Maximum Life 15%<br>
+                    Poison Length Reduced by 33%<br>
+                    Unlocks your Ennead Challenge skill</span>
+            </p>
+            <p><span class="holy">Assassin</span><br>
+                <span class="magic">+2 to Assassin Skills<br>
+                    50% Curse Length Reduction<br>
+                    Poison Length Reduced by 33%<br>
+                    Unlocks your Ennead Challenge skill</span>
+            </p>
+            <p><span class="holy">Barbarian</span><br>
+                <span class="magic">+2 to Barbarian Skills<br>
+                    20% Bonus to Summoned Minion Life<br>
+                    Poison Length Reduced by 33%<br>
+                    Unlocks your Ennead Challenge skill</span>
+            </p>
+            <p><span class="holy">Druid</span><br>
+                <span class="magic">+2 to Druid Skills<br>
+                    All Resists +25%<br>
+                    Poison Length Reduced by 33%<br>
+                    Unlocks your Ennead Challenge skill</span>
+            </p>
+            <p><span class="holy">Necromancer</span><br>
+                <span class="magic">+2 to Necromancer Skills<br>
+                    40% Bonus to Summoned Minion Damage<br>
+                    Poison Length Reduced by 33%<br>
+                    Unlocks your Ennead Challenge skill</span>
+            </p>
+            <p><span class="holy">Paladin</span><br>
+                <span class="magic">+2 to Paladin Skills<br>
+                    Total Character Defense +20%<br>
+                    Poison Length Reduced by 33%<br>
+                    Unlocks your Ennead Challenge skill</span>
+            </p>
+            <p><span class="holy">Sorceress</span><br>
+                <span class="magic">+2 to Sorceress Skills<br>
+                    +25% to Spell Damage<br>
+                    Poison Length Reduced by 33%<br>
+                    Unlocks your Ennead Challenge skill</span>
+            </p>
+            <hr>
+            <p><b>Your free bonus skill</b><br>
+                This skill can be found at the bottom right of your third skill tab. When you complete the Ennead
+                Challenge, upgrade your class charm and keep it into your inventory. This allows you to put skill points
+                into the skill.
+            </p>
+
+            <table>
+                <tr>
+                    <th><span class="bold">Name & Class</span></th>
+                    <th class="icon"><span class="bold">Icon</span></th>
+                    <th class="effect"><span class="bold">Effect</span></th>
+                </tr>
+                <tr>
+                    <td>Spellbind<br>[Amazon]</td>
+                    <td><img src="../img/skillicons/amazon/Spellbind.gif"></td>
+                    <td>The basilisk snake of Skartara is a devious creature whose bite turns flesh to stone. A skilled
+                        amazon warrior may carry a few to the battlefield in a leather bag for an unexpected surprise.
+                        <br>
+                        <span class="italic">Effect: throws snakes that turn enemies to stone</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Vampiric Icon<br>[Assassin]</td>
+                    <td><img src="../img/skillicons/assassin/VampiricIcon.gif"></td>
+                    <td>An assassin knows very well that most mages are male and many spend their life in seclusion
+                        without seeing a woman. Some who have trained in these particular arts can also employ this
+                        strategy on the battlefield.<br>
+                        <span class="italic">Effect: burns an unholy female sign on the ground in life stealing
+                            flames</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Immortal<br>[Barbarian]</td>
+                    <td><img src="../img/skillicons/barbarian/Immortal.gif"></td>
+                    <td>Running away is for the weak. A barbarian warrior who runs is easy prey. One who stands his
+                        ground in the face of death may survive, for he is the one the ancestral spirits will
+                        favour.<br>
+                        <span class="italic">Passive effect: avoids damage when standing still and improves hit
+                            recovery</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Goodberry<br>[Druid]</td>
+                    <td><img src="../img/skillicons/druid/Goodberry.gif"></td>
+                    <td>The fruits of the Glor-An-Fhaidha, the mystical tree of life, can bring back mortals from the
+                        brink of death. Wise druids look for large red berries growing on plants that ordinary do not
+                        bear fruit.<br>
+                        <span class="italic">Passive effect: create a Goodberry in the Horadric Cube that boosts life
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Black Mass<br>[Necromancer]</td>
+                    <td><img src="../img/skillicons/necromancer/BlackMass.gif"></td>
+                    <td>The dragon god of death Trang-Oul takes his faithful under his wings, turning aside blades and
+                        arrows. This powerful spell requires total concentration and is easily broken when the caster is
+                        disturbed.<br>
+                        <span class="italic">Effect: press and hold to protect self and nearby minions</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Divine Apparition<br>[Paladin]</td>
+                    <td><img src="../img/skillicons/paladin/DivineApparition.gif"></td>
+                    <td>Like a deus ex machina, the paladin of Zakarum descends upon the battlefield, his mere
+                        appearance chilling his heathen enemies to the bone.<br>
+                        <span class="italic">Effect: teleport to target location and freeze enemies</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Symbol of Esu*<br>[Sorceress]</td>
+                    <td><img src="../img/skillicons/sorceress/SymbolofEsu.gif"></td>
+                    <td>The symbol of the ancient witch queen is a specially crafted conductive adamantine moon crescent
+                        that accumulates ambient energy from the magic in the environment, releasing it as a healing
+                        pulse when broken.<br>
+                        <span class="italic">Effect: consume a moon symbol that instantly heals life and mana</span>
+                    </td>
+                </tr>
+            </table>
+            <p class="craftingPoints"><i>*Symbols of Esu are sold by Jamella in act IV</i></p>
+        </div>
+    </div>
+</body>
+<script src="../js/dropdown.js"></script>
+
+</html>
