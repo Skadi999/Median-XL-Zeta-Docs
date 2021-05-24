@@ -1,0 +1,95 @@
+.uber {
+  background-color: #1a160c;
+  border: 3px solid #413922e3;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.uber .uberName {
+  margin-bottom: 5px;
+}
+
+.uberName {
+  color: #ff9900;
+  font-size: 26px;
+}
+
+.uberDifficultyEasy {
+  font-size: 18px;
+  color: #117011;
+}
+
+.uberDifficultyModerate {
+  font-size: 18px;
+  color: #909000;
+}
+
+.uberDifficultyTricky {
+  font-size: 18px;
+  color: #a76524;
+}
+
+.uberDifficultyHard {
+  font-size: 18px;
+  color: #631010;
+}
+
+.uberDifficultyExtreme {
+  font-size: 18px;
+  color: #868d91;
+}
+
+.uberDifficultyImpossible {
+  font-size: 18px;
+  color: #706033;
+}
+
+.uberImage {
+  text-align: left;
+}
+
+.itemDisplay {
+  justify-content: center;
+  display: inline-block;
+  /* background-color: #110e0d; */
+  background-color: #140e02;
+  border: 1px solid #413922e3;
+  border-radius: 12px;
+  text-align: center;
+  padding: 15px 40px;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 80%;
+}
+
+th, td {
+  padding: 1px 3px;
+  text-align: center;
+  border: 1px solid rgb(179, 168, 147);
+  vertical-align: middle;
+}
+
+.effect {
+  text-align: left;
+  width: 70%;
+}
+
+.image {
+  width: 7%;
+}
+
+.toc {
+  height: 220px;
+  overflow: hidden;
+  overflow-y: scroll;
+  width: 11%;
+  text-align: left;
+  color: #a1a178;
+  font-size: 14px;
+  border: 1px solid #bbab7773;
+  position: fixed;
+  left: 5px;
+  top: 175px;
+}

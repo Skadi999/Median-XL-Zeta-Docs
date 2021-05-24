@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="../css/general.css">
+  <link rel="stylesheet" type="text/css" href="./css/uberquests.css">
+  <title>Dungeon Uberquests | MXL:Z Documentation</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>+ DUNGEON UBERQUESTS +</h1>
+    </header>
+    <nav>
+      <ul class="navpanel">
+        <li>
+          <button onclick="clickConcepts()" class="btnDropdown">Concepts ▼</button>
+          <div id="conceptDropdown" class="dropdown-content">
+            <a href="../concepts/difficulty_levels.html">Difficulty Levels</a>
+            <a href="../concepts/energy_factor.html">Energy Factor</a>
+            <a href="../concepts/block_and_defense.html">Block & Defense</a>
+            <a href="../concepts/players_x.html">Players Command</a>
+            <a href="../concepts/witches_warlocks.html">Witches & Warlocks</a>
+            <a href="../concepts/poison_damage.html">Poison Damage</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickCharacters()" class="btnDropdown">Characters ▼</button>
+          <div id="characterDropdown" class="dropdown-content">
+            <a href="../characters/amazon.html">Amazon</a>
+            <a href="../characters/assassin.html">Assassin</a>
+            <a href="../characters/barbarian.html">Barbarian</a>
+            <a href="../characters/druid.html">Druid</a>
+            <a href="../characters/necromancer.html">Necromancer</a>
+            <a href="../characters/paladin.html">Paladin</a>
+            <a href="../characters/sorceress.html">Sorceress</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickItems()" class="btnDropdown">Items ▼</button>
+          <div id="itemDropdown" class="dropdown-content">
+            <a href="../items/base_items.html">Base Items</a>
+            <a href="../items/tiered_uniques.html">Tiered Uniques</a>
+            <a href="../items/sacred_uniques.html">Sacred Uniques</a>
+            <a href="../items/umos.html">Unique Mystic Orbs</a>
+            <a href="../items/sets.html">Sets</a>
+            <a href="../items/runewords.html">Runewords</a>
+            <a href="../items/cube_recipes.html">Cube Recipes</a>
+            <a href="../items/gems_runes.html">Gems and Runes</a>
+            <a href="../items/jewelwords.html">Jewelwords</a>
+            <a href="../items/honorific_shrine.html">Honorific & Crafted</a>
+            <a href="../items/shrine_bonuses.html">Shrine Bonuses</a>
+            <a href="../items/prefixes_and_suffixes.html">Prefixes & Suffixes</a>
+            <a href="../items/oskill_items.html">Items with Oskills</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickUbers()" class="btnDropdown">Uberquests ▼</button>
+          <div id="uberDropdown" class="dropdown-content">
+            <a href="dungeon_uberquests.html">Dungeon Uberquests</a>
+            <a href="summoning_uberquests.html">Summoning Uberquests</a>
+            <a href="uberlevels.html">Uberlevels</a>
+            <a href="heroic_levels.html">Heroic Levels</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickChallenges()" class="btnDropdown">Challenges ▼</button>
+          <div id="challengeDropdown" class="dropdown-content">
+            <a href="../challenges/">Dragon's Eggs</a>
+            <a href="../challenges/lc1.html">Level Challenge 1</a>
+            <a href="../challenges/lc2.html">Level Challenge 2</a>
+            <a href="../challenges/ennead.html">Ennead Challenge</a>
+            <a href="../challenges/black_road.html">Black Road Challenge</a>
+            <a href="../challenges/minigames.html">Minigames</a>
+            <a href="../challenges/monster_tokens.html">Monster Tokens</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickMaps()" class="btnDropdown">Maps ▼</button>
+          <div id="mapDropdown" class="dropdown-content">
+            <a href="../maps/map_k3kba.html">Kurast 3000 BA Map</a>
+            <a href="../maps/map_tran_athulua.html">Tran Athulua Map</a>
+            <a href="../maps/map_fauztinville.html">Fauztinville Map</a>
+            <a href="../maps/map_ureh.html">Kingdom of Shadow Map</a>
+            <a href="../maps/map_duncraig.html">Duncraig Map</a>
+            <a href="../maps/map_vizjun.html">Vizjun Map</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickMisc()" class="btnDropdown">Misc ▼</button>
+          <div id="miscDropdown" class="dropdown-content">
+            <a href="../misc/introduction.html">Introduction</a>
+            <a href="../misc/hirelings.html">Hirelings</a>
+            <a href="../misc/changelog.html">Changelog</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="toc">
+      <li class="tocCategory">Quick Navigation</li>
+      <li><a href=#creatureOfFlame>Creature of Flame</a></li>
+      <li><a href=#infernalMachine>Infernal Machine</a></li>
+      <li><a href=#deathProjector>Death Projector</a></li>
+      <li><a href=#azmodan>Azmodan</a></li>
+      <li><a href=#rathmaSquare>Rathma Square</a></li>
+      <li><a href=#cathedralOfVanity>Cathedral of Vanity</a></li>
+      <li><a href=#toraja>Toraja</a></li>
+      <li><a href=#vizjun>Vizjun</a></li>
+  </ul>
+
+    <div class="description">
+      <h2>Dungeon Uberquests</h2>
+      <p>Small dungeons inhabited by a greater evil just waiting for you to enter its realm. Prepare well before
+        entering an uberquest area.</p>
+      <div class="uber" id="creatureOfFlame">
+        <p class="uberName">1/8 Creature of Flame</p>
+        <p class="uberDifficultyEasy">Difficulty: Easy</p>
+        <div class="uberImage"><img src="../img/uberquests/D1.gif" alt="Creature of Flame">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 55</i><br>
+          <i>Terror : 85</i><br>
+          <i>Destruction : 110</i><br><br>
+          <b>Location</b><br>
+          Ancient Tunnels (Lost City)
+        </p>
+
+        <p class="uberDesc"><b>Lore</b><br>
+          'This is a forbidden place. Return whence you came and your life will be spared'
+          This first uberquest reenacts a removed quest from Diablo 1. Horazon (also known as the real Summoner)
+          summoned a powerful demonlord that turned out to be too strong for him. He managed to trap it in his arcane
+          sanctuary, but could not defeat it and it almost killed him. Neither Horazon nor the demon wants you to be
+          there, so do not expect a warm welcome by either side...
+        </p>
+        <p><i>Horazon's holographic transmission is just for flavour and does nothing.</i></p>
+        <p><b>Strategy</b><br>
+          Kill the Horazon's Familiar, followed by the Creature of Flame. Make sure your lightning resistance is maxed
+          because both bosses have Forked Lightning, which does massive amounts of damage at close range.
+          You should also get lots of poison resistance to protect yourself against the army of succubi in the area.
+        </p>
+        <p><b>Reward</b><br>
+          Defeat the Creature of Flame on Destruction difficulty to get <span class="unique">Horazon's Focus.</span>
+        <div class="itemDisplay">
+          <img src="../img/charms/horazonsFocus.bmp" alt="Horazon's Focus"><br>
+          <span class="unique">Horazon's Focus</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 40<br>
+          <span class="magic">(3 to 5)% Life stolen per Hit<br>
+            (3 to 5)% Mana stolen per Hit<br>
+            -50 Defense<br>
+            +(21 to 25) to all Attributes</span>
+        </div>
+      </div>
+      <div class="spacing"></div>
+      <div class="uber" id="infernalMachine">
+        <p class="uberName">2/8 Infernal Machine</p>
+        <p class="uberDifficultyModerate">Difficulty: Moderate</p>
+        <div class="uberImage"><img src="../img/uberquests/D2.gif" alt="Infernal Machine">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 55</i><br>
+          <i>Terror : 85</i><br>
+          <i>Destruction : 110</i><br><br>
+          <b>Location</b><br>
+          The Pit Level 2 (Tamoe Highland)
+        </p>
+
+        <p class="uberDesc"><b>Lore</b><br>
+          Who knew the fallen clans were technologically adept? This rickety contraption contains wooden clockwork
+          mechanisms and the necessary runes to open a gateway to any location in the Burning Hells. This enables it to
+          summon hellish creatures at a rapid rate. Move quickly, because time is against you.
+        </p>
+        <p><b>Strategy</b><br>
+          The tower periodically summons a selection of dangerous elite monsters. Try to reach and destroy it as quickly
+          as possible, but keep in mind that after attacking it, it will become immune for a short while before you're
+          able to attack it again. Know your character's weaknesses against the various types of elites and try to
+          eliminate the dangerous ones quickly!
+        </p>
+        <p><b>Reward</b><br>
+          Defeat the Infernal Machine on Destruction difficulty to get the <span class="unique">Optical Detector.</span>
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/opticalDetector.bmp" alt="Optical Detector"><br>
+          <span class="unique">Optical Detector</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 60<br>
+          <span class="magic">+200 Crafting Points<br>
+            +2 to Light Radius</span>
+        </div>
+      </div>
+      <div class="spacing"></div>
+      <div class="uber" id="deathProjector">
+        <p class="uberName">3/8 Death Projector</p>
+        <p class="uberDifficultyModerate">Difficulty: Moderate</p>
+        <div class="uberImage"><img src="../img/uberquests/D3.gif" alt="Death Projector">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 60</i><br>
+          <i>Terror : 90</i><br>
+          <i>Destruction : 115</i><br><br>
+          <b>Location</b><br>
+          Swampy Pit Level 3 (Flayer Jungle)
+        </p>
+
+        <p class="uberDesc"><b>Lore</b><br>
+          The Swampy Pit serves as testing grounds for Mephisto's latest siege weapon. The Death Projector slowly
+          rotates, firing a devastating energy beam in a full circle, annihilating anything in its path.<br><br>
+
+          The weapon is guarded by eight ghostly Mechanics. It is said that they abduct people from the tribes around
+          Kurast to sacrifice them, powering the Death Projector’s energy array with their still beating hearts. The
+          Mechanics are immune to any attack and if they kill a player or minion in the central circle, the Death
+          Projector is restored to its original condition.
+        </p>
+        <p><b>Strategy</b><br>
+          The siege tower is tended to by trained Zakarumite techpriests. Its magitech shield is impenetrable to all
+          weapons, but when it senses a Mechanic nearby, it lowers its shield to enable maintenance. In this state, the
+          Death Projector can be damaged, though its fortified outer shell still harmlessly deflects a percentage of all
+          incoming attacks. The Mechanics themselves carry portable gap generators and are impossible to hit or kill.
+          Damage the Death Projector while avoiding Mechanics until the devilish device finally falls.
+        </p>
+        <p><b>Reward</b><br>
+          Defeat the Death Projector on Destruction difficulty to get the <span class="unique">Laser Focus
+            Crystal.</span>
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/laserFocusCrystal.bmp" alt="Laser Focus Crystal"><br>
+          <span class="unique">Laser Focus Crystal</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 80<br>
+          <span class="magic">Increase Maximum Life (11 to 15)%<br>
+            Increase Maximum Mana (11 to 15)%<br>
+            +(6 to 15)% to Experience Gained</span>
+        </div>
+      </div>
+      <div class="spacing"></div>
+      <div class="uber" id="azmodan">
+        <p class="uberName">4/8 Azmodan</p>
+        <p class="uberDifficultyTricky">Difficulty: Tricky</p>
+        <div class="uberImage"><img src="../img/uberquests/D4.gif" alt="Azmodan">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 65</i><br>
+          <i>Terror : 95</i><br>
+          <i>Destruction : 120</i><br><br>
+          <b>Location</b><br>
+          Forgotten Reliquary (Upper Kurast)
+        </p>
+
+        <p class="uberDesc"><b>Lore</b><br>
+          The Lord of Sin walks the earth. In his weakened state, he hides in the catacombs of Kurast, feasting on the
+          dark rituals of Mephisto's chosen. Destroy him before he becomes a threat.
+        </p>
+        <p><b>Strategy</b><br>
+          Azmodan is accompanied by a legion of elites and emits a black magic aura that grants unholy invulnerability
+          to nearby demons and 50% all resistances to himself. The tight confines of the temple area make it hard to get
+          past the immortal monsters blocking your way and reach Azmodan himself. He should be easy to kill in his
+          weakened state, but beware his powerful Pentagram attack which may require maximum fire resistance to survive.
+          Azmodan also feasts on death, healing himself when he makes a kill.
+        </p>
+        <p><b>Reward</b><br>
+          Defeat Azmodan on Destruction difficulty to get <span class="unique">Azmodan's Heart.</span>
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/azmodansHeart.bmp" alt="Azmodan's Heart"><br>
+          <span class="unique">Azmodan's Heart</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 100<br>
+          <span class="magic">All Resists +(31 to 40)%<br>
+            +5% to All Maximum Resistances<br>
+            Reduces Vendor Prices 10%</span>
+        </div>
+        <p><b>Trophy</b><br>
+          Azmodan also has a 2% chance to drop a trophy on Destruction difficulty. Cube the trophy with the charm for a
+          small
+          bonus.
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/trophy_azmodan.bmp" alt="Azmodan Trophy"><br>
+          <span class="reagent">Azmodan Trophy</span><br>
+          Cube with Azmodan's Heart...<br>
+          <span class="magic">+150 to Life<br>
+            +150 to Mana<br></span>
+        </div>
+
+      </div>
+      <div class="spacing"></div>
+      <div class="uber" id="rathmaSquare">
+        <p class="uberName">5/8 Rathma Square</p>
+        <p class="uberDifficultyTricky">Difficulty: Tricky</p>
+        <div class="uberImage"><img src="../img/uberquests/D5.gif" alt="Rathma Square">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 70</i><br>
+          <i>Terror : 95</i><br>
+          <i>Destruction : 120</i><br><br>
+          <b>Location</b><br>
+          Ruined Fane (Kurast Causeway)
+        </p>
+        <p class="uberDesc"><b>Lore</b><br>
+          <i>'My blade sings for mortal blood, and by my dark masters, it shall not be denied!'</i><br><br>
+
+          Back in the days when Kurast was the centre of civilisation and black magic was not yet frowned upon, this was
+          where the priests of Rathma - the necromancers - practiced their art. The place was abandoned when the
+          religion of Zakarum took over the city and banned pagan magic, making it the perfect hiding place for an
+          ancient evil bent on taking out the Church from within.<br><br>
+          Primus, son of Mephisto, was the leader of the Cult of the Triune in ages past before its destruction. His
+          efforts to rebuild the Triune were shut down by the crusaders of Zakarum, but he remains a formidable foe,
+          doubly so in the home city of the Zakarum.
+        </p>
+        <p><b>Strategy</b><br>
+          Primus himself is not particularly hard, despite his powerful ranged Bladestorm attack. The blades track your
+          position, but do less damage than his normal attack and can be avoided, blocked and dodged.<br><br>
+
+          Primus is guarded by an army of Gore Crawlers, which after several millennia in and around Rathma Square can
+          raise themselves from the dead. Shattering the corpse does not stop this, but the resurrection takes 10
+          seconds, during which you can attempt to run away and ditch them.
+        </p>
+        <p><b>Reward</b><br>
+          Defeat Primus on Destruction difficulty to get the <span class="unique">Spirit Trance Herb.</span> <b>(1/6
+            chance)</b>
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/spiritTranceHerb.bmp" alt="Spirit Trance Herb"><br>
+          <span class="unique">Spirit Trance Herb</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 100<br>
+          <span class="magic">10% Increased Attack Speed<br>
+            10% Faster Cast Rate<br>
+            (21 to 150)% Bonus to Attack Rating<br>
+            Regenerate Life +(11 to 40)</span>
+        </div>
+        <p><b>Trophy</b><br>
+          Primus also has 2% chance to drop a trophy on Destruction difficulty. Cube the trophy with the charm for a
+          small bonus.
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/trophy_rathma.bmp" alt="Rathma Square Trophy"><br>
+          <span class="reagent">Rathma Square Trophy</span><br>
+          Cube with the Spirit Trance Herb...<br>
+          <span class="magic">10% Chance of Uninterruptable Attack<br></span>
+        </div>
+      </div>
+      <div class="spacing"></div>
+      <div class="uber" id="cathedralOfVanity">
+        <p class="uberName">6/8 Cathedral of Vanity</p>
+        <p class="uberDifficultyHard">Difficulty: Hard</p>
+        <div class="uberImage"><img src="../img/uberquests/D6.gif" alt="Cathedral of Vanity">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 75</i><br>
+          <i>Terror : 100</i><br>
+          <i>Destruction : 121</i><br><br>
+          <b>Location</b><br>
+          Underground Passage Level 2
+        </p>
+        <p class="uberDesc"><b>Lore</b><br>
+          <i>How much suffering, mortal, does it take before you lose your grace?'</i><br><br>
+
+          According to pagan myth, the mortal plane – Sanctuary – was created by the fallen angel Inarius and the demon
+          Lilith to serve as a refuge from the Eternal War. The two created a race of servants from the earth which were
+          to worship them for all eternity.<br><br>
+
+          Humanity broke free when a small group of farmers rediscovered their birthright and ancient powers inherited
+          from their supernatural parents. As the edyrem army grew, Inarius descended into megalomanic madness and was
+          eventually destroyed along with his golden cathedral of vanity.<br><br>
+
+          It is whispered that the ghosts of Inarius and his closest worshippers still roam the cathedral…
+        </p>
+        <p><b>Strategy</b><br>
+          The Crystal Ball is the last of the cathedral’s magical defences. The tower exudes a holy invulnerability
+          shield to protect nearby revelers and casts a searing beam of angelic lightning that destroys anything it
+          touches. Destroy the Crystal Ball to dispel the immortality from the other enemies.<br><br>
+
+          <b>Bug:</b> Because the Crystal Ball has random modifiers, they might sometimes bug and cause it to become
+          unkillable. Try teleporting to town and back and hit it again, if it's still unkillable, the only thing you
+          can do is relog.
+        </p>
+        <p><b>Reward</b><br>
+          Defeat Inarius on Destruction difficulty to get the <span class="unique">Idol of Vanity.</span>
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/idolOfVanity.bmp" alt="Idol of Vanity"><br>
+          <span class="unique">Idol of Vanity</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 100<br>
+          <span class="magic">(21 to 40)% Increased Attack Speed<br>
+            (21 to 40)% Faster Cast Rate<br>
+            (21 to 40)% Faster Hit Recovery<br>
+            (21 to 40)% Faster Block Rate<br>
+            (21 to 40)% Faster Run/Walk<br>
+            Cannot Be Frozen</span>
+        </div>
+        <p><b>Trophy</b><br>
+          Inarius also has 2% chance to drop a trophy on Destruction difficulty. Cube the trophy with the charm for a
+          small bonus.
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/trophy_CoV.bmp" alt="Cathedral of Vanity Trophy"><br>
+          <span class="reagent">Cathedral of Vanity Trophy</span><br>
+          Cube with the Idol of Vanity...<br>
+          <span class="magic">+10% Bonus to Summoned Minion Life<br>
+            +10% Bonus to Summoned Minion Damage</span>
+        </div>
+        <p><b>Level 121 area: Sacred sets and uniques can drop here on Destruction difficulty.</b></p>
+        <p><b>Bonus quest</b><br>
+          Inarius' cathedral of vanity was ultimately destroyed by Mephisto, and Inarius and his followers were
+          captured, mutilated and deformed to grotesque Overlords to serve the forces of Hell. One may be able to summon
+          the tormented ghost of Inarius, defeat him and steal his power...</p>
+      </div>
+      <div class="spacing"></div>
+      <div class="uber" id="toraja">
+        <p class="uberName">7/8 Toraja</p>
+        <p class="uberDifficultyExtreme">Difficulty: Extreme</p>
+        <div class="uberImage"><img src="../img/uberquests/D7.gif" alt="Toraja">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 100</i><br>
+          <i>Terror : 120</i><br>
+          <i>Destruction : 121</i><br><br>
+          <b>Location</b><br>
+          Abaddon (Frigid Highlands)
+        </p>
+
+        <p class="uberDesc"><b>Lore</b><br>
+          Now nothing more than overgrown ruins, Toraja once stood proud as a medium-sized city in ancient times, and
+          has become legendary as the city where the nephalem Uldyssian recruited most of his edyrem to spearhead the
+          uprising against the infernal Cult of the Triune and Inarius’ Cathedral of Light.<br><br>
+
+          This is where the time portal leads you. Aid the edyrem in their battle against Lilith and the Triune’s
+          minions.
+        </p>
+        <p><b>Strategy</b><br>
+          The enemies on this level, Celebrant archers and Morlu fighters, are completely invulnerable and there is
+          nothing you can do about it. However, if you complete the Judgement Day summoning uberquest, you receive a
+          charm that grants the ability to summon edyrem.<br><br>
+
+          The edyrem are fighter-mages who have the ability to dispel the immortality wards off the enemies. Although
+          they are vulnerable to the supernatural onslaught of the Triune, they have the power to cast an
+          invulnerability shield of their own, allowing them to close in and remove the immunities.
+        </p>
+        <p><b>Reward</b><br>
+          On Destruction difficulty, when you kill Lilith, you have 30 seconds to cube the Crystalline Flame Medaillon
+          you used to summon the edyrem with an Arcane Crystal.<br><br>
+        </p>
+        <span class="reagent">Crystalline Flame Medaillon + Arcane Crystal -> returns Crystalline Flame Medaillon w/
+          added bonuses</span><br><br>
+        <i>This upgrade recipe adds the following bonuses:</i><br><br>
+        <span class="magic">Maximum Skill Level Increased by 1<br>
+          All Resists +10%<br>
+          Regenerate Life +100</span>
+        <p class="bold">Level 121 area: Sacred sets and uniques can drop here on Destruction difficulty.</p>
+
+        <p class="bold">Toraja on Destruction difficulty is the only place in the game where you can find the following
+          three Great Runes. These runes are required for the most powerful runewords.</p>
+
+        <table>
+          <tr>
+            <th class="image">Image</th>
+            <th>Name</th>
+            <th>Level</th>
+            <th>Effect</th>
+          </tr>
+          <tr>
+            <td><img src="../img/runes/invrKrys.gif" alt="Krys Rune"></td>
+            <td><span class="holy">Krys</span></td>
+            <td>100</td>
+            <td class="effect">Weapons: <span class="magic">Target Takes Additional Damage of 100</span><br>
+              Armor: <span class="magic">Target Takes Additional Damage of 25</span><br>
+              Shields: <span class="magic">Target Takes Additional Damage of 25</span></td>
+          </tr>
+          <tr>
+            <td><img src="../img/runes/invrAuhe.gif" alt="Auhe Rune"></td>
+            <td><span class="holy">Auhe</span></td>
+            <td>100</td>
+            <td class="effect">Weapons: <span class="magic">Regenerate Mana +15%</span><br>
+              Armor: <span class="magic">Regenerate Mana +5%</span><br>
+              Shields: <span class="magic">Regenerate Mana +5%</span></td>
+          </tr>
+          <tr>
+            <td><img src="../img/runes/invrShaad.gif" alt="Sha'ad Rune"></td>
+            <td><span class="holy">Sha'ad</span></td>
+            <td>100</td>
+            <td class="effect">Weapons: <span class="magic">+30% Enhanced Damage</span><br>
+              Armor: <span class="magic">+30% Enhanced Damage</span><br>
+              Shields: <span class="magic">+30% Enhanced Damage</span></td>
+          </tr>
+        </table>
+      </div>
+      <div class="spacing"></div>
+      <div class="uber" id="vizjun">
+        <p class="uberName">8/8 Vizjun</p>
+        <p class="uberDifficultyImpossible">Difficulty: Impossible</p>
+        <div class="uberImage"><img src="../img/uberquests/D8.gif" alt="Vizjun">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 110</i><br>
+          <i>Terror : 120</i><br>
+          <i>Destruction : 121</i><br><br>
+          <b>Location</b><br>
+          Disused Fane (Kurast Bazaar)
+        </p>
+
+        <p class="uberDesc"><b>Lore</b><br>
+          Vizjun, the technological home city of the Viz-Jaq'Taar or Assassins, recently ran into a major system flaw.
+          The artificial intelligence, Master Control System seems to have developed sentience as Diablo approached; the
+          computer then constructed a large army of robots to take over the city, its missile silos and from there the
+          world.</p>
+
+        <p class="uberDesc">The MCS managed to turn the city's cybernetic defences against its inhabitants. Those
+          seeking to retake the
+          compound will have to contend with its arsenal of combat drones, minefields and electro-pulse generators. It
+          is said that the MCS slumbered and fulfilled its menial tasks for years until the Viz-Jaq'Taari scientists
+          developed 'The Bomb', a secret weapon capable of destroying entire nations...
+        </p>
+        <p><b>Strategy</b><br>
+          Basic strategy is not too difficult: there are melee robots, laser robots and machine-bolter robots. You
+          should know what to do by now.<br><br>
+
+          But beware, Big Brother is watching you. The area's automatic defences will periodically deploy additional
+          drones, chaingun sentries, minefields and various explosives when you enter the protected zone. The computer
+          voice warns you of what is about to happen.<br><br>
+
+          The level boss, MCS is invulnerable to any damage. To destroy it, use the handy Purify skill you acquired in
+          Duncraig. One shot should be enough. Unless you miss.
+        </p>
+        <p><b>Reward</b><br>
+          Defeat MCS on Destruction difficulty to get the <span class="unique">Cold Fusion Schematics.</span>
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/coldFusionSchematics.bmp" alt="Cold Fusion Schematics"><br>
+          <span class="unique">Cold Fusion Schematics</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 100<br>
+          <span class="magic">5% Chance to cast level 10 Time Strike on striking<br>
+            100% Chance to cast level 59 Blast Wave when you Die<br>
+            +(11 to 50) to Strength<br>
+            +(11 to 50) to Dexterity<br>
+            +(11 to 50) to Vitality<br>
+            +(11 to 50) to Energy</span>
+        </div>
+        <p><b>Trophy</b><br>
+          MCS also has 2% chance to drop a trophy on Destruction difficulty. Cube the trophy with the charm for a
+          small bonus.
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/trophy_vizjun.bmp" alt="Vizjun Trophy"><br>
+          <span class="reagent">Vizjun Trophy</span><br>
+          Cube with the Cold Fusion Schematics...<br>
+          <span class="magic">+(5 to 20) to Strength, Dexterity, Vitality, Energy</span>
+        </div>
+        <p><b>Drop Bias</b><br>
+          Jewels drop more often in Vizjun.</p>
+        <p class="bold">Level 121 area: Sacred sets and uniques can drop here on Destruction difficulty.</p>
+      </div>
+    </div>
+  </div>
+  <script src="../js/dropdown.js"></script>
+</body>
+
+</html>

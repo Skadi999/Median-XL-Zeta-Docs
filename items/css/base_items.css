@@ -1,0 +1,48 @@
+.baseItemTable {
+    width: 95%;
+    margin: 5px auto 0 auto;
+}
+
+.baseItemTable th {
+    margin: 0 auto;
+    border: 1px solid rgb(179, 168, 147);
+    line-height: 24px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #a1a178;
+    background-color: #312a1aa9;
+}
+
+.baseItemTable td {
+    border: 1px solid rgb(179, 168, 147);
+    vertical-align: middle;
+    font-size: 15px;
+    color: #a1a178;
+}
+
+.baseItemTable td img{
+    margin: auto;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.baseItemTable .textCell {
+    width: 31%;
+    padding: 3px 0 5px 5px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.baseItemTable .img {
+    width: 7%;
+    padding: 0 10px 0 10px;
+}
+
+.invisibleTable{
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+
+.invisibleTable td:nth-child(1){
+    width: 30%;
+    color: #909000;
+}
