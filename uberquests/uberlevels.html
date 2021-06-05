@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="../css/general.css">
+  <link rel="stylesheet" type="text/css" href="./css/uberquests.css">
+  <title>Uberlevels | MXL:Z Documentation</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>+ UBERLEVELS +</h1>
+    </header>
+    <nav>
+      <ul class="navpanel">
+        <li>
+          <button onclick="clickConcepts()" class="btnDropdown">Concepts ▼</button>
+          <div id="conceptDropdown" class="dropdown-content">
+            <a href="../concepts/difficulty_levels.html">Difficulty Levels</a>
+            <a href="../concepts/energy_factor.html">Energy Factor</a>
+            <a href="../concepts/block_and_defense.html">Block & Defense</a>
+            <a href="../concepts/players_x.html">Players Command</a>
+            <a href="../concepts/witches_warlocks.html">Witches & Warlocks</a>
+            <a href="../concepts/poison_damage.html">Poison Damage</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickCharacters()" class="btnDropdown">Characters ▼</button>
+          <div id="characterDropdown" class="dropdown-content">
+            <a href="../characters/amazon.html">Amazon</a>
+            <a href="../characters/assassin.html">Assassin</a>
+            <a href="../characters/barbarian.html">Barbarian</a>
+            <a href="../characters/druid.html">Druid</a>
+            <a href="../characters/necromancer.html">Necromancer</a>
+            <a href="../characters/paladin.html">Paladin</a>
+            <a href="../characters/sorceress.html">Sorceress</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickItems()" class="btnDropdown">Items ▼</button>
+          <div id="itemDropdown" class="dropdown-content">
+            <a href="../items/base_items.html">Base Items</a>
+            <a href="../items/tiered_uniques.html">Tiered Uniques</a>
+            <a href="../items/sacred_uniques.html">Sacred Uniques</a>
+            <a href="../items/umos.html">Unique Mystic Orbs</a>
+            <a href="../items/sets.html">Sets</a>
+            <a href="../items/runewords.html">Runewords</a>
+            <a href="../items/cube_recipes.html">Cube Recipes</a>
+            <a href="../items/gems_runes.html">Gems and Runes</a>
+            <a href="../items/jewelwords.html">Jewelwords</a>
+            <a href="../items/honorific_shrine.html">Honorific & Crafted</a>
+            <a href="../items/shrine_bonuses.html">Shrine Bonuses</a>
+            <a href="../items/prefixes_and_suffixes.html">Prefixes & Suffixes</a>
+            <a href="../items/oskill_items.html">Items with Oskills</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickUbers()" class="btnDropdown">Uberquests ▼</button>
+          <div id="uberDropdown" class="dropdown-content">
+            <a href="dungeon_uberquests.html">Dungeon Uberquests</a>
+            <a href="summoning_uberquests.html">Summoning Uberquests</a>
+            <a href="uberlevels.html">Uberlevels</a>
+            <a href="heroic_levels.html">Heroic Levels</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickChallenges()" class="btnDropdown">Challenges ▼</button>
+          <div id="challengeDropdown" class="dropdown-content">
+            <a href="../challenges/dragon_eggs.html">Dragon's Eggs</a>
+            <a href="../challenges/lc1.html">Level Challenge 1</a>
+            <a href="../challenges/lc2.html">Level Challenge 2</a>
+            <a href="../challenges/ennead.html">Ennead Challenge</a>
+            <a href="../challenges/black_road.html">Black Road Challenge</a>
+            <a href="../challenges/minigames.html">Minigames</a>
+            <a href="../challenges/monster_tokens.html">Monster Tokens</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickMaps()" class="btnDropdown">Maps ▼</button>
+          <div id="mapDropdown" class="dropdown-content">
+            <a href="../maps/map_k3kba.html">Kurast 3000 BA Map</a>
+            <a href="../maps/map_tran_athulua.html">Tran Athulua Map</a>
+            <a href="../maps/map_fauztinville.html">Fauztinville Map</a>
+            <a href="../maps/map_ureh.html">Kingdom of Shadow Map</a>
+            <a href="../maps/map_duncraig.html">Duncraig Map</a>
+            <a href="../maps/map_vizjun.html">Vizjun Map</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickMisc()" class="btnDropdown">Misc ▼</button>
+          <div id="miscDropdown" class="dropdown-content">
+            <a href="../misc/introduction.html">Introduction</a>
+            <a href="../misc/hirelings.html">Hirelings</a>
+            <a href="../misc/changelog.html">Changelog</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="toc">
+      <li class="tocCategory">Quick Navigation</li>
+      <li><a href=#k3kba>Kurast 3000 BA</a></li>
+      <li><a href=#iotss>Island of the Sunless Sea</a></li>
+      <li><a href=#khalimgrad>Khalimgrad</a></li>
+      <li><a href=#ta>Tran Athulua</a></li>
+      <li><a href=#fauztinville>Fauztinville</a></li>
+      <li><a href=#bremmtown>Ghosts of Old Bremmtown</a></li>
+      <li><a href=#ureh>Kingdom of Shadow</a></li>
+      <li><a href=#duncraig>Duncraig</a></li>
+    </ul>
+
+    <div class="description">
+      <h2>Uberlevels</h2>
+      <p>The ultimate challenge of Median XL, these levels are much harder than any regular level and will challenge
+        even the strongest heroes. Your reward on Destruction difficulty is a unique charm!</p>
+      <div class="uber" id="k3kba">
+        <p class="uberName">1/8 Kurast 3000 Before Akarat</p>
+        <p class="uberDifficultyEasy">Difficulty: Easy</p>
+        <div class="uberImage"><img src="../img/uberquests/L1.gif" alt="Kurast 3000 BA">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 55</i><br>
+          <i>Terror : 85</i><br>
+          <i>Destruction : 110</i><br><br>
+          <b>Location</b><br>
+          Arachnid Lair (Spider Forest)
+        </p>
+
+        <p class="uberDesc"><b>Lore</b><br>
+          This uberlevel is a recreation of the city of Kurast located at the Kehjistani frontier, 3000 years before the
+          birth of the prophet Akarat and during the Mage Clan Wars between the Ennead, Annuit and Vizjerei clans.
+          Kurast, a neutral town allied with the Taan, was seized by the Ennead and used as a necromantic military
+          outpost. Can you destroy the magical fortifications and liberate the town?
+        </p>
+        <p><b>Enemies</b><br>
+          The town is well defended by armies of skeletons undead. Around the town square you will find the Ennead
+          shadowgate totems, which periodically raise additional skeletons and emit a magical field that grants
+          invulnerability to nearby units. The necromantic army is tended to by a contingent of Ennead Necromancers.
+        </p>
+        <p><b>Bosses</b><br>
+          Your targets are the Ennead Necromancers spread out around town. They summon more skeletons and cast the
+          powerful Nightmare curse, slowing you down and disabling magical healing.
+        </p>
+        <p><b>Map</b><br>
+          A map of the uberlevel can be found <a href="../maps/map_k3kba.html">HERE</a>
+        </p>
+        <p><b>Reward</b><br>
+          Defeat the Ennead Necromancers on Destruction difficulty to get the <span class="unique">Hammer of the Taan
+            Judges</span> (1/12 chance) (1/5 chance of perfect charm).
+        <div class="itemDisplay">
+          <img src="../img/charms/hammerOfTheTaanJudges.bmp" alt="Hammer of the Taan Judges"><br>
+          <span class="unique">Hammer of the Taan Judges</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 40<br>
+          <span class="magic">+50 Crafting Points<br>
+            +(21 to 25) Energy Factor to Spell Damage<br>
+            Total Character Damage Plus (0.25 per level)% (Based on Character Level)</span>
+        </div>
+        <p>On any difficulty, the Ennead Necromancers drop a random class charm in addition to their regular drop. You
+          need your class charm for other challenges and uberquests.</p>
+        <p><b>Drop Bias</b><br>
+          Increased chance to drop set items.</p>
+      </div>
+      <div class="spacing"></div>
+      <div class="uber" id="iotss">
+        <p class="uberName">2/8 Island of the Sunless Sea</p>
+        <p class="uberDifficultyModerate">Difficulty: Moderate</p>
+        <div class="uberImage"><img src="../img/uberquests/L2.gif" alt="Island of the Sunless Sea">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 55</i><br>
+          <i>Terror : 85</i><br>
+          <i>Destruction : 110</i><br><br>
+          <b>Location</b><br>
+          Drifter Cavern (Glacial Trail)
+        </p>
+
+        <p class="uberDesc"><b>Lore</b><br>
+          <i>'Your curiosity will be the death of you!'</i><br><br>
+
+          Thousands of years ago, two religions competed with one another. The Cathedral of Light, founded by the angel
+          Inarius. The Temple of the Triune, worshipping three self-proclaimed holy spirits - Mefis, Dialon and
+          Bala.<br><br>
+
+          The Island of the Sunless Sea, the place where angels watch, the staging ground of the angelic legions,
+          changed hands many times. From the forces of the High Heavens to Baal and back and then to the Temple of the
+          Triune and its leader, Primus, also known as Lucion, son of Mephisto.<br><br>
+
+          You may encounter some tough opposition in the gloomy ice cave, but the stakes are high - taking out Lucion
+          would remove him as a threat in the present day. Get to it, time traveller.
+        </p>
+        <p><b>Strategy</b><br>
+          The regular monsters are almost tougher than the bosses on this level. Many foes are invisible, and all have
+          high damage and chance to hit.<br><br>
+
+          Be wary of Malic’s Messenger at the entrance gate. The familiar is not dangerous on its own, but explodes on
+          death, creating a shockwave that pushes you back, possibly into unexplored territory.<br><br>
+
+          Malic is a priest with a powerful rain of fire and a homing Punisher spell. This slow moving doom bolt usually
+          leaves you poisoned at 1 life. Avoid it.<br><br>
+
+          Lucion emits an unholy invulnerability aura that makes nearby enemies immortal. Try to separate him from his
+          minions or kill him first. He also has a lethal poisonous melee attack.
+        </p>
+        <p><b>Reward</b><br>
+          Defeat Malic on Destruction difficulty to get the <span class="unique">Six Angel Bag.</span>
+          (1/15,625,000,000,000 chance of perfect charm)
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/sixAngelBag.bmp" alt="Six Angel Bag"><br>
+          <span class="unique">Six Angel Bag</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 60<br>
+          <span class="magic">Adds (101-150)-(151-250) Fire Damage<br>
+            Adds (101-150)-(151-250) Lightning Damage<br>
+            Adds (101-150)-(151-250) Cold Damage<br>
+            Fire Resist +(21 to 25)%<br>
+            Lightning Resist +(21 to 25)%<br>
+            Cold Resist +(21 to 25)%</span>
+        </div>
+        <p>
+          Defeat Lucion on Destruction difficulty to get the <span class="unique">Sunless Crystal Bird.</span> (1/10,000
+          chance of perfect charm)
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/sunlessBird.bmp" alt="Sunless Crystal Bird"><br>
+          <span class="unique">Sunless Crystal Bird</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 60<br>
+          <span class="magic">-(6 to 15)% to Enemy Fire Resistance<br>
+            -(6 to 15)% to Enemy Cold Resistance<br>
+            -(6 to 15)% to Enemy Lightning Resistance<br>
+            -(6 to 15)% to Enemy Poison Resistance<br>
+            5% Chance of Crushing Blow<br>
+            -5 to Light Radius</span>
+        </div>
+        <p><b>Drop Bias</b><br>
+          Increased chance to drop gold</p>
+      </div>
+      <div class="spacing"></div>
+      <div class="uber" id="khalimgrad">
+        <p class="uberName">3/8 Khalimgrad</p>
+        <p class="uberDifficultyModerate">Difficulty: Moderate</p>
+        <div class="uberImage"><img src="../img/uberquests/L3.gif" alt="Khalimgrad">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 60</i><br>
+          <i>Terror : 90</i><br>
+          <i>Destruction : 115</i><br><br>
+          <b>Location</b><br>
+          Infernal Pit (Frozen Tundra)
+        </p>
+
+        <p class="uberDesc"><b>Lore</b><br>
+          Heaven. Nirvana. Celestia. Call it what you will. Home of the angelic legions, who almost destroyed the taint
+          on Creation that is the mortal plane twice and allowed it to get overrun by the forces of Hell. Far from being
+          the beings of love they are believed to be by the common folk, the angels of the High Heavens present a clear
+          and present danger to Sanctuary. It may be better to strike first.
+        </p>
+        <p><b>Strategy</b><br>
+          The Ethereals are the physical manifestations of common angels. They attack furiously, but when you kill one
+          of them, it shatters, weakening other nearby enemies. This does however enrage them and they will swarm you at
+          the speed of a lightning bolt.<br><br>
+
+          The untargetable Lightwells cast Punisher spells at you at a rapid rate. Try to avoid them, because a direct
+          hit deals incredible amounts of poison damage. Their location changes from game to game.<br><br>
+
+          The main targets to take out are Zakarum’s Avatars watching over the battle. You can only attack Zakarum's
+          Avatars when their resistances are lowered.
+        </p>
+        <p><b>Reward</b><br>
+          Defeat Zakarum's Avatars on Destruction difficulty to get the <span class="unique">Zakarum's Ear</span> (1/12
+          chance) (1/50 chance of perfect charm).
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/zakarumsEar.bmp" alt="Zakarum's Ear"><br>
+          <span class="unique">Zakarum's Ear</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 80<br>
+          <span class="magic">+(16 to 25)% to Experience Gained<br>
+            (6 to 10)% Bonus to All Attributes<br>
+            +2 to Light Radius</span>
+        </div>
+        <p><b>Drop Bias</b><br>
+          Increased chance to drop rare items.
+        </p>
+        <p class="bold">Level 121 area: Sacred sets and uniques can drop here on Destruction difficulty.</p>
+      </div>
+      <div class="spacing"></div>
+      <div class="uber" id="ta">
+        <p class="uberName">4/8 Tran Athulua</p>
+        <p class="uberDifficultyTricky">Difficulty: Tricky</p>
+        <div class="uberImage"><img src="../img/uberquests/L4.gif" alt="Tran Athulua">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 65</i><br>
+          <i>Terror : 95</i><br>
+          <i>Destruction : 120</i><br><br>
+          <b>Location</b><br>
+          Halls of the Dead Level 3 (Dry Hills)
+        </p>
+
+        <p class="uberDesc"><b>Lore</b><br>
+          The capital of the Amazon nation, Tran Athulua, is almost impossible to take by land or sea. After a
+          humiliating defeat at the hands of the Amazon defenders, a band of pirates hired you to assassinate the
+          Priestesses and steal their expensive shinies.<br><br>
+
+          The uberlevel features amazon archers and three Priestesses, devoted to each of the three elemental gods.
+          Philios serves Hefaetrus, god of fire. Skovos serves Karcheus, god of ice. Lycander serves Zerae, goddess of
+          vengeance and storms.
+        </p>
+        <p><b>Strategy</b><br>
+          The common Amazons deal lots of damage, so keep moving to avoid Guided Chain. Otherwise the arrows will keep
+          returning and doing damage many times over.<br><br>
+
+          The Priestesses are very hard due to their Phalanx and Tremor spells. Phalanx can be dodged by staying at the
+          northwest or southeast of the Priestess; this prevents the Phalanx archers from lining up and whacking you
+          with 20 arrows per second. There is no way to mitigate Tremor damage, because it is percentage based. You can
+          easily recognise the Priestess in a large pack by her heavy armour.
+        </p>
+        <p><b>Map</b><br>
+          A map of the uberlevel can be found <a href="../maps/map_tran_athulua.html">HERE</a>
+        </p>
+        <p><b>Reward</b><br>
+          Defeat the respective elemental Priestesses on Hatred difficulty to get the <span class="unique">Sunstone of
+            Fire</span>, <span class="unique">Sunstone of Ice</span> and <span class="unique">Sunstone of
+            Thunder</span> that are used for Level Challenge 1. For more information, see <a
+            href="../challenges/lc1.html">LC1</a>
+        </p>
+        <p>Defeat the elemental priestesses on Destruction difficulty to get the <span class="unique">Sunstone of the
+            Gods</span>. (1/6 chance from each priestess) (1/390,625,000,000 chance of perfect charm)</p>
+        <div class="itemDisplay">
+          <img src="../img/charms/sunstoneOfTheGods.bmp" alt="Sunstone of the Gods"><br>
+          <span class="unique">Sunstone of the Gods</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 100<br>
+          <span class="magic">Adds (51-100)-(101-150) Fire Damage<br>
+            Adds (51-100)-(101-150) Lightning Damage<br>
+            Adds (51-100)-(101-150) Cold Damage<br>
+            Increase Maximum Life (11-15)%<br>
+            Increase Maximum Mana (11-15)%</span>
+        </div>
+        <p><b>Trophy</b><br>
+          The Priestesses also have 2% chance to drop a trophy on Destruction difficulty. Cube the trophy with the charm
+          for a small bonus.
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/trophy_TA.bmp" alt="Tran Athulua Trophy"><br>
+          <span class="reagent">Tran Athulua Trophy</span><br>
+          Cube with the Sunstone of the Gods<br>
+          <span class="magic">+150 to Life<br>
+            +150 to Mana</span>
+        </div>
+
+        <p><b>Drop Bias</b><br>
+          Unique items drop more often in Tran Athulua.
+        </p>
+        <p class="bold">Level 121 area: Sacred sets and uniques can drop here on Destruction difficulty.</p>
+      </div>
+      <div class="spacing"></div>
+      <div class="uber" id="fauztinville">
+        <p class="uberName">5/8 Fauztinville</p>
+        <p class="uberDifficultyTricky">Difficulty: Tricky</p>
+        <div class="uberImage"><img src="../img/uberquests/L5.gif" alt="Fauztinville">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 70</i><br>
+          <i>Terror : 95</i><br>
+          <i>Destruction : 120</i><br><br>
+          <b>Location</b><br>
+          Stony Tomb Level 2 (Rocky Waste)
+        </p>
+        <p class="uberDesc"><b>Lore</b><br>
+          After the destruction of the Worldstone, a new era of peace and prosperity began, eventually evolving into
+          what we call the modern age. Humanity has all but forgotten how to deal with demons. Until out of nowhere an
+          evil force beneath the metropolis of Fauztinville begins to corrupt the machinery and pets, turning them
+          against their masters. Overwhelmed by the assault, the army employs its new experimental time machine to
+          request help from the heroes of the past. Will you answer the call?<br>
+
+          Once a humble settlement founded by the mage Fauztin, the city has grown to over ten million inhabitants after
+          the destruction of the Worldstone. All have died or left the city in the face of an onslaught of demonically
+          twisted robots and demons bursting from the city's neon signs.<br>
+
+          The invasion is led by five warped robots, Alpha, Beta, Gamma, Delta and Epsilon. These are your targets.
+          Terminate them.
+        </p>
+        <p><b>Enemies</b><br>
+          Fauztinville has fallen under an onslaught of demonically twisted robots and demons bursting from the city's
+          neon signs. Each battle should be straightforward, but beware their various immunities, notably the
+          tri-elemental immunities of Neon Fiends. Summoners should eliminate Harpylisks first to prevent their bouncing
+          blade attack from ravaging their forces.
+        </p>
+        <p><b>Bosses</b><br>
+          The invasion is led by five warped robots, Alpha, Beta, Gamma, Delta and Epsilon. Find them in the back alleys
+          of Fauztinville and terminate them. If you have trouble finding them, look for dead-end streets and hidden
+          passages through buildings. One of the five requires a teleport skill to access; if you do not have a
+          teleportation spell, use an item with charges of Blink or Jitan’s Gate, like the runeword Pax Mystica or the
+          reward charm for the Lord Aldric Jitan uberquest.
+        </p>
+        <p><b>Map</b><br>
+          A map of the uberlevel can be found <a href="../maps/map_fauztinville.html">HERE</a>
+        </p>
+        <p><b>Reward</b><br>
+          On Terror difficulty, the Robot Bosses drop their electronic Brains. These are required for the Black Road
+          challenge.
+        </p>
+        <p>Fauztinville on Destruction difficulty is the only place where you can find the following three Great Runes.
+          These runes are required for the most powerful runewords.
+        </p>
+        <table>
+          <tr>
+            <th class="image">Image</th>
+            <th>Name</th>
+            <th>Level</th>
+            <th>Effect</th>
+          </tr>
+          <tr>
+            <td><img src="../img/runes/invrTaha.gif"></td>
+            <td><span class="holy">Taha</span></td>
+            <td>100</td>
+            <td class="effect">Weapons: <span class="magic">+40 to Maximum Damage</span><br>
+              Armor: <span class="magic">+20 to Maximum Damage</span><br>
+              Shields: <span class="magic">+20 to Maximum Damage</span></td>
+          </tr>
+          <tr>
+            <td><img src="../img/runes/invrGhal.gif"></td>
+            <td><span class="holy">Ghal</span></td>
+            <td>100</td>
+            <td class="effect">Weapons: <span class="magic">+15 Energy Factor to Spell Damage</span><br>
+              Armor: <span class="magic">+5 Energy Factor to Spell Damage</span><br>
+              Shields: <span class="magic">+5 Energy Factor to Spell Damage</span></td>
+          </tr>
+          <tr>
+            <td><img src="../img/runes/invrQor.gif"></td>
+            <td><span class="holy">Qor</span></td>
+            <td>100</td>
+            <td class="effect">Weapons: <span class="magic">Requirements -12%</span><br>
+              Armor: <span class="magic">Requirements -12%</span><br>
+              Shields: <span class="magic">Requirements -12%</span></td>
+          </tr>
+        </table>
+        <div class="spacing"></div>
+        <p><b>Drop Bias</b><br>
+          Runes and shrines drop more often in Fauztinville.</p>
+        <p class="bold">Level 121 area: Sacred sets and uniques can drop here on Destruction difficulty.</p>
+      </div>
+      <div class="spacing"></div>
+      <div class="uber" id="bremmtown">
+        <p class="uberName">6/8 Ghosts of Old Bremmtown</p>
+        <p class="uberDifficultyHard">Difficulty: Hard</p>
+        <div class="uberImage"><img src="../img/uberquests/L6.gif" alt="Ghosts of Old Bremmtown">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 75</i><br>
+          <i>Terror : 100</i><br>
+          <i>Destruction : 121</i><br><br>
+          <b>Location</b><br>
+          Pit of Acheron (Arreat Plateau)
+        </p>
+        <p class="uberDesc"><b>Lore</b><br>
+          You ended the demon invasion of Fauztinville... fast forward another few thousand years. Following a global
+          demon apocalypse, the city is in ruins. Lilith, once banished to the Plane of the Dead, broke free and worse
+          still, corrupted the sons of the cosmic dragon Trang-Oul.<br><br>
+
+          The draconic death god is the ruler of the Plane of the Dead. Weakened by his battle against the angelic and
+          demonic legions at the end of time in the far future, Trang-Oul was unable to stop Lilith from capturing and
+          possessing his drakes.<br><br>
+
+          The shadowy Dark Star Dragons were unleashed upon Sanctuary by Lilith’s forces. There is no hope for
+          humanity’s resistance forces unless these creatures are eliminated. The old time machine was put into action
+          once again... Will you help out Fauztinville a second time?
+        </p>
+        <p><b>Strategy</b><br>
+          The Howling Spirits materialise directly on top of you when you approach their hiding spots. You have no
+          choice but to take some hits unless you have inhuman reflexes. Defence is very important.<br><br>
+
+          The Dark Star Dragon on the level has a dual rotating energy beam attack that slays anyone it touches. Use the
+          ruins and debris to avoid the beam. He also summons more Howling Spirits when threatened. You will need to
+          deliver as much damage as fast as possible, because the Dark Star Dragon has a very fast regeneration ability.
+        </p>
+        <p><b>Reward (requires your class charm)</b><br>
+          Bring the appropriate class charm you found in Kurast 3000 BA. Defeat the Dark Star Dragon on Destruction
+          difficulty within 3 minutes after entering the level and without dying. If you succeed, a single use cube
+          recipe is available to upgrade your class charm. You only have 30 seconds after killing the Dark Star Dragon
+          to use the recipe.
+        </p>
+
+        <p class="reagent">[Class Charm] + Arcane Crystal -> returns [Class Charm] w/ added bonuses</p>
+
+        <p class="italic">This upgrade recipe adds the following bonuses:</p>
+        <p><span class="holy">Amazon</span><br>
+          <span class="magic">+500 Crafting Points<br>
+            Maximum Skill Level Increased by 1<br>
+            +500 to Life</span>
+        </p>
+
+        <p><span class="holy">Assassin</span><br>
+          <span class="magic">+500 Crafting Points<br>
+            Maximum Skill Level Increased by 1<br>
+            +500 to Mana</span>
+        </p>
+
+        <p><span class="holy">Barbarian</span><br>
+          <span class="magic">+500 Crafting Points<br>
+            Maximum Skill Level Increased by 1<br>
+            Enhanced Weapon Damage +50%</span>
+        </p>
+
+        <p><span class="holy">Druid</span><br>
+          <span class="magic">+500 Crafting Points<br>
+            Maximum Skill Level Increased by 1<br>
+            +1000 Defense</span>
+        </p>
+
+        <p><span class="holy">Necromancer</span><br>
+          <span class="magic">+500 Crafting Points<br>
+            Maximum Skill Level Increased by 1<br>
+            +15% Bonus to Summoned Minion Resistances</span>
+        </p>
+
+        <p><span class="holy">Paladin</span><br>
+          <span class="magic">+500 Crafting Points<br>
+            Maximum Skill Level Increased by 1<br>
+            5% Chance to Avoid Damage</span>
+        </p>
+
+        <p><span class="holy">Sorceress</span><br>
+          <span class="magic">+500 Crafting Points<br>
+            Maximum Skill Level Increased by 1<br>
+            +50 Energy Factor to Spell Damage</span>
+        </p>
+        <p><b>Level 121 area: Sacred sets and uniques can drop here on Destruction difficulty.</b></p>
+      </div>
+      <div class="spacing"></div>
+      <div class="uber" id="ureh">
+        <p class="uberName">7/8 Kingdom of Shadow</p>
+        <p class="uberDifficultyExtreme">Difficulty: Extreme</p>
+        <div class="uberImage"><img src="../img/uberquests/L7.gif" alt="Kingdom of Shadow">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 100</i><br>
+          <i>Terror : 120</i><br>
+          <i>Destruction : 121</i><br><br>
+          <b>Location</b><br>
+          Crypt (Blood Raven's Graveyard)
+        </p>
+
+        <p class="uberDesc"><b>Lore</b><br>
+          The radiant city of Ureh, thought to be a gateway to Heaven in ancient times. As it turned out, Diablo had
+          taken the form of an angel and deceived the city wizards, tricking them into casting a spell that doomed the
+          city.<br><br>
+
+          Ureh and everyone within are now trapped between the mortal plane and Hell, appearing in this world only once
+          every two thousand years, when the shadow of Mount Nymyr falls upon the ruins.<br><br>
+
+          Be there.
+        </p>
+        <p><b>Strategy</b><br>
+          This is zombie city. Worse, this is immortal zombie city. Do not bother attacking the ghost citizens, because
+          you cannot. Keep moving at all costs to avoid the undead hordes.<br><br>
+
+          This is a huge level, there is no minimap, the lighting is very dim and the boss is located in a distant
+          corner. Please run around like a damsel in a zombie film until you find the narrow bridge leading to King
+          Juris Khan.<br><br>
+
+          Raw firepower is almost useless in this level, because very few enemies can be killed at all. Do equip all the
+          run speed and hit recovery bonuses you can get, try to get some minions and a teleportation spell, either
+          natively or granted by an item.<br><br>
+
+          The most dangerous part is the narrow ledge leading to King Juris Khan. Do your best to get a teleportation
+          ability. If your class cannot teleport, get a source of Blink or Jitan’s Gate. Blink can be found on the
+          runeword staff Pax Mystica, Jitan’s Gate appears on the Lord Aldric Jitan uberquest reward.<br><br>
+
+          Skills that allow you to move past enemies, such as Angel of Death or Spin to Win can be very useful here...
+        </p>
+        <p><b>Map</b><br>
+          A map of the uberlevel can be found <a href="../maps/map_ureh.html">HERE</a>
+        </p>
+        <p><b>Reward</b><br>
+          Defeat Juris Khan on Destruction difficulty to get the <span class="unique">Eternal Bone Pile.</span> (1/128
+          chance of perfect charm)
+        </p>
+
+        <div class="itemDisplay">
+          <img src="../img/charms/eternalBonePile.bmp" alt="Eternal Bone Pile"><br>
+          <span class="unique">Eternal Bone Pile</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 120<br>
+          <span class="magic">+(1 to 2) to Amazon Skill Levels<br>
+            +(1 to 2) to Assassin Skill Levels<br>
+            +(1 to 2) to Barbarian Skill Levels<br>
+            +(1 to 2) to Druid Skill Levels<br>
+            +(1 to 2) to Necromancer Skill Levels<br>
+            +(1 to 2) to Paladin Skill Levels<br>
+            +(1 to 2) to Sorceress Skill Levels<br>
+            +500 Maximum Stamina</span>
+        </div>
+        <p><b>Trophy</b><br>
+          Juris Khan also has 2% chance to drop a trophy on Destruction difficulty. Cube the trophy with the charm for a
+          small bonus.
+        </p>
+
+        <div class="itemDisplay">
+          <img src="../img/charms/trophy_ureh.bmp" alt="Kingdom of Shadow Trophy"><br>
+          <span class="reagent">Kingdom of Shadow Trophy</span><br>
+          Cube with the Eternal Bone Pile<br>
+          <span class="magic">+1 to All Skills</span>
+        </div>
+        <p class="bold">Level 121 area: Sacred sets and uniques can drop here on Destruction difficulty.</p>
+        <p class="italic">This uberlevel is sometimes referred to as "Ureh"</p>
+      </div>
+      <div class="spacing"></div>
+
+      <div class="uber" id="duncraig">
+        <p class="uberName">8/8 Duncraig</p>
+        <p class="uberDifficultyImpossible">Difficulty: Impossible</p>
+        <div class="uberImage"><img src="../img/uberquests/L8.gif" alt="Duncraig">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 110</i><br>
+          <i>Terror : 120</i><br>
+          <i>Destruction : 121</i><br><br>
+          <b>Location</b><br>
+          Cave Level 2 (Cold Plains)
+        </p>
+
+        <p class="uberDesc"><b>Lore</b><br>
+          The powerful demonlord Assur is on the move, burning a wake of destruction across the Western Kingdoms and
+          turning the inhabitants of the towns he razes into mindless minions on his side. All efforts to stop him so
+          far have failed thanks to Assur's powerful invulnerability rune. Find a way to kill him before he takes over
+          the world.</p>
+        <p><b>Enemies</b><br>
+          There are several variants of the common Lost Soul enemies. Most are mindless zombies with a very strong melee
+          claw or blade attack. Most.<br><br>
+
+          Some of them, however, rush at you with lit powder barrels! They can throw the barrels over great distances,
+          then light the fuse. When the flame reaches the barrel, a very big explosion follows. Run away from the barrel
+          when you see the burning fuse approaching. The explosion will instantly kill even the most powerful
+          character.<br><br>
+
+          Others throw hexed bone shards that explode on the ground, emitting lethal poison clouds. This is powerful
+          enough to kill anyone, but being undead, their aim may be off, allowing you to get out of the way. You should
+          get some Maximum Poison Resist to survive their attack!
+        </p>
+        <p><b>Bosses</b><br>
+          Assur wields powerful fire magic and pierces 200% of your fire resistance, but his main threat is the
+          invulnerability shield. It is impossible to damage Assur directly. You will have to wrestle the secret to
+          destroy Assur from his henchmen.</p>
+        <p><b>The Secret</b><br>
+          Retrieve the five demon seals from Assur's lieutenants: Skinrender, Spinecracker, Eyegouger, Fleshcutter and
+          Bonehexer. On Destruction difficulty, each lieutenant drops his own seal. When you have the five Seals, kill
+          Slain Souls until a <span class="unique">Ring of the Five</span> drops. Cube it with all five seals to create
+          <span class="unique">Assur's Bane</span>.
+          Go back to Assur, then select your ring's Purify spell. This spell bypasses Assur's invulnerability and will
+          take him out in a few hits.
+        </p>
+        <p><b>An important note about Purify</b><br>
+          Purify works best in combination with the Open Wounds attribute. Purify triggers the damage from Open Wounds,
+          and if you keep applying Open Wounds on a monster while it's taking damage, it will keep bleeding and losing
+          life.</p>
+        <p><b>Map</b><br>
+          A map of the uberlevel can be found <a href="../maps/map_duncraig.html">HERE</a>
+        </p>
+        <p><b>Reward</b><br>
+          Defeat Assur on Destruction difficulty to get <span class="unique">Demonsbane</span>. (1/2187 chance of
+          perfect charm)
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/demonsbane.bmp" alt="Demonsbane"><br>
+          <span class="unique">Demonsbane</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 100<br>
+          <span class="magic">+(0 to 2) to Amazon Skill Levels<br>
+            +(0 to 2) to Assassin Skill Levels<br>
+            +(0 to 2) to Barbarian Skill Levels<br>
+            +(0 to 2) to Druid Skill Levels<br>
+            +(0 to 2) to Necromancer Skill Levels<br>
+            +(0 to 2) to Paladin Skill Levels<br>
+            +(0 to 2) to Sorceress Skill Levels<br>
+            Replenish Life +50</span>
+        </div>
+        <p><b>Trophy</b><br>
+          Assur also has 2% chance to drop a trophy on Destruction difficulty. Cube the trophy with the charm for a
+          small bonus.
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/trophy_duncraig.bmp" alt="Duncraig Trophy"><br>
+          <span class="reagent">Duncraig Trophy</span><br>
+          Cube with Demonsbane...<br>
+          <span class="magic">10% Faster Run/Walk<br>
+            10% Increased Attack Speed<br>
+            10% Faster Cast Rate<br>
+            10% Faster Hit Recovery<br>
+            10% Faster Block Rate</span>
+        </div>
+        <p><b>Drop Bias</b><br>
+          Increased chance to drop sacred items.</p>
+        <p class="bold">Level 121 area: Sacred sets and uniques can drop here on Destruction difficulty.</p>
+      </div>
+    </div>
+  </div>
+  <script src="../js/dropdown.js"></script>
+</body>
+
+</html>

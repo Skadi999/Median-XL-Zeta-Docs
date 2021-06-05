@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="../css/general.css">
+  <link rel="stylesheet" type="text/css" href="./css/uberquests.css">
+  <link rel="stylesheet" type="text/css" href="./css/summoning_uberquests.css">
+  <title>Summoning Uberquests | MXL:Z Documentation</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>+ SUMMONING UBERQUESTS +</h1>
+    </header>
+    <nav>
+      <ul class="navpanel">
+        <li>
+          <button onclick="clickConcepts()" class="btnDropdown">Concepts ▼</button>
+          <div id="conceptDropdown" class="dropdown-content">
+            <a href="../concepts/difficulty_levels.html">Difficulty Levels</a>
+            <a href="../concepts/energy_factor.html">Energy Factor</a>
+            <a href="../concepts/block_and_defense.html">Block & Defense</a>
+            <a href="../concepts/players_x.html">Players Command</a>
+            <a href="../concepts/witches_warlocks.html">Witches & Warlocks</a>
+            <a href="../concepts/poison_damage.html">Poison Damage</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickCharacters()" class="btnDropdown">Characters ▼</button>
+          <div id="characterDropdown" class="dropdown-content">
+            <a href="../characters/amazon.html">Amazon</a>
+            <a href="../characters/assassin.html">Assassin</a>
+            <a href="../characters/barbarian.html">Barbarian</a>
+            <a href="../characters/druid.html">Druid</a>
+            <a href="../characters/necromancer.html">Necromancer</a>
+            <a href="../characters/paladin.html">Paladin</a>
+            <a href="../characters/sorceress.html">Sorceress</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickItems()" class="btnDropdown">Items ▼</button>
+          <div id="itemDropdown" class="dropdown-content">
+            <a href="../items/base_items.html">Base Items</a>
+            <a href="../items/tiered_uniques.html">Tiered Uniques</a>
+            <a href="../items/sacred_uniques.html">Sacred Uniques</a>
+            <a href="../items/umos.html">Unique Mystic Orbs</a>
+            <a href="../items/sets.html">Sets</a>
+            <a href="../items/runewords.html">Runewords</a>
+            <a href="../items/cube_recipes.html">Cube Recipes</a>
+            <a href="../items/gems_runes.html">Gems and Runes</a>
+            <a href="../items/jewelwords.html">Jewelwords</a>
+            <a href="../items/honorific_shrine.html">Honorific & Crafted</a>
+            <a href="../items/shrine_bonuses.html">Shrine Bonuses</a>
+            <a href="../items/prefixes_and_suffixes.html">Prefixes & Suffixes</a>
+            <a href="../items/oskill_items.html">Items with Oskills</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickUbers()" class="btnDropdown">Uberquests ▼</button>
+          <div id="uberDropdown" class="dropdown-content">
+            <a href="dungeon_uberquests.html">Dungeon Uberquests</a>
+            <a href="summoning_uberquests.html">Summoning Uberquests</a>
+            <a href="uberlevels.html">Uberlevels</a>
+            <a href="heroic_levels.html">Heroic Levels</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickChallenges()" class="btnDropdown">Challenges ▼</button>
+          <div id="challengeDropdown" class="dropdown-content">
+            <a href="../challenges/dragon_eggs.html">Dragon's Eggs</a>
+            <a href="../challenges/lc1.html">Level Challenge 1</a>
+            <a href="../challenges/lc2.html">Level Challenge 2</a>
+            <a href="../challenges/ennead.html">Ennead Challenge</a>
+            <a href="../challenges/black_road.html">Black Road Challenge</a>
+            <a href="../challenges/minigames.html">Minigames</a>
+            <a href="../challenges/monster_tokens.html">Monster Tokens</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickMaps()" class="btnDropdown">Maps ▼</button>
+          <div id="mapDropdown" class="dropdown-content">
+            <a href="../maps/map_k3kba.html">Kurast 3000 BA Map</a>
+            <a href="../maps/map_tran_athulua.html">Tran Athulua Map</a>
+            <a href="../maps/map_fauztinville.html">Fauztinville Map</a>
+            <a href="../maps/map_ureh.html">Kingdom of Shadow Map</a>
+            <a href="../maps/map_duncraig.html">Duncraig Map</a>
+            <a href="../maps/map_vizjun.html">Vizjun Map</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickMisc()" class="btnDropdown">Misc ▼</button>
+          <div id="miscDropdown" class="dropdown-content">
+            <a href="../misc/introduction.html">Introduction</a>
+            <a href="../misc/hirelings.html">Hirelings</a>
+            <a href="../misc/changelog.html">Changelog</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="toc">
+      <li class="tocCategory">Quick Navigation</li>
+      <li><a href=#butcher>The Butcher</a></li>
+      <li><a href=#bindingOfBaal>The Binding of Baal</a></li>
+      <li><a href=#assaultOnMountArreat>Assault on Mount Arreat</a></li>
+      <li><a href=#akarat>Akarat</a></li>
+      <li><a href=#lordAldricJitan>Lord Aldric Jitan</a></li>
+      <li><a href=#legacyOfBlood>Legacy of Blood</a></li>
+      <li><a href=#judgementDay>Judgement Day</a></li>
+      <li><a href=#brotherLaz>Brother Laz</a></li>
+      <li><a href=#inariusRevenge>Inarius' Revenge</a></li>
+    </ul>
+
+    <div class="description">
+      <h2>Summoning Uberquests</h2>
+      <p>For a hunter like you, the demons infesting Sanctuary may seem easy to destroy. If you want to test your skill
+        against the mighty beings of ancient times, cast a summoning spell to pull them back from the dead.</p>
+
+      <p>As any sorcerer knows, in order to summon a creature you need a Book of Summoning. Create one by cubing three
+        Sacrifical Hearts and three Meditation Candles.
+      </p>
+      <p class="reagent">Meditation Candle x3 + Sacrifical Heart x3 -> Book of Summoning</p>
+      <p>The Book grants you a new skill called Dark Summoning. Select the skill and cast the skill in the right area to
+        summon the boss.</p>
+      <div class="uber" id="butcher">
+        <p class="uberName">1/8 The Butcher</p>
+        <p class="uberDifficultyEasy">Difficulty: Easy</p>
+        <div class="uberImage"><img src="../img/uberquests/S1.gif" alt="The Butcher">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 55</i><br>
+          <i>Terror : 85</i><br>
+          <i>Destruction : 110</i><br><br>
+          <b>Summon at</b><br>
+          The Hole Level 2 (Black Marsh)
+        </p>
+
+        <p class="uberDesc"><b>Lore</b><br>
+          Slain in his hellhole beneath Tristram, the Butcher rises from the dead at the call of your summoning spell
+          and the smell of fresh blood. It is said the Butcher cannot be summoned without an acceptable human sacrifice,
+          and if none is provided, he will take one...
+        </p>
+        <p><b>Strategy</b><br>
+          The Butcher is slow, but hits very hard and has a high attack rating. Additionally, due to his layers of
+          bouncy fat he has a high chance to negate any incoming attack. The basic strategy is simple - do not get hit.
+        </p>
+        <p><b>Reward</b><br>
+          Defeat the Butcher on Destruction difficulty to get <span class="unique">Butcher's Tooth.</span>
+        <div class="itemDisplay">
+          <img src="../img/charms/butchersTooth.bmp" alt="Butcher's Tooth"><br>
+          <span class="unique">The Butcher's Tooth</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 40<br>
+          <span class="magic">50% Chance of Open Wounds<br>
+            100% Extra Gold from Monsters<br>
+            40% Better Chance of Getting Magic Items</span>
+        </div>
+      </div>
+      <div class="spacing"></div>
+      <div class="uber" id="bindingOfBaal">
+        <p class="uberName">2/8 The Binding of Baal</p>
+        <p class="uberDifficultyModerate">Difficulty: Moderate</p>
+        <div class="uberImage"><img src="../img/uberquests/S2.gif" alt="Binding of Baal">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 55</i><br>
+          <i>Terror : 85</i><br>
+          <i>Destruction : 110</i><br><br>
+          <b>Summon at</b><br>
+          Valley of Snakes
+        </p>
+
+        <p class="uberDesc"><b>Lore</b><br>
+          Reenact the capture and imprisonment of Baal by Tal Rasha and his Horadrim, with you playing the role of Baal.
+          To protect their leader, the Horadrim weave warding spells that make Tal Rasha immortal until the last of his
+          soldiers has died and their spirits have faded.
+        </p>
+        <p><b>Strategy</b><br>
+          During this uberquest, you morph into Baal when you are near Tal Rasha. The archmage himself is immune to all
+          damage until you get rid of his escort by parking them or separating Tal Rasha from his allies. If you have a
+          way to break immunities, it may prove to be useful as well</p>
+
+        <p>Being Baal gives you some protection against the attacks of the Horadrim, but these are some of the most
+          powerful mages of Sanctuary and can concentrate their fire to bring down even a Prime Evil.</p>
+
+        <p>You may want to stack your resistances, because the Horadrim possess the ability to reduce your effective
+          resistances, making you that much weaker.<br>
+          Tal Rasha pierces <b>250%</b> of your resistances, while his followers pierce <b>150%</b>.</p>
+
+        <p><b>Reward</b><br>
+          Defeat Tal Rasha on Destruction difficulty to get the <span class="unique">Scroll of Kings.</span> (1/25
+          chance of perfect charm)
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/scrollOfKings.bmp" alt="Scroll of Kings"><br>
+          <span class="unique">Scroll of Kings</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 60<br>
+          <span class="magic">+(16 to 20)% to Spell Damage<br>
+            (16 to 20)% Bonus to all Attributes</span>
+        </div>
+      </div>
+      <div class="spacing"></div>
+      <div class="uber" id="assaultOnMountArreat">
+        <p class="uberName">3/8 Assault on Mount Arreat</p>
+        <p class="uberDifficultyModerate">Difficulty: Moderate</p>
+        <div class="uberImage"><img src="../img/uberquests/S3.gif" alt="Assault on Mount Arreat">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 60</i><br>
+          <i>Terror : 90</i><br>
+          <i>Destruction : 115</i><br><br>
+          <b>Summon at</b><br>
+          Arreat Summit
+        </p>
+
+        <p class="uberDesc"><b>Lore</b><br>
+          In ages past, Diablo himself attempted to invade Mount Arreat to corrupt or destroy the Worldstone and was
+          repelled by the Bear tribe defenders. This is a recreation of that battle on the peak of Mount Arreat, with
+          you as Diablo.<br><br>
+
+          The shamanic powers of the Bear tribe protect their king with an ancient spirit shield until the last of
+          the defenders has fallen.</p>
+        <p><b>Strategy</b><br>
+          Much like the Tal Rasha encounter, the key target to take out, Shaman King Koth is immune to all damage until
+          you kill all of his minions. The difference is that this fight is mainly physical and you need to focus on
+          defense and life to survive. Try to break the shield with a resistance piercing spell if you have one.<br><br>
+
+          Beware the piercing Bear Claws which stun you at range. If you let a pack of Bear Shamans catch you, you may
+          get locked in perpetual stun until you die.<br><br>
+
+          Thanks to their connection to the primal forces, all shamans have an innate 50% resistance to all.
+        </p>
+        <p><b>Reward</b><br>
+          Defeat King Koth on Destruction difficulty to get the <span class="unique">Sacred Worldstone Key.</span>
+          (1/100 chance of perfect charm)
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/sacredWorldstoneKey.bmp" alt="Sacred Worldstone Key"><br>
+          <span class="unique">Sacred Worldstone Key</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 80<br>
+          <span class="magic">Total Character Damage Plus (41 to 50)%<br>
+            Total Character Defense Plus (21 to 30)%</span>
+        </div>
+      </div>
+      <div class="spacing"></div>
+      <div class="uber" id="akarat">
+        <p class="uberName">4/8 Akarat</p>
+        <p class="uberDifficultyTricky">Difficulty: Tricky</p>
+        <div class="uberImage"><img src="../img/uberquests/S4.gif" alt="Akarat">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 65</i><br>
+          <i>Terror : 95</i><br>
+          <i>Destruction : 120</i><br><br>
+          <b>Summon at</b><br>
+          Kurast Causeway
+        </p>
+
+        <p class="uberDesc"><b>Lore</b><br>
+          This uberquest involves summoning and defeating the ghost of the prophet Akarat and his band of Followers. The
+          spirit is ritually summoned in the fortress city of Travincal by the church fathers four times a year or
+          during times of trouble. Because Travincal is irrepairably tainted by Mephisto, it may be a better plan to
+          summon him at the bridge to Travincal, just outside the walls.<br><br>
+
+          Although Sanctuary owes many years of relative peace to the founder of the Church of Zakarum, both the motives
+          of the Church and the plans of the archangels behind it are dubious. Sanctuary would be better off without
+          interference from both the Burning Hells and the High Heavens.<br><br>
+
+          If you have problems defeating Akarat, remember that a religion is nothing without followers, and the death of
+          his apostles may be a particularly hard blow to Akarat’s spirit.
+        </p>
+        <p><b>Strategy</b><br>
+          As an emissary from the Heavens, the prophet Akarat is immune to all damage. However, when you kill one of his
+          Followers nearby, all other enemies within range have their resistances reduced by -200%. This gives you a
+          five second window of opportunity to damage Akarat.
+        </p>
+        <p><b>Reward</b><br>
+          Defeat Akarat on Destruction difficulty to get <span class="unique">Visions of Akarat.</span> (1/250 chance of
+          perfect charm)
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/visionsOfAkarat.bmp" alt="Visions of Akarat"><br>
+          <span class="unique">Visions of Akarat</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 100<br>
+          <span class="magic">+(201 to 250) Defense<br>
+            +(21 to 25) to all Attributes</span>
+        </div>
+        <p><b>Trophy</b><br>
+          Akarat also has a 2% chance to drop a trophy on Destruction difficulty. Cube the trophy with the charm for a
+          small bonus.
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/trophy_akarat.bmp" alt="Akarat Trophy"><br>
+          <span class="reagent">Akarat Trophy</span><br>
+          Cube with the Visions of Akarat...<br>
+          <span class="magic">Increase Maximum Life and Mana 5%</span>
+        </div>
+
+      </div>
+      <div class="spacing"></div>
+      <div class="uber" id="lordAldricJitan">
+        <p class="uberName">5/8 Lord Aldric Jitan</p>
+        <p class="uberDifficultyTricky">Difficulty: Tricky</p>
+        <div class="uberImage"><img src="../img/uberquests/S5.gif" alt="Lord Aldric Jitan">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 70</i><br>
+          <i>Terror : 95</i><br>
+          <i>Destruction : 120</i><br><br>
+          <b>Location</b><br>
+          Nihlathak's Temple
+        </p>
+        <p class="uberDesc"><b>Lore</b><br>
+          Driven mad by nightmares, the Western aristocrat Lord Aldric Jitan hopes to summon a terrible demon and plunge
+          the land into darkness. Stop him before he does.
+        </p>
+        <p><b>Strategy</b><br>
+          Another encounter with immunity shields. Jitan comes with an army of 20 guardsmen, which need to be killed
+          before you can harm Jitan. The enemies are tougher than before and will heal themselves, as well as summon
+          guard towers that will pummel the living daylights out of you if you stand still for too long. Keep moving and
+          the towers will vanish behind you.
+
+          Also bring some resistances, because the enemies inflict fire, cold and lightning damage.
+
+          When any enemy dies, a vortex of shadow spawns at the location of the deceased fighter. Do not run into it, or
+          you will die instantly. Use a weapon with a long reach and keep your finger on the Shift key.
+        </p>
+        <p><b>Reward</b><br>
+          Defeat Lord Aldric Jitan on Destruction difficulty to get the <span class="unique">Moon of the Spider.</span>
+          <b>(1/6 chance)</b> (1/5 chance of perfect charm)
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/moonOfTheSpider.bmp" alt="Moon of the Spider"><br>
+          <span class="unique">Moon of the Spider</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 100<br>
+          <span class="magic">+(21 to 25) Energy Factor to Spell Damage<br>
+            Maximum Skill Level Increased by 1<br>
+            +1 to Jitan’s Gate<br>
+            Half Freeze Duration</span>
+        </div>
+        <p><b>Trophy</b><br>
+          Jitan also has 2% chance to drop a trophy on Destruction difficulty. Cube the trophy with the charm for a
+          small bonus.
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/trophy_jitan.bmp" alt="Lord Aldric Jitan Trophy"><br>
+          <span class="reagent">Lord Aldric Jitan Trophy</span><br>
+          Cube with the Moon if the Spider<br>
+          <span class="magic">Enhanced Weapon Damage +25%<br></span>
+        </div>
+        <p><b>Level 121 encounter: Sacred sets and uniques can drop here on Destruction difficulty.</b></p>
+      </div>
+      <div class="spacing"></div>
+      <div class="uber" id="legacyOfBlood">
+        <p class="uberName">6/8 Legacy of Blood</p>
+        <p class="uberDifficultyHard">Difficulty: Hard</p>
+        <div class="uberImage"><img src="../img/uberquests/S6.gif" alt="Legacy of Blood">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 75</i><br>
+          <i>Terror : 100</i><br>
+          <i>Destruction : 121</i><br><br>
+          <b>Summon at</b><br>
+          Tower Cellar (Black Marsh)
+        </p>
+        <p class="uberDesc"><b>Lore</b><br>
+          <i>'When you get to hell maggot, tell them that I am coming to rule!''</i><br><br>
+
+
+          Bartuc, the Warlord of Blood, was once Horazon's brother in the Vizjerei mage clan. Whereas Horazon wanted to
+          summon demons to enslave them, Bartuc chose to worship them and traded his soul for demonic power. Their
+          conflict eventually led to a civil war that shattered the mage clan. Although Bartuc was eventually destroyed
+          by the very powers he sought to control, his soul and power have been claimed by the forces of Hell.<br><br>
+
+          It may be possible to summon Bartuc's spirit in the crypt where his cursed armor was buried...
+        </p>
+        <p><b>Strategy</b><br>
+          Bartuc and his summoned Blood Golems have ranged attacks and can hurt a lot in this tiny room. Compounding the
+          challenge is the fact that the Blood Golems are only vulnerable for a brief moment after hitting you, and
+          Bartuc can only be harmed after he uses his Wychwind attack.<br><br>
+
+          The enemies use physical attacks and they hit hard. The most dangerous attack is Bartuc's Wychwind, which can
+          kill you on the spot if you run into the rift field. Attack him after he uses this ability, because it also
+          removes his immunities. Bartuc also summons more Blood Golems.
+        </p>
+        <p><b>Reward</b><br>
+          Defeat Bartuc on Destruction difficulty to get the <span class="unique">Legacy of Blood.</span> (1/9 chance of
+          perfect charm)
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/legacyOfBlood.bmp" alt="Legacy of Blood"><br>
+          <span class="unique">Legacy of Blood</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 100<br>
+          <span class="magic">(2 to 4)% Life Stolen per Hit<br>
+            (2 to 4)% Mana Stolen per Hit<br>
+            Maximum Skill Level Increased by 2</span>
+        </div>
+        <p><b>Trophy</b><br>
+          Bartuc also has 2% chance to drop a trophy on Destruction difficulty. Cube the trophy with the charm for a
+          small bonus.
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/trophy_bartuc.bmp" alt="Legacy of Blood Trophy"><br>
+          <span class="reagent">Cathedral of Vanity Trophy</span><br>
+          Cube with the Legacy of Blood...<br>
+          <span class="magic">Total Character Defense Plus 15%</span>
+        </div>
+        <p><b>Level 121 encounter: Sacred sets and uniques can drop here on Destruction difficulty.</b></p>
+      </div>
+      <div class="spacing"></div>
+      <div class="uber" id="judgementDay">
+        <p class="uberName">7/8 Judgement Day</p>
+        <p class="uberDifficultyExtreme">Difficulty: Extreme</p>
+        <div class="uberImage"><img src="../img/uberquests/S7.gif" alt="Judgement Day">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 100</i><br>
+          <i>Terror : 120</i><br>
+          <i>Destruction : 121</i><br><br>
+          <b>Summon at</b><br>
+          Inner Cloister
+        </p>
+
+        <p class="uberDesc"><b>Lore</b><br>
+          When Uldyssian sacrificed his life at the Cathedral of Vanity in the battle between angels and demons, his
+          soul was thought to be blown to the far reaches of the universe.<br><br>
+
+          But a malicious spirit in the High Heavens, watching over the battle from afar, snatched Uldyssian and his
+          edyrem on their way to oblivion. Imperius, archangel and high warlord of the Crystal Arch, had his own
+          opinions about Sanctuary and the human vermin inhabiting it. This taint on Creation had to be
+          eradicated.<br><br>
+
+          But his side of the argument, despite the support of Malthael, lost out in the Angiris Council due to the
+          intervention of Tyrael, and the ensuing blood pact with Mephisto prevented him from intervening on the mortal
+          plane at all. A puppet had to be found, and Uldyssian was just what he sought. After a thorough brainwashing,
+          Imperius sent his harbinger Dark Uldyssian to Sanctuary with the mission to exact divine justice and destroy
+          the world...
+        </p>
+        <p><b>Strategy</b><br>
+          Dark Uldyssian and his Fallen Edyrem are ghosts that exist only partially on the mortal plane and cannot be
+          hit by mortal weapons and spells.<br><br>
+
+          The war machine has one weak spot. When the army runs into trouble, Dark Uldyssian will summon an Avatar of
+          Imperius or Malthael to aid them. This avatar is vulnerable. Kill it to sever the link.<br><br>
+
+          An avatar will be summoned 1% of the time when Dark Uldyssian hits a player or minion. The Fallen Edyrem do
+          not have this power. You can recognise Dark Uldyssian by his heavy armour. What they all have in common is
+          their Divine Apparition ability which warps them next to their victim with a freezing blast.<br><br>
+
+          The Avatars bear the secrets of Creation and can throw alchemical nuclear bombs from Heaven. They also have
+          the ability to cast lethal spiked death bolts. Lastly, they summon more Fallen Edyrem at a rapid rate.
+        </p>
+        <p><b>Reward</b><br>
+          Defeat Imperius or Malthael on Destruction difficulty to get the <span class="unique">Crystalline Flame
+            Medallion.</span>
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/crystallineFlameMedallion.bmp" alt="Crystalline Flame Medallion"><br>
+          <span class="unique">Crystalline Flame Medallion</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 120<br>
+          <span class="magic">+1 to Summon Edyrem<br>
+            +5% to Maximum Fire Resist<br>
+            +5% to Maximum Cold Resist<br>
+            +5% to Maximum Lightning Resist<br>
+            Fire Absorb 10%<br>
+            Cold Absorb 10%<br>
+            Lightning Absorb 10%</span>
+        </div>
+        <p><b>Trophy</b><br>
+          Imperius and Malthael also have 2% chance to drop a trophy on Destruction difficulty. Cube the trophy with the
+          charm for a
+          small bonus.
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/trophy_jday.bmp" alt="Judgement Day Trophy"><br>
+          <span class="reagent">Judgement Day Trophy</span><br>
+          Cube with the Crystalline Flame Medallion...<br>
+          <span class="magic">5% to All Attributes</span>
+        </div>
+        <p class="bold">Level 121 encounter: Sacred sets and uniques can drop here on Destruction difficulty.</p>
+        <p>
+          <b>Bonus Quest</b><br>
+          If you are exceptionally daring or suicidal, distract Dark Uldyssian until both the Avatar of Imperius and the
+          Avatar of Malthael are summoned. Then kill them both within 30 seconds and transmute the Medallion in the cube
+          while the red whirls are on your character to add some extra modifiers…
+
+        <p class="reagent">Crystalline Flame Medallion -> returns Crystalline Flame Medallion w/ added bonuses </p>
+
+        <p class="italic">This upgrade recipe adds the following bonuses:</p>
+
+        <p class="magic">100% Chance to cast level 62 Apocalypse when you Die<br>
+          +3 to All Skills<br>
+          +50 to All Attributes</p>
+        <p class="italic">You do have to kill two different Avatars, not the same one twice.</p>
+      </div>
+      <div class="spacing"></div>
+
+      <div class="uber" id="brotherLaz">
+        <p class="uberName">8/8 Brother Laz</p>
+        <p class="uberDifficultyImpossible">Difficulty: Impossible</p>
+        <div class="uberImage"><img src="../img/uberquests/S8.gif" alt="Brother Laz">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 110</i><br>
+          <i>Terror : 120</i><br>
+          <i>Destruction : 121</i><br><br>
+          <b>Summon at</b><br>
+          Swampy Pit Level 3 (Flayer Jungle)
+        </p>
+
+        <p class="uberDesc"><b>Lore</b><br>
+          There are many religions in Sanctuary. Although they all tell very different stories, loremasters agree that
+          since most of them seem to be effective and enable their faithful to work miracles, there has to be a common
+          truth between them.<br><br>
+
+          One particular element found in most religions is the creation of the world by a God or other deity, whether
+          it be Zakarum, Inarius and Lilith or Trang-Oul or the Four Elements or even Kharos or Tiarna Dulra.<br><br>
+
+          Some alchemical scientists even believe that the world as we know it was shaped by an individual human on
+          another plane, one 'Brother Laz' with a calculation engine powered by lightning. According to this cult, when
+          humanity complains too much about the difficult living conditions in Sanctuary and the scarcity of divine
+          weaponry, he may send his avatar to the mortal plane to deal with those who annoy him in person...
+        </p>
+
+        <p><b>Strategy</b><br>
+          The Groupies are just your average frenzied mod fanatics with throwing knives and should not be too hard to
+          dispatch.<br><br>
+
+          The boss, Brother Laz is something else. Do not stand still in his crosshairs or he will cast either
+          Deathstrike or Singularity on you and destroy you. If you keep moving, he will attempt an offensive teleport,
+          summon more minions and may cast totems that kill you with Disintegrate if you go near them.<br><br>
+
+          If you take down the totems, you will receive an unholy death curse that kills you when you next receive
+          damage, so avoid doing this at all costs and give them a wide berth to avoid instant annihilation!<br><br>
+
+          Brother Laz is invulnerable to any damage. Use the <i>Purify</i> skill you acquired in Duncraig and keep
+          hitting him with it until he dies.
+        </p>
+        <p><b>Reward</b><br>
+          Defeat Brother Laz on Destruction difficulty to get the <span class="unique">Glorious Book of Median.</span>
+          (1/6,250 chance of perfect charm)
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/gloriousBookOfMedian.bmp" alt="Glorious Book of Median"><br>
+          <span class="unique">Glorious Book of Median</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 100<br>
+          <span class="magic">+1 to All Skills<br>
+            (51 to 75)% Enhanced Damage vs. Demons<br>
+            +50 Damage<br>
+            All Resists +(11 to 15)%<br>
+            (201 to 250)% Extra Gold from Monsters<br>
+            5% Reanimate as: Groupie</span>
+        </div>
+        <p><b>Trophy</b><br>
+          Brother Laz also has 2% chance to drop a trophy on Destruction difficulty. Cube the trophy with the charm for
+          a small bonus.
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/trophy_laz.bmp" alt="Brother Laz Trophy"><br>
+          <span class="reagent">Brother Laz Trophy</span><br>
+          Cube with the Glorious Book of Median...<br>
+          <span class="magic">+1 to All Skills</span>
+        </div>
+        <p class="bold">Level 121 encounter: Sacred sets and uniques can drop here on Destruction difficulty.</p>
+      </div>
+      <div class="spacing"></div>
+      <div class="uber" id="inariusRevenge">
+        <p class="uberName">Secret: Inarius' Revenge</p>
+        <p class="uberDifficultyModerate">Difficulty: Moderate</p>
+        <div class="uberImage"><img src="../img/uberquests/SX.gif" alt="Inarius' Revenge">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 110</i><br>
+          <i>Terror : 120</i><br>
+          <i>Destruction : 121</i><br><br>
+          <b>Summon at</b><br>
+          ??? - Find it yourself!
+        </p>
+
+        <p class="uberDesc"><b>Lore</b><br>
+          In his vanity, fallen angel Inarius made the fatal mistake of raiding one of Mephisto's black temples on
+          mortal soil and killing the dark monks there. The Prime Evils had previously ignored this rebellious angel,
+          but this was an insult they could not leave unpunished. Mephisto invaded Inarius' cathedral of vanity, burned
+          it to the ground and captured Inarius and his followers, warping and mutating them into flabby and horrible
+          creatures - the Overlords - instilling them with eternal hatred for the still beautiful creations of Zakarum,
+          humans.<br><br>
+
+          You may be able to summon Inarius' ghost at a place of great significance for the fallen angel...
+        </p>
+
+        <p><b>Strategy</b><br>
+          Even in their weakened state, Inarius' ghost and his minions hit very hard and almost always hit. This fight
+          is most similar to the Butcher, but with multiple enemies.
+        </p>
+        <p><b>Reward</b><br>
+          Defeat Inarius' Ghost on Destruction difficulty to get the <span class="unique">Spirit of Damnation.</span>
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/spiritOfDamnation.bmp" alt="Spirit of Damnation"><br>
+          <span class="unique">Spirit of Damnation</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 120<br>
+          <span class="magic">1% Chance to cast level 20 Death Spiral when Struck</span>
+        </div>
+        <p class="bold">Level 121 encounter: Sacred sets and uniques can drop here on Destruction difficulty.</p>
+      </div>
+    </div>
+  </div>
+  <script src="../js/dropdown.js"></script>
+</body>
+
+</html>

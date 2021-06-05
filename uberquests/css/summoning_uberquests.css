@@ -1,0 +1,13 @@
+.toc {
+  height: 243px;
+  overflow: hidden;
+  overflow-y: scroll;
+  width: 11%;
+  text-align: left;
+  color: #a1a178;
+  font-size: 14px;
+  border: 1px solid #bbab7773;
+  position: fixed;
+  left: 5px;
+  top: 175px;
+}

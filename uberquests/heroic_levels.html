@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="../css/general.css">
+  <link rel="stylesheet" type="text/css" href="./css/uberquests.css">
+  <title>Heroic Levels | MXL:Z Documentation</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>+ HEROIC LEVELS +</h1>
+    </header>
+    <nav>
+      <ul class="navpanel">
+        <li>
+          <button onclick="clickConcepts()" class="btnDropdown">Concepts ▼</button>
+          <div id="conceptDropdown" class="dropdown-content">
+            <a href="../concepts/difficulty_levels.html">Difficulty Levels</a>
+            <a href="../concepts/energy_factor.html">Energy Factor</a>
+            <a href="../concepts/block_and_defense.html">Block & Defense</a>
+            <a href="../concepts/players_x.html">Players Command</a>
+            <a href="../concepts/witches_warlocks.html">Witches & Warlocks</a>
+            <a href="../concepts/poison_damage.html">Poison Damage</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickCharacters()" class="btnDropdown">Characters ▼</button>
+          <div id="characterDropdown" class="dropdown-content">
+            <a href="../characters/amazon.html">Amazon</a>
+            <a href="../characters/assassin.html">Assassin</a>
+            <a href="../characters/barbarian.html">Barbarian</a>
+            <a href="../characters/druid.html">Druid</a>
+            <a href="../characters/necromancer.html">Necromancer</a>
+            <a href="../characters/paladin.html">Paladin</a>
+            <a href="../characters/sorceress.html">Sorceress</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickItems()" class="btnDropdown">Items ▼</button>
+          <div id="itemDropdown" class="dropdown-content">
+            <a href="../items/base_items.html">Base Items</a>
+            <a href="../items/tiered_uniques.html">Tiered Uniques</a>
+            <a href="../items/sacred_uniques.html">Sacred Uniques</a>
+            <a href="../items/umos.html">Unique Mystic Orbs</a>
+            <a href="../items/sets.html">Sets</a>
+            <a href="../items/runewords.html">Runewords</a>
+            <a href="../items/cube_recipes.html">Cube Recipes</a>
+            <a href="../items/gems_runes.html">Gems and Runes</a>
+            <a href="../items/jewelwords.html">Jewelwords</a>
+            <a href="../items/honorific_shrine.html">Honorific & Crafted</a>
+            <a href="../items/shrine_bonuses.html">Shrine Bonuses</a>
+            <a href="../items/prefixes_and_suffixes.html">Prefixes & Suffixes</a>
+            <a href="../items/oskill_items.html">Items with Oskills</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickUbers()" class="btnDropdown">Uberquests ▼</button>
+          <div id="uberDropdown" class="dropdown-content">
+            <a href="dungeon_uberquests.html">Dungeon Uberquests</a>
+            <a href="summoning_uberquests.html">Summoning Uberquests</a>
+            <a href="uberlevels.html">Uberlevels</a>
+            <a href="heroic_levels.html">Heroic Levels</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickChallenges()" class="btnDropdown">Challenges ▼</button>
+          <div id="challengeDropdown" class="dropdown-content">
+            <a href="../challenges/dragon_eggs.html">Dragon's Eggs</a>
+            <a href="../challenges/lc1.html">Level Challenge 1</a>
+            <a href="../challenges/lc2.html">Level Challenge 2</a>
+            <a href="../challenges/ennead.html">Ennead Challenge</a>
+            <a href="../challenges/black_road.html">Black Road Challenge</a>
+            <a href="../challenges/minigames.html">Minigames</a>
+            <a href="../challenges/monster_tokens.html">Monster Tokens</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickMaps()" class="btnDropdown">Maps ▼</button>
+          <div id="mapDropdown" class="dropdown-content">
+            <a href="../maps/map_k3kba.html">Kurast 3000 BA Map</a>
+            <a href="../maps/map_tran_athulua.html">Tran Athulua Map</a>
+            <a href="../maps/map_fauztinville.html">Fauztinville Map</a>
+            <a href="../maps/map_ureh.html">Kingdom of Shadow Map</a>
+            <a href="../maps/map_duncraig.html">Duncraig Map</a>
+            <a href="../maps/map_vizjun.html">Vizjun Map</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickMisc()" class="btnDropdown">Misc ▼</button>
+          <div id="miscDropdown" class="dropdown-content">
+            <a href="../misc/introduction.html">Introduction</a>
+            <a href="../misc/hirelings.html">Hirelings</a>
+            <a href="../misc/changelog.html">Changelog</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="toc">
+      <li class="tocCategory">Quick Navigation</li>
+      <li><a href=#bpr>Bull Prince Rodeo</a></li>
+      <li><a href=#qt>Quov Tsin</a></li>
+      <li><a href=#belial>Belial</a></li>
+      <li><a href=#astrogha>Astrogha</a></li>
+    </ul>
+
+    <div class="description">
+      <h2>HEROIC LEVELS</h2>
+      <p>Abandon all hope, ye who enter here. Similar to ordinary demons but much stronger and more intelligent, heroic
+        demons are more than a match for the toughest heroes.</p>
+      <img src="../img/highlights/heroic.gif" alt="Heroic Level">
+      <p>Median XL features four heroic areas:</p>
+      <p><b>Act 1 Mausoleum (Burial Grounds)<br>
+          Act 2 Stony Tomb Level 1 (Rocky Waste)<br>
+          Act 5 Icy Cellar (Ancients' Way)</b><br>
+        <i>Each of the three areas contains the same 20 heroic monster types. You may want to choose the
+          area that suits your character build the most.</i>
+      </p>
+      <p><b>Act 1 Cow Level (Rogue Encampment)</b><br>
+        <i>Meet invisible cow ninjas, bovine summoners and other figments of your fever dreams after a bad case of food
+          poisoning in the Cow Level!</i>
+      </p>
+      <p><b>All four heroic areas are level 121 on destruction and can drop sacred sets and uniques.</b></p>
+      <hr>
+
+      <h2>HEROIC BOSSES</h2>
+      <p>Each heroic area is protected by its own guardian. The area's heroic boss may randomly appear in the area, or
+        he may not... Beware, heroic bosses are among the hardest encounters in Median XL.<br><br>
+
+        <b>Chaos Shields</b><br>
+        All heroic bosses are protected by an invulnerability shield. This shield is nearly impossible to break with
+        mortal magic but will occasionally fail and drop a random immunity, though this still leaves the boss with high
+        resistance to this element. Use these rare opportunities well.<br><br>
+        More precisely, heroic shields periodically give a random increase of resistances to each element at a time.
+        Usually, they give more than a 100% resistances, which is why the boss only rarely drops the immunity of a
+        particular element. In order to efficiently slay a heroic boss, one should get -199% reduction in resistances
+        for the element the character is using (for example, -199% fire pierce for a fire sorceress). The reason for
+        that is that then, whether the heroic boss gets a 1% increase or a 99% increase, you will always pierce his
+        resistances down to -100% (which is the limit) and deal double damage to the boss. Skills that reduce
+        resistances, such as Mythal, further help since they will make the boss receive an increase of less than 100%
+        resists much quicker.
+      </p>
+
+      <div class="uber" id="bpr">
+        <p class="uberName">1/4 Bull Prince Rodeo</p>
+        <p class="uberDifficultyTricky">Difficulty: Moderate</p>
+        <div class="uberImage"><img src="../img/uberquests/H1.gif" alt="Bull Prince Rodeo">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 40</i><br>
+          <i>Terror : 92</i><br>
+          <i>Destruction : 121</i><br><br>
+          <b>Location</b><br>
+          Act 1 Cow Level
+        </p>
+
+        <p class="uberDesc"><b>Lore</b><br>
+          The moolicious heir to the Cow King's throne, Bull Prince Rodeo is out to exact his indiscriminate revenge for
+          all the cattle killed by humans.
+        </p>
+        <p><b>Strategy</b><br>
+          Bull Prince Rodeo may randomly appear in the Cow Level. Killing Rodeo does not prevent you from entering the
+          Cow Level again.<br><br>
+
+          Rodeo is very aggressive and has a stunning teleport spell, making it difficult to put some distance between
+          you and him. He summons Cow Soldiers and can call upon a Stampeding Herd that ploughs across the screen,
+          trampling all in their path. This ability is unblockable, unresistable and will destroy you if you don't get
+          out of the way in time.<br><br>
+
+          His most common spell, in cooperation with another victim of cruel farming practices, is a wave of chickens
+          that will pursue their victim relentlessly, inflicting devastating hurt with their beaks if they connect. The
+          chickens can be dodged by staying mobile.<br><br>
+
+          Additionally, Bull Prince Rodeo has a hoof stomp spell that knocks back and stuns his enemies in all
+          directions.. Try not to stand between Rodeo and a wall or you will become closely acquainted with said wall,
+          leaving you unable to dodge his spells and the growing herd of Cow Soldiers.
+        </p>
+        <p><b>Chaos Shield</b><br>
+          Rodeo is a sacred cow, invulnerable to damage. Warding shields are not an exact science, however, and the
+          spell may occasionally fail, allowing you to hit him with one or more elements until the spell is restored.
+        </p>
+        <p><b>Reward</b><br>
+          Defeat Bull Prince Rodeo on Destruction difficulty to get <span class="unique">Fool's Gold.</span>
+          (1/2,550 chance of perfect charm not accounting for a specific reanimate)
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/foolsGold.bmp" alt="Fool's Gold"><br>
+          <span class="unique">Fool's Gold</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 100<br>
+          <span class="magic">+(-10 to 40) to all Attributes<br>
+            Total Character Defense Plus (11 to 15)%<br>
+            5% Reanimate as: Random monster<br>
+            -75% Less Gold from Monsters<br>
+            (31 to 40)% Better Chance of Getting Magic Items</span>
+        </div>
+        <p><b>Drop Bias</b><br>
+          Bull Prince Rodeo has a 10% chance to drop a random Unique Mystic Orb.</p>
+        <p>Killing Rodeo does <b>not</b> prevent you from entering the Cow Level again.</p>
+      </div>
+      <div class="spacing"></div>
+
+      <div class="uber" id="qt">
+        <p class="uberName">2/4 Quov Tsin</p>
+        <p class="uberDifficultyHard">Difficulty: Hard</p>
+        <div class="uberImage"><img src="../img/uberquests/H2.gif" alt="Quov Tsin">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 50</i><br>
+          <i>Terror : 70</i><br>
+          <i>Destruction : 121</i><br><br>
+          <b>Location</b><br>
+          Act 2 Stony Tomb Level 1
+        </p>
+
+        <p class="uberDesc"><b>Lore</b><br>
+          Hungry for power and misled by Diablo, the Vizjerei mage Quov Tsin almost succeeded in sacrificing the city of
+          Ureh to the forces of Hell. He was defeated at the last moment, but his spirit still roams the burial tombs
+          looking for a mortal vessel to come back to life...
+        </p>
+        <p><b>Strategy</b><br>
+          Quov Tsin may randomly appear in the Stony Tomb Level 1.<br><br>
+
+          As a former Vizjerei in life, Quov Tsin wields the elements. His most devastating attack is a streaming blast
+          of fire, cold and lightning bolts powerful enough to annihilate any hero in a moment. In melee combat, he may
+          use a fire, cold and lightning nova combo that causes massive destruction at close range. Prepare for this
+          battle by equipping resistance items to counter his ability to pierce resistances, and try to find some absorb
+          items to further cut the damage.<br><br>
+
+          Quov Tsin pierces 250% of all elemental resistances. To protect yourself from his magic, you would need 250% +
+          100% (destruction difficulty malus) + 95% to all elemental resistances, and 25% to all maximum elemental
+          resistances. Additionally, he deals some physical damage. To protect yourself against the physical portion of
+          damage, you should get at least 100 flat damage reduction and as much % damage reduction (up to 50%) as you
+          can.<br><br>
+
+          His contingency spells protect him by teleporting him to safety when struck by any attack. Stay near cover in
+          case he appears too close for comfort.
+        </p>
+        <p><b>Chaos Shield</b><br>
+          Like Rodeo, Quov Tsin is invulnerable most of the time, but occasionally his warding spell may partially fail,
+          so seize the opportunity when you see it!<br><br>
+
+          <b>Quov Tsin will never drop his poison immunity.</b>
+        </p>
+        <p><b>Reward</b><br>
+          Defeat Quov Tsin on Destruction difficulty to get the <span class="unique">Silver Seal of Ureh</span>
+          (1/2,500,000 chance of perfect charm).
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/silverSealOfUreh.bmp" alt="Silver Seal of Ureh"><br>
+          <span class="unique">Silver Seal of Ureh</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 120<br>
+          <span class="magic">+(21 to 30) Energy Factor to Spell Damage<br>
+            +1 to All Skills<br>
+            +(41 to 50) to Strength<br>
+            +(41 to 50) to Dexterity<br>
+            +(41 to 50) to Vitality<br>
+            +(41 to 50) to Energy<br>
+            (21 to 25)% Bonus to Summoned Minion Damage<br>
+            (11 to 15)% Bonus to Summoned Minion Resistances</span>
+        </div>
+        <p><b>Trophy</b><br>
+          Quov Tsin also has 2% chance to drop a trophy on Destruction difficulty. Cube the trophy with the charm for a
+          small bonus.
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/trophy_quovTsin.bmp" alt="Quov Tsin Trophy"><br>
+          <span class="unique">Quov Tsin Trophy</span><br>
+          Cube with the Silver Seal of Ureh..<br>
+          <span class="magic">+15% to Spell Damage</span>
+        </div>
+      </div>
+      <div class="spacing"></div>
+
+      <div class="uber" id="belial">
+        <p class="uberName">3/4 Belial</p>
+        <p class="uberDifficultyExtreme">Difficulty: Extreme</p>
+        <div class="uberImage"><img src="../img/uberquests/H3.gif" alt="Belial">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 50</i><br>
+          <i>Terror : 70</i><br>
+          <i>Destruction : 121</i><br><br>
+          <b>Location</b><br>
+          Act 5 Icy Cellar (Ancients' Way)
+        </p>
+
+        <p class="uberDesc"><b>Lore</b><br>
+          After his defeat in the civil war in Hell, the Lord of Lies and infernal King of Rats was banished to
+          Sanctuary where he plots his return. The icy caves under Harrogath offered him both proximity to the powerful
+          Worldstone and a dark moist breeding ground for his rodent servants.
+        </p>
+        <p><b>Strategy</b><br>
+          Belial may randomly appear in the Icy Cellar.
+
+          As the Lord of Lies, Belial prefers to cheat in battle. His main offence consists of his Henchmen who use the
+          Punisher spell to poison heroes to death. If one gets through this line of defence, his tiny rat familiars go
+          on the attack. Being so small and fast, they cannot be hit or even aimed at.
+
+          Belial himself knows a spell that spits out punishers in random directions, as well as an area effect spell
+          that slowly siphons the victim's life away and a spell that causes more rats to burst from the ground and
+          swarm the unwary hero. According to witnesses, Belial does attack recklessly from time to time, chasing his
+          enemy around by teleportation, but demonologists believe that this is just to impress his underlings and his
+          main intention is to get close to summon another batch of Henchmen.
+        </p>
+        <p><b>Chaos Shield</b><br>
+          Belial is protected by a warding spell that makes him invulnerable to all attacks. Occasionally he may drop
+          this shield for a few moments to entice a foolish hero to attack him; this is usually met with a fierce
+          counterattack, but it is the only way to kill him.
+        </p>
+        <p><b>Reward</b><br>
+          Defeat Belial on Destruction difficulty to get the <span class="unique">Book of Lies</span> (1/202,500 chance
+          of perfect charm).
+        <div class="itemDisplay">
+          <img src="../img/charms/bookOfLies.bmp" alt="Book of Lies"><br>
+          <span class="unique">Book of Lies</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 60<br>
+          <span class="magic">+(51 to 500) to Life<br>
+            +(51 to 500) to Mana</span>
+        </div>
+      </div>
+      <div class="spacing"></div>
+
+      <div class="uber" id="astrogha">
+        <p class="uberName">4/4 Astrogha</p>
+        <p class="uberDifficultyImpossible">Difficulty: Impossible</p>
+        <div class="uberImage"><img src="../img/uberquests/H4.gif" alt="Astrogha">
+        </div>
+        <p><b>Level</b><br>
+          <i>Hatred : 50</i><br>
+          <i>Terror : 70</i><br>
+          <i>Destruction : 121</i><br><br>
+          <b>Location</b><br>
+          Act 1 Mausoleum
+        </p>
+
+        <p class="uberDesc"><b>Lore</b><br>
+          One of Hell's greatest, the scheming spider demon Astrogha has surfaced after the fall of Andariel to continue
+          his reign of terror. He is not the most powerful demon in close combat, but the arachnid king is never alone.
+        </p>
+        <p><b>Strategy</b><br>
+          Astrogha may randomly appear in the Mausoleum.<br><br>
+
+          The spider king does not usually fight his foes directly, but he does not need to. His summoned Spider Statues
+          serve as gateways for his personal swarm, belching waves of crawling Darklings from the depths of the void.
+          Deal with them quickly, but do not touch the statues! They are protected by one of Astrogha's devious tricks:
+          when destroyed, they will both rejuvenate Astrogha and unleash a curse that cripples the assailant causing a
+          swift death. If left alone, they will eventually collapse on their own.<br><br>
+
+          Astrogha also possesses a very powerful but close ranged Frozen Orb attack and has contingency spells that
+          teleport him away when threatened, courtesy of Quov Tsin's mages.<br><br>
+
+          Astrogha pierces 250% of all your elemental resistances.
+        </p>
+        <p><b>Chaos Shield</b><br>
+          After centuries of fighting side by side at the head of their respective legions, Astrogha employs many of the
+          same tactics as Quov Tsin, notably the warding spell that renders Astrogha immune to all attacks. This is
+          cutting edge magic and therefore still fails from time to time, allowing you to get some hits in.<br><br>
+
+          <b>Astrogha will never drop his poison immunity.</b>
+        </p>
+        <p><b>Reward</b><br>
+          Defeat Astrogha on Destruction difficulty to get <span class="unique">Astrogha's Venom Stinger</span>.
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/astroghasVenomStinger.bmp" alt="Astrogha's Venom Stinger"><br>
+          <span class="unique">Astrogha's Venom Stinger</span><br>
+          Keep in Inventory to gain Bonus<br>
+          Required Level: 120<br>
+          <span class="magic">+1 to All Skills<br>
+            Poison Length Reduced by 50%</span>
+        </div>
+        <p><b>Trophy</b><br>
+          Astrogha also has 2% chance to drop a trophy on Destruction difficulty. Cube the trophy with the charm for a
+          small bonus.
+        </p>
+        <div class="itemDisplay">
+          <img src="../img/charms/trophy_astrogha.bmp" alt="Astrogha Trophy"><br>
+          <span class="reagent">Astrogha Trophy</span><br>
+          Cube with Astrogha's Venom Stinger..<br>
+          <span class="magic">-5% to All Enemy Resistances</span>
+        </div>
+      </div>
+      <div class="spacing"></div>
+
+    </div>
+  </div>
+  <script src="../js/dropdown.js"></script>
+</body>
+
+</html>

@@ -2,348 +2,348 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../css/reset.css">
-    <link rel="stylesheet" type="text/css" href="../css/general.css">
-    <link rel="stylesheet" type="text/css" href="../characters/css/characters.css">
-    <title>Black Road Challenge | MXL:Z Documentation</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="../css/general.css">
+  <link rel="stylesheet" type="text/css" href="../characters/css/characters.css">
+  <title>Black Road Challenge | MXL:Z Documentation</title>
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <h1>+ BLACK ROAD CHALLENGE +</h1>
-        </header>
-        <nav>
-            <ul class="navpanel">
-                <li>
-                    <button onclick="clickConcepts()" class="btnDropdown">Concepts ▼</button>
-                    <div id="conceptDropdown" class="dropdown-content">
-                        <a href="../concepts/difficulty_levels.html">Difficulty Levels</a>
-                        <a href="../concepts/energy_factor.html">Energy Factor</a>
-                        <a href="../concepts/block_and_defense.html">Block & Defense</a>
-                        <a href="../concepts/players_x.html">Players Command</a>
-                        <a href="../concepts/witches_warlocks.html">Witches & Warlocks</a>
-                        <a href="../concepts/poison_damage.html">Poison Damage</a>
-                    </div>
-                </li>
-                <li>
-                    <button onclick="clickCharacters()" class="btnDropdown">Characters ▼</button>
-                    <div id="characterDropdown" class="dropdown-content">
-                        <a href="../characters/amazon.html">Amazon</a>
-                        <a href="../characters/assassin.html">Assassin</a>
-                        <a href="../characters/barbarian.html">Barbarian</a>
-                        <a href="../characters/druid.html">Druid</a>
-                        <a href="../characters/necromancer.html">Necromancer</a>
-                        <a href="../characters/paladin.html">Paladin</a>
-                        <a href="../characters/sorceress.html">Sorceress</a>
-                    </div>
-                </li>
-                <li>
-                    <button onclick="clickItems()" class="btnDropdown">Items ▼</button>
-                    <div id="itemDropdown" class="dropdown-content">
-                        <a href="../items/base_items.html">Base Items</a>
-                        <a href="../items/tiered_uniques.html">Tiered Uniques</a>
-                        <a href="../items/sacred_uniques.html">Sacred Uniques</a>
-                        <a href="../items/umos.html">Unique Mystic Orbs</a>
-                        <a href="../items/sets.html">Sets</a>
-                        <a href="../items/runewords.html">Runewords</a>
-                        <a href="../items/cube_recipes.html">Cube Recipes</a>
-                        <a href="../items/gems_runes.html">Gems and Runes</a>
-                        <a href="../items/jewelwords.html">Jewelwords</a>
-                        <a href="../items/honorific_shrine.html">Honorific & Crafted</a>
-                        <a href="../items/shrine_bonuses.html">Shrine Bonuses</a>
-                        <a href="../items/prefixes_and_suffixes.html">Prefixes & Suffixes</a>
-                        <a href="../items/oskill_items.html">Items with Oskills</a>
-                    </div>
-                </li>
-                <li>
-                    <button onclick="clickUbers()" class="btnDropdown">Uberquests ▼</button>
-                    <div id="uberDropdown" class="dropdown-content">
-                        <a href="../uberquests/dungeon_uberquests.html">Dungeon Uberquests</a>
-                        <a href="../uberquests/summoning_uberquests.html">Summoning Uberquests</a>
-                        <a href="../uberquests/uberlevels.html">Uberlevels</a>
-                        <a href="../uberquests/heroic_levels.html">Heroic Levels</a>
-                        <a href="../uberquests/trophies.html">Trophy Bonuses</a>
-                    </div>
-                </li>
-                <li>
-                    <button onclick="clickChallenges()" class="btnDropdown">Challenges ▼</button>
-                    <div id="challengeDropdown" class="dropdown-content">
-                        <a href="dragon_eggs.html">Dragon's Eggs</a>
-                        <a href="lc1.html">Level Challenge 1</a>
-                        <a href="lc2.html">Level Challenge 2</a>
-                        <a href="ennead.html">Ennead Challenge</a>
-                        <a href="black_road.html">Black Road Challenge</a>
-                        <a href="minigames.html">Minigames</a>
-                        <a href="monster_tokens.html">Monster Tokens</a>
-                    </div>
-                </li>
-                <li>
-                    <button onclick="clickMaps()" class="btnDropdown">Maps ▼</button>
-                    <div id="mapDropdown" class="dropdown-content">
-                        <a href="../maps/map_k3kba.html">Kurast 3000 BA Map</a>
-                        <a href="../maps/map_tran_athulua.html">Tran Athulua Map</a>
-                        <a href="../maps/map_fauztinville.html">Fauztinville Map</a>
-                        <a href="../maps/map_ureh.html">Kingdom of Shadow Map</a>
-                        <a href="../maps/map_duncraig.html">Duncraig Map</a>
-                        <a href="../maps/map_vizjun.html">Vizjun Map</a>
-                    </div>
-                </li>
-                <li>
-                    <button onclick="clickMisc()" class="btnDropdown">Misc ▼</button>
-                    <div id="miscDropdown" class="dropdown-content">
-                        <a href="../misc/introduction.html">Introduction</a>
-                        <a href="../misc/hirelings.html">Hirelings</a>
-                        <a href="../misc/changelog.html">Changelog</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-        <div class="description">
-            <h2>THE BLACK ROAD CHALLENGE</h2>
-            <p>The Black Road challenge is the hardest challenge in Median XL. It consists of five trials, ranging from
-                easy to very difficult.
-            </p>
-            <div class="sacredUniqueAreas">
-                <p><b>Killing a boss</b><br>
-                    This challenge requires you to 'kill' a boss. This means that you need to be physically present at
-                    the battle and <u>near the boss when it dies</u> before you can use the cube recipe that grants you
-                    the
-                    reward.
-                </p>
-                <p>If you succeed in killing the target boss, you get a whirling red overlay that looks like three
-                    rotating bolts:
-                </p>
-                <img src="../img/highlights/doc_swirlies.jpg">
-                <p>You now have 30 seconds to perform the cube recipe. If you are too slow and the red overlay vanishes,
-                    you have to do it again!
-                </p>
-                <p><b>Warning:</b> This does not work if the monster is killed by reflected damage, due to a Diablo II
-                    engine limitation. Please use different means of killing the target.
-                </p>
-            </div>
+  <div class="container">
+    <header>
+      <h1>+ BLACK ROAD CHALLENGE +</h1>
+    </header>
+    <nav>
+      <ul class="navpanel">
+        <li>
+          <button onclick="clickConcepts()" class="btnDropdown">Concepts ▼</button>
+          <div id="conceptDropdown" class="dropdown-content">
+            <a href="../concepts/difficulty_levels.html">Difficulty Levels</a>
+            <a href="../concepts/energy_factor.html">Energy Factor</a>
+            <a href="../concepts/block_and_defense.html">Block & Defense</a>
+            <a href="../concepts/players_x.html">Players Command</a>
+            <a href="../concepts/witches_warlocks.html">Witches & Warlocks</a>
+            <a href="../concepts/poison_damage.html">Poison Damage</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickCharacters()" class="btnDropdown">Characters ▼</button>
+          <div id="characterDropdown" class="dropdown-content">
+            <a href="../characters/amazon.html">Amazon</a>
+            <a href="../characters/assassin.html">Assassin</a>
+            <a href="../characters/barbarian.html">Barbarian</a>
+            <a href="../characters/druid.html">Druid</a>
+            <a href="../characters/necromancer.html">Necromancer</a>
+            <a href="../characters/paladin.html">Paladin</a>
+            <a href="../characters/sorceress.html">Sorceress</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickItems()" class="btnDropdown">Items ▼</button>
+          <div id="itemDropdown" class="dropdown-content">
+            <a href="../items/base_items.html">Base Items</a>
+            <a href="../items/tiered_uniques.html">Tiered Uniques</a>
+            <a href="../items/sacred_uniques.html">Sacred Uniques</a>
+            <a href="../items/umos.html">Unique Mystic Orbs</a>
+            <a href="../items/sets.html">Sets</a>
+            <a href="../items/runewords.html">Runewords</a>
+            <a href="../items/cube_recipes.html">Cube Recipes</a>
+            <a href="../items/gems_runes.html">Gems and Runes</a>
+            <a href="../items/jewelwords.html">Jewelwords</a>
+            <a href="../items/honorific_shrine.html">Honorific & Crafted</a>
+            <a href="../items/shrine_bonuses.html">Shrine Bonuses</a>
+            <a href="../items/prefixes_and_suffixes.html">Prefixes & Suffixes</a>
+            <a href="../items/oskill_items.html">Items with Oskills</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickUbers()" class="btnDropdown">Uberquests ▼</button>
+          <div id="uberDropdown" class="dropdown-content">
+            <a href="../uberquests/dungeon_uberquests.html">Dungeon Uberquests</a>
+            <a href="../uberquests/summoning_uberquests.html">Summoning Uberquests</a>
+            <a href="../uberquests/uberlevels.html">Uberlevels</a>
+            <a href="../uberquests/heroic_levels.html">Heroic Levels</a>
+            <a href="../uberquests/trophies.html">Trophy Bonuses</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickChallenges()" class="btnDropdown">Challenges ▼</button>
+          <div id="challengeDropdown" class="dropdown-content">
+            <a href="dragon_eggs.html">Dragon's Eggs</a>
+            <a href="lc1.html">Level Challenge 1</a>
+            <a href="lc2.html">Level Challenge 2</a>
+            <a href="ennead.html">Ennead Challenge</a>
+            <a href="black_road.html">Black Road Challenge</a>
+            <a href="minigames.html">Minigames</a>
+            <a href="monster_tokens.html">Monster Tokens</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickMaps()" class="btnDropdown">Maps ▼</button>
+          <div id="mapDropdown" class="dropdown-content">
+            <a href="../maps/map_k3kba.html">Kurast 3000 BA Map</a>
+            <a href="../maps/map_tran_athulua.html">Tran Athulua Map</a>
+            <a href="../maps/map_fauztinville.html">Fauztinville Map</a>
+            <a href="../maps/map_ureh.html">Kingdom of Shadow Map</a>
+            <a href="../maps/map_duncraig.html">Duncraig Map</a>
+            <a href="../maps/map_vizjun.html">Vizjun Map</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickMisc()" class="btnDropdown">Misc ▼</button>
+          <div id="miscDropdown" class="dropdown-content">
+            <a href="../misc/introduction.html">Introduction</a>
+            <a href="../misc/hirelings.html">Hirelings</a>
+            <a href="../misc/changelog.html">Changelog</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="description">
+      <h2>THE BLACK ROAD CHALLENGE</h2>
+      <p>The Black Road challenge is the hardest challenge in Median XL. It consists of five trials, ranging from
+        easy to very difficult.
+      </p>
+      <div class="sacredUniqueAreas">
+        <p><b>Killing a boss</b><br>
+          This challenge requires you to 'kill' a boss. This means that you need to be physically present at
+          the battle and <u>near the boss when it dies</u> before you can use the cube recipe that grants you
+          the
+          reward.
+        </p>
+        <p>If you succeed in killing the target boss, you get a whirling red overlay that looks like three
+          rotating bolts:
+        </p>
+        <img src="../img/highlights/doc_swirlies.jpg">
+        <p>You now have 30 seconds to perform the cube recipe. If you are too slow and the red overlay vanishes,
+          you have to do it again!
+        </p>
+        <p><b>Warning:</b> This does not work if the monster is killed by reflected damage, due to a Diablo II
+          engine limitation. Please use different means of killing the target.
+        </p>
+      </div>
 
-            <div class="sacredUniqueAreas">
-                <p>
-                    <b>You need your Class Charm</b><br>
-                    This challenge requires you to have your 'Class Charm'. This is a charm that drops in the Kurast
-                    3000 BA uberlevel. If you did the Ennead Challenge, you already have one.
-                </p>
-                <p>
-                    If not, see <a href="../uberquests/dungeon_uberquests.html">THIS PAGE</a> for more information about
-                    Kurast 3000 BA.
-                </p>
-                <p>There are 7 class charms, one for each character class.</p>
-            </div>
+      <div class="sacredUniqueAreas">
+        <p>
+          <b>You need your Class Charm</b><br>
+          This challenge requires you to have your 'Class Charm'. This is a charm that drops in the Kurast
+          3000 BA uberlevel. If you did the Ennead Challenge, you already have one.
+        </p>
+        <p>
+          If not, see <a href="../uberquests/dungeon_uberquests.html">THIS PAGE</a> for more information about
+          Kurast 3000 BA.
+        </p>
+        <p>There are 7 class charms, one for each character class.</p>
+      </div>
 
-            <h2>THE FIVE TRIALS</h2>
+      <h2>THE FIVE TRIALS</h2>
 
-            <p>It is said that the demon Kabraxas rewards his followers with infernal powers: the ability to heal, cast
-                apocalyptic spells or fight like no mere human ever could.
-            </p>
+      <p>It is said that the demon Kabraxas rewards his followers with infernal powers: the ability to heal, cast
+        apocalyptic spells or fight like no mere human ever could.
+      </p>
 
-            <p>To obtain Kabraxas' favour, you will need to pass his tests of faith first. These tests are based on the
-                human weaknesses Kabraxas exploits to corrupt mortals. Thankfully, you are well above being corrupted...
-                right?
-            </p>
+      <p>To obtain Kabraxas' favour, you will need to pass his tests of faith first. These tests are based on the
+        human weaknesses Kabraxas exploits to corrupt mortals. Thankfully, you are well above being corrupted...
+        right?
+      </p>
 
-            <p>The Black Road Challenge consists of five parts. You can do them in any order, but you need to do all of
-                them if you want the reward.
-            </p>
-            <hr>
+      <p>The Black Road Challenge consists of five parts. You can do them in any order, but you need to do all of
+        them if you want the reward.
+      </p>
+      <hr>
 
-            <p><b>1. Trial of Fear</b><br>
-                Overcome your fear of demons by tackling the Butcher in Terror difficulty. Go to The Hole Level 2
-                and summon him, then kill him. Cube the charm while the red swirls are on your character.</p>
-            <p>See <a href="../uberquests/summoning_uberquests.html">THIS PAGE</a> for more information on the Butcher.
-            </p>
-            <p class="reagent">[Class Charm] -> returns [Class Charm] with note of completion (Fear)</p>
+      <p><b>1. Trial of Fear</b><br>
+        Overcome your fear of demons by tackling the Butcher in Terror difficulty. Go to The Hole Level 2
+        and summon him, then kill him. Cube the charm while the red swirls are on your character.</p>
+      <p>See <a href="../uberquests/summoning_uberquests.html">THIS PAGE</a> for more information on the Butcher.
+      </p>
+      <p class="reagent">[Class Charm] -> returns [Class Charm] with note of completion (Fear)</p>
 
-            <p><b>2. Trial of Greed</b><br>
-                Material wealth is a sign of demonic corruption. To pass this trial, keep 666,666 gold or more on your
-                character (not your stash), then use the recipe to complete the trial.</p>
-            <p class="reagent">[Class Charm] -> returns [Class Charm] with note of completion (Greed)</p>
+      <p><b>2. Trial of Greed</b><br>
+        Material wealth is a sign of demonic corruption. To pass this trial, keep 666,666 gold or more on your
+        character (not your stash), then use the recipe to complete the trial.</p>
+      <p class="reagent">[Class Charm] -> returns [Class Charm] with note of completion (Greed)</p>
 
-            <p><b>3. Trial of Contrition</b><br>
-                Kabraxas is almost impressed with your combat prowess against demons. But how about other humans? To
-                complete this Trial, summon and kill Shaman King Koth on Terror difficulty. Cube the charm while the red
-                swirls are on your character.</p>
-            <p>See <a href="../uberquests/summoning_uberquests.html">THIS PAGE</a> for more information about King Koth.
-            </p>
-            <p class="reagent">[Class Charm] -> returns [Class Charm] with note of completion (Contrition)</p>
+      <p><b>3. Trial of Contrition</b><br>
+        Kabraxas is almost impressed with your combat prowess against demons. But how about other humans? To
+        complete this Trial, summon and kill Shaman King Koth on Terror difficulty. Cube the charm while the red
+        swirls are on your character.</p>
+      <p>See <a href="../uberquests/summoning_uberquests.html">THIS PAGE</a> for more information about King Koth.
+      </p>
+      <p class="reagent">[Class Charm] -> returns [Class Charm] with note of completion (Contrition)</p>
 
-            <p><b>4. Trial of Knowledge</b><br>
-                Obtain untold wisdom by collecting the positronic brains of the five Robot Bosses in Fauztinville in
-                Terror difficulty. Kill the Robot Bosses and snap up their Brains.</p>
-            <p>See <a href="../uberquests/uberlevels.html">THIS PAGE</a> for more information about Fauztinville.
-            </p>
-            <p class="reagent">[Class Charm] + Alpha, Beta, Gamma, Delta, Epsilon Brain -> returns [Class Charm] with
-                note of completion (Knowledge)</p>
+      <p><b>4. Trial of Knowledge</b><br>
+        Obtain untold wisdom by collecting the positronic brains of the five Robot Bosses in Fauztinville in
+        Terror difficulty. Kill the Robot Bosses and snap up their Brains.</p>
+      <p>See <a href="../uberquests/uberlevels.html">THIS PAGE</a> for more information about Fauztinville.
+      </p>
+      <p class="reagent">[Class Charm] + Alpha, Beta, Gamma, Delta, Epsilon Brain -> returns [Class Charm] with
+        note of completion (Knowledge)</p>
 
-            <p class="italic">Fauztinville is a huge level, and the Robot Bosses are fairly well hidden. You may need to
-                explore the whole level. One of the bosses requires a teleportation ability to access; if you cannot
-                teleport, use an item with charges of a teleportation skill, like the runeword Pax Mystica or the
-                ubercharm Moon of the Spider. A second boss is at the end of a hidden passage, but can be accessed
-                through teleportation as well.</p>
+      <p class="italic">Fauztinville is a huge level, and the Robot Bosses are fairly well hidden. You may need to
+        explore the whole level. One of the bosses requires a teleportation ability to access; if you cannot
+        teleport, use an item with charges of a teleportation skill, like the runeword Pax Mystica or the
+        ubercharm Moon of the Spider. A second boss is at the end of a hidden passage, but can be accessed
+        through teleportation as well.</p>
 
-            <p><b>5. Trial of Blood</b><br>
-                Kabraxas' element is Fire. Try and sway the Amazon Islands to your cause by eliminating the Priestesses
-                of the amazon gods of Ice and Lightning. But do it quickly. Kabraxas has no time to waste on bumbling
-                humans like you.</p>
+      <p><b>5. Trial of Blood</b><br>
+        Kabraxas' element is Fire. Try and sway the Amazon Islands to your cause by eliminating the Priestesses
+        of the amazon gods of Ice and Lightning. But do it quickly. Kabraxas has no time to waste on bumbling
+        humans like you.</p>
 
-            <p>Your targets are Skovos, Priestess of Karcheus and Lycander, Priestess of Zerae. Both can be found in the
-                Tran Athulua uberlevel. Go kill them on Terror difficulty.
-            </p>
+      <p>Your targets are Skovos, Priestess of Karcheus and Lycander, Priestess of Zerae. Both can be found in the
+        Tran Athulua uberlevel. Go kill them on Terror difficulty.
+      </p>
 
-            <p>The catch is that after you kill either one, you now have only 30 seconds to kill the other and then cube
-                the charm. The timer starts to tick down after your first kill. You can only complete this Trial if you
-                lead them to the same area and kill them quickly, one after the other.
-            </p>
+      <p>The catch is that after you kill either one, you now have only 30 seconds to kill the other and then cube
+        the charm. The timer starts to tick down after your first kill. You can only complete this Trial if you
+        lead them to the same area and kill them quickly, one after the other.
+      </p>
 
-            <p>See <a href="../uberquests/uberlevels.html">THIS PAGE</a> for more information about Tran Athulua.</p>
+      <p>See <a href="../uberquests/uberlevels.html">THIS PAGE</a> for more information about Tran Athulua.</p>
 
-            <p class="italic">There is a third Priestess on the level, Philios, Priestess of Hefaetrus. Make sure you
-                kill the correct Priestesses.</p>
-            <p class="italic">The amazon bosses have relatively low health, and you don't want to kill them too early or
-                you would have to restart the trial. A few helpful tips to keeping the amazons alive:<br>
-                Try not using damaging buffs such as Queen of Blades or Symhpony of Destruction, disable reanimates via
-                the RIP recipe (if you want the reanimates later, equip a temporary item that you won't be using anymore
-                and put the RIP recipe on it), and if possible use abilities of the element that the amazon boss is
-                immune to. A Sorceress, for example, could spread the area around Skovos with Abyss.
-            </p>
+      <p class="italic">There is a third Priestess on the level, Philios, Priestess of Hefaetrus. Make sure you
+        kill the correct Priestesses.</p>
+      <p class="italic">The amazon bosses have relatively low health, and you don't want to kill them too early or
+        you would have to restart the trial. A few helpful tips to keeping the amazons alive:<br>
+        Try not using damaging buffs such as Queen of Blades or Symhpony of Destruction, disable reanimates via
+        the RIP recipe (if you want the reanimates later, equip a temporary item that you won't be using anymore
+        and put the RIP recipe on it), and if possible use abilities of the element that the amazon boss is
+        immune to. A Sorceress, for example, could spread the area around Skovos with Abyss.
+      </p>
 
-            <p class="reagent">[Class Charm] -> returns [Class Charm] with note of completion (Blood)</p>
+      <p class="reagent">[Class Charm] -> returns [Class Charm] with note of completion (Blood)</p>
 
-            <p><b>Black Road Completion</b><br>
-                You did all five Challenges above? Great! Buy four Sacrifical Hearts (sold by magic item vendors) and
-                cube them with your class charm. If you completed all five Challenges, this will add a number of bonuses
-                and unlock the Level Challenge Skill in your skill tree.
-            </p>
+      <p><b>Black Road Completion</b><br>
+        You did all five Challenges above? Great! Buy four Sacrifical Hearts (sold by magic item vendors) and
+        cube them with your class charm. If you completed all five Challenges, this will add a number of bonuses
+        and unlock the Level Challenge Skill in your skill tree.
+      </p>
 
-            <p class="reagent">[Class Charm] + Sacrifical Heart x4 -> returns [Class Charm] with added bonuses</p>
+      <p class="reagent">[Class Charm] + Sacrifical Heart x4 -> returns [Class Charm] with added bonuses</p>
 
-            <p class="italic">This upgrade recipe adds the following bonuses:</p>
-            <p><span class="holy">Amazon</span><br>
-                <span class="magic">+150 to Life<br>
-                    +150 to Mana<br>
-                    Unlocks your Black Road Challenge skill</span>
-            </p>
+      <p class="italic">This upgrade recipe adds the following bonuses:</p>
+      <p><span class="holy">Amazon</span><br>
+        <span class="magic">+150 to Life<br>
+          +150 to Mana<br>
+          Unlocks your Black Road Challenge skill</span>
+      </p>
 
-            <p><span class="holy">Assassin</span><br>
-                <span class="magic">+150 to Life<br>
-                    +150 to Mana<br>
-                    Unlocks your Black Road Challenge skill</span>
-            </p>
+      <p><span class="holy">Assassin</span><br>
+        <span class="magic">+150 to Life<br>
+          +150 to Mana<br>
+          Unlocks your Black Road Challenge skill</span>
+      </p>
 
-            <p><span class="holy">Barbarian</span><br>
-                    <span class="magic">+150 to Life<br>
-                        +150 to Mana<br>
-                        Unlocks your Black Road Challenge skill</span>
-            </p>
+      <p><span class="holy">Barbarian</span><br>
+        <span class="magic">+150 to Life<br>
+          +150 to Mana<br>
+          Unlocks your Black Road Challenge skill</span>
+      </p>
 
-            <p><span class="holy">Druid</span><br>
-                <span class="magic">+150 to Life<br>
-                    +150 to Mana<br>
-                    Unlocks your Black Road Challenge skill</span>
-            </p>
+      <p><span class="holy">Druid</span><br>
+        <span class="magic">+150 to Life<br>
+          +150 to Mana<br>
+          Unlocks your Black Road Challenge skill</span>
+      </p>
 
-            <p><span class="holy">Necromancer</span><br>
-                <span class="magic">+150 to Life<br>
-                    +150 to Mana<br>
-                    Unlocks your Black Road Challenge skill</span>
-            </p>
+      <p><span class="holy">Necromancer</span><br>
+        <span class="magic">+150 to Life<br>
+          +150 to Mana<br>
+          Unlocks your Black Road Challenge skill</span>
+      </p>
 
-            <p><span class="holy">Paladin</span><br>
-                <span class="magic">+150 to Life<br>
-                    +150 to Mana<br>
-                    Unlocks your Black Road Challenge skill</span>
-            </p>
+      <p><span class="holy">Paladin</span><br>
+        <span class="magic">+150 to Life<br>
+          +150 to Mana<br>
+          Unlocks your Black Road Challenge skill</span>
+      </p>
 
-            <p><span class="holy">Sorceress</span><br>
-                <span class="magic">+150 to Life<br>
-                    +150 to Mana<br>
-                    Unlocks your Black Road Challenge skill</span>
-            </p>
+      <p><span class="holy">Sorceress</span><br>
+        <span class="magic">+150 to Life<br>
+          +150 to Mana<br>
+          Unlocks your Black Road Challenge skill</span>
+      </p>
 
-            <hr>
-            <p><b>Your free bonus skill</b><br>
-                This skill can be found at the bottom right of your third skill tab. When you complete the Black Road
-                Challenge, upgrade your class charm and keep it into your inventory. This allows you to put skill points
-                into the skill.
-            </p>
+      <hr>
+      <p><b>Your free bonus skill</b><br>
+        This skill can be found at the bottom right of your third skill tab. When you complete the Black Road
+        Challenge, upgrade your class charm and keep it into your inventory. This allows you to put skill points
+        into the skill.
+      </p>
 
-            <table>
-                <tr>
-                    <th><span class="bold">Name & Class</span></th>
-                    <th class="icon"><span class="bold">Icon</span></th>
-                    <th class="effect"><span class="bold">Effect</span></th>
-                </tr>
-                <tr>
-                    <td>War Spirit<br>[Amazon]</td>
-                    <td><img src="../img/skillicons/amazon/WarSpirit.gif"></td>
-                    <td>Many of the amazon deities represent an aspect of war. The deity's spirits, summoned by an
-                        amazon high priestess or warrior queen, protect her in battle by striking down her enemies,
-                        seemingly out of nowhere.<br>
-                        <span class="italic">Effect: periodically emits spike novas that deal weapon damage</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Psychic Scream<br>[Assassin]</td>
-                    <td><img src="../img/skillicons/assassin/PsychicScream.gif"></td>
-                    <td>There are two schools in psychic training. The most common school promotes balance of mind and
-                        peace of thoughts. This is a creation of the other school: a primal scream that overwhelms
-                        weaker minds with pain and confusion.<br>
-                        <span class="italic">Effect: short ranged shockwave that forces enemies to flee</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Thundergod<br>[Barbarian]</td>
-                    <td><img src="../img/skillicons/barbarian/Thundergod.gif"></td>
-                    <td>A warrior who has his eyes on the throne of his tribe is sent to the summit of Mt. Sescheron to
-                        await the next thunderstorm. If he survives, he may have learned something valuable about the
-                        forces of nature.<br>
-                        <span class="italic">Effect: adds stun damage and periodically emits stun novas</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Lifeshield<br>[Druid]</td>
-                    <td><img src="../img/skillicons/druid/Lifeshield.gif"></td>
-                    <td>Aside from their healing effect on humans and other animals, the juice of the Glor-An-Fhaidha's
-                        fruits can be applied to armour, making it as hard as the bark of a thousand year tree.<br>
-                        <span class="italic">Passive effect: consuming a Goodberry also increases defence</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Graveyard<br>[Necromancer]</td>
-                    <td><img src="../img/skillicons/necromancer/Graveyard.gif"></td>
-                    <td>The deathspeaker establishes an aura powered by the emanations of a demon's wicked thoughts,
-                        conjuring torture equipment and striking the demon with the punishments it desires most to
-                        inflict upon humanity.<br>
-                        <span class="italic">Effect: when activated, periodically shoots deadly spiked balls at
-                            enemies</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Blessed Life<br>[Paladin]</td>
-                    <td><img src="../img/skillicons/paladin/BlessedLife.gif"></td>
-                    <td>A life of worship teaches the warrior of Zakarum the futility of evil. The denizens of hell are
-                        but vermin to an emissary of the Light.<br>
-                        <span class="italic">Passive effect: reduces damage taken and speeds up healing apples</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Arcane Fury<br>[Sorceress]</td>
-                    <td><img src="../img/skillicons/sorceress/ArcaneFury.gif"></td>
-                    <td>Hell hath no Fury like a woman scorned. This metamagic ability drastically speeds up
-                        spellcasting, movement and mana regeneration for a short period of time.<br>
-                        <span class="italic">Effect: temporarily increases casting speed and mana regeneration</span>
-                    </td>
-                </tr>
-            </table>
-            <div class="spacing"></div>
-        </div>
+      <table>
+        <tr>
+          <th><span class="bold">Name & Class</span></th>
+          <th class="icon"><span class="bold">Icon</span></th>
+          <th class="effect"><span class="bold">Effect</span></th>
+        </tr>
+        <tr>
+          <td>War Spirit<br>[Amazon]</td>
+          <td><img src="../img/skillicons/amazon/WarSpirit.gif"></td>
+          <td>Many of the amazon deities represent an aspect of war. The deity's spirits, summoned by an
+            amazon high priestess or warrior queen, protect her in battle by striking down her enemies,
+            seemingly out of nowhere.<br>
+            <span class="italic">Effect: periodically emits spike novas that deal weapon damage</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Psychic Scream<br>[Assassin]</td>
+          <td><img src="../img/skillicons/assassin/PsychicScream.gif"></td>
+          <td>There are two schools in psychic training. The most common school promotes balance of mind and
+            peace of thoughts. This is a creation of the other school: a primal scream that overwhelms
+            weaker minds with pain and confusion.<br>
+            <span class="italic">Effect: short ranged shockwave that forces enemies to flee</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Thundergod<br>[Barbarian]</td>
+          <td><img src="../img/skillicons/barbarian/Thundergod.gif"></td>
+          <td>A warrior who has his eyes on the throne of his tribe is sent to the summit of Mt. Sescheron to
+            await the next thunderstorm. If he survives, he may have learned something valuable about the
+            forces of nature.<br>
+            <span class="italic">Effect: adds stun damage and periodically emits stun novas</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Lifeshield<br>[Druid]</td>
+          <td><img src="../img/skillicons/druid/Lifeshield.gif"></td>
+          <td>Aside from their healing effect on humans and other animals, the juice of the Glor-An-Fhaidha's
+            fruits can be applied to armour, making it as hard as the bark of a thousand year tree.<br>
+            <span class="italic">Passive effect: consuming a Goodberry also increases defence</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Graveyard<br>[Necromancer]</td>
+          <td><img src="../img/skillicons/necromancer/Graveyard.gif"></td>
+          <td>The deathspeaker establishes an aura powered by the emanations of a demon's wicked thoughts,
+            conjuring torture equipment and striking the demon with the punishments it desires most to
+            inflict upon humanity.<br>
+            <span class="italic">Effect: when activated, periodically shoots deadly spiked balls at
+              enemies</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Blessed Life<br>[Paladin]</td>
+          <td><img src="../img/skillicons/paladin/BlessedLife.gif"></td>
+          <td>A life of worship teaches the warrior of Zakarum the futility of evil. The denizens of hell are
+            but vermin to an emissary of the Light.<br>
+            <span class="italic">Passive effect: reduces damage taken and speeds up healing apples</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Arcane Fury<br>[Sorceress]</td>
+          <td><img src="../img/skillicons/sorceress/ArcaneFury.gif"></td>
+          <td>Hell hath no Fury like a woman scorned. This metamagic ability drastically speeds up
+            spellcasting, movement and mana regeneration for a short period of time.<br>
+            <span class="italic">Effect: temporarily increases casting speed and mana regeneration</span>
+          </td>
+        </tr>
+      </table>
+      <div class="spacing"></div>
     </div>
+  </div>
 </body>
 <script src="../js/dropdown.js"></script>
 

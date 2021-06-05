@@ -1,0 +1,10 @@
+.map {
+  border: 3px solid #bbab7773;
+  display: inline-block;
+  margin: 20px 0;
+  max-width: 90%;
+}
+
+.map img {
+  max-width: 100%;
+}
