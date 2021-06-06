@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="../css/general.css">
+  <link rel="stylesheet" type="text/css" href="css/changelog.css">
+  <title>Changelog | MXL:Z Documentation</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>+ ZETA CHANGELOG +</h1>
+    </header>
+    <nav>
+      <ul class="navpanel">
+        <li>
+          <button onclick="clickConcepts()" class="btnDropdown">Concepts ▼</button>
+          <div id="conceptDropdown" class="dropdown-content">
+            <a href="../concepts/difficulty_levels.html">Difficulty Levels</a>
+            <a href="../concepts/energy_factor.html">Energy Factor</a>
+            <a href="../concepts/block_and_defense.html">Block & Defense</a>
+            <a href="../concepts/players_x.html">Players Command</a>
+            <a href="../concepts/witches_warlocks.html">Witches & Warlocks</a>
+            <a href="../concepts/poison_damage.html">Poison Damage</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickCharacters()" class="btnDropdown">Characters ▼</button>
+          <div id="characterDropdown" class="dropdown-content">
+            <a href="../characters/amazon.html">Amazon</a>
+            <a href="../characters/assassin.html">Assassin</a>
+            <a href="../characters/barbarian.html">Barbarian</a>
+            <a href="../characters/druid.html">Druid</a>
+            <a href="../characters/necromancer.html">Necromancer</a>
+            <a href="../characters/paladin.html">Paladin</a>
+            <a href="../characters/sorceress.html">Sorceress</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickItems()" class="btnDropdown">Items ▼</button>
+          <div id="itemDropdown" class="dropdown-content">
+            <a href="../items/base_items.html">Base Items</a>
+            <a href="../items/tiered_uniques.html">Tiered Uniques</a>
+            <a href="../items/sacred_uniques.html">Sacred Uniques</a>
+            <a href="../items/umos.html">Unique Mystic Orbs</a>
+            <a href="../items/sets.html">Sets</a>
+            <a href="../items/runewords.html">Runewords</a>
+            <a href="../items/cube_recipes.html">Cube Recipes</a>
+            <a href="../items/gems_runes.html">Gems and Runes</a>
+            <a href="../items/jewelwords.html">Jewelwords</a>
+            <a href="../items/honorific_shrine.html">Honorific & Crafted</a>
+            <a href="../items/shrine_bonuses.html">Shrine Bonuses</a>
+            <a href="../items/prefixes_and_suffixes.html">Prefixes & Suffixes</a>
+            <a href="../items/oskill_items.html">Items with Oskills</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickUbers()" class="btnDropdown">Uberquests ▼</button>
+          <div id="uberDropdown" class="dropdown-content">
+            <a href="../uberquests/dungeon_uberquests.html">Dungeon Uberquests</a>
+            <a href="../uberquests/summoning_uberquests.html">Summoning Uberquests</a>
+            <a href="../uberquests/uberlevels.html">Uberlevels</a>
+            <a href="../uberquests/heroic_levels.html">Heroic Levels</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickChallenges()" class="btnDropdown">Challenges ▼</button>
+          <div id="challengeDropdown" class="dropdown-content">
+            <a href="../challenges/dragon_eggs.html">Dragon's Eggs</a>
+            <a href="../challenges/lc1.html">Level Challenge 1</a>
+            <a href="../challenges/lc2.html">Level Challenge 2</a>
+            <a href="../challenges/ennead.html">Ennead Challenge</a>
+            <a href="../challenges/black_road.html">Black Road Challenge</a>
+            <a href="../challenges/minigames.html">Minigames</a>
+            <a href="../challenges/monster_tokens.html">Monster Tokens</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickMaps()" class="btnDropdown">Maps ▼</button>
+          <div id="mapDropdown" class="dropdown-content">
+            <a href="../maps/map_k3kba.html">Kurast 3000 BA Map</a>
+            <a href="../maps/map_tran_athulua.html">Tran Athulua Map</a>
+            <a href="../maps/map_fauztinville.html">Fauztinville Map</a>
+            <a href="../maps/map_ureh.html">Kingdom of Shadow Map</a>
+            <a href="../maps/map_duncraig.html">Duncraig Map</a>
+            <a href="../maps/map_vizjun.html">Vizjun Map</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickMisc()" class="btnDropdown">Misc ▼</button>
+          <div id="miscDropdown" class="dropdown-content">
+            <a href="introduction.html">Introduction</a>
+            <a href="hirelings.html">Hirelings</a>
+            <a href="changelog.html">Changelog</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="description">
+      <h2>ZETA CHANGELOG</h2>
+      <p>This is the complete list of changes made from Omega 003 to Zeta</p>
+      <hr>
+      <div class="spacing"></div>
+
+      <h3><b>Quality of Life</b></h3>
+      <p>
+        - Player inventory and horadric cube size has been massively increased<br>
+        - Hirelings now have slots for any item, except for a second ring<br>
+        - New Item: <b>Flask of Renewal</b>. It functions exactly the same as an Oil of Renewal, but has 50 charges and
+        costs 50 times more.<br>
+        - Mass disenchanting and "sigging" added. You may disenchant up to 10 items and sig up to 25 items. You may
+        combine set & unique items and mix various item types.<br>
+        - Arcane Shards now come in sizes of 1 to 4. You may mix different arcane shards in the cube, up to a maximum
+        shard worth of 3 Arcane Crystals each time.<br>
+        - Shrine Vessels and Arcane Clusters have been added. Cube any Shrine or Arcane Crystal with an Oil of Craft to
+        create a Shrine Vessel or Arcane Cluster, respectively. Shrine Vessels and Arcane Clusters act as a container
+        for Shrines and Arcane Crystals. Cube a Vessel with shrines of the same type, or a Cluster with Arcane Crystals
+        to increase the stored amount. Cube a Vessel or Cluster by itself to receive the Shrine or Crystal and the
+        Vessel or Cluster with 1 less item stored.<br>
+      </p>
+
+      <h3><b>Characters</b></h3>
+      <p>
+        - <br>
+      </p>
+
+      <h3><b>Items</b></h3>
+      <p>
+        <b>Item Renames</b><br>
+        Renamed the following items, since their names were silly:<br>
+        - Roflchopper -> Tveihandr Danox<br>
+        - Axekicker -> Brute's Mansplitter<br>
+        - Mr. Clubbo -> Garrett's Blackjack<br>
+        - Snotflinger -> Claw Viper Bow<br>
+        - Boss Crow -> Crowbane<br>
+        - Katar Hero -> Blade of Undeath<br>
+        - Mr. Painless -> Black Bow of the Betrayer<br>
+        - Weird Sister -> Orb of the Occult<br>
+        - PortalKombat -> Wrathraven's Skull<br>
+        - Trollface -> Hallow's Visage<br>
+        - Kekeke -> Coldworm's Eye<br>
+        - 83K Damage Cap -> Beanie Sidhe (carried over from 2012)<br>
+        - Modder's Block -> Shield of Hakan II (carried over from 2012)<br>
+        - Gauntlets Khan -> Lamha Na Draoithe (carried over from 2012)<br>
+        - Greatest Axe -> Elder Law (carried over from 2012)<br>
+        - Safety Fist -> Baron Sludge's Bonecrushers (carried over from 2012)<br>
+        - SuperMonStar -> Linarian's Furs (carried over from 2012)<br>
+        - The Square Peg -> The Compensator (carried over from 2012)<br>
+        - Rime Bomb -> Lacuni Cowl (carried over from 2012)<br>
+        - Nevermind-> Arkenstone (carried over from 2012)<br>
+        - Big Bad -> Beast Prince<br>
+        - Noob Loop -> Flavie's Ring<br>
+        - Self-Referential Secret Unlisted Item -> Seal of the City Watch<br>
+        - The Idiot Ball -> Fool's Bane<br>
+        - Test Tube -> Frozen Quills<br><br>
+      </p>
+
+      <p>
+        <b>Item Reworks</b><br>
+        - Replaced Tldr Sacred Belt with Vampire's Bloodied Belt. Check the docs for stats.<br><br>
+      </p>
+      <p>
+        <b>New Items</b><br>
+        - Black Hand Sigil
+      </p>
+
+      <p>
+      <h3><b>Monsters</b></h3>
+      - New monster: <span class="rare">Treewarden</span>. Tough tree beasts with a strong Wildfire attack, they spawn
+      in some jungle areas of Act III.<br>
+      </p>
+
+      <h3><b>Uberquests</b></h3>
+      - Added a new item: <span class="unique">Elemental Prism</span>. This is a charm that drops from the Volcanic Shrine in Tran Athulua and is
+      used for LC1.<br>
+      LC1 now works slightly differently: you must first obtain the Elemental Prism, then head to the bosses, and when
+      they drop their charms, cube it with the Elemental Prism. The Prism would then get their bonuses. The charms by
+      themselves no longer have any stats on them, so their only use is cubing with the Prism.<br>
+      The reason for this feature is that it didn't make sense to cube the charms with scrolls of TP/identify, it felt
+      unimmersive. Besides that, it saves you 2 inventory slots.<br>
+      </p>
+
+      <p>
+      <h3><b>Technical</b></h3>
+      - Some .txt files, including, but not limited to: uniqueitems.txt, misc.txt, cubemain.txt, sets.txt, armor.txt,
+      weapons.txt have been greatly cleaned up and reorganized.<br>
+      </p>
+
+      <p>
+      <h3><b>Code Edits</b></h3>
+      - Median XL Zeta now comes with a .dll that provides code edits to the game. The code edits are:
+      - The maximum HP that a player can reach before visual bugs occur has been doubled. Credits to whist.
+      - Throwing a weapon now no longer reduces its quantity. This was done for 2 reasons:<br>
+      a. Throwing weapons had a problem with their price. They would sell for a lot of gold if you put a rune into them
+      and their repair cost was high, all because of the quantity.<br>
+      b. You cannot repair ethereal items, so if you'd deplete the quantity of an ethereal throwing weapon, it would be
+      forever useless. Jewels with the Indestructible attribute don't help with it. Only auto attack would consume
+      charges, but accidents can happen and a player might find himself accidentally using auto attack for different
+      reasons. The chance of actually depleting a throwing weapons were extremely low, but it's better to be 100%
+      safe.<br>
+      - The bug with multiple Astroghas spawning should no longer happen (untested)<br>
+      </p>
+      <p>asdas</p>
+    </div>
+  </div>
+</body>
+<script src="../js/dropdown.js"></script>
+
+</html>
