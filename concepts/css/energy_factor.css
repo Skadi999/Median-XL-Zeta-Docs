@@ -1,3 +1,22 @@
 #energy_factor {
     width: 100%;
 }
+
+.frame {
+  width: 40%;
+  background-color: #1a160c;
+  border: 3px solid #413922e3;
+  padding: 10px 30px;
+}
+
+.textField {
+  margin-bottom: 12px;
+  background-color: grey;
+  border: none;
+}
+
+#btnCalculate {
+  margin-bottom: 10px;
+  background-color: grey;
+  border: none;
+}

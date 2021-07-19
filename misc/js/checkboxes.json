@@ -1,0 +1,32 @@
+[
+  {
+    "id": "hDenOfEvil",
+    "skillPoints": 1,
+    "maxSkillPoints": 0
+  },
+  {
+    "id": "tDenOfEvil",
+    "skillPoints": 1,
+    "maxSkillPoints": 0
+  },
+  {
+    "id": "dDenOfEvil",
+    "skillPoints": 1,
+    "maxSkillPoints": 0
+  },
+  {
+    "id": "hRadament",
+    "skillPoints": 1,
+    "maxSkillPoints": 0
+  },
+  {
+    "id": "tRadament",
+    "skillPoints": 1,
+    "maxSkillPoints": 0
+  },
+  {
+    "id": "dRadament",
+    "skillPoints": 1,
+    "maxSkillPoints": 0
+  }
+]

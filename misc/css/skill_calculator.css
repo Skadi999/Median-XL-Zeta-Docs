@@ -1,0 +1,60 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.grid-item-left {
+  padding: 20px;
+}
+
+.grid-item-right {
+  padding: 20px;
+}
+
+.shortDescription {
+  text-align: left;
+}
+
+td, th {
+  text-align: left;
+  padding: 1px 3px;
+  /* border: 1px solid rgb(179, 168, 147); */
+  vertical-align: middle;
+}
+
+th {
+  font-weight: bold;
+}
+
+.tableSkills {
+  margin-bottom: 25px;
+}
+
+.tableSpace {
+  padding: 20px 0;
+}
+
+#trVenefica {
+  display: none;
+}
+
+.buttons {
+  text-align: left;
+  margin: 10px 0 10px 0;
+}
+
+input[type="text"]:disabled {
+  background-color: white;
+}
+
+.btnAddSkill, .btnRemoveSkill {
+  background-color: rgb(117, 11, 32);
+  border-color: crimson;
+  font-weight: bold;
+  color: #838363;
+}
+
+.btnAddSkill:disabled, .btnRemoveSkill:disabled {
+  background-color: rgb(43, 15, 20);
+  border-color: rgb(105, 32, 47);
+}

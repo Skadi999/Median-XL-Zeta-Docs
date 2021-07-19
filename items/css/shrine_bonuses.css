@@ -1,0 +1,18 @@
+ table {
+    margin: 20px auto;
+    width: 90%;
+}
+
+td, th {
+    border: 1px solid rgb(179, 168, 147);
+    padding: 10px;
+}
+
+th {
+    font-weight: bold;
+}
+
+td span {
+  display: inline-block;
+  vertical-align: middle;
+}

@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="../css/general.css">
+  <link rel="stylesheet" type="text/css" href="css/characters.css">
+  <link rel="stylesheet" type="text/css" href="css/oskills.css">
+  <title>Character Only Skills | MXL:Z Documentation</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>+ Character Only Skills +</h1>
+    </header>
+    <nav>
+      <ul class="navpanel">
+        <li>
+          <button onclick="clickConcepts()" class="btnDropdown">Concepts ▼</button>
+          <div id="conceptDropdown" class="dropdown-content">
+            <a href="../concepts/difficulty_levels.html">Difficulty Levels</a>
+            <a href="../concepts/energy_factor.html">Energy Factor</a>
+            <a href="../concepts/block_and_defense.html">Block & Defense</a>
+            <a href="../concepts/players_x.html">Players Command</a>
+            <a href="../concepts/witches_warlocks.html">Witches & Warlocks</a>
+            <a href="../concepts/poison_damage.html">Poison Damage</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickCharacters()" class="btnDropdown">Characters ▼</button>
+          <div id="characterDropdown" class="dropdown-content">
+            <a href="amazon.html">Amazon</a>
+            <a href="assassin.html">Assassin</a>
+            <a href="barbarian.html">Barbarian</a>
+            <a href="druid.html">Druid</a>
+            <a href="necromancer.html">Necromancer</a>
+            <a href="paladin.html">Paladin</a>
+            <a href="sorceress.html">Sorceress</a>
+            <a href="oskills.html">Item-Only Skills</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickItems()" class="btnDropdown">Items ▼</button>
+          <div id="itemDropdown" class="dropdown-content">
+            <a href="../items/base_items.html">Base Items</a>
+            <a href="../items/tiered_uniques.html">Tiered Uniques</a>
+            <a href="../items/sacred_uniques.html">Sacred Uniques</a>
+            <a href="../items/umos.html">Unique Mystic Orbs</a>
+            <a href="../items/sets.html">Sets</a>
+            <a href="../items/runewords.html">Runewords</a>
+            <a href="../items/cube_recipes.html">Cube Recipes</a>
+            <a href="../items/gems_runes.html">Gems and Runes</a>
+            <a href="../items/jewelwords.html">Jewelwords</a>
+            <a href="../items/honorific_shrine.html">Honorific & Crafted</a>
+            <a href="../items/shrine_bonuses.html">Shrine Bonuses</a>
+            <a href="../items/prefixes_and_suffixes.html">Prefixes & Suffixes</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickUbers()" class="btnDropdown">Uberquests ▼</button>
+          <div id="uberDropdown" class="dropdown-content">
+            <a href="../uberquests/dungeon_uberquests.html">Dungeon Uberquests</a>
+            <a href="../uberquests/summoning_uberquests.html">Summoning Uberquests</a>
+            <a href="../uberquests/uberlevels.html">Uberlevels</a>
+            <a href="../uberquests/heroic_levels.html">Heroic Levels</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickChallenges()" class="btnDropdown">Challenges ▼</button>
+          <div id="challengeDropdown" class="dropdown-content">
+            <a href="../challenges/dragon_eggs.html">Dragon's Eggs</a>
+            <a href="../challenges/lc1.html">Level Challenge 1</a>
+            <a href="../challenges/lc2.html">Level Challenge 2</a>
+            <a href="../challenges/ennead.html">Ennead Challenge</a>
+            <a href="../challenges/black_road.html">Black Road Challenge</a>
+            <a href="../challenges/minigames.html">Minigames</a>
+            <a href="../challenges/monster_tokens.html">Monster Tokens</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickMaps()" class="btnDropdown">Maps ▼</button>
+          <div id="mapDropdown" class="dropdown-content">
+            <a href="../maps/map_k3kba.html">Kurast 3000 BA Map</a>
+            <a href="../maps/map_tran_athulua.html">Tran Athulua Map</a>
+            <a href="../maps/map_fauztinville.html">Fauztinville Map</a>
+            <a href="../maps/map_ureh.html">Kingdom of Shadow Map</a>
+            <a href="../maps/map_duncraig.html">Duncraig Map</a>
+            <a href="../maps/map_vizjun.html">Vizjun Map</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickMisc()" class="btnDropdown">Misc ▼</button>
+          <div id="miscDropdown" class="dropdown-content">
+            <a href="../misc/introduction.html">Introduction</a>
+            <a href="../misc/hirelings.html">Hirelings</a>
+            <a href="../misc/changelog.html">Changelog</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="description">
+      <h2>OSKILLS</h2>
+      <p>Aside from the regular character skills, Median XL features a variety of item-only skills. Some are so powerful
+        and devastating that the human mind cannot learn or comprehend them. Others were abandoned in favour of new and
+        stronger magic, but are still useful for adventurers looking for a solution to a particular problem.<br><br>
+        Some of these can be cast much like regular skills when you equip the item that grants the skill. Others are
+        triggered by items. Either way, these skills enable you to create a character like no other!
+      </p>
+      <img src="../img/highlights/doc_spiraldance.jpg" alt="Spiral Dance">
+
+      <p><b>Spell scaling</b> Item-only elemental spells gain a damage bonus from energy, just like regular elemental
+        spells.</p>
+      <h3>Melee Skills</h3>
+      <table id="melee">
+        <tr>
+          <th>Name</th>
+          <th class="icon">Icon</th>
+          <th class="effect">Effect</th>
+        </tr>
+        <tr>
+          <td>Ancient's Hand</td>
+          <td><img src="../img/skillicons/oskills/0026.bmp" alt="Ancient's Hand"></td>
+          <td><i>Effect: melee attack that sends a shockwave explosion through the ground</i></td>
+        </tr>
+        <tr>
+          <td>Bloodspeaker's Mark</td>
+          <td><img src="../img/skillicons/oskills/0035.bmp" alt="Bloodspeaker's Mark"></td>
+          <td><i>Effect: melee attack that summons bloodknights with a Tremor attack</i></td>
+        </tr>
+        <tr>
+          <td>Cautious Strike</td>
+          <td><img src="../img/skillicons/oskills/0041.bmp" alt="Cautious Strike"></td>
+          <td><i>Effect: dual wield attack that raises defence and reduces damage taken</i></td>
+        </tr>
+        <tr>
+          <td>Cherub Strike</td>
+          <td><img src="../img/skillicons/oskills/0044.bmp" alt="Cherub Strike"></td>
+          <td><i>Effect: retaliatory attack that manifests an angel that attacks enemies</i></td>
+        </tr>
+        <tr>
+          <td>Claw Tornado</td>
+          <td><img src="../img/skillicons/oskills/0045.bmp" alt="Claw Tornado"></td>
+          <td><i>Effect: melee attack that unleashes weapon damage twisters</i></td>
+        </tr>
+        <tr>
+          <td>Clobber</td>
+          <td><img src="../img/skillicons/oskills/0046.bmp" alt="Clobber"></td>
+          <td><i>Effect: melee attack that hits faster, does more damage and knocks back</i></td>
+        </tr>
+        <tr>
+          <td>Conquest</td>
+          <td><img src="../img/skillicons/oskills/0049.bmp" alt="Conquest"></td>
+          <td><i>Effect: melee attack that temporarily turns you invulnerable</i></td>
+        </tr>
+        <tr>
+          <td>Danse Macabre</td>
+          <td><img src="../img/skillicons/oskills/0102.bmp" alt="Danse Macabre"></td>
+          <td><i>Effect: a fierce spinning attack</i></td>
+        </tr>
+        <tr>
+          <td>Feral Strike</td>
+          <td><img src="../img/skillicons/oskills/0071.bmp" alt="Feral Strike"></td>
+          <td><i>Effect: melee attack that increases your speed after striking</i></td>
+        </tr>
+        <tr>
+          <td>Fowl Fight</td>
+          <td><img src="../img/skillicons/oskills/0000.bmp" alt="Fowl Fight"></td>
+          <td><i>Effect: melee attack that unleashes homing chickens</i></td>
+        </tr>
+        <tr>
+          <td>Gorefest</td>
+          <td><img src="../img/skillicons/oskills/0121.bmp" alt="Gorefest"></td>
+          <td><i>Effect: melee attack that splatters the area with damaging guts and blood</i></td>
+        </tr>
+        <tr>
+          <td>Hamstring</td>
+          <td><img src="../img/skillicons/oskills/0089.bmp" alt="Hamstring"></td>
+          <td><i>Effect: melee attack that adds stun damage to subsequent attacks</i></td>
+        </tr>
+        <tr>
+          <td>Harvest</td>
+          <td><img src="../img/skillicons/oskills/0102.bmp" alt="Harvest"></td>
+          <td><i>Effect: whirling necromantic melee attack of death</i></td>
+        </tr>
+        <tr>
+          <td>Medusa</td>
+          <td><img src="../img/skillicons/oskills/0124.bmp" alt="Medusa"></td>
+          <td><i>Effect: melee attack that summons water snakes that attack enemies</i></td>
+        </tr>
+        <tr>
+          <td>Overpower</td>
+          <td><img src="../img/skillicons/oskills/0084.bmp" alt="Overpower"></td>
+          <td><i>Effect: melee attack that hits the target multiple times</i></td>
+        </tr>
+        <tr>
+          <td>Ravage</td>
+          <td><img src="../img/skillicons/oskills/0118.bmp" alt="Ravage"></td>
+          <td><i>Effect: multiple very fast melee attacks against all enemies</i></td>
+        </tr>
+        <tr>
+          <td>Rock Shock</td>
+          <td><img src="../img/skillicons/oskills/0143.bmp" alt="Rock Shock"></td>
+          <td><i>Effect: melee attack that produces a rock that bounces off enemies</i></td>
+        </tr>
+        <tr>
+          <td>Spin to Win</td>
+          <td><img src="../img/skillicons/oskills/0102.bmp" alt="Spin to Win"></td>
+          <td><i>Effect: Whirling attack</i></td>
+        </tr>
+        <tr>
+          <td>Spiral Dance</td>
+          <td><img src="../img/skillicons/oskills/0113.bmp" alt="Spiral Dance"></td>
+          <td><i>Effect: melee attack that emits a circle of whirling spirits</i></td>
+        </tr>
+        <tr>
+          <td>Sunburn</td>
+          <td><img src="../img/skillicons/oskills/0111.bmp" alt="Sunburn"></td>
+          <td><i>Effect: melee attack that blinds enemies around the target</i></td>
+        </tr>
+        <tr>
+          <td>Thorn Field</td>
+          <td><img src="../img/skillicons/oskills/0119.bmp" alt="Thorn Field"></td>
+          <td><i>Effect: melee attack that summons a ripple of spiked roots</i></td>
+        </tr>
+        <tr>
+          <td>Time Strike</td>
+          <td><img src="../img/skillicons/oskills/0090.bmp" alt="Time Strike"></td>
+          <td><i>Effect: melee attack that hits again after a short delay</i></td>
+        </tr>
+        <tr>
+          <td>Whirlpool</td>
+          <td><img src="../img/skillicons/oskills/0138.bmp" alt="Whirlpool"></td>
+          <td><i>Effect: melee attack that creates a devastating vortex</i></td>
+        </tr>
+      </table>
+      <div class="spacing"></div>
+
+      <h3>Ranged Skills</h3>
+      <table id="ranged">
+        <tr>
+          <th>Name</th>
+          <th class="icon">Icon</th>
+          <th class="effect">Effect</th>
+        </tr>
+        <tr>
+          <td>Arrow Swarm</td>
+          <td><img src="../img/skillicons/oskills/0027.bmp" alt="Arrow Swarm"></td>
+          <td><i>Effect: shoot multiple zigzagging arrows</i></td>
+        </tr>
+        <tr>
+          <td>Ambush</td>
+          <td><img src="../img/skillicons/oskills/0000.bmp" alt="Ambush"></td>
+          <td><i>Effect: hidden archers randomly fire arrows from a distance</i></td>
+        </tr>
+        <tr>
+          <td>Cyclone</td>
+          <td><img src="../img/skillicons/oskills/cyclone.bmp" alt="Cyclone"></td>
+          <td><i>Effect: shoot a zigzagging blast of wind from your bow</i></td>
+        </tr>
+        <tr>
+          <td>Deathstrike</td>
+          <td><img src="../img/skillicons/oskills/0058.bmp" alt="Deathstrike"></td>
+          <td><i>Effect: crossbow attack that calls down an energy blast</i></td>
+        </tr>
+        <tr>
+          <td>Guided Chain</td>
+          <td><img src="../img/skillicons/oskills/guided_chain.bmp" alt="Guided Chain"></td>
+          <td><i>Effect: arrow that pierces and tracks down random enemies</i></td>
+        </tr>
+        <tr>
+          <td>O.H.M.A.N</td>
+          <td><img src="../img/skillicons/oskills/0142.bmp" alt="O.H.M.A.N"></td>
+          <td><i>Effect: shoot an Orb of Homing Multishot Arrow Novas!</i></td>
+        </tr>
+        <tr>
+          <td>Scattershot</td>
+          <td><img src="../img/skillicons/oskills/0083.bmp" alt="Scattershot"></td>
+          <td><i>Effect: arrow that pierces and unleashes shock novas</i></td>
+        </tr>
+        <tr>
+          <td>Silver Dart</td>
+          <td><img src="../img/skillicons/oskills/silver_dart.bmp" alt="Silver Dart"></td>
+          <td><i>Effect: crossbow bolt that pierces and splits on impact</i></td>
+        </tr>
+        <tr>
+          <td>Squall Gust</td>
+          <td><img src="../img/skillicons/oskills/0123.bmp" alt="Squall Gust"></td>
+          <td><i>Effect: shoot a wall of clouds from your bow</i></td>
+        </tr>
+        <tr>
+          <td>Tantrum</td>
+          <td><img src="../img/skillicons/oskills/0120.bmp" alt="Tantrum"></td>
+          <td><i>Effect: shoots shrapnel from your bow in all directions around you</i></td>
+        </tr>
+        <tr>
+          <td>Wraith Arrow</td>
+          <td><img src="../img/skillicons/oskills/0128.bmp" alt="Wraith Arrow"></td>
+          <td><i>Effect: arrow that unleashes magical homing spirits on striking</i></td>
+        </tr>
+        <tr>
+          <td>Maelstrom</td>
+          <td><img src="../img/skillicons/oskills/0127.bmp" alt="Maelstrom"></td>
+          <td><i>Effect: javelin that emits multiple novas while in flight</i></td>
+        </tr>
+        <tr>
+          <td>Sunspear</td>
+          <td><img src="../img/skillicons/oskills/0091.bmp" alt="Sunspear"></td>
+          <td><i>Effect: javelin that bounces off the target, stunning enemies in its path</i></td>
+        </tr>
+        <tr>
+          <td>Shadow Blade</td>
+          <td><img src="../img/skillicons/oskills/0092.bmp" alt="Shadow Blade"></td>
+          <td><i>Effect: throwing knife that inflicts lethal magic damage</i></td>
+        </tr>
+        <tr>
+          <td>Hawk Talons</td>
+          <td><img src="../img/skillicons/oskills/0137.bmp" alt="Hawk Talons"></td>
+          <td><i>Effect: landmine that explodes with a flurry of throwing axes</i></td>
+        </tr>
+      </table>
+      <div class="spacing"></div>
+
+      <h3>Trap Skills</h3>
+      <table id="trap">
+        <tr>
+          <th>Name</th>
+          <th class="icon">Icon</th>
+          <th class="effect">Effect</th>
+        </tr>
+        <tr>
+          <td>ATMG Sentry</td>
+          <td><img src="../img/skillicons/oskills/0028.bmp" alt="ATMG Sentry"></td>
+          <td><i>Effect: sentry that fires a machine gun at nearby enemies</i></td>
+        </tr>
+        <tr>
+          <td>Blade Barrier</td>
+          <td><img src="../img/skillicons/oskills/0031.bmp" alt="Blade Barrier"></td>
+          <td><i>Effect: spiked wall that fragments on contact, dealing weapon damage</i></td>
+        </tr>
+        <tr>
+          <td>Death Shards</td>
+          <td><img src="../img/skillicons/oskills/0000.bmp" alt="Death Shards"></td>
+          <td><i>Effect: detonates a corpse, sending out a weapon damage spike blast</i></td>
+        </tr>
+        <tr>
+          <td>Disco Inferno</td>
+          <td><img src="../img/skillicons/oskills/0061.bmp" alt="Disco Inferno"></td>
+          <td><i>Effect: kills your enemies deader than disco!</i></td>
+        </tr>
+        <tr>
+          <td>Guard Tower</td>
+          <td><img src="../img/skillicons/oskills/0129.bmp" alt="Guard Tower"></td>
+          <td><i>Effect: summons a tower that shoots arrows at enemies</i></td>
+        </tr>
+        <!-- <tr>
+          <td>Slicer Blade</td>
+          <td><img src="../img/skillicons/oskills/0046.bmp" alt="Slicer Blade"></td>
+          <td><i>Effect: magnetically suspends spinning blades in front of you</i></td>
+        </tr> -->
+        <tr>
+          <td>SMG</td>
+          <td><img src="../img/skillicons/oskills/0130.bmp" alt="SMG"></td>
+          <td><i>Effect: fires a machine gun at your target</i></td>
+        </tr>
+        <tr>
+          <td>Soulshatter</td>
+          <td><img src="../img/skillicons/oskills/0140.bmp" alt="Soulshatter"></td>
+          <td><i>Effect: kills target minion and emits a nova shockwave of damage</i></td>
+        </tr>
+        <!-- <tr>
+          <td>Time Wave</td>
+          <td><img src="../img/skillicons/oskills/0071.bmp" alt="Time Wave"></td>
+          <td><i>Effect: triggers a Time Strike attack against all enemies</i></td>
+        </tr> -->
+        <tr>
+          <td>Wyrd</td>
+          <td><img src="../img/skillicons/oskills/0106.bmp" alt="Wyrd"></td>
+          <td><i>Effect: spirit of the dead that unleashes multiple weapon damage novas</i></td>
+        </tr>
+      </table>
+      <div class="spacing"></div>
+
+
+
+      <h3>Fire Skills</h3>
+      <table id="fire">
+        <tr>
+          <th>Name</th>
+          <th class="icon">Icon</th>
+          <th class="effect">Effect</th>
+        </tr>
+        <tr>
+          <td>Apocalypse</td>
+          <td><img src="../img/skillicons/oskills/0025.bmp" alt="Apocalypse"></td>
+          <td><i>Effect: causes nearby enemies to burst into hellfire</i></td>
+        </tr>
+        <tr>
+          <td>Bloodstar</td>
+          <td><img src="../img/skillicons/oskills/0036.bmp" alt="Bloodstar"></td>
+          <td><i>Effect: burning blood missile that knocks the target back</i></td>
+        </tr>
+        <tr>
+          <td>Cataclysm</td>
+          <td><img src="../img/skillicons/oskills/0040.bmp" alt="Cataclysm"></td>
+          <td><i>Effect: nova of exploding fireballs</i></td>
+        </tr>
+        <tr>
+          <td>Death Blossom</td>
+          <td><img src="../img/skillicons/oskills/0055.bmp" alt="Death Blossom"></td>
+          <td><i>Effect: melee attack that emits a nova of fire</i></td>
+        </tr>
+        <tr>
+          <td>Fire Cascade</td>
+          <td><img src="../img/skillicons/oskills/0072.bmp" alt="Fire Cascade"></td>
+          <td><i>Effect: cast fireballs at all nearby targets</i></td>
+        </tr>
+        <tr>
+          <td>Fire Fountain</td>
+          <td><img src="../img/skillicons/oskills/0073.bmp" alt="Fire Fountain"></td>
+          <td><i>Effect: scatters explosive volcanic bombs around you</i></td>
+        </tr>
+        <tr>
+          <td>Holy Trap</td>
+          <td><img src="../img/skillicons/oskills/0049.bmp" alt="Holy Trap"></td>
+          <td><i>Effect: places a landmine that explodes with holy fire</i></td>
+        </tr>
+        <tr>
+          <td>Immolation Bomb</td>
+          <td><img src="../img/skillicons/oskills/0147.bmp" alt="Immolation Bomb"></td>
+          <td><i>Effect: places a fireball bomb at the target spot</i></td>
+        </tr>
+        <tr>
+          <td>Meteor Shower</td>
+          <td><img src="../img/skillicons/oskills/meteor_shower.bmp" alt="Meteor Shower"></td>
+          <td><i>Effect: devastating bombardment of meteors on a wide area</i></td>
+        </tr>
+        <tr>
+          <td>Path of Flames</td>
+          <td><img src="../img/skillicons/oskills/0131.bmp" alt="Path of Flames"></td>
+          <td><i>Effect: periodically creates a pool of flames</i></td>
+        </tr>
+        <tr>
+          <td>Pentagram</td>
+          <td><img src="../img/skillicons/oskills/pentagram.bmp" alt="Pentagram"></td>
+          <td><i>Effect: cast an expanding pentagram of hellfire </i></td>
+        </tr>
+        <!-- <tr>
+          <td>Phoenix Wave</td>
+          <td><img src="../img/skillicons/oskills/0000.bmp" alt="Phoenix Wave"></td>
+          <td><i>Effect: wide advancing wall of flame</i></td>
+        </tr> -->
+        <tr>
+          <td>Powder Keg</td>
+          <td><img src="../img/skillicons/oskills/powder_keg.bmp" alt="Powder Keg"></td>
+          <td><i>Effect: throw a barrel of gunpowder with a burning fuse</i></td>
+        </tr>
+        <tr>
+          <td>Pyroclastic Flow</td>
+          <td><img src="../img/skillicons/oskills/0101.bmp" alt="Pyroclastic Flow"></td>
+          <td><i>Effect: massive rolling wave from a distant volcanic eruption</i></td>
+        </tr>
+        <tr>
+          <td>Rain of Bombs</td>
+          <td><img src="../img/skillicons/oskills/0141.bmp" alt="Rain of Bombs"></td>
+          <td><i>Effect: bombards target area with a hail of explosives</i></td>
+        </tr>
+        <tr>
+          <td>Rune of Fire</td>
+          <td><img src="../img/skillicons/oskills/0107.bmp" alt="Rune of Fire"></td>
+          <td><i>Effect: rune trap that explodes when triggered</i></td>
+        </tr>
+        <!-- <tr>
+          <td>Splitfire</td>
+          <td><img src="../img/skillicons/oskills/0000.bmp" alt="Splitfire"></td>
+          <td><i>Effect: casts powerful fireballs to your left and right</i></td>
+        </tr> -->
+        <tr>
+          <td>Wrath</td>
+          <td><img src="../img/skillicons/oskills/0151.bmp" alt="Wrath"></td>
+          <td><i>Effect: expanding circle of holy stones</i></td>
+        </tr>
+      </table>
+      <div class="spacing"></div>
+
+
+
+      <h3>Cold Skills</h3>
+      <table id="cold">
+        <tr>
+          <th>Name</th>
+          <th class="icon">Icon</th>
+          <th class="effect">Effect</th>
+        </tr>
+        <!-- <tr>
+          <td>Avalanche</td>
+          <td><img src="../img/skillicons/oskills/0026.bmp" alt="Avalanche"></td>
+          <td><i>Effect: two parallel rolling clouds of ice</i></td>
+        </tr>
+        <tr>
+          <td>Churel</td>
+          <td><img src="../img/skillicons/oskills/0035.bmp" alt="Churel"></td>
+          <td><i>Effect: gravestone that emits homing frost spirits</i></td>
+        </tr> -->
+        <tr>
+          <td>Cold Fear</td>
+          <td><img src="../img/skillicons/oskills/0047.bmp" alt="Cold Fear"></td>
+          <td><i>Effect: nova of icy terror that makes enemies flee</i></td>
+        </tr>
+        <tr>
+          <td>Cone of Cold</td>
+          <td><img src="../img/skillicons/oskills/0048.bmp" alt="Cone of Cold"></td>
+          <td><i>Effect: short ranged but deadly blast of ice</i></td>
+        </tr>
+        <tr>
+          <td>Countdown</td>
+          <td><img src="../img/skillicons/oskills/0050.bmp" alt="Countdown"></td>
+          <td><i>Effect: use target as focus for a delayed cold explosion</i></td>
+        </tr>
+        <!-- <tr>
+          <td>Cryo Beam</td>
+          <td><img src="../img/skillicons/oskills/0046.bmp" alt="Cryo Beam"></td>
+          <td><i>Effect: freeze laser with a chance to annihilate the target</i></td>
+        </tr> -->
+        <tr>
+          <td>Frostfire Wave</td>
+          <td><img src="../img/skillicons/oskills/0045.bmp" alt="Frostfire Wave"></td>
+          <td><i>Effect: multiple homing waves of ice flame</i></td>
+        </tr>
+        <tr>
+          <td>Frozen Crown</td>
+          <td><img src="../img/skillicons/oskills/0076.bmp" alt="Frozen Crown"></td>
+          <td><i>Effect: missile that emits a cold circle around the target on impact</i></td>
+        </tr>
+        <tr>
+          <td>Frozen Soul</td>
+          <td><img src="../img/skillicons/oskills/0077.bmp" alt="Frozen Soul"></td>
+          <td><i>Effect: cast a freezing orb at a random nearby enemy</i></td>
+        </tr>
+        <tr>
+          <td>Glacial Nova</td>
+          <td><img src="../img/skillicons/oskills/0095.bmp" alt="Glacial Nova"></td>
+          <td><i>Effect: nova of ice that freezes all enemies</i></td>
+        </tr>
+        <tr>
+          <td>Hailstorm</td>
+          <td><img src="../img/skillicons/oskills/0148.bmp" alt="Hailstorm"></td>
+          <td><i>Effect: targets an enemy and rains down ice</i></td>
+        </tr>
+        <tr>
+          <td>Ice Beam</td>
+          <td><img src="../img/skillicons/oskills/0110.bmp" alt="Ice Beam"></td>
+          <td><i>Effect: cast a piercing beam of ice and frost</i></td>
+        </tr>
+        <tr>
+          <td>Ice Bolt Nova</td>
+          <td><img src="../img/skillicons/oskills/0082.bmp" alt="Ice Bolt Nova"></td>
+          <td><i>Effect: nova of powerful ice bolts</i></td>
+        </tr>
+        <tr>
+          <td>Ice Whirl</td>
+          <td><img src="../img/skillicons/oskills/ice_whirl.bmp" alt="Ice Whirl"></td>
+          <td><i>Effect: cast multiple whirling loops of frost at your enemies</i></td>
+        </tr>
+        <tr>
+          <td>Rune of Ice</td>
+          <td><img src="../img/skillicons/oskills/0136.bmp" alt="Rune of Ice"></td>
+          <td><i>Effect: rune trap that freezes the enemy when triggered</i></td>
+        </tr>
+        <tr>
+          <td>Shackles of Ice</td>
+          <td><img src="../img/skillicons/oskills/0080.bmp" alt="Shackles of Ice"></td>
+          <td><i>Effect: freezes target solid in a large block of ice</i></td>
+        </tr>
+        <tr>
+          <td>Shadow Avatar</td>
+          <td><img src="../img/skillicons/oskills/0109.bmp" alt="Shadow Avatar"></td>
+          <td><i>Effect: floating avatar that unleashes waves of ice flame</i></td>
+        </tr>
+        <tr>
+          <td>Winter Avatar</td>
+          <td><img src="../img/skillicons/oskills/winter_avatar.bmp" alt="Winter Avatar"></td>
+          <td><i>Effect: floating apparition that blasts the area with frost novas</i></td>
+        </tr>
+      </table>
+      <div class="spacing"></div>
+
+
+
+      <h3>Lightning Skills</h3>
+      <table id="lightning">
+        <tr>
+          <th>Name</th>
+          <th class="icon">Icon</th>
+          <th class="effect">Effect</th>
+        </tr>
+        <tr>
+          <td>Electrobolt</td>
+          <td><img src="../img/skillicons/oskills/0065.bmp" alt="Electrobolt"></td>
+          <td><i>Effect: piercing bolt of lightning that leaves a wake of energy</i></td>
+        </tr>
+        <tr>
+          <td>Flash</td>
+          <td><img src="../img/skillicons/oskills/0074.bmp" alt="Flash"></td>
+          <td><i>Effect: short ranged electrical radius blast</i></td>
+        </tr>
+        <tr>
+          <td>Lightning Arena</td>
+          <td><img src="../img/skillicons/oskills/0149.bmp" alt="Lightning Arena"></td>
+          <td><i>Effect: periodically creates a circular stun fence of lightning</i></td>
+        </tr>
+        <tr>
+          <td>Lightning Wall</td>
+          <td><img src="../img/skillicons/oskills/0132.bmp" alt="Lightning Wall"></td>
+          <td><i>Effect: wall of lightning that disintegrates when touched</i></td>
+        </tr>
+        <tr>
+          <td>Nova Bomb</td>
+          <td><img src="../img/skillicons/oskills/0146.bmp" alt="Nova Bomb"></td>
+          <td><i>Effect: places a nova bomb at the target spot</i></td>
+        </tr>
+        <tr>
+          <td>Shock Flower</td>
+          <td><img src="../img/skillicons/oskills/0112.bmp" alt="Shock Flower"></td>
+          <td><i>Effect: melee attack that unleashes an electrical shockwave</i></td>
+        </tr>
+        <tr>
+          <td>Static Lance</td>
+          <td><img src="../img/skillicons/oskills/static_lance.bmp" alt="Static Lance"></td>
+          <td><i>Effect: lightning missile that emits charged bolts on impact</i></td>
+        </tr>
+        <tr>
+          <td>Static Ward</td>
+          <td><img src="../img/skillicons/oskills/0126.bmp" alt="Static Ward"></td>
+          <td><i>Effect: cast on a minion, emits charged bolts from the minion</i></td>
+        </tr>
+        <tr>
+          <td>Supernova</td>
+          <td><img src="../img/skillicons/oskills/0088.bmp" alt="Supernova"></td>
+          <td><i>Effect: gigantic nova that does more damage at close range</i></td>
+        </tr>
+        <tr>
+          <td>Vortex</td>
+          <td><img src="../img/skillicons/oskills/0096.bmp" alt="Vortex"></td>
+          <td><i>Effect: whirling maelstrom of lightning damage around target point</i></td>
+        </tr>
+      </table>
+      <div class="spacing"></div>
+
+
+
+      <h3>Poison Skills</h3>
+      <table id="poison">
+        <tr>
+          <th>Name</th>
+          <th class="icon">Icon</th>
+          <th class="effect">Effect</th>
+        </tr>
+        <tr>
+          <td>Amatoxin</td>
+          <td><img src="../img/skillicons/oskills/0000.bmp" alt="Amatoxin"></td>
+          <td><i>Passive effect: adds poison damage to weapon attacks, 1/4 of Curare</i></td>
+        </tr>
+        <tr>
+          <td>Black Lotus Strike</td>
+          <td><img src="../img/skillicons/oskills/0030.bmp" alt="Black Lotus Strike"></td>
+          <td><i>Effect: melee attack that emits a nova of poison</i></td>
+        </tr>
+        <tr>
+          <td>Diseased Cattle</td>
+          <td><img src="../img/skillicons/oskills/0062.bmp" alt="Diseased Cattle"></td>
+          <td><i>Effect: gates in hexed cows that emit disease</i></td>
+        </tr>
+        <tr>
+          <td>Punisher</td>
+          <td><img src="../img/skillicons/oskills/0150.bmp" alt="Punisher"></td>
+          <td><i>Effect: slow moving death bolt of poison</i></td>
+        </tr>
+        <tr>
+          <td>Razor Spines</td>
+          <td><img src="../img/skillicons/oskills/0049.bmp" alt="Razor Spines"></td>
+          <td><i>Effect: cast a ripple of poisoned spines of subterranean beasts</i></td>
+        </tr>
+        <tr>
+          <td>Venomous Spirit</td>
+          <td><img src="../img/skillicons/oskills/0134.bmp" alt="Venomous Spirit"></td>
+          <td><i>Effect: slow moving poisonous spirit of death</i></td>
+        </tr>
+      </table>
+      <div class="spacing"></div>
+
+
+
+      <h3>Magic Skills</h3>
+      <table id="magic">
+        <tr>
+          <th>Name</th>
+          <th class="icon">Icon</th>
+          <th class="effect">Effect</th>
+        </tr>
+        <tr>
+          <td>Blast Wave</td>
+          <td><img src="../img/skillicons/oskills/0032.bmp" alt="Blast Wave"></td>
+          <td><i>Effect: multiple blast novas that stun and knock back enemies</i></td>
+        </tr>
+        <tr>
+          <td>Death Ray</td>
+          <td><img src="../img/skillicons/oskills/0057.bmp" alt="Death Ray"></td>
+          <td><i>Effect: press and hold button to emit a deadly energy ray</i></td>
+        </tr>
+        <tr>
+          <td>Disintegrate</td>
+          <td><img src="../img/skillicons/oskills/0063.bmp" alt="Disintegrate"></td>
+          <td><i>Effect: radius blast of deadly energy that slays nearby enemies</i></td>
+        </tr>
+        <tr>
+          <td>Energy Beam</td>
+          <td><img src="../img/skillicons/oskills/0067.bmp" alt="Energy Beam"></td>
+          <td><i>Effect: cast a piercing beam of magic damage</i></td>
+        </tr>
+        <tr>
+          <td>Exorcism</td>
+          <td><img src="../img/skillicons/oskills/0068.bmp" alt="Exorcism"></td>
+          <td><i>Effect: melee attack that inflicts magical damage over time that spreads</i></td>
+        </tr>
+        <tr>
+          <td>Hail of Stones</td>
+          <td><img src="../img/skillicons/oskills/hail_of_stones.bmp" alt="Hail of Stones"></td>
+          <td><i>Effect: stone your enemies with a bombardment of thrown rocks</i></td>
+        </tr>
+        <tr>
+          <td>Orb of Annihilation</td>
+          <td><img src="../img/skillicons/oskills/orb_of_annihilation.bmp" alt="Orb of Annihilation"></td>
+          <td><i>Effect: deadly energy orb that emits bolts at nearby enemies</i></td>
+        </tr>
+        <tr>
+          <td>Pain Spirit</td>
+          <td><img src="../img/skillicons/oskills/0098.bmp" alt="Pain Spirit"></td>
+          <td><i>Effect: spirit tracks random enemy and deals magic damage</i></td>
+        </tr>
+        <tr>
+          <td>Raven Flight</td>
+          <td><img src="../img/skillicons/oskills/0078.bmp" alt="Raven Flight"></td>
+          <td><i>Effect: flock of ravens passes through the area, dealing damage on the way</i></td>
+        </tr>
+        <tr>
+          <td>Rune of Mana</td>
+          <td><img src="../img/skillicons/oskills/0116.bmp" alt="Rune of Mana"></td>
+          <td><i>Effect: places a mine that steals mana and deals damage based on mana lost</i></td>
+        </tr>
+        <tr>
+          <td>Searing Orb</td>
+          <td><img src="../img/skillicons/oskills/0133.bmp" alt="Searing Orb"></td>
+          <td><i>Effect: orb of holy light that explodes at the target point</i></td>
+        </tr>
+        <tr>
+          <td>Typhoon Sentry</td>
+          <td><img src="../img/skillicons/oskills/0081.bmp" alt="Typhoon Sentry"></td>
+          <td><i>Effect: trap that casts wind blasts that knock enemies around</i></td>
+        </tr>
+      </table>
+      <div class="spacing"></div>
+
+
+
+      <h3>Leech Skills</h3>
+      <table id="leech">
+        <tr>
+          <th>Name</th>
+          <th class="icon">Icon</th>
+          <th class="effect">Effect</th>
+        </tr>
+        <tr>
+          <td>Blood Flash</td>
+          <td><img src="../img/skillicons/oskills/0033.bmp" alt="Blood Flash"></td>
+          <td><i>Effect: short ranged radius blast that steals life</i></td>
+        </tr>
+        <tr>
+          <td>Death Coil</td>
+          <td><img src="../img/skillicons/oskills/0056.bmp" alt="Death Coil"></td>
+          <td><i>Effect: bolt that steals life and does damage based on life stolen</i></td>
+        </tr>
+        <tr>
+          <td>Mana Coil</td>
+          <td><img src="../img/skillicons/oskills/0097.bmp" alt="Mana Coil"></td>
+          <td><i>Effect: bolt that steals mana and does damage based on mana stolen</i></td>
+        </tr>
+      </table>
+      <div class="spacing"></div>
+
+
+
+      <h3>Buff Skills</h3>
+      <table id="buff">
+        <tr>
+          <th>Name</th>
+          <th class="icon">Icon</th>
+          <th class="effect">Effect</th>
+        </tr>
+        <tr>
+          <td>Blades of Light (unused skill)</td>
+          <td><img src="../img/skillicons/oskills/0000.bmp" alt="Blades of Light"></td>
+          <td><i>Effect: defensive shield that damages attackers</i></td>
+        </tr>
+        <tr>
+          <td>Blood Fury</td>
+          <td><img src="../img/skillicons/oskills/0034.bmp" alt="Blood Fury"></td>
+          <td><i>Effect: increases spell damage but slowly drains life</i></td>
+        </tr>
+        <tr>
+          <td>Bloody Mary</td>
+          <td><img src="../img/skillicons/oskills/0000.bmp" alt="Bloody Mary"></td>
+          <td><i>Effect: increases spell damage but slowly drains life</i></td>
+        </tr>
+        <tr>
+          <td>Dark Power</td>
+          <td><img src="../img/skillicons/oskills/0053.bmp" alt="Dark Power"></td>
+          <td><i>Effect: increases damage of the party and adds bonus magic damage</i></td>
+        </tr>
+        <tr>
+          <td>Demonic Speed</td>
+          <td><img src="../img/skillicons/oskills/0059.bmp" alt="Demonic Speed"></td>
+          <td><i>Effect: increases run speed but makes you vulnerable to damage</i></td>
+        </tr>
+        <tr>
+          <td>Hounfor</td>
+          <td><img src="../img/skillicons/oskills/0153.bmp" alt="Hounfor"></td>
+          <td><i>Effect: ritual circle that amplifies spells cast inside</i></td>
+        </tr>
+        <tr>
+          <td>Inner Fire</td>
+          <td><img src="../img/skillicons/oskills/0135.bmp" alt="Inner Fire"></td>
+          <td><i>Effect: heal yourself with the power of fire</i></td>
+        </tr>
+        <tr>
+          <td>Lightning Shield</td>
+          <td><img src="../img/skillicons/oskills/0086.bmp" alt="Lightning Shield"></td>
+          <td><i>Effect: casts a retaliatory shield of lightning on the party</i></td>
+        </tr>
+        <tr>
+          <td>Pagan Heart</td>
+          <td><img src="../img/skillicons/oskills/0000.bmp" alt="Pagan Heart"></td>
+          <td><i>Effect: grants an energy bonus to apples</i></td>
+        </tr>
+        <tr>
+          <td>Raven Heart</td>
+          <td><img src="../img/skillicons/oskills/0079.bmp" alt="Raven Heart"></td>
+          <td><i>Effect: increases cold spell damage but slowly drains life</i></td>
+        </tr>
+        <tr>
+          <td>Vanquish</td>
+          <td><img src="../img/skillicons/oskills/0094.bmp" alt="Vanquish"></td>
+          <td><i>Effect: briefly grants a major boost to all damage</i></td>
+        </tr>
+      </table>
+      <div class="spacing"></div>
+
+
+
+      <h3>Stance Skills</h3>
+      <table id="stance">
+        <tr>
+          <th>Name</th>
+          <th class="icon">Icon</th>
+          <th class="effect">Effect</th>
+        </tr>
+        <tr>
+          <td>Crane Stance</td>
+          <td><img src="../img/skillicons/oskills/0051.bmp" alt="Crane Stance"></td>
+          <td><i>Stance effect: increases damage and grants avoidance</i></td>
+        </tr>
+        <tr>
+          <td>Kraken Stance</td>
+          <td><img src="../img/skillicons/oskills/0152.bmp" alt="Kraken Stance"></td>
+          <td><i>Stance effect: adds elemental damage to weapon attacks</i></td>
+        </tr>
+      </table>
+      <div class="spacing"></div>
+
+
+
+      <h3>Curse Skills</h3>
+      <table id="curse">
+        <tr>
+          <th>Name</th>
+          <th class="icon">Icon</th>
+          <th class="effect">Effect</th>
+        </tr>
+        <tr>
+          <td>Banish</td>
+          <td><img src="../img/skillicons/oskills/0029.bmp" alt="Banish"></td>
+          <td><i>Curse effect: reduced life of the cursed by a percentage</i></td>
+        </tr>
+        <tr>
+          <td>Nightmare</td>
+          <td><img src="../img/skillicons/oskills/0093.bmp" alt="Nightmare"></td>
+          <td><i>Curse effect: cursed enemies move slower and miss more often</i></td>
+        </tr>
+      </table>
+      <div class="spacing"></div>
+
+
+
+      <h3>Charm Skills</h3>
+      <table id="charm">
+        <tr>
+          <th>Name</th>
+          <th class="icon">Icon</th>
+          <th class="effect">Effect</th>
+        </tr>
+        <tr>
+          <td>Dire Charm</td>
+          <td><img src="../img/skillicons/oskills/0043.bmp" alt="Dire Charm"></td>
+          <td><i>Effect: converts a random number of enemies for a random length of time</i></td>
+        </tr>
+        <tr>
+          <td>Dominate</td>
+          <td><img src="../img/skillicons/oskills/0064.bmp" alt="Dominate"></td>
+          <td><i>Effect: long lasting single target charm spell</i></td>
+        </tr>
+      </table>
+      <div class="spacing"></div>
+
+
+
+      <h3>Summoning Skills</h3>
+      <table id="summoning">
+        <tr>
+          <th>Name</th>
+          <th class="icon">Icon</th>
+          <th class="effect">Effect</th>
+        </tr>
+        <tr>
+          <td>Body of the Savior</td>
+          <td><img src="../img/skillicons/oskills/0037.bmp" alt="Body of the Savior"></td>
+          <td><i>Effect: summons the corpse of Akarat to resurrect!</i></td>
+        </tr>
+        <tr>
+          <td>Call Leprechaun</td>
+          <td><img src="../img/skillicons/oskills/0038.bmp" alt="Call Leprechaun"></td>
+          <td><i>Effect: summons a mischievous nature spirit to charm</i></td>
+        </tr>
+        <tr>
+          <td>Call Treewarden</td>
+          <td><img src="../img/skillicons/oskills/0039.bmp" alt="Call Treewarden"></td>
+          <td><i>Effect: summons a hostile treant creature to charm</i></td>
+        </tr>
+        <tr>
+          <td>Champions of the Sun</td>
+          <td><img src="../img/skillicons/oskills/0042.bmp" alt="Champions of the Sun"></td>
+          <td><i>Effect: summon golden spearwomen with a defensive aura</i></td>
+        </tr>
+        <tr>
+          <td>Elvensong</td>
+          <td><img src="../img/skillicons/druid/Elvensong.gif" alt="Elvensong"></td>
+          <td><i>Effect: summons elfin beings whose song charms enemies</i></td>
+        </tr>
+        <tr>
+          <td>Golden Calf</td>
+          <td><img src="../img/skillicons/oskills/0085.bmp" alt="Golden Calf"></td>
+          <td><i>Effect: cow statue that attracts enemies and blinds attackers</i></td>
+        </tr>
+        <tr>
+          <td>Summon Avalanche</td>
+          <td><img src="../img/skillicons/oskills/0115.bmp" alt="Summon Avalanche"></td>
+          <td><i>Effect: summon a dangerous cold demon</i></td>
+        </tr>
+        <tr>
+          <td>Summon Bane Monster</td>
+          <td><img src="../img/skillicons/oskills/0105.bmp" alt="Summon Bane Monster"></td>
+          <td><i>Effect: summon a demon with a Flash attack</i></td>
+        </tr>
+        <tr>
+          <td>Summon Darklings</td>
+          <td><img src="../img/skillicons/oskills/0139.bmp" alt="Summon Darklings"></td>
+          <td><i>Effect: summon large numbers of insectoid minions</i></td>
+        </tr>
+        <tr>
+          <td>Summon Daystar</td>
+          <td><img src="../img/skillicons/oskills/0103.bmp" alt="Summon Daystar"></td>
+          <td><i>Effect: summon a dark priest with an Angelfire attack</i></td>
+        </tr>
+        <tr>
+          <td>Summon Fallen</td>
+          <td><img src="../img/skillicons/oskills/0108.bmp" alt="Summon Fallen"></td>
+          <td><i>Effect: summon numerous little useless fallen ones</i></td>
+        </tr>
+        <tr>
+          <td>Summon Glowing Fungus</td>
+          <td><img src="../img/skillicons/oskills/0117.bmp" alt="Summon Glowing Fungus"></td>
+          <td><i>Effect: summon a mushroom fiend with a wide lightning attack</i></td>
+        </tr>
+        <tr>
+          <td>Summon Overlord</td>
+          <td><img src="../img/skillicons/oskills/0087.bmp" alt="Summon Overlord"></td>
+          <td><i>Effect: overseer that increases the size of your necromantic army</i></td>
+        </tr>
+        <tr>
+          <td>Summon Shock Beast</td>
+          <td><img src="../img/skillicons/oskills/0100.bmp" alt="Summon Shock Beast"></td>
+          <td><i>Effect: summon an ape with a melee attack and Lightning Wall</i></td>
+        </tr>
+        <tr>
+          <td>Summon Shredder</td>
+          <td><img src="../img/skillicons/oskills/0104.bmp" alt="Summon Shredder"></td>
+          <td><i>Effect: summon a demon with a Frozen Orb attack</i></td>
+        </tr>
+        <tr>
+          <td>Summon Sinner</td>
+          <td><img src="../img/skillicons/oskills/0114.bmp" alt="Summon Sinner"></td>
+          <td><i>Effect: summon a fire demon with a Pyroblast attack</i></td>
+        </tr>
+        <tr>
+          <td>Summon Sirens</td>
+          <td><img src="../img/skillicons/oskills/0125.bmp" alt="Summon Sirens"></td>
+          <td><i>Effect: summon female shadows that may charm enemies</i></td>
+        </tr>
+        <tr>
+          <td>Summon Thunder Bear</td>
+          <td><img src="../img/skillicons/oskills/0099.bmp" alt="Summon Thunder Bear"></td>
+          <td><i>Effect: bear with Shower of Rocks attack</i></td>
+        </tr>
+        <tr>
+          <td>Totembound Guardian</td>
+          <td><img src="../img/skillicons/oskills/0145.bmp" alt="Totembound Guardian"></td>
+          <td><i>Effect: minion that gains strength when near totems</i></td>
+        </tr>
+      </table>
+      <div class="spacing"></div>
+
+
+
+      <h3>Totem Skills</h3>
+      <table id="totem">
+        <tr>
+          <th>Name</th>
+          <th class="icon">Icon</th>
+          <th class="effect">Effect</th>
+        </tr>
+        <tr>
+          <td>Dead Wall Totem</td>
+          <td><img src="../img/skillicons/oskills/0054.bmp" alt="Dead Wall Totem"></td>
+          <td><i>Totem effect: raises an army of zombies</i></td>
+        </tr>
+        <tr>
+          <td>Devil's Fang Totem</td>
+          <td><img src="../img/skillicons/oskills/0060.bmp" alt="Devil's Fang Totem"></td>
+          <td><i>Totem effect: raises an army of asatruar</i></td>
+        </tr>
+        <tr>
+          <td>Elemental Totem</td>
+          <td><img src="../img/skillicons/oskills/0066.bmp" alt="Elemental Totem"></td>
+          <td><i>Totem effect: increases elemental damage</i></td>
+        </tr>
+        <tr>
+          <td>Exploding Totem</td>
+          <td><img src="../img/skillicons/oskills/0069.bmp" alt="Exploding Totem"></td>
+          <td><i>Totem effect: does nothing until destroyed, then stuns enemies</i></td>
+        </tr>
+        <tr>
+          <td>Fear Bomb Totem</td>
+          <td><img src="../img/skillicons/oskills/0070.bmp" alt="Fear Bomb Totem"></td>
+          <td><i>Totem effect: casts a nova of terror, then self-destructs</i></td>
+        </tr>
+        <tr>
+          <td>Mana Tide Totem</td>
+          <td><img src="../img/skillicons/oskills/0144.bmp" alt="Mana Tide Totem"></td>
+          <td><i>Totem effect: regenerates mana</i></td>
+        </tr>
+      </table>
+      <div class="spacing"></div>
+
+
+
+      <h3>Uberquest Skills</h3>
+      <table id="uberquest">
+        <tr>
+          <th>Name</th>
+          <th class="icon">Icon</th>
+          <th class="effect">Effect</th>
+        </tr>
+        <tr>
+          <td>Dark Summoning</td>
+          <td><img src="../img/skillicons/oskills/0001.bmp" alt="Dark Summoning"></td>
+          <td><i>Effect: summons a random monster, or in some places, an ancient evil...</i></td>
+        </tr>
+        <tr>
+          <td>Jitan's Gate</td>
+          <td><img src="../img/skillicons/oskills/0008.bmp" alt="Jitan's Gate"></td>
+          <td><i>Effect: burst from the ground at the target location</i></td>
+        </tr>
+        <tr>
+          <td>Purify</td>
+          <td><img src="../img/skillicons/oskills/0010.bmp" alt="Purify"></td>
+          <td><i>Effect: use this spell to kill Assur in Duncraig!</i></td>
+        </tr>
+        <tr>
+          <td>Summon Edyrem</td>
+          <td><img src="../img/skillicons/oskills/0004.bmp" alt="Summon Edyrem"></td>
+          <td><i>Effect: summon ancient nephalem spirits, the enemies of the Triune...</i></td>
+        </tr>
+      </table>
+      <div class="spacing"></div>
+
+
+
+      <h3>Trigger-Only Skills</h3>
+      <table id="procs">
+        <tr>
+          <th>Name</th>
+          <th class="effect">Effect</th>
+        </tr>
+        <tr>
+          <td>Arrow</td>
+          <td><i>Effect: shoot an arrow at your target</i></td>
+        </tr>
+        <tr>
+          <td>Javelin</td>
+          <td><i>Effect: throw a javelin at your target</i></td>
+        </tr>
+        <tr>
+          <td>Throwing Knife</td>
+          <td><i>Effect: throw a knife at your target</i></td>
+        </tr>
+        <tr>
+          <td>Flurry of Javelins</td>
+          <td><i>Effect: unleashes a barrage of javelins in random directions</i></td>
+        </tr>
+        <tr>
+          <td>Javelin Nova</td>
+          <td><i>Effect: throw a nova of javelins</i></td>
+        </tr>
+        <tr>
+          <td>Hammertime</td>
+          <td><i>Effect: blasts a stream of Thunder Hammer bolts at a random foe</i></td>
+        </tr>
+        <tr>
+          <td>Spike Nova</td>
+          <td><i>Effect: nova of spikes that deal weapon-based damage</i></td>
+        </tr>
+        <tr>
+          <td>Thunder Hammer</td>
+          <td><i>Effect: hammer that deals weapon-based damage</i></td>
+        </tr>
+        <tr>
+          <td>Thunder Wave</td>
+          <td><i>Effect: throw multiple Thunder Hammers</i></td>
+        </tr>
+        <tr>
+          <td>Crater</td>
+          <td><i>Effect: emits multiple fire novas from target point</i></td>
+        </tr>
+        <tr>
+          <td>Death of a God</td>
+          <td><i>Effect: corpse goes up in a blaze of holy fire</i></td>
+        </tr>
+        <tr>
+          <td>Fire Bolt Nova</td>
+          <td><i>Effect: casts a nova of firebolts</i></td>
+        </tr>
+        <tr>
+          <td>Fire Cannonade</td>
+          <td><i>Effect: unleashes a stream of firebolts at a random target</i></td>
+        </tr>
+        <tr>
+          <td>Fire Splash</td>
+          <td><i>Effect: creates a burning fire around the point of explosion</i></td>
+        </tr>
+        <tr>
+          <td>Frog Prince</td>
+          <td><i>Effect: summon a fairy prince that casts frost novas</i></td>
+        </tr>
+        <tr>
+          <td>Shadowstorm</td>
+          <td><i>Effect: swarm of homing shadow bolts that inflict cold damage</i></td>
+        </tr>
+        <tr>
+          <td>Static Trap</td>
+          <td><i>Effect: corpse trap that emits stunning electricity when touched</i></td>
+        </tr>
+        <tr>
+          <td>Trinity Nova</td>
+          <td><i>Effect: casts a nova of fireballs, shock bolts and freeze bolts</i></td>
+        </tr>
+        <tr>
+          <td>Death Star</td>
+          <td><i>Effect: slow moving poison missile</i></td>
+        </tr>
+        <tr>
+          <td>Death Spiral</td>
+          <td><i>Effect: slowly rotating beam of total annihilation</i></td>
+        </tr>
+        <tr>
+          <td>MIRV</td>
+          <td><i>Effect: multiple independent nukes are launched at nearby points</i></td>
+        </tr>
+        <tr>
+          <td>Slayer Bolt</td>
+          <td><i>Effect: magical bolt similar to the bolts cast by the Slayer skill</i></td>
+        </tr>
+        <tr>
+          <td>Celerity</td>
+          <td><i>Effect: temporarily increases run speed and grants freeze immunity</i></td>
+        </tr>
+        <tr>
+          <td>Gift of Celerity</td>
+          <td><i>Curse effect: party version of the Celerity spell</i></td>
+        </tr>
+        <tr>
+          <td>Gift of Inner Fire</td>
+          <td><i>Curse effect: party version of the Inner Fire spell</i></td>
+        </tr>
+        <tr>
+          <td>Gift of the Wild</td>
+          <td><i>Curse effect: party version of the Mark of the Wild spell</i></td>
+        </tr>
+        <tr>
+          <td>Gift of Vanquishing</td>
+          <td><i>Curse effect: party version of the Vanquish spell</i></td>
+        </tr>
+        <tr>
+          <td>Lifeblood</td>
+          <td><i>Effect: slowly regenerates all your lost life over time</i></td>
+        </tr>
+        <tr>
+          <td>Rust Storm</td>
+          <td><i>Curse effect: reduces defence and velocity of the cursed</i></td>
+        </tr>
+        <tr>
+          <td>Demon Blood Aura</td>
+          <td><i>Aura effect: increases life, life regeneration and elemental damage</i></td>
+        </tr>
+        <tr>
+          <td>Call Blood Golem</td>
+          <td><i>Effect: summons a hostile monster, a golem with a ranged attack</i></td>
+        </tr>
+        <tr>
+          <td>Call Henchmen</td>
+          <td><i>Effect: summons a hostile monster, one of Belial's angry rats!</i></td>
+        </tr>
+        <tr>
+          <td>Call Necrobot</td>
+          <td><i>Effect: summons a hostile monster, a robot with lazorguns</i></td>
+        </tr>
+        <tr>
+          <td>Pandemonium</td>
+          <td><i>Effect: unleashes hell in the form of 44 hostile elite monsters</i></td>
+        </tr>
+      </table>
+    </div>
+    <div class="spacing"></div>
+  </div>
+</body>
+<script src="../js/dropdown.js"></script>
+
+</html>

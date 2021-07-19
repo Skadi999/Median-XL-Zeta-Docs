@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="../css/general.css">
+  <link rel="stylesheet" type="text/css" href="css/skill_calculator.css">
+  <title>Skill Calculator | MXL:Z Documentation</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>+ SKILL CALCULATOR +</h1>
+    </header>
+    <nav>
+      <ul class="navpanel">
+        <li>
+          <button onclick="clickConcepts()" class="btnDropdown">Concepts ▼</button>
+          <div id="conceptDropdown" class="dropdown-content">
+            <a href="../concepts/difficulty_levels.html">Difficulty Levels</a>
+            <a href="../concepts/energy_factor.html">Energy Factor</a>
+            <a href="../concepts/block_and_defense.html">Block & Defense</a>
+            <a href="../concepts/players_x.html">Players Command</a>
+            <a href="../concepts/witches_warlocks.html">Witches & Warlocks</a>
+            <a href="../concepts/poison_damage.html">Poison Damage</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickCharacters()" class="btnDropdown">Characters ▼</button>
+          <div id="characterDropdown" class="dropdown-content">
+            <a href="../characters/amazon.html">Amazon</a>
+            <a href="../characters/assassin.html">Assassin</a>
+            <a href="../characters/barbarian.html">Barbarian</a>
+            <a href="../characters/druid.html">Druid</a>
+            <a href="../characters/necromancer.html">Necromancer</a>
+            <a href="../characters/paladin.html">Paladin</a>
+            <a href="../characters/sorceress.html">Sorceress</a>
+            <a href="../characters/oskills.html">Item-Only Skills</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickItems()" class="btnDropdown">Items ▼</button>
+          <div id="itemDropdown" class="dropdown-content">
+            <a href="../items/base_items.html">Base Items</a>
+            <a href="../items/tiered_uniques.html">Tiered Uniques</a>
+            <a href="../items/sacred_uniques.html">Sacred Uniques</a>
+            <a href="../items/umos.html">Unique Mystic Orbs</a>
+            <a href="../items/sets.html">Sets</a>
+            <a href="../items/runewords.html">Runewords</a>
+            <a href="../items/cube_recipes.html">Cube Recipes</a>
+            <a href="../items/gems_runes.html">Gems and Runes</a>
+            <a href="../items/jewelwords.html">Jewelwords</a>
+            <a href="../items/honorific_shrine.html">Honorific & Crafted</a>
+            <a href="../items/shrine_bonuses.html">Shrine Bonuses</a>
+            <a href="../items/prefixes_and_suffixes.html">Prefixes & Suffixes</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickUbers()" class="btnDropdown">Uberquests ▼</button>
+          <div id="uberDropdown" class="dropdown-content">
+            <a href="../uberquests/dungeon_uberquests.html">Dungeon Uberquests</a>
+            <a href="../uberquests/summoning_uberquests.html">Summoning Uberquests</a>
+            <a href="../uberquests/uberlevels.html">Uberlevels</a>
+            <a href="../uberquests/heroic_levels.html">Heroic Levels</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickChallenges()" class="btnDropdown">Challenges ▼</button>
+          <div id="challengeDropdown" class="dropdown-content">
+            <a href="../challenges/dragon_eggs.html">Dragon's Eggs</a>
+            <a href="../challenges/lc1.html">Level Challenge 1</a>
+            <a href="../challenges/lc2.html">Level Challenge 2</a>
+            <a href="../challenges/ennead.html">Ennead Challenge</a>
+            <a href="../challenges/black_road.html">Black Road Challenge</a>
+            <a href="../challenges/minigames.html">Minigames</a>
+            <a href="../challenges/monster_tokens.html">Monster Tokens</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickMaps()" class="btnDropdown">Maps ▼</button>
+          <div id="mapDropdown" class="dropdown-content">
+            <a href="../maps/map_k3kba.html">Kurast 3000 BA Map</a>
+            <a href="../maps/map_tran_athulua.html">Tran Athulua Map</a>
+            <a href="../maps/map_fauztinville.html">Fauztinville Map</a>
+            <a href="../maps/map_ureh.html">Kingdom of Shadow Map</a>
+            <a href="../maps/map_duncraig.html">Duncraig Map</a>
+            <a href="../maps/map_vizjun.html">Vizjun Map</a>
+          </div>
+        </li>
+        <li>
+          <button onclick="clickMisc()" class="btnDropdown">Misc ▼</button>
+          <div id="miscDropdown" class="dropdown-content">
+            <a href="introduction.html">Introduction</a>
+            <a href="hirelings.html">Hirelings</a>
+            <a href="changelog.html">Changelog</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="gridContainer">
+      <div class="grid-item-left">
+        <div class="shortDescription">
+          <p>Class:<br>
+            <select name="class" id="selectClass" onchange="changeClass(this.value)">
+              <option value="amazon">Amazon</option>
+              <option value="assassin">Assassin</option>
+              <option value="barbarian">Barbarian</option>
+              <option value="druid">Druid</option>
+              <option value="necromancer">Necromancer</option>
+              <option value="paladin">Paladin</option>
+              <option value="sorceress">Sorceress</option>
+            </select>
+          </p>
+          <p>Spent: <b><span id="spentPoints">0</span></b> out of <b><span id="totalPoints">119</span></b> points<br>
+            Remaining: <b><span id="remainingPoints">119</span></b> points.<br>
+            Maximum Skill Level: <b><span id="maxSkillLevel">0</span></b></p>
+          <p>Skill Point and Max Skill Level bonuses:</p>
+        </div>
+        <table>
+          <tr>
+            <td>Den of Evil<br>
+              (+1 Skill Point each)</td>
+            <td><input type="checkbox" id="hDenOfEvil" name="checkbox" onclick="update()" onclick="update()">
+              <label for="hDenOfEvil"> Hatred</label><br>
+              <input type="checkbox" id="tDenOfEvil" name="checkbox" onclick="update()">
+              <label for="tDenOfEvil"> Terror</label><br>
+              <input type="checkbox" id="dDenOfEvil" name="checkbox" onclick="update()">
+              <label for="dDenOfEvil"> Destruction</label><br>
+            </td>
+          </tr>
+          <tr>
+            <td>Radament<br>
+              (+1 Skill Point each)</td>
+            <td><input type="checkbox" id="hRadament" name="checkbox" onclick="update()">
+              <label for="hRadament"> Hatred</label><br>
+              <input type="checkbox" id="tRadament" name="checkbox" onclick="update()">
+              <label for="tRadament"> Terror</label><br>
+              <input type="checkbox" id="dRadament" name="checkbox" onclick="update()">
+              <label for="dRadament"> Destruction</label><br>
+            </td>
+          </tr>
+          <tr>
+            <td>Izual<br>
+              (+2 Skill Point each)</td>
+            <td><input type="checkbox" id="hIzual" name="checkbox" onclick="update()">
+              <label for="hIzual"> Hatred</label><br>
+              <input type="checkbox" id="tIzual" name="checkbox" onclick="update()">
+              <label for="tIzual"> Terror</label><br>
+              <input type="checkbox" id="dIzual" name="checkbox" onclick="update()">
+              <label for="dIzual"> Destruction</label><br>
+            </td>
+          </tr>
+          <tr>
+            <td>Signets of Skill<br>
+              (+1 Skill Point each)</td>
+            <td><input type="checkbox" id="firstSkillSignet" name="checkbox" onclick="update()">
+              <input type="checkbox" id="secondSkillSignet" name="checkbox" onclick="update()">
+              <input type="checkbox" id="thirdSkillSignet" name="checkbox" onclick="update()">
+            </td>
+          </tr>
+          <tr>
+            <td>Ennead Challenge<br>
+              (Unlocks Ennead skill,<br>+1 Maximum Skill Level)</td>
+            <td><input type="checkbox" id="ennead" name="checkbox" onclick="update()">
+            </td>
+          </tr>
+          <tr>
+            <td>Black Road Challenge<br>
+              (Unlocks Black Road skill)</td>
+            <td><input type="checkbox" id="blackRoad" name="checkbox" onclick="update()">
+            </td>
+          </tr>
+          <tr>
+            <td>Minigames<br>
+              (+1 Maximum Skill Level each)</td>
+            <td><input type="checkbox" id="witchQueen" name="checkbox" onclick="update()">
+              <label for="witchQueen"> Witch Queen</label><br>
+              <input type="checkbox" id="crowned" name="checkbox" onclick="update()">
+              <label for="crowned"> Crowned</label><br>
+              <input type="checkbox" id="mirrorMirror" name="checkbox" onclick="update()">
+              <label for="mirrorMirror"> Mirror Mirror</label><br>
+            </td>
+          </tr>
+          <tr>
+            <td>Moon of the Spider<br>
+              (+1 Maximum Skill Level)</td>
+            <td><input type="checkbox" id="moonOfTheSpider" name="checkbox" onclick="update()">
+            </td>
+          </tr>
+          <tr>
+            <td>Legacy of Blood<br>
+              (+2 Maximum Skill Levels)</td>
+            <td><input type="checkbox" id="legacyOfBlood" name="checkbox" onclick="update()">
+            </td>
+          </tr>
+          <tr>
+            <td>Bremmtown Upgrade<br>
+              (+1 Maximum Skill Level)</td>
+            <td><input type="checkbox" id="bremmtown" name="checkbox" onclick="update()">
+            </td>
+          </tr>
+          <tr>
+            <td>Toraja Upgrade<br>
+              (+1 Maximum Skill Level)</td>
+            <td><input type="checkbox" id="toraja" name="checkbox" onclick="update()">
+            </td>
+          </tr>
+          <tr>
+            <td>Drekavac (Taha runeword in Gloves)<br>
+              (+1 Maximum Skill Level)</td>
+            <td><input type="checkbox" id="drekavac" name="checkbox" onclick="update()">
+            </td>
+          </tr>
+          <tr id="trVenefica">
+            <td>Venefica (Qor runeword in sorc body armor)<br>
+              (+1 Maximum Skill Level)</td>
+            <td><input type="checkbox" id="venefica" name="checkbox" onclick="update()">
+            </td>
+          </tr>
+        </table>
+        <div class="buttons">
+          <button id="checkNone" onclick="toggleAllCheckboxes(false)">Check None</button>
+          <button id="checkAll" onclick="toggleAllCheckboxes(true)">Check All</button>
+          <button id="resetSkills" onclick="resetSkills()">Reset Skills</button>
+        </div>
+      </div>
+      <div class="grid-item-right">
+        <table class="tableSkills">
+          <tr>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/WildAndFree.gif" id="img1_1" alt="Wild And Free">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="1_1"><span class="name">Wild and Free</span><br>
+                <input type="text" id="skill1_1" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn1_1" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">22</span>
+              </p>
+            </td>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/Curare.gif" id="img1_2" alt="Curare">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="2_1"><span class="name">Curare</span><br>
+                <input type="text" id="skill1_2" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn1_2" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">7</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/FireElementals.gif" id="img1_3" alt="Summon Fire Elementals">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="1_2"><span class="name">Summon Fire Elementals</span><br>
+                <input type="text" id="skill1_3" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn1_3" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">21</span>
+              </p>
+            </td>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/Paragon.gif" id="img1_4" alt="Paragon">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="2_2"><span class="name">Paragon</span><br>
+                <input type="text" id="skill1_4" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn1_4" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">7</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/Balance.gif" id="img1_5" alt="Balance">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="1_3"><span class="name">Balance</span><br>
+                <input type="text" id="skill1_5" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn1_5" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">20</span>
+              </p>
+            </td>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/SpiritofVengeance.gif" id="img1_6" alt="Spirit of Vengeance">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="2_3"><span class="name">Spirit of Vengeance</span><br>
+                <input type="text" id="skill1_6" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn1_6" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">7</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/EcstaticFrenzy.gif" id="img1_7" alt="Ecstatic Frenzy">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="1_4"><span class="name">Ecstatic Frenzy</span><br>
+                <input type="text" id="skill1_7" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn1_7" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">19</span>
+              </p>
+            </td>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/Spellbind.gif" id="img1_8" alt="Spellbind">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="2_4"><span class="name">Spellbind</span><br>
+                <input type="text" id="skill1_8" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn1_8" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">7</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/DefensiveHarmony.gif" id="img1_9" alt="Defensive Harmony">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="1_5"><span class="name">Defensive Harmony</span><br>
+                <input type="text" id="skill1_9" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn1_9" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">18</span>
+              </p>
+            </td>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/WarSpirit.gif" id="img1_10" alt="War Spirit">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="2_5"><span class="name">War Spirit</span><br>
+                <input type="text" id="skill1_10" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn1_10" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">7</span>
+              </p>
+            </td>
+          </tr>
+        </table>
+
+
+
+        <table class="tableSkills">
+          <tr>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/Takedown.gif" id="img2_1" alt="Takedown">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="3_1"><span class="name">Takedown</span><br>
+                <input type="text" id="skill2_1" class="txtSkillPoints"value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn2_1" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">22</span>
+              </p>
+            </td>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/MagicMissiles.gif" id="img2_2" alt="Magic Missiles">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="4_1"><span class="name">Magic Missiles</span><br>
+                <input type="text" id="skill2_2" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn2_2" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">22</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/Prowl.gif" id="img2_3" alt="Prowl">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="3_2"><span class="name">Prowl</span><br>
+                <input type="text" id="skill2_3" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn2_3" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">21</span>
+              </p>
+            </td>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/Balefire.gif" id="img2_4" alt="Balefire">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="4_2"><span class="name">Balefire</span><br>
+                <input type="text" id="skill2_4" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn2_4" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">21</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/Pounce.gif" id="img2_5" alt="Pounce">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="3_3"><span class="name">Pounce</span><br>
+                <input type="text" id="skill2_5" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn2_5" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">20</span>
+              </p>
+            </td>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/Bloodstorm.gif" id="img2_6" alt="Bloodstorm">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="4_3"><span class="name">Bloodstorm</span><br>
+                <input type="text" id="skill2_6" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn2_6" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">20</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/Lioness.gif" id="img2_7" alt="Lioness">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="3_4"><span class="name">Lioness</span><br>
+                <input type="text" id="skill2_7" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn2_7" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">19</span>
+              </p>
+            </td>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/Bacchanalia.gif" id="img2_8" alt="Bacchanalia">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="4_4"><span class="name">Bacchanalia</span><br>
+                <input type="text" id="skill2_8" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn2_8" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">19</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/GreatHunt.gif" id="img2_9" alt="Great Hunt">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="3_5"><span class="name">Great Hunt</span><br>
+                <input type="text" id="skill2_9" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn2_9" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">18</span>
+              </p>
+            </td>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/LavaPit.gif" id="img2_10" alt="Lava Pit">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="4_5"><span class="name">Lava Pit</span><br>
+                <input type="text" id="skill2_10" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn2_10" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">18</span>
+              </p>
+            </td>
+          </tr>
+        </table>
+
+
+
+        <table class="tableSkills">
+          <tr>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/GhostArrow.gif" id="img3_1" alt="Ghost Arrow">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="5_1"><span class="name">Ghost Arrow</span><br>
+                <input type="text" id="skill3_1" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn3_1" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">22</span>
+              </p>
+            </td>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/Moonbeam.gif" id="img3_2" alt="Moonbeam">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="6_1"><span class="name">Moonbeam</span><br>
+                <input type="text" id="skill3_2" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn3_2" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">22</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/Barrage.gif" id="img3_3" alt="Barrage">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="5_2"><span class="name">Barrage</span><br>
+                <input type="text" id="skill3_3" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn3_3" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">21</span>
+              </p>
+            </td>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/Ricochet.gif" id="img3_4" alt="Ricochet">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="6_2"><span class="name">Ricochet</span><br>
+                <input type="text" id="skill3_4" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn3_4" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">21</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/Phalanx.gif" id="img3_5" alt="Phalanx">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="5_3"><span class="name">Phalanx</span><br>
+                <input type="text" id="skill3_5" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn3_5" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">20</span>
+              </p>
+            </td>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/Enfilade.gif" id="img3_6" alt="Enfilade">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="6_3"><span class="name">Enfilade</span><br>
+                <input type="text" id="skill3_6" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn3_6" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">20</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/Dragonlore.gif" id="img3_7" alt="Dragonlore">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="5_4"><span class="name">Dragonlore</span><br>
+                <input type="text" id="skill3_7" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn3_7" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">19</span>
+              </p>
+            </td>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/MoonQueen.gif" id="img3_8" alt="Moon Queen">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="6_4"><span class="name">Moon Queen</span><br>
+                <input type="text" id="skill3_8" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn3_8" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">19</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/Wyrmshot.gif" id="img3_9" alt="Wyrmshot">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="5_5"><span class="name">Wyrmshot</span><br>
+                <input type="text" id="skill3_9" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn3_9" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">18</span>
+              </p>
+            </td>
+            <td class="tdImg">
+              <img src="../img/skillicons/amazon/FairyRing.gif" id="img3_10" alt="Fairy Ring">
+            </td>
+            <td class="tdSkillInput">
+              <p class="skill" id="6_5"><span class="name">Fairy Ring</span><br>
+                <input type="text" id="skill3_10" class="txtSkillPoints" value="0">
+                <button class="btnRemoveSkill" onclick="removeSkillPoint(this)">-</button>
+                <button id="btn3_10" class="btnAddSkill" onclick="addSkill(this)">+</button>
+                max: <span class="max">18</span>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../js/dropdown.js"></script>
+<script src="js/skill_calculator.js"></script>
+
+</html>

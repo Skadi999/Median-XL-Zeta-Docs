@@ -37,6 +37,7 @@
             <a href="../characters/necromancer.html">Necromancer</a>
             <a href="../characters/paladin.html">Paladin</a>
             <a href="../characters/sorceress.html">Sorceress</a>
+            <a href="../characters/oskills.html">Item-Only Skills</a>
           </div>
         </li>
         <li>
@@ -54,7 +55,6 @@
             <a href="../items/honorific_shrine.html">Honorific & Crafted</a>
             <a href="../items/shrine_bonuses.html">Shrine Bonuses</a>
             <a href="../items/prefixes_and_suffixes.html">Prefixes & Suffixes</a>
-            <a href="../items/oskill_items.html">Items with Oskills</a>
           </div>
         </li>
         <li>
@@ -102,7 +102,6 @@
     <div class="description">
       <h2>ZETA CHANGELOG</h2>
       <p>This is the complete list of changes made from Omega 003 to Zeta</p>
-      <hr>
       <div class="spacing"></div>
 
       <h3><b>Quality of Life</b></h3>
@@ -120,14 +119,22 @@
         for Shrines and Arcane Crystals. Cube a Vessel with shrines of the same type, or a Cluster with Arcane Crystals
         to increase the stored amount. Cube a Vessel or Cluster by itself to receive the Shrine or Crystal and the
         Vessel or Cluster with 1 less item stored.<br>
-      </p>
-
-      <h3><b>Characters</b></h3>
-      <p>
-        - <br>
+        - The Scroll of Resistances given by Malah can no longer be used. You must now combine it with the Elemental
+        Prism, which will give the resistance bonus to it. This is done to prevent the "malah scroll bug" where the
+        resistance bonus disappears after you die, until you relog.<br>
       </p>
 
       <h3><b>Items</b></h3>
+
+      <p>
+        <b>Low-level Gems Rework</b><br>
+        Chipped, Flawed and Normal gems have received a complete overhaul. Their stats are now much more useful for low
+        level characters and are more similar to the way they were in cLoD. Flawless and Perfect gems remain the
+        same.<br>
+        Additionally, all gems have received a price overhaul and now sell for more gold.<br>
+        See the <a href="../items/gems_runes.html">Gems and Runes</a> page for more details.
+      </p>
+
       <p>
         <b>Item Renames</b><br>
         Renamed the following items, since their names were silly:<br>
@@ -164,7 +171,52 @@
       </p>
       <p>
         <b>New Items</b><br>
-        - Black Hand Sigil
+        - Black Hand Sigil<br>
+        - Elixir of Wealth and Greater Elixir of Wealth: these elixirs increase your gold find by 250% and 400%
+        respectively.<br>
+        - Oil of Transmutation: These are used for some crafting recipes. You can buy them like any other oil, they cost
+        15000 gold.<br>
+        - Flask of Renewal: See the Quality of Life section.<br>
+        - Shrine Vessel and Arcane Cluster: See the Quality of Life section.<br>
+        - Enabled the Testament of the Apes set and all of the realm-only uniques from Ω003<br>
+        - Oil of Duplication now costs 300,000 gold.<br>
+
+      </p>
+
+      <p><b>Sprites</b>
+        - The sprites of many items have been changed. Most of the changes were done for unique items, charms, shrines,
+        trophies, Unique Mystic Orbs, and a few misc items like Apples.
+      </p>
+
+      <p><b>Gemwords</b>
+        - Gemwords have been removed
+      </p>
+
+
+      <h3><b>Crafting</b></h3><br>
+
+      <p><b>Changed Recipes:</b><br>
+        <b>Alchemy</b><br>
+        - All Alchemy recipes now use an Oil of Transmutation instead of ID/TP scrolls.<br><br>
+
+        - The Dupe Recipe is now only available for magic, rare and crafted jewels and requires 1500 crafting points.
+      </p>
+
+      <p><b>New Recipes:</b><br>
+        - Greater Elixir of Transmutation: Perfect Diamond + Oil of Transmutation (500 Crafting Points)<br>
+        - Arcane Cluster creation: Arcane Crystal + Oil of Transmutation<br>
+        - Arcane Cluster increment: Arcane Cluster + Arcane Crystal<br>
+        - Arcane Cluster decrement (at 0 charges gives you back the Oil of Transmutation along with the crystal): Arcane
+        Cluster<br>
+        - Shrine Vessel creation: Shrine + Oil of Transmutation<br>
+        - Shrine Vessel increment: Shrine Vessel + 1-10 Shrines of same type<br>
+        - Shrine Vessel decrement (at 0 charges gives you back the Oil of Transmutation along with the shrine): Shrine
+        Vessel<br>
+      </p>
+
+      <p><b>Crafting Point Rework</b><br>
+        The crafting points requirement has been increased for some recipes. Namely, the dupe recipe now requires 1500
+        crafting points. More changes to the crafting points requirements will be done in the future.<br>
       </p>
 
       <p>
@@ -174,7 +226,8 @@
       </p>
 
       <h3><b>Uberquests</b></h3>
-      - Added a new item: <span class="unique">Elemental Prism</span>. This is a charm that drops from the Volcanic Shrine in Tran Athulua and is
+      - Added a new item: <span class="unique">Elemental Prism</span>. This is a charm that drops from the Volcanic
+      Shrine in Tran Athulua and is
       used for LC1.<br>
       LC1 now works slightly differently: you must first obtain the Elemental Prism, then head to the bosses, and when
       they drop their charms, cube it with the Elemental Prism. The Prism would then get their bonuses. The charms by
@@ -191,9 +244,10 @@
 
       <p>
       <h3><b>Code Edits</b></h3>
-      - Median XL Zeta now comes with a .dll that provides code edits to the game. The code edits are:
-      - The maximum HP that a player can reach before visual bugs occur has been doubled. Credits to whist.
-      - Throwing a weapon now no longer reduces its quantity. This was done for 2 reasons:<br>
+      Median XL Zeta now comes with a .dll that provides a couple of code edits to the game:<br><br>
+      1. The maximum HP that a player can reach before visual bugs occur has been doubled. Credits to whist.<br>
+      2. Throwing a weapon now no longer reduces its quantity and their quantity is now always 1. This was done for 2
+      reasons:<br>
       a. Throwing weapons had a problem with their price. They would sell for a lot of gold if you put a rune into them
       and their repair cost was high, all because of the quantity.<br>
       b. You cannot repair ethereal items, so if you'd deplete the quantity of an ethereal throwing weapon, it would be
@@ -201,9 +255,8 @@
       charges, but accidents can happen and a player might find himself accidentally using auto attack for different
       reasons. The chance of actually depleting a throwing weapons were extremely low, but it's better to be 100%
       safe.<br>
-      - The bug with multiple Astroghas spawning should no longer happen (untested)<br>
+      3. The bug with multiple Astroghas spawning should no longer happen (untested)<br>
       </p>
-      <p>asdas</p>
     </div>
   </div>
 </body>
