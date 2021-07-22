@@ -51,17 +51,12 @@
 .itemDisplay {
   justify-content: center;
   display: inline-block;
-  /* background-color: #110e0d; */
   background-color: #140e02;
   border: 1px solid #413922e3;
   border-radius: 12px;
   text-align: center;
   padding: 15px 40px;
   margin-bottom: 10px;
-}
-
-table {
-  width: 80%;
 }
 
 th, td {
@@ -78,18 +73,4 @@ th, td {
 
 .image {
   width: 7%;
-}
-
-.toc {
-  height: 220px;
-  overflow: hidden;
-  overflow-y: scroll;
-  width: 11%;
-  text-align: left;
-  color: #a1a178;
-  font-size: 14px;
-  border: 1px solid #bbab7773;
-  position: fixed;
-  left: 5px;
-  top: 175px;
 }

@@ -42,6 +42,7 @@ h2 {
 
 h3 {
     font-size: 18px;
+    font-weight: bold;
 }
 
 h6 {
@@ -87,7 +88,7 @@ a:hover {
 .sacredUniqueAreas {
     margin: 20px 0 20px 0;
     background-color: #1a160c;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     width: 70%;
     border: 2px solid #413922e3;
 }
@@ -97,7 +98,7 @@ a:hover {
     margin: 20px auto 10px auto;
     width: 80%;
     text-align: left;
-    line-height: 1.2;
+    line-height: 1.3;
 }
 
 .description p {
@@ -195,6 +196,26 @@ ul button {
     color: #ebebc5;
 }
 
+.tocSmall {
+  overflow: auto;
+  width: 11%;
+  text-align: left;
+  color: #a1a178;
+  font-size: 14px;
+  border: 1px solid #bbab7773;
+  position: fixed;
+  left: 5px;
+  top: 175px;
+}
+
+.tocSmall li {
+  padding: 4px 0 8px 3px;
+}
+
+.tocSmall li a:hover {
+  color: #ebebc5;
+}
+
 /* Font Colors */
 .unique {
     color: #706033;
@@ -243,4 +264,17 @@ ul button {
 
 .orange {
 	  color: #706033;
+}
+
+.note {
+  color: #a1a178;
+  font-size: 1em;
+}
+
+/* Table */
+.table-small td, th {
+  padding: 1px 10px;
+  text-align: center;
+  border: 1px solid rgb(179, 168, 147);
+  vertical-align: middle;
 }

@@ -1,45 +1,30 @@
-h2 {
+/* h2 {
     font-size: 28px;
     color: rgb(216, 162, 62);
     margin-top: 35px;
-}
+} */
 
-.sacredUniqueAreas {
+/* .sacredUniqueAreas {
     margin: 20px 0 20px 0;
     background-color: #1a160c;
     padding: 10px 10px 10px 10px;
     width: 80%;
     border: 2px solid #413922e3;
-}
+} */
 
-.description {
+/* .description {
     padding: 10px 5px 10px 55px;
     margin: 20px auto 10px auto;
     width: 90%;
     text-align: left;
     line-height: 1.2;
-}
+} */
 
 .craftingTitle {
     font-size: 18px;
     color: #b38b29;
 }
 
-.note {
-    color: #a1a178;
-    font-size: 1em;
-}
-
 .toc {
     height: 220px;
-    overflow: hidden;
-    overflow-y: scroll;
-    width: 11%;
-    text-align: left;
-    color: #a1a178;
-    font-size: 14px;
-    border: 1px solid #bbab7773;
-    position: fixed;
-    left: 5px;
-    top: 175px;
 }

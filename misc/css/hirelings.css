@@ -1,9 +1,5 @@
 h3 {
     color: #706033;
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 9px;
-    text-align: left;
 }
 
 h4 {
@@ -19,7 +15,7 @@ table {
 }
 
 td, th {
-    border: 1px solid black;
+    border: 1px solid rgb(179, 168, 147);
     padding: 4px;
 }
 
@@ -33,16 +29,7 @@ th {
     text-align: left;
 }
 
-.hirelings p {
-    margin: 0 0 20px 0;
-    text-align: left;
-}
-
-.hirelings a {
-    color: #6e567e;
-    text-decoration: underline;
-}
-
-.hirelings a:hover{
-    color: #c8a3e0;
+.mercenary img {
+  margin: 15px 0;
+  border: 2px solid #413922e3;
 }
