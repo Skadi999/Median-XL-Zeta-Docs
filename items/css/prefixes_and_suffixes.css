@@ -8,7 +8,8 @@ th {
     padding: 3px 3px;
     vertical-align: center;
     margin: 0 auto;
-    border: 1px solid black;
+
+    border: 1px solid rgb(179, 168, 147);
     line-height: 24px;
     font-weight: bold;
     font-size: 18px;
@@ -20,13 +21,13 @@ th:hover {
     cursor: pointer;
 }
 
-#testIlvl {
+#ilvl {
     width: 5%;
 }
 
 td {
     padding: 7px 3px;
-    border: 1px solid black;
+    border: 1px solid rgb(179, 168, 147);
     vertical-align: middle;
     font-size: 15px;
     color: #a1a178;

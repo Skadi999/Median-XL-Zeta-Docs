@@ -56,6 +56,11 @@ h6 {
     height: 50px;
 }
 
+.smallSpacing {
+  width: 100%;
+  height: 20px;
+}
+
 a {
     color: inherit;
 }

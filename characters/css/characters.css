@@ -1,11 +1,7 @@
-.indented {
-    margin-left: 40px;
+table th:nth-child(2) {
+  width: 8%;
 }
 
-.effect {
-    width: 75%;
-}
-
-.icon {
-    width: 8%;
+table th:nth-child(3) {
+  width: 75%;
 }

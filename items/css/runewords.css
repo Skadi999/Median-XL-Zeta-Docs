@@ -2,14 +2,9 @@
 .description {
     color: #a0a076;
     text-align: left;
-    width: 100%;
+    width: 95%;
     margin: 30px auto 20px auto;
-    padding: 10px 5px 10px 30px;
-}
-
-.description h3 {
-    font-size: 18px;
-    font-weight: bold;
+    padding: 10px 5px 10px 5px;
 }
 
 /* table */
@@ -20,7 +15,7 @@ table {
 
 th {
     margin: 0 auto;
-    border: 1px solid black;
+    border: 1px solid rgb(179, 168, 147);
     line-height: 24px;
     font-weight: bold;
     font-size: 18px;
@@ -29,10 +24,9 @@ th {
 }
 
 td {
-    border: 1px solid black;
+    border: 1px solid rgb(179, 168, 147);
     vertical-align: middle;
     font-size: 15px;
-    color: #a1a178;
     width: 12%;
     padding-bottom: 4px;
 }
@@ -43,7 +37,9 @@ td img{
 }
 
 .stats {
-    padding: 10px 0 10px 0;
+    text-align: left;
+    padding: 10px 0 10px 10px;
+    /* Width of every other td is 12%, 3 * 12 = 36, thats why this one is 64%  */
     width: 64%;
 }
 

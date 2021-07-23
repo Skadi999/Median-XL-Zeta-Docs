@@ -6,19 +6,6 @@
     padding: 10px 5px 10px 30px;
 }
 
-.description h3 {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.sacredUniqueAreas {
-    margin: 20px 0 20px 0;
-    background-color: #1a160c;
-    padding: 10px 10px 10px 10px;
-    width: 70%;
-    border: 2px solid #413922e3;
-}
-
 /* table */
 table {
     width: 95%;
@@ -39,7 +26,6 @@ td {
     border: 1px solid black;
     vertical-align: middle;
     font-size: 15px;
-    color: #a1a178;
 }
 
 td img{
