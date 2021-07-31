@@ -1,5 +1,8 @@
 .description {
-    width: 95%;
+  padding: 10px 5px 10px 5px;
+  margin: 20px auto 10px auto;
+  width: 95%;
+  text-align: left;
 }
 
 table {
@@ -25,7 +28,7 @@ td {
     color: #a1a178;
 }
 
-td img{
+td img {
     margin: auto;
     border: 1px solid rgb(204, 204, 204);
 }

@@ -4,17 +4,21 @@ table {
 }
 
 th, td {
-    padding: 1px 3px;
+    padding: 1px 5px;
     text-align: center;
     border: 1px solid rgb(179, 168, 147);
     vertical-align: middle;
 }
 
-table td:first-child {
+.gem td:first-child {
   width: 7%;
 }
 
-table td:nth-child(3) {
+.gem td:nth-child(3) {
   text-align: left;
   width: 70%;
+}
+
+.rune td:nth-child(4) {
+  text-align: left;
 }

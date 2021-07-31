@@ -278,7 +278,7 @@ ul button {
 
 /* Table */
 .table-small td, th {
-  padding: 1px 10px;
+  padding: 2px 10px;
   text-align: center;
   border: 1px solid rgb(179, 168, 147);
   vertical-align: middle;

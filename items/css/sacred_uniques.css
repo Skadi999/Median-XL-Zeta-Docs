@@ -1,9 +1,8 @@
 .description {
-    color: #a0a076;
-    text-align: left;
-    width: 100%;
-    margin: 30px auto 20px auto;
-    padding: 10px 5px 10px 30px;
+  padding: 10px 5px 10px 5px;
+  margin: 20px auto 10px auto;
+  width: 95%;
+  text-align: left;
 }
 
 /* table */
